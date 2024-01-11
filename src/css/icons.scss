@@ -1,0 +1,30 @@
+[data-toggled="true"],
+[toggled] {
+  color: var(--blue-100);
+}
+
+.row_dashboard_icon_container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.info_content_container {
+  position: absolute;
+  right: 2rem;
+  width: 40%;
+  font-size: var(--small-text-1);
+  margin-left: 2rem;
+}
+.info_icon_container {
+  display: inline-block;
+  margin: auto 0;
+}
+.info_icon {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+}

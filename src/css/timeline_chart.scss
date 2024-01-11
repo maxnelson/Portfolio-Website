@@ -1,0 +1,66 @@
+#timeline_chart_container {
+  line {
+    stroke: var(--gray-175);
+  }
+
+  path.domain {
+    visibility: hidden;
+  }
+
+  .x_axis text {
+    fill: #999;
+  }
+
+  .x_axis text {
+    font-size: 15px;
+  }
+
+  .x_axis2 text,
+  .x_axis3 text,
+  .x_axis4 text {
+    font-weight: 800;
+    font-size: 34px;
+    fill: #cdcdcd;
+  }
+}
+
+$arrow-width: 10px;
+$arrow-border-width: calc($arrow-width + 2px);
+$arrow-offset: calc($arrow-width * 2);
+
+.timeline_chart_mouseover_tooltip {
+  position: absolute;
+  font-size: 11pt;
+  background-color: var(--gray-150);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid var(--gray-175);
+  width: 12rem;
+
+  p {
+    color: var(--gray-175);
+    filter: brightness(0.8);
+  }
+
+  &:before,
+  &:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    position: absolute;
+  }
+
+  &:before {
+    border-bottom-color: var(--gray-175);
+    border-width: $arrow-border-width;
+    margin-left: -$arrow-border-width;
+  }
+
+  &:after {
+    border-bottom-color: var(--gray-150);
+    border-width: $arrow-width;
+    margin-left: -$arrow-width;
+  }
+}

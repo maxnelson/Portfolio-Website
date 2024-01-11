@@ -1,0 +1,15 @@
+runtime: nodejs16 # closest available runtime to your local version
+env: standard
+instance_class: F1 # You can choose different classes based on your needs
+
+automatic_scaling:
+  max_instances: 1 # Adjust based on expected traffic
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
+
+env_variables:
+  NODE_ENV: "production"
+  # Add other environment variables here, if needed

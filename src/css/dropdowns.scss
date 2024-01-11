@@ -1,0 +1,31 @@
+.dropdown_menu_container {
+  position: absolute;
+  text-align: left;
+  border: 1px solid var(--gray-175);
+  background-color: white;
+  top: 49px;
+  z-index: 1;
+}
+
+.dropdown_menu_container_item {
+  white-space: nowrap;
+  border-bottom: 1px solid var(--gray-175);
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  a {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--gray-500);
+  }
+}
+
+.left_sidebar_navigation_link_li,
+.dropdown_menu_container_item {
+  cursor: pointer;
+  &:hover {
+    background-color: var(--gray-125);
+  }
+}
