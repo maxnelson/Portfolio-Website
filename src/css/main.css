@@ -3,13 +3,13 @@
 @import "input.scss";
 @import "timeline_chart.scss";
 @import "buttons.scss";
-@import "dropdowns.scss";
 @import "grid_item_buttons.scss";
 @import "containers.scss";
 @import "icons.scss";
 */
 @import "basic.scss";
 @import "header.scss";
+@import "dropdowns.scss";
 @import "text_treatments.scss";
 @import "portfolio-website.scss";
 @import "resume-page.scss";

@@ -1,70 +1,84 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LeftSidebar } from "@/components/LeftSidebar";
-import { jsPDF } from "jspdf";
-import { useRef } from "react";
+import { ResumeHeader } from "@/components/Resume/ResumeHeader";
+import { ResumeFooter } from "@/components/Resume/ResumeFooter";
+import { ResumeItem } from "@/components/Resume/ResumeItem";
+import {
+  PDFViewer,
+  Document,
+  Page,
+  View,
+  Text,
+  Svg,
+  Line,
+} from "@react-pdf/renderer";
+import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
+import {
+  resumeItemPropObjectApple,
+  resumeItemPropObjectRubrik,
+  resumeItemPropObjectApple2,
+  resumeItemPropObjectCloudera,
+} from "@/components/Resume/ResumeData";
 
-export function ResumePage() {
-  const resumePageRef = useRef();
-  const demoFromHTML = () => {
-    console.log("this is firing");
-    const doc = new jsPDF("p", "pt", "letter");
-
-    doc.html(document.getElementById("resume_page"), {
-      callback: function (doc) {
-        //doc.save();
-      },
-      x: 10,
-      y: 10,
-    });
-  };
+export const ResumePage = () => {
   return (
     <>
       <Header />
       <div className="left_sidebar_page_container">
         <LeftSidebar />
         <div className="left_sidebar_main_section">
-          <div ref={resumePageRef} id="resume_page" onClick={demoFromHTML}>
-            <div className="resume_header_section display-flex justify-content-space-between">
-              <h1>MAX NELSON</h1>
-              <div className="contact_info">
-                <p className="contact_info_title">EMAIL</p>
-                <p className="contact_info_content">MAXNELSON88@GMAIL.COM</p>
-                <hr />
-                <p className="contact_info_title">Phone</p>
-                <div className="phone_number"></div>
-                <hr />
-                <p className="contact_info_title">Website</p>
-                <p className="contact_info_content">MAXNELSONDESIGN.COM</p>
-                <hr />
-              </div>
-            </div>
-            <div className="resume_body">
-              <div className="section_header">
-                <p>Summary</p>
-                <hr />
-                <p>
-                  Web Developer with 9+ years of experience developing
-                  maintainable web applications using Javascript, HTML5, CSS3,
-                  Python, Java, and integrating with a variety of web services,
-                  databases, and content repositories, such as Google App Engine
-                  and AEM.
-                </p>
-              </div>
-              <div className="section_header">
-                <p>Experience</p>
-                <hr />
-                <div className="job_info_container">
-                  <div className="current_dates">
-                    <p>2020 – 2023</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <PDFViewer style={{ width: "80%", height: "71rem" }}>
+            <Document>
+              <Page size="LETTER">
+                <View style={styles.page_container}>
+                  <ResumeHeader />
+                  <View style={styles.section_padding}>
+                    <Text style={styles.section_title}>SUMMARY</Text>
+                    <Svg viewBox="0 0 0 0" width="570" height="10">
+                      <Line
+                        x1="0"
+                        y1="5"
+                        x2="570"
+                        y2="5"
+                        strokeWidth={1}
+                        stroke="black"
+                      />
+                    </Svg>
+                    <Text style={styles.body_copy}>
+                      Web Developer with 9+ years of experience developing
+                      maintainable web applications using Javascript, HTML5,
+                      CSS3, Python, Java, and integrating with a variety of web
+                      services, databases, and content repositories, such as
+                      Google App Engine and AEM.
+                    </Text>
+                  </View>
+                  <View>
+                    <Text style={styles.section_title}>EXPERIENCE</Text>
+                    <Svg viewBox="0 0 0 0" width="570" height="10">
+                      <Line
+                        x1="0"
+                        y1="5"
+                        x2="570"
+                        y2="5"
+                        strokeWidth={1}
+                        stroke="black"
+                      />
+                    </Svg>
+                    <ResumeItem {...resumeItemPropObjectApple} />
+                    <ResumeItem {...resumeItemPropObjectRubrik} />
+                    <ResumeItem {...resumeItemPropObjectApple2} />
+                    <ResumeItem {...resumeItemPropObjectCloudera} />
+
+                    <ResumeFooter />
+                  </View>
+                </View>
+              </Page>
+            </Document>
+          </PDFViewer>
         </div>
       </div>
       <Footer />
     </>
   );
-}
+};
