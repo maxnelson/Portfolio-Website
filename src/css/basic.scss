@@ -75,7 +75,7 @@ textarea,
 button,
 li {
   font-family: Helvetica, "Helvetica";
-  color: #cdcdcd;
+  //color: #cdcdcd;
   margin: 0;
   padding: 0;
 }
@@ -89,7 +89,7 @@ ol,
 ul {
   padding: 0px;
   margin: 0px;
-  list-style: none;
+  //list-style: none;
 }
 
 table {
@@ -135,11 +135,6 @@ i,
 a,
 span > i {
   cursor: pointer;
-}
-
-hr {
-  border: 0;
-  border-top: 2px solid var(--gray-175);
 }
 
 .hidden {
