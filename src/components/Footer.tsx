@@ -1,47 +1,73 @@
+import { Link } from "react-router-dom";
+const styles = {
+  footer: {
+    marginTop: "1rem",
+    marginLeft: "15rem",
+    marginRight: "15rem",
+    marginBottom: "2rem",
+    paddingTop: "1.5rem",
+    paddingBottom: "1.5rem",
+    borderTop: "2px solid black",
+    borderBottom: "2px solid black",
+    fontSize: "12px",
+  },
+  footer_item: {
+    marginRight: "0rem",
+    color: "black",
+    //fontWeight: "300",
+  },
+  footer_item_copyright: {
+    marginLeft: "1rem",
+  },
+
+  footer_items_container: {
+    display: "flex",
+    paddingLeft: "1rem",
+  },
+};
+
 export const Footer = () => {
   return (
-    <footer className="background-color-gray-100 border-top-gray">
-      <div className="page_section_container padding-top-6 padding-bottom-6">
-        <div className="position-relative">
-          <div className="display-inline-block margin-right-10 vertical-align-top">
-            <p className="footer_column_header">Pages</p>
-            <ul className="font-size-14px line-height-1-3">
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Resumé</a>
-              </li>
-              <li>
-                <a href="#">Timeline</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
-          <div className="display-inline-block margin-right-10 vertical-align-top">
-            <p className="footer_column_header">Contact</p>
-            <ul className="font-size-14px line-height-1-3">
-              <li>
-                <a href="#">LinkedIn</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-            </ul>
-          </div>
-          <div className="display-inline-block position-bottom-right">
-            <a href="http://www.maxnelsondesign.com" target="_blank">
-              <img src="/public/images/icons/nyan-cat.png" alt="Timeline" />
-            </a>
-          </div>
+    <footer style={styles.footer}>
+      <div
+        style={styles.footer_items_container}
+        className="footer_items_container"
+      >
+        <div style={styles.footer_item} className="footer_item">
+          <Link to={"/"}>Home</Link>
         </div>
-        <div className="margin-top-8 font-size-14px text-align-center">
-          <p id="footer_column_copyright_text">Max Nelson © 2024</p>
+        <div style={styles.footer_item} className="footer_item">
+          <Link to={"/about"}>About</Link>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <Link to={"/resume"}>Resumé</Link>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <Link to={"/timeline"}>Timeline</Link>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <a href="https://quidbroquo.com" target="_blank">
+            Blog
+          </a>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <Link to={"/contact"}>Contact</Link>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <a href="https://www.linkedin.com/in/maxnelson88/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        <div style={styles.footer_item} className="footer_item">
+          <a href="https://twitter.com/modularmoon" target="_blank">
+            Twitter
+          </a>
+        </div>
+        <div
+          style={styles.footer_item_copyright}
+          className="footer_item_copyright"
+        >
+          <p>© 2024</p>
         </div>
       </div>
     </footer>

@@ -6,8 +6,6 @@
 @import "grid_item_buttons.scss";
 @import "containers.scss";
 @import "icons.scss";
-*/
-@import "basic.scss";
 @import "header.scss";
 @import "dropdowns.scss";
 @import "text_treatments.scss";
@@ -18,3 +16,6 @@
 @import "basic_class_names/padding.scss";
 @import "basic_class_names/interval_colors.scss";
 @import "basic_class_names/filter-brightness.scss";
+*/
+@import "basic.scss";
+@import "portfolio-website.scss";

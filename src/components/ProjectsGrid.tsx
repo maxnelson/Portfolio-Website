@@ -123,11 +123,7 @@ export const ProjectsGrid = () => {
     ),
   };
   return (
-    <>
-      <div className="section_header">
-        <h2>Projects</h2>
-        <hr />
-      </div>
+    <div className="projects_section">
       {projectDescriptionVisible ? (
         <ProjectDescription {...projectDescriptionContent} />
       ) : (
@@ -135,8 +131,10 @@ export const ProjectsGrid = () => {
           <ProjectGridItem {...project_grid_prop_apple} />
           <ProjectGridItem {...project_grid_prop_rubrik} />
           <ProjectGridItem {...project_grid_prop_cloudera} />
+          <ProjectGridItem {...project_grid_prop_cloudera} />
+          <ProjectGridItem {...project_grid_prop_cloudera} />
         </div>
       )}
-    </>
+    </div>
   );
 };
