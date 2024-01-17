@@ -62,6 +62,8 @@ table {
 
 a,
 a > p {
+  transition: background 0.25s ease-in-out;
+  transition: color 0s ease-in-out;
   text-decoration: none;
   &:hover {
     text-decoration: none;

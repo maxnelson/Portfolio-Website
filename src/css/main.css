@@ -17,5 +17,7 @@
 @import "basic_class_names/interval_colors.scss";
 @import "basic_class_names/filter-brightness.scss";
 */
+
 @import "basic.scss";
+@import "project-grid.scss";
 @import "portfolio-website.scss";

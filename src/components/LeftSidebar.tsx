@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const styles = {
   left_sidebar: {
     borderTop: "2px solid black",
@@ -12,14 +12,12 @@ const styles = {
   left_sidebar_li: {
     fontSize: "12px",
     borderBottom: "1px solid #ccc",
-    color: "black",
-  },
-  left_sidebar_image_li: {
-    marginBottom: "1rem",
   },
   left_sidebar_image: {
-    width: "10rem",
+    display: "block",
     maxWidth: "10rem",
+    paddingBottom: "1rem",
+    //transition: "border-bottom 0.25s ease-in-out",
   },
 };
 
@@ -31,36 +29,64 @@ export const LeftSidebar = () => {
           className="left_sidebar_navigation_link_container_img"
           style={styles.left_sidebar_image_li}
         >
-          <Link to={"/"}>
+          <NavLink
+            className={({ isActive }) =>
+              "left_sidebar_navigation_link_image" +
+              (isActive ? " active_nav_image" : "")
+            }
+            end
+            to={"/"}
+          >
             <img
               style={styles.left_sidebar_image}
               src="/public/images/icons/rocket_hands_logo.jpg"
             />
-          </Link>
+          </NavLink>
         </li>
         <li
           className="left_sidebar_navigation_link_container"
           style={styles.left_sidebar_li}
         >
-          <Link to={"/about"} className="left_sidebar_navigation_link">
+          <NavLink
+            className={({ isActive }) =>
+              "left_sidebar_navigation_link" +
+              (isActive ? " active_nav_link" : "")
+            }
+            end
+            to={"/about"}
+          >
             About
-          </Link>
+          </NavLink>
         </li>
         <li
           className="left_sidebar_navigation_link_container"
           style={styles.left_sidebar_li}
         >
-          <Link to={"/resume"} className="left_sidebar_navigation_link">
+          <NavLink
+            className={({ isActive }) =>
+              "left_sidebar_navigation_link" +
+              (isActive ? " active_nav_link" : "")
+            }
+            end
+            to={"/resume"}
+          >
             Resumé
-          </Link>
+          </NavLink>
         </li>
         <li
           className="left_sidebar_navigation_link_container"
           style={styles.left_sidebar_li}
         >
-          <Link to={"/timeline"} className="left_sidebar_navigation_link">
+          <NavLink
+            className={({ isActive }) =>
+              "left_sidebar_navigation_link" +
+              (isActive ? " active_nav_link" : "")
+            }
+            end
+            to={"/timeline"}
+          >
             Timeline
-          </Link>
+          </NavLink>
         </li>
         <li
           className="left_sidebar_navigation_link_container"
