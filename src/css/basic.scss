@@ -1,3 +1,17 @@
+:root {
+  --blue-100: #0e71b8;
+  --blue-50: #3382b0;
+  --blue-200: #054674;
+  --red-100: #dc3546;
+  --green-100: #28a745;
+  --yellow-100: #ffbf00;
+  --gray-100: #9b9b9b;
+  --gray-125: #aaa;
+  --gray-175: #ddd;
+  --gray-400: #777;
+  --gray-500: #666;
+}
+
 *,
 *:after,
 *:before {
@@ -44,10 +58,23 @@ button,
 ol,
 ul,
 li {
-  font-family: Helvetica, "Helvetica";
-  //font-family: "Droid Sans', Helvetica, sans-serif";
+  font-family: Helvetica, "Helvetica, sans-serif";
   margin: 0;
   padding: 0;
+}
+
+a,
+p,
+label,
+span,
+input,
+select,
+textarea,
+button,
+ol,
+ul,
+li {
+  font-size: 15px;
 }
 
 img {
@@ -82,10 +109,14 @@ button {
 }
 
 button:disabled,
-.disabled {
-  opacity: 0.5;
+*.disabled {
+  //opacity: 0.5;
+  background: none !important;
+  color: var(--gray-125) !important;
   cursor: not-allowed !important;
   &:hover {
+    color: var(--gray-125) !important;
+    background: none !important;
     filter: none !important;
   }
 }

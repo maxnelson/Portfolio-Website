@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const styles = {
   footer: {
     marginTop: "1rem",
@@ -9,7 +9,7 @@ const styles = {
     paddingBottom: "1.5rem",
     borderTop: "2px solid black",
     borderBottom: "2px solid black",
-    fontSize: "12px",
+    fontSize: "14px",
   },
   footer_item: {
     marginRight: "0rem",
@@ -18,6 +18,9 @@ const styles = {
   },
   footer_item_copyright: {
     marginLeft: "1rem",
+    flexGrow: "1",
+    color: "#aaa",
+    textAlign: "right",
   },
 
   footer_items_container: {
@@ -34,32 +37,67 @@ export const Footer = () => {
         className="footer_items_container"
       >
         <div style={styles.footer_item} className="footer_item">
-          <Link to={"/"}>Home</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "internal_link active_nav_link" : "internal_link"
+            }
+            end
+            to={"/"}
+          >
+            Home
+          </NavLink>
         </div>
         <div style={styles.footer_item} className="footer_item">
-          <Link to={"/about"}>About</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "internal_link active_nav_link" : "internal_link"
+            }
+            end
+            to={"/about"}
+          >
+            About
+          </NavLink>
         </div>
         <div style={styles.footer_item} className="footer_item">
-          <Link to={"/resume"}>Resumé</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "internal_link active_nav_link" : "internal_link"
+            }
+            end
+            to={"/resume"}
+          >
+            Resumé
+          </NavLink>
+        </div>
+        <div style={styles.footer_item} className="footer_item ">
+          <a className={"internal_link disabled"}>Timeline</a>
         </div>
         <div style={styles.footer_item} className="footer_item">
-          <Link to={"/timeline"}>Timeline</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "internal_link active_nav_link" : "internal_link"
+            }
+            end
+            to={"/contact"}
+          >
+            Contact
+          </NavLink>
         </div>
         <div style={styles.footer_item} className="footer_item">
-          <a href="https://quidbroquo.com" target="_blank">
-            Blog
-          </a>
-        </div>
-        <div style={styles.footer_item} className="footer_item">
-          <Link to={"/contact"}>Contact</Link>
-        </div>
-        <div style={styles.footer_item} className="footer_item">
-          <a href="https://www.linkedin.com/in/maxnelson88/" target="_blank">
+          <a
+            className="external_link"
+            href="https://www.linkedin.com/in/maxnelson88/"
+            target="_blank"
+          >
             LinkedIn
           </a>
         </div>
         <div style={styles.footer_item} className="footer_item">
-          <a href="https://twitter.com/modularmoon" target="_blank">
+          <a
+            className="external_link"
+            href="https://twitter.com/modularmoon"
+            target="_blank"
+          >
             Twitter
           </a>
         </div>
@@ -67,7 +105,7 @@ export const Footer = () => {
           style={styles.footer_item_copyright}
           className="footer_item_copyright"
         >
-          <p>© 2024</p>
+          <p>Max Nelson © 2024</p>
         </div>
       </div>
     </footer>

@@ -2,26 +2,37 @@ import { StyleSheet } from "@react-pdf/renderer";
 
 export const resumeStyles = StyleSheet.create({
   page_container: {
-    padding: "20",
+    paddingTop: "30",
+    paddingBottom: "20",
+    paddingLeft: "30",
+    paddingRight: "30",
   },
   section_title: {
     fontFamily: "Helvetica-Bold",
-    fontSize: "12pt",
+    fontSize: "11pt",
   },
   body_copy: {
     fontSize: "10pt",
+    marginBottom: "1",
+    whiteSpace: "nowrap",
+  },
+  experience_section: {
+    marginTop: "5",
+  },
+  summary_section: {
+    marginBottom: "10",
   },
   section_padding: {
-    marginBottom: "15",
+    marginBottom: "10",
   },
   header_section: {
     flexDirection: "row",
     justifyContent: "space-between",
   },
   header_text: {
-    fontSize: "45pt",
-    color: "#777",
-    fontFamily: "Helvetica",
+    fontSize: "50pt",
+    color: "#666",
+    fontFamily: "Helvetica-Bold",
     lineHeight: "0.8",
   },
   contact_info_title: {
@@ -30,12 +41,18 @@ export const resumeStyles = StyleSheet.create({
     color: "#3382b0",
     paddingBottom: "2px",
   },
+  contact_info_container: {
+    marginTop: "5",
+    marginLeft: "50",
+  },
   contact_info_content: {
     fontFamily: "Helvetica-Bold",
-    fontSize: "10pt",
+    color: "#000",
+    fontSize: "9pt",
+    //color: "#666",
   },
-  line_rule: {
-    marginBottom: "5",
+  contact_info_section: {
+    marginBottom: "4",
   },
 
   job_header_container: {
@@ -43,15 +60,30 @@ export const resumeStyles = StyleSheet.create({
     justifyContent: "flex-start",
   },
   job_header_info_container: {
-    fontSize: "10pt",
+    fontSize: "9pt",
     fontFamily: "Helvetica-Bold",
     flexDirection: "column",
     marginRight: "30",
   },
-  job_title: {
+  month_duration: {
+    fontSize: "8pt",
+  },
+  client_name: {
+    fontFamily: "Helvetica-Bold",
     color: "#3382b0",
   },
-  footer_section: {
+  job_title: {
+    fontFamily: "Helvetica-Bold",
+  },
+  job_description_container: {
+    marginTop: "5",
+  },
+  footer_section_left: {
+    width: "45%",
+    marginRight: "5%",
+  },
+  footer_section_right: {
     width: "50%",
+    //marginLeft: "5%",
   },
 });

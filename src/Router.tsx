@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "@/pages/HomePage";
 import { ResumePage } from "@/pages/ResumePage";
@@ -5,6 +6,8 @@ import { AboutPage } from "@/pages/AboutPage";
 import { TimelinePage } from "@/pages/TimelinePage";
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
+import { ContactPage } from "./pages/ContactPage";
+
 const styles = {
   left_sidebar_page_container: {
     display: "flex",
@@ -19,16 +22,29 @@ const styles = {
 };
 
 export function Router() {
+  const [projectDescriptionVisible, setProjectDescriptionVisible] =
+    useState(false);
   return (
     <>
       <div style={styles.left_sidebar_page_container}>
-        <LeftSidebar />
+        <LeftSidebar
+          setProjectDescriptionVisible={setProjectDescriptionVisible}
+        />
         <div className="left_sidebar_main_section">
           <Routes>
-            <Route path="/" element={<HomePage />}></Route>
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  projectDescriptionVisible={projectDescriptionVisible}
+                  setProjectDescriptionVisible={setProjectDescriptionVisible}
+                />
+              }
+            ></Route>
             <Route path="/about" element={<AboutPage />}></Route>
             <Route path="/resume" element={<ResumePage />}></Route>
             <Route path="/timeline" element={<TimelinePage />}></Route>
+            <Route path="/contact" element={<ContactPage />}></Route>
           </Routes>
         </div>
       </div>

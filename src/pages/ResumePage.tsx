@@ -1,6 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { LeftSidebar } from "@/components/LeftSidebar";
 import { ResumeHeader } from "@/components/Resume/ResumeHeader";
 import { ResumeFooter } from "@/components/Resume/ResumeFooter";
 import { ResumeItem } from "@/components/Resume/ResumeItem";
@@ -23,14 +20,14 @@ import {
 
 export const ResumePage = () => {
   return (
-    <PDFViewer style={{ width: "80%", height: "71rem" }}>
+    <PDFViewer style={{ width: "100%", height: "71rem" }}>
       <Document>
         <Page size="LETTER">
           <View style={styles.page_container}>
             <ResumeHeader />
-            <View style={styles.section_padding}>
+            <View style={styles.summary_section}>
               <Text style={styles.section_title}>SUMMARY</Text>
-              <Svg viewBox="0 0 0 0" width="570" height="10">
+              <Svg viewBox="0 0 0 0" height="15">
                 <Line
                   x1="0"
                   y1="5"
@@ -41,16 +38,17 @@ export const ResumePage = () => {
                 />
               </Svg>
               <Text style={styles.body_copy}>
-                Web Developer with 9+ years of experience developing
-                maintainable web applications using Javascript, HTML5, CSS3,
+                Web Developer with 9+ years of experience developing scalable
+                and maintainable web applications using a variety of web
+                languages and frameworks, including Javascript, HTML, CSS,
                 Python, Java, and integrating with a variety of web services,
-                databases, and content repositories, such as Google App Engine
-                and AEM.
+                databases, and content repositories, such as Google Cloud and
+                AEM.
               </Text>
             </View>
             <View>
               <Text style={styles.section_title}>EXPERIENCE</Text>
-              <Svg viewBox="0 0 0 0" width="570" height="10">
+              <Svg viewBox="0 0 0 0" height="10">
                 <Line
                   x1="0"
                   y1="5"
@@ -60,11 +58,13 @@ export const ResumePage = () => {
                   stroke="black"
                 />
               </Svg>
-              <ResumeItem {...resumeItemPropObjectApple} />
-              <ResumeItem {...resumeItemPropObjectRubrik} />
-              <ResumeItem {...resumeItemPropObjectApple2} />
-              <ResumeItem {...resumeItemPropObjectCloudera} />
-              <ResumeFooter />
+              <View style={styles.experience_section}>
+                <ResumeItem {...resumeItemPropObjectApple} />
+                <ResumeItem {...resumeItemPropObjectRubrik} />
+                <ResumeItem {...resumeItemPropObjectApple2} />
+                <ResumeItem {...resumeItemPropObjectCloudera} />
+                <ResumeFooter />
+              </View>
             </View>
           </View>
         </Page>

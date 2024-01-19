@@ -50,29 +50,37 @@
 }
 .project_description_container {
   display: flex;
-  color: #aaa;
+  color: #777;
+
   ul {
     margin-left: 1rem;
   }
   li {
+    color: #777;
     padding-bottom: 1rem;
   }
   img {
-    display: inline-block;
     max-width: 25rem;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
   }
   .project_description_text_container {
+    position: relative;
     padding-left: 2rem;
+  }
+  .project_description_text {
+    font-size: 15px;
+    padding-top: 1rem;
   }
   hr {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  .back-button {
-    display: inline-block;
+  div.back-button {
     position: absolute;
-    right: 1rem;
-    font-size: 18pt;
-    color: var(--blue-150);
+    bottom: 0;
+    right: 0;
+    color: var(--blue-100);
   }
 }

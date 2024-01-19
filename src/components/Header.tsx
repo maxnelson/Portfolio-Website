@@ -32,7 +32,7 @@ export const Header = () => {
           </a>
         </h1>
         <div>
-          <div className="header_button_container position-relative display-inline-block">
+          <div className="header_button_container">
             <HeaderButton
               ref={utilityButtonRef}
               className="header_button_icon"

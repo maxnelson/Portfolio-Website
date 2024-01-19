@@ -1,23 +1,3 @@
-/*
-@import "modal.scss";
-@import "input.scss";
-@import "timeline_chart.scss";
-@import "buttons.scss";
-@import "grid_item_buttons.scss";
-@import "containers.scss";
-@import "icons.scss";
-@import "header.scss";
-@import "dropdowns.scss";
-@import "text_treatments.scss";
-@import "portfolio-website.scss";
-@import "resume-page.scss";
-@import "basic_class_names/flexbox.scss";
-@import "basic_class_names/margin.scss";
-@import "basic_class_names/padding.scss";
-@import "basic_class_names/interval_colors.scss";
-@import "basic_class_names/filter-brightness.scss";
-*/
-
 @import "basic.scss";
 @import "project-grid.scss";
 @import "portfolio-website.scss";
