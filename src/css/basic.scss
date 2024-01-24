@@ -89,6 +89,7 @@ table {
 
 a,
 a > p {
+  color: var(--blue-50);
   transition: background 0.25s ease-in-out;
   transition: color 0s ease-in-out;
   text-decoration: none;

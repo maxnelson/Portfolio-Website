@@ -6,6 +6,7 @@ import {
   resumeItemPropObjectRubrik,
   resumeItemPropObjectCloudera,
 } from "@/components/Resume/ResumeData";
+import { linkify_text } from "@/utility_functions/linkify_text";
 
 export const ProjectsGrid = ({
   projectDescriptionVisible,
@@ -16,6 +17,12 @@ export const ProjectsGrid = ({
   const clickHandler = (prop_object) => {
     setProjectDescriptionVisible(true);
     setProjectDescriptionContent(prop_object);
+  };
+  const rubrik_description_formatted = {
+    __html: linkify_text(resumeItemPropObjectRubrik.description1),
+  };
+  const cloudera_description_formatted = {
+    __html: linkify_text(resumeItemPropObjectCloudera.description1),
   };
 
   const appleDescription = (
@@ -34,7 +41,7 @@ export const ProjectsGrid = ({
   );
   const rubrikDescription = (
     <>
-      <p>{resumeItemPropObjectRubrik.description1}</p>
+      <p dangerouslySetInnerHTML={rubrik_description_formatted}></p>
       <br />
       <ul>
         <li>{resumeItemPropObjectRubrik.description2?.slice(2)}</li>
@@ -47,7 +54,7 @@ export const ProjectsGrid = ({
   );
   const clouderaDescription = (
     <>
-      <p>{resumeItemPropObjectCloudera.description1}</p>
+      <p dangerouslySetInnerHTML={cloudera_description_formatted}></p>
       <br />
       <ul>
         <li>{resumeItemPropObjectCloudera.description2?.slice(2)}</li>
