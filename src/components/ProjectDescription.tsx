@@ -2,7 +2,7 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
   console.log(data_object);
   return (
     <div className="project_description_container">
-      <div>
+      <div className="project_description_container_images">
         <img src={data_object.image_1}></img>
         <img src={data_object.image_2}></img>
         <img src={data_object.image_3}></img>

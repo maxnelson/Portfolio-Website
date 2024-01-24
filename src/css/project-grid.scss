@@ -1,7 +1,7 @@
 .project_grid_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 5%;
 }
 .project_grid_item {
   aspect-ratio: 1 / 1;
@@ -51,7 +51,14 @@
 .project_description_container {
   display: flex;
   color: #777;
-
+  .project_description_container_images {
+    width: calc(50% - 1rem);
+    padding-right: 2rem;
+    img {
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+    }
+  }
   ul {
     margin-left: 1rem;
   }
@@ -59,15 +66,11 @@
     color: #777;
     padding-bottom: 1rem;
   }
-  img {
-    max-width: 25rem;
-    align-self: flex-start;
-    border: 1px solid #ddd;
-    margin-bottom: 1rem;
-  }
+
   .project_description_text_container {
-    position: relative;
-    padding-left: 2rem;
+    width: calc(50% - 1rem);
+    display: inline-block;
+    vertical-align: top;
   }
   .project_description_text {
     font-size: 15px;

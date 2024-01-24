@@ -1,14 +1,4 @@
-import {
-  StyleSheet,
-  PDFViewer,
-  Document,
-  Font,
-  Page,
-  View,
-  Text,
-  Svg,
-  Line,
-} from "@react-pdf/renderer";
+import { View, Text, Svg, Line } from "@react-pdf/renderer";
 import { ResumeItem } from "@/components/Resume/ResumeItem";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { resumeItemPropObjectChico } from "@/components/Resume/ResumeData";
@@ -29,12 +19,8 @@ export const ResumeFooter = () => {
         </Svg>
 
         <Text style={styles.body_copy}>
-          • Experience analyzing network behaviors within complex server
-          architectures.
-        </Text>
-        <Text style={styles.body_copy}>
-          • Experience developing front-end web components, with integrations to
-          a variety of back-end data sources.
+          • Experience with developing front-end web components, with
+          integrations to a variety of back-end data sources.
         </Text>
 
         <Text style={styles.body_copy}>
@@ -42,6 +28,10 @@ export const ResumeFooter = () => {
           integrating with a variety of federated login services
         </Text>
         <Text style={styles.body_copy}>• Proficient in React framework</Text>
+        <Text style={styles.body_copy}>
+          • Experience analyzing network behaviors within complex server
+          architectures.
+        </Text>
         <Text style={styles.body_copy}>
           • Completed the 'AEM Developer' and 'Advanced AEM Developer' training
           courses at Adobe.

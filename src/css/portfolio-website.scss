@@ -1,5 +1,35 @@
-.left_sidebar {
-  a.left_sidebar_navigation_link {
+.page_container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 17%;
+  border-top: 2px solid black;
+  padding-top: 2rem;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li.sidebar_navigation_link_container {
+    border-bottom: 1px solid #ccc;
+  }
+  .sidebar_navigation_link_image img {
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid transparent;
+    &:hover {
+      border-bottom-color: var(--blue-100);
+    }
+  }
+  .active_nav_image img {
+    border-bottom-color: var(--blue-100);
+  }
+  a.sidebar_navigation_link {
     display: block;
     width: 100%;
     height: 100%;
@@ -15,38 +45,27 @@
     }
   }
 }
+.main_section {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  border-top: 2px solid black;
+  padding-top: 2rem;
+  margin-left: 5%;
+}
 
 footer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: "14px";
   a {
     &.active_nav_link {
       color: white;
       background: var(--blue-100);
-    }
-  }
-}
-
-.left_sidebar_navigation_link_image img {
-  border-bottom: 5px solid transparent;
-  &:hover {
-    border-bottom-color: var(--blue-100);
-  }
-}
-
-.active_nav_image img {
-  border-bottom-color: var(--blue-100);
-}
-
-.left_sidebar_main_section {
-  flex-grow: 1;
-  border-top: 2px solid black;
-  padding-top: 2rem;
-  margin-left: 2rem;
-}
-
-.footer_items_container {
-  &:last-child {
-    &:after {
-      content: "";
     }
   }
 }
@@ -58,14 +77,21 @@ hr {
   border-top: 1px solid var(--gray-175);
 }
 
-.page_section_container {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+.footer_items_container {
+  display: flex;
+  justify-content: space-between;
 }
-
-.footer_item a {
-  padding: 5px 10px;
+.footer_item_copyright {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: right;
+  color: #aaa;
+}
+.footer_item {
+  display: inline-block;
+  a {
+    padding: 5px 10px;
+  }
 }
 a.internal_link {
   color: black;
@@ -84,8 +110,18 @@ a.internal_link {
 }
 
 a.external_link {
+  position: relative;
   color: var(--blue-100);
   &:hover {
     background: none !important;
   }
+  i {
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 8pt;
+  }
+}
+
+.display-inline-block {
+  display: inline-block;
 }

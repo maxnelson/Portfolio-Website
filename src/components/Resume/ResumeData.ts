@@ -1,7 +1,27 @@
-export const resumeItemPropObjectApple = {
-  image_1: "/public/images/projects/apple/explore_app_simulator_1.jpg",
-  image_2: "/public/images/projects/apple/explore_app_simulator_2.png",
-  image_3: "/public/images/projects/apple/explore_app_simulator_3.png",
+type resumeItemType = {
+  image_1?: string;
+  image_2?: string;
+  image_3?: string;
+  startDateMonth?: string;
+  startDateYear?: string;
+  endDateMonth?: string;
+  endDateYear?: string;
+  monthDuration?: string;
+  yearDuration?: string;
+  client_name?: string;
+  client_name_detail?: string;
+  jobTitle?: string;
+  description1?: string;
+  description2?: string;
+  description3?: string;
+  technologies_used?: string;
+  descriptionFormatted?: JSX.Element;
+};
+
+export const resumeItemPropObjectApple: resumeItemType = {
+  image_1: "/images/projects/apple/explore_app_simulator_1.jpg",
+  image_2: "/images/projects/apple/explore_app_simulator_2.png",
+  image_3: "/images/projects/apple/explore_app_simulator_3.png",
 
   startDateMonth: "Aug",
   startDateYear: "2020",
@@ -19,13 +39,13 @@ export const resumeItemPropObjectApple = {
   description3:
     "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors.",
   technologies_used:
-    "Internal iPhone Application Development Tools, Swift & SwiftUI, AEM, JSON, Proxyman, Git.",
+    "Internal iPhone Application Development Tool, Swift & SwiftUI, AEM, JSON, Proxyman, Git.",
 };
 
-export const resumeItemPropObjectRubrik = {
-  image_1: "/public/images/projects/rubrik/rubrik_homepage_1.png",
-  image_2: "/public/images/projects/rubrik/rubrik_homepage_2.png",
-  image_3: "/public/images/projects/rubrik/rubrik_homepage_3.png",
+export const resumeItemPropObjectRubrik: resumeItemType = {
+  image_1: "/images/projects/rubrik/rubrik_homepage_1.png",
+  image_2: "/images/projects/rubrik/rubrik_homepage_2.png",
+  image_3: "/images/projects/rubrik/rubrik_homepage_3.png",
   startDateMonth: "Jan",
   startDateYear: "2019",
   endDateMonth: "Feb",
@@ -40,10 +60,10 @@ export const resumeItemPropObjectRubrik = {
   description2:
     "• Working with remote agencies and developers to develop authorable web components integrating with a JSR-170 repository.",
   technologies_used:
-    "HTML, SCSS, Javascript, Wordpress, PHP, Timber, Twig, Marketo, AEM, HTL (Sightly), Maven, NPM, Git.",
+    "HTML5, SCSS, Javascript, Wordpress, PHP, Timber, Twig, Marketo, AEM, HTL (Sightly), Maven, Node, Git.",
 };
 
-export const resumeItemPropObjectApple2 = {
+export const resumeItemPropObjectApple2: resumeItemType = {
   startDateMonth: "June",
   startDateYear: "2018",
   endDateMonth: "Jan",
@@ -58,13 +78,13 @@ export const resumeItemPropObjectApple2 = {
   description2:
     "• Developing UI / UX systems for an internal web service. Designing filter and search functionality, working with team to create visually compelling and consistent page layouts.",
   technologies_used:
-    "HTML5, CSS3, SASS, Gulp, Git, Stylus, npm, Internal Tools, Apple brand standards & guidelines.",
+    "HTML5, CSS3, SCSS, Stylus, Node, Gulp, Git, Internal Apple Development Framework.",
 };
 
-export const resumeItemPropObjectCloudera = {
-  image_1: "/public/images/projects/cloudera/cloudera_homepage_1.png",
-  image_2: "/public/images/projects/cloudera/cloudera_homepage_2.png",
-  image_3: "/public/images/projects/cloudera/cloudera_homepage_3.png",
+export const resumeItemPropObjectCloudera: resumeItemType = {
+  image_1: "/images/projects/cloudera/cloudera_homepage_1.png",
+  image_2: "/images/projects/cloudera/cloudera_homepage_2.png",
+  image_3: "/images/projects/cloudera/cloudera_homepage_3.png",
   startDateMonth: "Oct",
   startDateYear: "2013",
   endDateMonth: "Aug",
@@ -81,10 +101,10 @@ export const resumeItemPropObjectCloudera = {
   description3:
     "• Creating dynamic AEM components with advanced front-end functionality, utilizing JSP scriptlets, later updating to Sightly.",
   technologies_used:
-    "AEM stack [Java, OSGi, JCR (JackRabbit Oak), CRX, JSP, Apache Sling, ExtJS, Sightly], Apache Maven, Apache Ant XSLT, Eloqua, SFDC, Apex, Git, Wordpress, PHP, Javascript, jQuery, ES6, HTML5, CSS3, SCSS, Grunt, Jenkins.",
+    "AEM stack (Java, OSGi, JCR [JackRabbit Oak], CRX, JSP, Apache Sling, ExtJS, HCL [Sightly]), Apache Maven, Eloqua, SFDC Apex, Wordpress, PHP, Javascript (ES6), HTML5, CSS3, Rollup, Grunt, Jenkins, Git.",
 };
 
-export const resumeItemPropObjectChico = {
+export const resumeItemPropObjectChico: resumeItemType = {
   startDateMonth: "Sept",
   startDateYear: "2007",
   endDateMonth: "Sept",

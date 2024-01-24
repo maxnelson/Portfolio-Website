@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   resumeItemPropObjectApple,
   resumeItemPropObjectRubrik,
-  resumeItemPropObjectApple2,
   resumeItemPropObjectCloudera,
 } from "@/components/Resume/ResumeData";
 
@@ -24,12 +23,12 @@ export const ProjectsGrid = ({
       <p>{resumeItemPropObjectApple.description1}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectApple.description2.slice(2)}</li>
-        <li>{resumeItemPropObjectApple.description3.slice(2)}</li>
+        <li>{resumeItemPropObjectApple.description2?.slice(2)}</li>
+        <li>{resumeItemPropObjectApple.description3?.slice(2)}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
-        {resumeItemPropObjectApple.technologies_used}
+        <p>{resumeItemPropObjectApple.technologies_used}</p>
       </div>
     </>
   );
@@ -38,11 +37,11 @@ export const ProjectsGrid = ({
       <p>{resumeItemPropObjectRubrik.description1}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectRubrik.description2.slice(2)}</li>
+        <li>{resumeItemPropObjectRubrik.description2?.slice(2)}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
-        {resumeItemPropObjectRubrik.technologies_used}
+        <p>{resumeItemPropObjectRubrik.technologies_used}</p>
       </div>
     </>
   );
@@ -51,12 +50,12 @@ export const ProjectsGrid = ({
       <p>{resumeItemPropObjectCloudera.description1}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectCloudera.description2.slice(2)}</li>
-        <li>{resumeItemPropObjectCloudera.description3.slice(2)}</li>
+        <li>{resumeItemPropObjectCloudera.description2?.slice(2)}</li>
+        <li>{resumeItemPropObjectCloudera.description3?.slice(2)}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
-        {resumeItemPropObjectCloudera.technologies_used}
+        <p>{resumeItemPropObjectCloudera.technologies_used}</p>
       </div>
     </>
   );
@@ -64,7 +63,7 @@ export const ProjectsGrid = ({
   resumeItemPropObjectRubrik.descriptionFormatted = rubrikDescription;
   resumeItemPropObjectCloudera.descriptionFormatted = clouderaDescription;
   return (
-    <div className="projects_section">
+    <>
       {projectDescriptionVisible ? (
         <ProjectDescription
           data_object={projectDescriptionContent}
@@ -94,6 +93,6 @@ export const ProjectsGrid = ({
           />
         </div>
       )}
-    </div>
+    </>
   );
 };

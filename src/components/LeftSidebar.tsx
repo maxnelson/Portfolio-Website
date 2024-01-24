@@ -1,53 +1,27 @@
 import { NavLink } from "react-router-dom";
-const styles = {
-  left_sidebar: {
-    borderTop: "2px solid black",
-    paddingTop: "2rem",
-  },
-  left_sidebar_ul: {
-    listStyleType: "none",
-    margin: "0",
-    padding: "0",
-  },
-  left_sidebar_li: {
-    borderBottom: "1px solid #ccc",
-  },
-  left_sidebar_image: {
-    display: "block",
-    maxWidth: "10rem",
-    paddingBottom: "1rem",
-  },
-};
 
 export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
   return (
-    <div className="left_sidebar" style={styles.left_sidebar}>
-      <ul style={styles.left_sidebar_ul}>
-        <li className="left_sidebar_navigation_link_container_img">
+    <div className="sidebar">
+      <ul>
+        <li className="sidebar_navigation_link_container_img">
           <NavLink
             onClick={() => setProjectDescriptionVisible(false)}
             className={({ isActive }) =>
-              "left_sidebar_navigation_link_image" +
+              "sidebar_navigation_link_image" +
               (isActive ? " active_nav_image" : "")
             }
             end
             to={"/"}
           >
-            <img
-              style={styles.left_sidebar_image}
-              src="/public/images/icons/rocket_hands_logo.jpg"
-            />
+            <img src="/images/icons/rocket_hands_logo.jpg" />
           </NavLink>
         </li>
-        <li
-          className="left_sidebar_navigation_link_container"
-          style={styles.left_sidebar_li}
-        >
+        <li className="sidebar_navigation_link_container">
           <NavLink
             onClick={() => setProjectDescriptionVisible(false)}
             className={({ isActive }) =>
-              "left_sidebar_navigation_link" +
-              (isActive ? " active_nav_link" : "")
+              "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
             to={"/"}
@@ -55,14 +29,10 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             Projects
           </NavLink>
         </li>
-        <li
-          className="left_sidebar_navigation_link_container"
-          style={styles.left_sidebar_li}
-        >
+        <li className="sidebar_navigation_link_container">
           <NavLink
             className={({ isActive }) =>
-              "left_sidebar_navigation_link" +
-              (isActive ? " active_nav_link" : "")
+              "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
             to={"/about"}
@@ -70,14 +40,10 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             About
           </NavLink>
         </li>
-        <li
-          className="left_sidebar_navigation_link_container"
-          style={styles.left_sidebar_li}
-        >
+        <li className="sidebar_navigation_link_container">
           <NavLink
             className={({ isActive }) =>
-              "left_sidebar_navigation_link" +
-              (isActive ? " active_nav_link" : "")
+              "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
             to={"/resume"}
@@ -85,12 +51,18 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             Resumé
           </NavLink>
         </li>
-        <li
-          className="left_sidebar_navigation_link_container"
-          style={styles.left_sidebar_li}
-        >
-          <a className={"left_sidebar_navigation_link disabled "}>Timeline</a>
+        <li className="sidebar_navigation_link_container">
+          <a className={"sidebar_navigation_link disabled "}>Timeline</a>
         </li>
+        <NavLink
+          className={({ isActive }) =>
+            "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
+          }
+          end
+          to={"/contact"}
+        >
+          Contact
+        </NavLink>
       </ul>
     </div>
   );

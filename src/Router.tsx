@@ -9,15 +9,15 @@ import { Footer } from "@/components/Footer";
 import { ContactPage } from "./pages/ContactPage";
 
 const styles = {
-  left_sidebar_page_container: {
-    display: "flex",
-    marginTop: "5rem",
-    marginBottom: "2rem",
-    marginLeft: "15rem",
-    marginRight: "15rem",
+  sidebar_page_container: {
+    //display: "flex",
+    //marginTop: "5rem",
+    // marginBottom: "2rem",
+    // marginLeft: "15rem",
+    //marginRight: "15rem",
   },
   footer: {
-    margin: "1rem 15rem",
+    // margin: "1rem 15rem",
   },
 };
 
@@ -26,11 +26,11 @@ export function Router() {
     useState(false);
   return (
     <>
-      <div style={styles.left_sidebar_page_container}>
+      <div className="page_container" style={styles.sidebar_page_container}>
         <LeftSidebar
           setProjectDescriptionVisible={setProjectDescriptionVisible}
         />
-        <div className="left_sidebar_main_section">
+        <div className="main_section">
           <Routes>
             <Route
               path="/"
@@ -47,8 +47,8 @@ export function Router() {
             <Route path="/contact" element={<ContactPage />}></Route>
           </Routes>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

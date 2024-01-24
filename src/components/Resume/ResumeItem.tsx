@@ -1,18 +1,7 @@
-import {
-  StyleSheet,
-  PDFViewer,
-  Document,
-  Font,
-  Page,
-  View,
-  Text,
-  Svg,
-  Line,
-} from "@react-pdf/renderer";
+import { View, Text } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 
 export const ResumeItem = (props) => {
-  console.log(props);
   return (
     <View style={styles.section_padding}>
       <View style={styles.job_header_container}>

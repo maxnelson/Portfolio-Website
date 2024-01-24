@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) {
+  a,
+  p,
+  label,
+  span,
+  input,
+  select,
+  textarea,
+  button,
+  ol,
+  ul,
+  b,
+  li {
+    font-size: 9px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  a.external_link i {
+    font-size: 6pt;
+    vertical-align: text-top;
+  }
+
+  .project_grid_container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+}

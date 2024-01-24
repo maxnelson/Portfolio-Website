@@ -1,14 +1,4 @@
-import {
-  StyleSheet,
-  PDFViewer,
-  Document,
-  Font,
-  Page,
-  View,
-  Text,
-  Svg,
-  Line,
-} from "@react-pdf/renderer";
+import { View, Text, Svg, Line } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 const contact_info_container_width = "170";
 export const ResumeHeader = () => {
