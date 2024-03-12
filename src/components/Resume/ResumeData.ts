@@ -18,6 +18,40 @@ type resumeItemType = {
   descriptionFormatted?: JSX.Element;
 };
 
+export const resumeItemPropObjectSketchblog: resumeItemType = {
+  image_1: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  startDateMonth: "May",
+  startDateYear: "2010",
+  endDateMonth: "May",
+  endDateYear: "2012",
+  monthDuration: "May - May",
+  yearDuration: "2010 - 2012",
+  client_name: "Sketchblog",
+  client_name_detail: "Sketchblog",
+  jobTitle: "Designer",
+  description1:
+    "My sketchblog is where I host a lot of my design work, as well as drawings and digital art. Feel free to check it out!",
+  description2: "sketchblog.maxnelsonwebsite.com",
+};
+
+export const resumeItemPropObjectLevis: resumeItemType = {
+  image_1: "/images/projects/levis/levis_arcuate_image_1.jpg",
+  image_2: "/images/projects/levis/levis_arcuate_image_2.jpg",
+  image_3: "/images/projects/levis/levis_arcuate_image_3.jpg",
+
+  startDateMonth: "May",
+  startDateYear: "2012",
+  endDateMonth: "Feb",
+  endDateYear: "2013",
+  monthDuration: "May - Feb",
+  yearDuration: "2012 - 2013",
+  client_name: "Levis",
+  client_name_detail: "Levi Strauss & Co.",
+  jobTitle: "Production Artist",
+  description1:
+    "Worked with Store Operations and Brand Environment to design a variety of Retail communications including monthly newsletter, store layout instructions, and conference graphics.",
+};
+
 export const resumeItemPropObjectApple: resumeItemType = {
   image_1: "/images/projects/apple/explore_app_simulator_1.jpg",
   image_2: "/images/projects/apple/explore_app_simulator_2.png",

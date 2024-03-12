@@ -5,8 +5,11 @@ import {
   resumeItemPropObjectApple,
   resumeItemPropObjectRubrik,
   resumeItemPropObjectCloudera,
+  resumeItemPropObjectLevis,
+  resumeItemPropObjectSketchblog,
 } from "@/components/Resume/ResumeData";
 import { linkify_text } from "@/utility_functions/linkify_text";
+import { NavLink } from "react-router-dom";
 
 export const ProjectsGrid = ({
   projectDescriptionVisible,
@@ -24,6 +27,9 @@ export const ProjectsGrid = ({
   const cloudera_description_formatted = {
     __html: linkify_text(resumeItemPropObjectCloudera.description1),
   };
+  const sketchblog_description_formatted = {
+    __html: linkify_text(resumeItemPropObjectSketchblog.description2),
+  };
 
   const appleDescription = (
     <>
@@ -39,6 +45,7 @@ export const ProjectsGrid = ({
       </div>
     </>
   );
+
   const rubrikDescription = (
     <>
       <p dangerouslySetInnerHTML={rubrik_description_formatted}></p>
@@ -66,9 +73,24 @@ export const ProjectsGrid = ({
       </div>
     </>
   );
+  const levisDescription = (
+    <>
+      <p>{resumeItemPropObjectLevis.description1}</p>
+    </>
+  );
+  const sketchblogDescription = (
+    <>
+      <p>{resumeItemPropObjectSketchblog.description1}</p>
+      <br />
+      <NavLink to={"/sketchblog"}>sketchblog.maxnelsonart.com</NavLink>
+    </>
+  );
   resumeItemPropObjectApple.descriptionFormatted = appleDescription;
   resumeItemPropObjectRubrik.descriptionFormatted = rubrikDescription;
   resumeItemPropObjectCloudera.descriptionFormatted = clouderaDescription;
+  resumeItemPropObjectLevis.descriptionFormatted = levisDescription;
+  resumeItemPropObjectSketchblog.descriptionFormatted = sketchblogDescription;
+
   return (
     <>
       {projectDescriptionVisible ? (
@@ -96,6 +118,18 @@ export const ProjectsGrid = ({
             data_object={resumeItemPropObjectCloudera}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectCloudera);
+            }}
+          />
+          <ProjectGridItem
+            data_object={resumeItemPropObjectLevis}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectLevis);
+            }}
+          />
+          <ProjectGridItem
+            data_object={resumeItemPropObjectSketchblog}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectSketchblog);
             }}
           />
         </div>
