@@ -3,7 +3,11 @@ import { PostCollection } from "@/sketchblog/PostCollection";
 export function SketchblogPage() {
   return (
     <>
-      <PostCollection />
+      <div className="sketchblog_page_background">
+        <div className="sketchblog_page_container">
+          <PostCollection />
+        </div>
+      </div>
     </>
   );
 }
