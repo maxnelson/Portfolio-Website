@@ -1,5 +1,4 @@
 export const ProjectDescription = ({ data_object, clickHandler }) => {
-  console.log(data_object);
   return (
     <div className="project_description_container">
       <div className="project_description_container_images">

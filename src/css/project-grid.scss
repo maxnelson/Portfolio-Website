@@ -80,10 +80,9 @@
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  div.back-button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: var(--blue-100);
-  }
+}
+.back-button {
+  text-align: right;
+  margin-top: 3rem;
+  color: var(--blue-100);
 }

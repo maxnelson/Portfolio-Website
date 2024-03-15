@@ -2,9 +2,9 @@ import { SketchblogPost } from "@/sketchblog/SketchblogPost";
 import { getPostCategory } from "@/sketchblog/GetPostCategory";
 import { useState, useEffect } from "react";
 
-export function PostCollection() {
+export function PostCollection(props) {
   const [collectionDataObject, setCollectionDataObject] = useState([]);
-  const postCollectionQueryResult = getPostCategory("drawing");
+  const postCollectionQueryResult = getPostCategory(props.category);
 
   useEffect(() => {
     if (postCollectionQueryResult.status === "success") {
@@ -15,19 +15,25 @@ export function PostCollection() {
           return docData;
         })
         .reverse();
-      console.log(collectionDataObject);
+      collectionDataObject.sort((a, b) => {
+        const dateA = new Date(a.date.seconds);
+        const dateB = new Date(b.date.seconds);
+        return dateB - dateA;
+      });
       setCollectionDataObject(() => {
         return collectionDataObject;
       });
     }
-  }, [postCollectionQueryResult.status]);
+  }, [postCollectionQueryResult.status, props.category]);
 
   return (
     <>
-      {collectionDataObject &&
-        collectionDataObject.map((postData, index) => {
-          return <SketchblogPost key={postData.id} postData={postData} />;
-        })}
+      <div className="post_collection_container">
+        {collectionDataObject &&
+          collectionDataObject.map((postData, index) => {
+            return <SketchblogPost key={postData.id} postData={postData} />;
+          })}
+      </div>
     </>
   );
 }
