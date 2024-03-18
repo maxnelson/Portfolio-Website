@@ -36,7 +36,7 @@ export function SketchblogSidebar(props) {
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
               end
-              to="/sketchblog/digtal_art"
+              to="/sketchblog/digital_art"
             >
               digital art
             </NavLink>

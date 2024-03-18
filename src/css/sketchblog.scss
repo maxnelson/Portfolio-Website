@@ -95,6 +95,12 @@ body {
     vertical-align: top;
   }
 }
+.post_featured_1w {
+  .post_image_container {
+    max-width: 49rem;
+    vertical-align: top;
+  }
+}
 
 .post_featured_1_large {
   .post_image_container {
@@ -156,7 +162,13 @@ body {
 }
 .post_featured_3 {
   .post_image_container {
-    max-width: 15rem;
+    max-width: 15.65rem;
+    vertical-align: top;
+  }
+}
+.post_featured_40 {
+  .post_image_container {
+    max-width: 40rem;
     vertical-align: top;
   }
 }
@@ -177,7 +189,7 @@ body {
 }
 .sketchblog_post_detail_images_container {
   display: inline-block;
-  max-width: 30rem;
+  max-width: 42rem;
 }
 
 .sketchblog_post_detail_description_container {
