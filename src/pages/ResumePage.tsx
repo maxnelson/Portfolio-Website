@@ -24,6 +24,7 @@ export const ResumePage = (
   projectDescriptionVisible,
   setProjectDescriptionVisible
 ) => {
+  document.body.classList.remove("sketchblog_background");
   return (
     <>
       <div className="page_container">
@@ -49,12 +50,12 @@ export const ResumePage = (
                       />
                     </Svg>
                     <Text style={styles.body_copy}>
-                      Web Developer with 9+ years of experience developing
-                      scalable and maintainable web applications using a variety
-                      of web languages and frameworks, including Javascript,
-                      HTML, CSS, Python, Java, and integrating with a variety of
-                      web services, databases, and content repositories, such as
-                      Google Cloud and AEM.
+                      Front-End Web Developer with 8 years of experience
+                      developing sites web applications using a variety of web
+                      languages and frameworks, including Javascript, HTML and
+                      CSS, and integrating with a variety of web services,
+                      databases and content repositories, such as Google Cloud
+                      and AEM.
                     </Text>
                   </View>
                   <View>

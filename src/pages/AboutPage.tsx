@@ -4,6 +4,7 @@ export function AboutPage(
   projectDescriptionVisible,
   setProjectDescriptionVisible
 ) {
+  document.body.classList.remove("sketchblog_background");
   return (
     <>
       <div className="page_container">
@@ -14,11 +15,11 @@ export function AboutPage(
           <div>
             <h2 className="section_header">About</h2>
             <p className="section_text">
-              Web Developer with 9+ years of experience developing scalable and
-              maintainable web applications using a variety of web languages and
-              frameworks, including Javascript, HTML, CSS, Python, Java, and
-              integrating with a variety of web services, databases, and content
-              repositories, such as Google Cloud and AEM.
+              Front-End Web Developer with 8 years of experience developing
+              scalable and maintainable websites and applications using a
+              variety of languages and frameworks, including Javascript, HTML,
+              CSS, and Python. And integrating with a variety of web services,
+              databases and content repositories, such as Google Cloud and AEM.
             </p>
           </div>
         </div>

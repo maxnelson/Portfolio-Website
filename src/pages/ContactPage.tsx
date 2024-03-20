@@ -4,6 +4,7 @@ export function ContactPage(
   projectDescriptionVisible,
   setProjectDescriptionVisible
 ) {
+  document.body.classList.remove("sketchblog_background");
   return (
     <>
       <div className="page_container">

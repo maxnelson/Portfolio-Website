@@ -7,6 +7,7 @@ export function SketchblogPage() {
   const [category, setCategory] = useState();
   const params = useParams();
   const category_safe = params.category ? params.category : "drawings";
+  document.body.classList.add("sketchblog_background");
   useEffect(() => {
     setCategory(category_safe);
   }, [category_safe]);

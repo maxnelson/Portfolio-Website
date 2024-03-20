@@ -7,6 +7,8 @@ export function PostDescriptionPage(props) {
   const params = useParams();
   const postDescription = getPost(params.postname);
 
+  document.body.classList.add("sketchblog_background");
+
   useEffect(() => {
     if (postDescription.status === "success") {
       const postObjectData = postDescription.data.data();

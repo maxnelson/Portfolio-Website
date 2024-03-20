@@ -127,7 +127,7 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   yearDuration: "2013 - 2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Front End Web Developer",
+  jobTitle: "Web Content and Production Assistant / Front End Web Developer",
   description1:
     "Working closely with team and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
   description2:

@@ -48,6 +48,18 @@ export function SketchblogSidebar(props) {
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
               end
+              to="/sketchblog/mixed_media"
+            >
+              mixed media
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={() => console.log("clicked")}
+              className={({ isActive }) =>
+                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+              }
+              end
               to="/sketchblog/comics"
             >
               comics
