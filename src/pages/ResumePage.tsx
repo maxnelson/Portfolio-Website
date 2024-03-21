@@ -51,7 +51,7 @@ export const ResumePage = (
                     </Svg>
                     <Text style={styles.body_copy}>
                       Front-End Web Developer with 8 years of experience
-                      developing sites web applications using a variety of web
+                      developing websites and applications using a variety of
                       languages and frameworks, including Javascript, HTML and
                       CSS, and integrating with a variety of web services,
                       databases and content repositories, such as Google Cloud

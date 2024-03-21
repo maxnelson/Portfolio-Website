@@ -30,11 +30,13 @@ export const ResumeHeader = () => {
           </View>
           <View style={styles.contact_info_section}>
             <Text style={styles.contact_info_title}>PHONE</Text>
+            <Text style={styles.contact_info_content}>(510) 508-1392</Text>
             <Svg
               viewBox="0 0 0 0"
               width={contact_info_container_width}
-              height="25"
+              height="10"
             >
+              {/* 
               <Line
                 x1="0"
                 y1="5"
@@ -43,11 +45,12 @@ export const ResumeHeader = () => {
                 strokeWidth={15}
                 stroke="#9b9b9b"
               />
+              */}
               <Line
                 x1="0"
-                y1="18"
+                y1="5"
                 x2={contact_info_container_width}
-                y2="18"
+                y2="5"
                 strokeWidth={1}
                 stroke="black"
               />

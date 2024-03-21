@@ -14,6 +14,7 @@ type resumeItemType = {
   description1?: string;
   description2?: string;
   description3?: string;
+  description4?: string;
   technologies_used?: string;
   descriptionFormatted?: JSX.Element;
 };
@@ -67,13 +68,13 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contractor)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Working cross-functionally between MarCom and Retail Engineering teams to develop and deploy Retail Experience applications for iPhone, available on in-store devices in Apple stores globally.",
+    "Used an internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, available on display devices in Apple stores globally.",
   description2:
-    "• Overseeing the implementation of static designs and functional requirements from Marcom into iPhone applications with Apple-level scrutiny towards fidelity to layout specifications and animation behavior.",
+    "• Oversaw the implementation of static designs and functional requirements from Marcom into shippable iPhone applications, with Apple-level scrutiny towards layout specifications and animation behavior.",
   description3:
     "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors.",
   technologies_used:
-    "Internal iPhone Application Development Tool, Swift & SwiftUI, AEM, JSON, Proxyman, Git.",
+    "Internal iPhone Application Development Tool, SwiftUI, AEM, JSON, Proxyman, Git.",
 };
 
 export const resumeItemPropObjectRubrik: resumeItemType = {
@@ -90,11 +91,11 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   client_name_detail: "Rubrik",
   jobTitle: "Front End Web Developer",
   description1:
-    "Working with team and agencies to develop and maintain the rubrik.com web property. Developing Wordpress page templates with advanced front end requirements, dynamic web form experiences, and API integrations with multiple web services.",
+    "Worked with team and agencies to develop and maintain the rubrik.com web property. Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
   description2:
-    "• Working with remote agencies and developers to develop authorable web components integrating with a JSR-170 repository.",
+    "• Worked with remote agencies and developers to develop authorable web components integrating with a JSR-170 repository.",
   technologies_used:
-    "HTML5, SCSS, Javascript, Wordpress, PHP, Timber, Twig, Marketo, AEM, HTL (Sightly), Maven, Node, Git.",
+    "Javascript, HTML, CSS, Wordpress, Timber, Twig, AEM, Node, Git.",
 };
 
 export const resumeItemPropObjectApple2: resumeItemType = {
@@ -108,11 +109,11 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   client_name_detail: "Apple (Contractor)",
   jobTitle: "Front End Web Developer",
   description1:
-    "Building fully responsive and customizable Email templates, adhering to Apple brand standards and guidelines; utilizing internal development tools to enable advanced customization functionality.",
+    "Developed Email templates using HTML and CSS. Templates built to be responsive, customizable, and adherent to Apple brand standards and guidelines.",
   description2:
-    "• Developing UI / UX systems for an internal web service. Designing filter and search functionality, working with team to create visually compelling and consistent page layouts.",
+    "• Helped design UI / UX system for internal web service. Worked with team to design visually compelling and consistent page layouts.",
   technologies_used:
-    "HTML5, CSS3, SCSS, Stylus, Node, Gulp, Git, Internal Apple Development Framework.",
+    "HTML, CSS, Node, Git, Gulp, Stylus, Internal Apple Development Framework.",
 };
 
 export const resumeItemPropObjectCloudera: resumeItemType = {
@@ -127,15 +128,15 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   yearDuration: "2013 - 2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Web Content and Production Assistant / Front End Web Developer",
+  jobTitle: "Web Content Production Assistant",
   description1:
-    "Working closely with team and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
+    "Worked closely with multiple teams and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
   description2:
-    "• Developing platform integrations utilizing data from various APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
+    "• Administered the publication of website content, image assets, and internal user accounts within the AEM CMS.",
   description3:
-    "• Creating dynamic AEM components with advanced front-end functionality, utilizing JSP scriptlets, later updating to Sightly.",
+    "• Developed Frontend AEM components with platform integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
   technologies_used:
-    "AEM stack (Java, OSGi, JCR [JackRabbit Oak], CRX, JSP, Apache Sling, ExtJS, HCL [Sightly]), Apache Maven, Eloqua, SFDC Apex, Wordpress, PHP, Javascript (ES6), HTML5, CSS3, Rollup, Grunt, Jenkins, Git.",
+    "AEM, JCR (JackRabbit Oak), CRX, JSP, HTL (Sightly), HTML, CSS, Javascript, Apache Maven, Grunt, Jenkins, Git.",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {
