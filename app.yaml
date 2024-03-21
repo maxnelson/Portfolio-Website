@@ -1,4 +1,4 @@
-runtime: nodejs16 # closest available runtime to your local version
+runtime: nodejs18 # closest available runtime to your local version
 env: standard
 instance_class: F1 # You can choose different classes based on your needs
 

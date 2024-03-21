@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { getPost } from "@/sketchblog/GetPostCategory";
 import { useState, useEffect } from "react";
 import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
-export function PostDescriptionPage(props) {
+export function PostDescriptionPage() {
   const [postObject, setPostObject] = useState();
   const params = useParams();
   const postDescription = getPost(params.postname);
@@ -12,9 +12,7 @@ export function PostDescriptionPage(props) {
   useEffect(() => {
     if (postDescription.status === "success") {
       const postObjectData = postDescription.data.data();
-      setPostObject(() => {
-        return postObjectData;
-      });
+      setPostObject(postObjectData);
     }
   }, [postDescription.status]);
 

@@ -1,10 +1,8 @@
-import { getStorage } from "firebase/storage";
 import { DateTime } from "luxon";
 export function SketchblogPost(props) {
   const dateParsed = new Date(props.postData.date.toDate());
   const formattedDate =
     DateTime.fromJSDate(dateParsed).toFormat("MMMM dd, yyyy");
-  //const storage = getStorage();
   return (
     <>
       <div className={"post_container post_format_" + props.postData.format}>

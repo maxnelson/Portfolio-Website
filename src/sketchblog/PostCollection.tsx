@@ -3,7 +3,7 @@ import { getPostCategory } from "@/sketchblog/GetPostCategory";
 import { useState, useEffect } from "react";
 
 export function PostCollection(props) {
-  const [collectionDataObject, setCollectionDataObject] = useState([]);
+  const [collectionDataObject, setCollectionDataObject] = useState<any[]>([]);
   const postCollectionQueryResult = getPostCategory(props.category);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export function PostCollection(props) {
       collectionDataObject.sort((a, b) => {
         const dateA = new Date(a.date.seconds);
         const dateB = new Date(b.date.seconds);
-        return dateB - dateA;
+        return dateB.getTime() - dateA.getTime();
       });
       setCollectionDataObject(() => {
         return collectionDataObject;
@@ -30,7 +30,7 @@ export function PostCollection(props) {
     <>
       <div className="post_collection_container">
         {collectionDataObject &&
-          collectionDataObject.map((postData, index) => {
+          collectionDataObject.map((postData) => {
             return <SketchblogPost key={postData.id} postData={postData} />;
           })}
       </div>

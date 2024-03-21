@@ -21,6 +21,9 @@ type resumeItemType = {
 
 export const resumeItemPropObjectSketchblog: resumeItemType = {
   image_1: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  image_2: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  image_3: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+
   startDateMonth: "May",
   startDateYear: "2010",
   endDateMonth: "May",

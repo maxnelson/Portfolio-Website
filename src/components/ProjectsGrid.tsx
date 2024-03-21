@@ -27,9 +27,6 @@ export const ProjectsGrid = ({
   const cloudera_description_formatted = {
     __html: linkify_text(resumeItemPropObjectCloudera.description1),
   };
-  const sketchblog_description_formatted = {
-    __html: linkify_text(resumeItemPropObjectSketchblog.description2),
-  };
 
   const appleDescription = (
     <>

@@ -6,7 +6,6 @@ import { AboutPage } from "@/pages/AboutPage";
 import { TimelinePage } from "@/pages/TimelinePage";
 import { ContactPage } from "@/pages/ContactPage";
 import { SketchblogPage } from "@/sketchblog/SketchblogPage";
-import { PostCollection } from "@/sketchblog/PostCollection";
 import { PostDescriptionPage } from "@/sketchblog/PostDescriptionPage";
 export function Router() {
   const [projectDescriptionVisible, setProjectDescriptionVisible] =
@@ -41,15 +40,7 @@ export function Router() {
             />
           }
         ></Route>
-        <Route
-          path="/timeline"
-          element={
-            <TimelinePage
-              projectDescriptionVisible={projectDescriptionVisible}
-              setProjectDescriptionVisible={setProjectDescriptionVisible}
-            />
-          }
-        ></Route>
+        <Route path="/timeline" element={<TimelinePage />}></Route>
         <Route
           path="/contact"
           element={

@@ -1,9 +1,6 @@
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
-export function ContactPage(
-  projectDescriptionVisible,
-  setProjectDescriptionVisible
-) {
+export function ContactPage(_, setProjectDescriptionVisible) {
   document.body.classList.remove("sketchblog_background");
   return (
     <>

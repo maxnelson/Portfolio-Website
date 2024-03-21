@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export function SketchblogPage() {
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState<string | null>(null);
   const params = useParams();
   const category_safe = params.category ? params.category : "drawings";
   document.body.classList.add("sketchblog_background");
