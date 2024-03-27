@@ -2,8 +2,24 @@ import { useParams } from "react-router-dom";
 import { getPost } from "@/sketchblog/GetPostCategory";
 import { useState, useEffect } from "react";
 import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
+import { DocumentData } from "@firebase/firestore";
+
+/*
+type postObjectType = {
+  category: string;
+  date: {
+    nanoseconds: number;
+    seconds: number;
+  };
+  description: string;
+  format: string;
+  images: [];
+  title: string;
+};
+*/
+
 export function PostDescriptionPage() {
-  const [postObject, setPostObject] = useState();
+  const [postObject, setPostObject] = useState<DocumentData | null>(null);
   const params = useParams();
   const postDescription = getPost(params.postname);
 
@@ -15,6 +31,7 @@ export function PostDescriptionPage() {
       setPostObject(postObjectData);
     }
   }, [postDescription.status]);
+  console.log(postObject);
 
   return (
     <>

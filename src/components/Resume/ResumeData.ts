@@ -1,7 +1,9 @@
 type resumeItemType = {
+  image_0?: string;
   image_1?: string;
   image_2?: string;
   image_3?: string;
+  image_4?: string;
   startDateMonth?: string;
   startDateYear?: string;
   endDateMonth?: string;
@@ -20,9 +22,15 @@ type resumeItemType = {
 };
 
 export const resumeItemPropObjectSketchblog: resumeItemType = {
-  image_1: "/images/projects/sketchblog/sketchblog_image_1.jpg",
-  image_2: "/images/projects/sketchblog/sketchblog_image_1.jpg",
-  image_3: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  image_0: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_1.jpg?alt=media&token=32b6fb7e-7b4b-4c8e-a4f5-e991a4e6117e",
+  image_2:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_2.jpg?alt=media&token=7db3b66c-31c5-4209-b738-fb75ac9e8281",
+  image_3:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_3.jpg?alt=media&token=1b22f275-6d31-47b9-9b5f-754765190e7f",
+  image_4:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_4.jpg?alt=media&token=176f8bab-c7b8-4564-9c89-b9fedee4a6cd",
 
   startDateMonth: "May",
   startDateYear: "2010",
@@ -39,9 +47,13 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
 };
 
 export const resumeItemPropObjectLevis: resumeItemType = {
-  image_1: "/images/projects/levis/levis_arcuate_image_1.jpg",
-  image_2: "/images/projects/levis/levis_arcuate_image_2.jpg",
-  image_3: "/images/projects/levis/levis_arcuate_image_3.jpg",
+  image_0: "/images/projects/levis/levis_arcuate_image_1.jpg",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdesign%2Fdesign_levis%2Fthe-arcuate-01.jpg?alt=media&token=c6672a33-3288-4a03-9100-d58b0e1ffde2",
+  image_2:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdesign%2Fdesign_levis%2Fthe-arcuate-02.jpg?alt=media&token=ec43e112-ff38-473f-996e-43497b306be9",
+  image_3:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdesign%2Fdesign_levis%2Fthe-arcuate-04.jpg?alt=media&token=91eb7873-95eb-4fc2-86f6-190133de4a27",
 
   startDateMonth: "May",
   startDateYear: "2012",
@@ -57,6 +69,7 @@ export const resumeItemPropObjectLevis: resumeItemType = {
 };
 
 export const resumeItemPropObjectApple: resumeItemType = {
+  image_0: "/images/projects/apple/explore_app_simulator_1.jpg",
   image_1: "/images/projects/apple/explore_app_simulator_1.jpg",
   image_2: "/images/projects/apple/explore_app_simulator_2.png",
   image_3: "/images/projects/apple/explore_app_simulator_3.png",
@@ -68,7 +81,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
   monthDuration: "Aug - Sept",
   yearDuration: "2020 - 2023",
   client_name: "Apple",
-  client_name_detail: "Apple (Contractor)",
+  client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
     "Used an internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, available on display devices in Apple stores globally.",
@@ -81,6 +94,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
 };
 
 export const resumeItemPropObjectRubrik: resumeItemType = {
+  image_0: "/images/projects/rubrik/rubrik_homepage_1.png",
   image_1: "/images/projects/rubrik/rubrik_homepage_1.png",
   image_2: "/images/projects/rubrik/rubrik_homepage_2.png",
   image_3: "/images/projects/rubrik/rubrik_homepage_3.png",
@@ -94,9 +108,9 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   client_name_detail: "Rubrik",
   jobTitle: "Front End Web Developer",
   description1:
-    "Worked with team and agencies to develop and maintain the rubrik.com web property. Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
+    "Worked with team and agencies to develop and maintain the rubrik.com website and it's associated web properties.",
   description2:
-    "• Worked with remote agencies and developers to develop authorable web components integrating with a JSR-170 repository.",
+    "• Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
   technologies_used:
     "Javascript, HTML, CSS, Wordpress, Timber, Twig, AEM, Node, Git.",
 };
@@ -109,17 +123,18 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   monthDuration: "June - Jan",
   yearDuration: "2018 - 2019",
   client_name: "Apple",
-  client_name_detail: "Apple (Contractor)",
-  jobTitle: "Front End Web Developer",
+  client_name_detail: "Apple (Contract)",
+  jobTitle: "Email Template Developer",
   description1:
     "Developed Email templates using HTML and CSS. Templates built to be responsive, customizable, and adherent to Apple brand standards and guidelines.",
   description2:
-    "• Helped design UI / UX system for internal web service. Worked with team to design visually compelling and consistent page layouts.",
+    "• Helped design UI / UX system for internal web service. Worked with team to produce visually compelling and consistent page layouts.",
   technologies_used:
-    "HTML, CSS, Node, Git, Gulp, Stylus, Internal Apple Development Framework.",
+    "HTML, CSS, Internal Development Tool, Node, Gulp, Stylus, Git.",
 };
 
 export const resumeItemPropObjectCloudera: resumeItemType = {
+  image_0: "/images/projects/cloudera/cloudera_homepage_1.png",
   image_1: "/images/projects/cloudera/cloudera_homepage_1.png",
   image_2: "/images/projects/cloudera/cloudera_homepage_2.png",
   image_3: "/images/projects/cloudera/cloudera_homepage_3.png",
@@ -133,13 +148,13 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   client_name_detail: "Cloudera",
   jobTitle: "Web Content Production Assistant",
   description1:
-    "Worked closely with multiple teams and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
+    "Worked with team and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
   description2:
     "• Administered the publication of website content, image assets, and internal user accounts within the AEM CMS.",
   description3:
-    "• Developed Frontend AEM components with platform integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
+    "• Developed dynamic web form experiences, as well as front-end AEM components with integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
   technologies_used:
-    "AEM, JCR (JackRabbit Oak), CRX, JSP, HTL (Sightly), HTML, CSS, Javascript, Apache Maven, Grunt, Jenkins, Git.",
+    "Javascript, HTML, CSS, AEM Stack [Maven, JCR (JackRabbit Oak), JSP, HTL, CRX] Grunt, Jenkins, Git.",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {

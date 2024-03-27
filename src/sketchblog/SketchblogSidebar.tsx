@@ -7,7 +7,10 @@ export function SketchblogSidebar(props) {
         <ul>
           <li>
             <NavLink
-              onClick={() => props.setCategory("drawings")}
+              onClick={() => {
+                props.setCategory("drawings");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -19,7 +22,10 @@ export function SketchblogSidebar(props) {
           </li>
           <li>
             <NavLink
-              onClick={() => props.setCategory("design")}
+              onClick={() => {
+                props.setCategory("design");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -31,7 +37,10 @@ export function SketchblogSidebar(props) {
           </li>
           <li>
             <NavLink
-              onClick={() => console.log("clicked")}
+              onClick={() => {
+                props.setCategory("digital_art");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -43,7 +52,10 @@ export function SketchblogSidebar(props) {
           </li>
           <li>
             <NavLink
-              onClick={() => console.log("clicked")}
+              onClick={() => {
+                props.setCategory("mixed_media");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -55,7 +67,10 @@ export function SketchblogSidebar(props) {
           </li>
           <li>
             <NavLink
-              onClick={() => console.log("clicked")}
+              onClick={() => {
+                props.setCategory("comics");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -67,7 +82,10 @@ export function SketchblogSidebar(props) {
           </li>
           <li>
             <NavLink
-              onClick={() => console.log("clicked")}
+              onClick={() => {
+                props.setCategory("schoolwork");
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
@@ -80,7 +98,9 @@ export function SketchblogSidebar(props) {
           <li>
             {" "}
             <NavLink
-              onClick={() => console.log("clicked")}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }

@@ -79,7 +79,12 @@ export const ProjectsGrid = ({
     <>
       <p>{resumeItemPropObjectSketchblog.description1}</p>
       <br />
-      <NavLink to={"/sketchblog"}>sketchblog.maxnelsonart.com</NavLink>
+      <NavLink
+        onClick={() => setProjectDescriptionVisible(false)}
+        to={"/sketchblog"}
+      >
+        sketchblog.maxnelsonart.com
+      </NavLink>
     </>
   );
   resumeItemPropObjectApple.descriptionFormatted = appleDescription;

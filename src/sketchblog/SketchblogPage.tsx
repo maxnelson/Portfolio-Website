@@ -1,5 +1,5 @@
 import { PostCollection } from "@/sketchblog/PostCollection";
-import { SketchblogSidebar } from "./SketchblogSidebar";
+import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
