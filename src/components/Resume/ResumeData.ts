@@ -17,6 +17,7 @@ type resumeItemType = {
   description2?: string;
   description3?: string;
   description4?: string;
+  popoverDescription?: string;
   technologies_used?: string;
   descriptionFormatted?: JSX.Element;
 };
@@ -44,6 +45,8 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
   description1:
     "My sketchblog is where I host a lot of my design work, as well as drawings and digital art. Feel free to check it out!",
   description2: "sketchblog.maxnelsonwebsite.com",
+  popoverDescription:
+    "My sketchblog is where I host a lot of my old design work, as well as drawings and digital art.",
 };
 
 export const resumeItemPropObjectLevis: resumeItemType = {
@@ -66,6 +69,8 @@ export const resumeItemPropObjectLevis: resumeItemType = {
   jobTitle: "Production Artist",
   description1:
     "Worked with Store Operations and Brand Environment to design a variety of Retail communications including monthly newsletter, store layout instructions, and conference graphics.",
+  popoverDescription:
+    "Worked with Store Operations and Brand Environment to design and produce a variety of Retail communications.",
 };
 
 export const resumeItemPropObjectApple: resumeItemType = {
@@ -91,6 +96,8 @@ export const resumeItemPropObjectApple: resumeItemType = {
     "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors.",
   technologies_used:
     "Internal iPhone Application Development Tool, SwiftUI, AEM, JSON, Proxyman, Git.",
+  popoverDescription:
+    "Worked with Marcom and Retail Engineering to produce and deploy Retail Experience applications for iPhone.",
 };
 
 export const resumeItemPropObjectRubrik: resumeItemType = {
@@ -146,7 +153,7 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   yearDuration: "2013 - 2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Web Content Production Assistant",
+  jobTitle: "Web Content Production Assistant / Front End Web Developer",
   description1:
     "Worked with team and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
   description2:

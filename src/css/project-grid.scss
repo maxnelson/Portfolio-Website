@@ -9,46 +9,7 @@
   overflow: hidden;
   cursor: pointer;
 }
-.project_grid_item_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(14, 113, 184, 0.7);
 
-  backdrop-filter: blur(2px);
-  opacity: 0;
-  transition: all 0.25s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .project_grid_item_overlay_text {
-    color: white;
-    opacity: 0;
-    transition: all 0.25s ease-in-out;
-
-    &.project_grid_item_overlay_text_top {
-      transform: translateY(-50px);
-      padding-bottom: 1rem;
-    }
-    &.project_grid_item_overlay_text_bottom {
-      transform: translateY(50px);
-    }
-  }
-}
-
-.project_grid_item:hover .project_grid_item_overlay {
-  opacity: 1;
-}
-
-.project_grid_item:hover .project_grid_item_overlay_text {
-  transition: all 0.25s ease-in-out;
-  transform: translateY(50%);
-  opacity: 1;
-}
 .project_description_container {
   display: flex;
   color: #777;
@@ -87,3 +48,86 @@
   margin-top: 3rem;
   color: var(--blue-100);
 }
+
+//the new hover treatment
+
+.project_grid_item_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 113, 184, 0.7);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+
+  .project_grid_item_overlay_text {
+    color: white;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    padding: 1rem;
+    p {
+      font-size: 10pt;
+      line-height: 13pt;
+    }
+  }
+}
+
+.project_grid_item:hover .project_grid_item_overlay {
+  opacity: 1;
+}
+
+.project_grid_item:hover .project_grid_item_overlay_text {
+  transition: all 0.25s ease-in-out;
+  //transform: translateY(50%);
+  opacity: 1;
+}
+
+//Here's the flashy hover treatment for posterity
+/*
+.project_grid_item_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 113, 184, 0.7);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .project_grid_item_overlay_text {
+    color: white;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+
+    &.project_grid_item_overlay_text_top {
+      transform: translateY(-50px);
+      padding-bottom: 1rem;
+    }
+    &.project_grid_item_overlay_text_bottom {
+      transform: translateY(50px);
+    }
+  }
+}
+
+
+.project_grid_item:hover .project_grid_item_overlay {
+  opacity: 1;
+}
+
+.project_grid_item:hover .project_grid_item_overlay_text {
+  transition: all 0.25s ease-in-out;
+  transform: translateY(50%);
+  opacity: 1;
+}
+*/
