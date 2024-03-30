@@ -177,3 +177,22 @@ export const resumeItemPropObjectChico: resumeItemType = {
   description1:
     "Studied many mediums of graphic design, including information design, packaging, corporate identity, typography, illustration and website design with an upper-division theme in computer programming.",
 };
+
+export const resumeItemPropObjectGifhov: resumeItemType = {
+  image_0:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
+  startDateMonth: "Jan",
+  startDateYear: "2014",
+  endDateMonth: "Aug",
+  endDateYear: "2015",
+  monthDuration: "Jan - Aug",
+  yearDuration: "2014 - 2015",
+  client_name: "Gifhov",
+  client_name_detail: "Gifhov",
+  jobTitle: "Developer",
+  description1: "Created a fun little gif + audio application in my free time.",
+  technologies_used:
+    "Google Cloud, Python2.7, Flask, Jinja2, HTML, CSS, Javascript",
+};
