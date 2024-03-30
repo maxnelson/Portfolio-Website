@@ -33,15 +33,15 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
   image_4:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_4.jpg?alt=media&token=176f8bab-c7b8-4564-9c89-b9fedee4a6cd",
 
-  startDateMonth: "May",
-  startDateYear: "2010",
-  endDateMonth: "May",
-  endDateYear: "2012",
-  monthDuration: "May - May",
-  yearDuration: "2010 - 2012",
+  startDateMonth: "",
+  startDateYear: "",
+  endDateMonth: "",
+  endDateYear: "",
+  monthDuration: "",
+  yearDuration: "",
   client_name: "Sketchblog",
   client_name_detail: "Sketchblog",
-  jobTitle: "Designer",
+  jobTitle: "",
   description1:
     "My sketchblog is where I host a lot of my design work, as well as drawings and digital art. Feel free to check it out!",
   description2: "sketchblog.maxnelsonwebsite.com",
@@ -195,4 +195,51 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
   description1: "Created a fun little gif + audio application in my free time.",
   technologies_used:
     "Google Cloud, Python2.7, Flask, Jinja2, HTML, CSS, Javascript",
+};
+
+export const resumeItemPropObjectMcdonalds: resumeItemType = {
+  image_0:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds_project_grid.jpg?alt=media&token=16136497-1144-43c8-b6ee-2689db2d3aca",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-01.png?alt=media&token=0eb5cca8-81ef-4d6a-8e76-2d7cf5fcda16",
+  image_2:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-02.png?alt=media&token=d40699c8-064c-49d3-bd6a-079e8a8af354",
+  image_3:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-03.png?alt=media&token=9677320d-e027-4225-977a-0b6eeff8191f",
+  image_4:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-07.png?alt=media&token=81d4d5f8-4135-4340-a93d-08b18781d11f",
+  startDateMonth: "March",
+  startDateYear: "2010",
+  endDateMonth: "April",
+  endDateYear: "2011",
+  monthDuration: "March - April",
+  yearDuration: "",
+  client_name: "",
+  client_name_detail: "",
+  jobTitle: "",
+  description1:
+    "Redesign of the McDonald’s logo and brand for corporate design class at CSU Chico. ",
+  technologies_used: "Photoshop, Illustrator",
+};
+
+export const resumeItemPropObjectSanPellegrino: resumeItemType = {
+  image_0:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fsan_pellegrino%2Fsan_pellegrino_project_grid_2.jpg?alt=media&token=a24fe6d8-25ae-4638-b94c-71dc22c18e2f",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fsan_pellegrino%2FSan_Pellegrino.jpg?alt=media&token=830c84fc-04c8-48aa-9cd2-a79b6c66baea",
+  image_2:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fsan_pellegrino%2Fnewbottle.jpg?alt=media&token=4213c7d2-379e-436c-b6ba-b7f2c4fb0b26",
+
+  startDateMonth: "",
+  startDateYear: "",
+  endDateMonth: "",
+  endDateYear: "",
+  monthDuration: "",
+  yearDuration: "",
+  client_name: "",
+  client_name_detail: "",
+  jobTitle: "",
+  description1:
+    "Redesign of the San Pellegrino label for a packaging design class at CSU Chico. ",
+  technologies_used: "Photoshop, Illustrator",
 };

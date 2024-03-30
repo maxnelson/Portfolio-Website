@@ -107,6 +107,7 @@ a.internal_link {
 }
 .section_text {
   color: #777;
+  line-height: 1.5;
 }
 
 a.external_link {
@@ -124,4 +125,27 @@ a.external_link {
 
 .display-inline-block {
   display: inline-block;
+}
+.width-10rem {
+  width: 10rem;
+}
+
+.width-20pc {
+  width: calc(20% - 1rem);
+}
+.width-80pc {
+  width: calc(80% - 1rem);
+}
+.margin-right-1 {
+  margin-right: 1rem;
+}
+.margin-left-1 {
+  margin-left: 1rem;
+}
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.padding-top-1 {
+  padding-top: 1rem;
 }

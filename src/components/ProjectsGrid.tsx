@@ -8,6 +8,8 @@ import {
   resumeItemPropObjectLevis,
   resumeItemPropObjectSketchblog,
   resumeItemPropObjectGifhov,
+  resumeItemPropObjectMcdonalds,
+  resumeItemPropObjectSanPellegrino,
 } from "@/components/Resume/ResumeData";
 import { linkify_text } from "@/utility_functions/linkify_text";
 import { NavLink } from "react-router-dom";
@@ -100,12 +102,33 @@ export const ProjectsGrid = ({
       </NavLink>
     </>
   );
+  const mcdonaldsDescription = (
+    <>
+      <p>{resumeItemPropObjectMcdonalds.description1}</p>
+      <br />
+
+      <b>Technologies Used: </b>
+      <p>{resumeItemPropObjectMcdonalds.technologies_used}</p>
+    </>
+  );
+  const sanpellegrinoDescription = (
+    <>
+      <p>{resumeItemPropObjectSanPellegrino.description1}</p>
+      <br />
+
+      <b>Technologies Used: </b>
+      <p>{resumeItemPropObjectSanPellegrino.technologies_used}</p>
+    </>
+  );
   resumeItemPropObjectApple.descriptionFormatted = appleDescription;
   resumeItemPropObjectRubrik.descriptionFormatted = rubrikDescription;
   resumeItemPropObjectCloudera.descriptionFormatted = clouderaDescription;
   resumeItemPropObjectLevis.descriptionFormatted = levisDescription;
   resumeItemPropObjectSketchblog.descriptionFormatted = sketchblogDescription;
   resumeItemPropObjectGifhov.descriptionFormatted = gifhovDescription;
+  resumeItemPropObjectMcdonalds.descriptionFormatted = mcdonaldsDescription;
+  resumeItemPropObjectSanPellegrino.descriptionFormatted =
+    sanpellegrinoDescription;
 
   return (
     <>
@@ -146,6 +169,18 @@ export const ProjectsGrid = ({
             data_object={resumeItemPropObjectLevis}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectLevis);
+            }}
+          />
+          <ProjectGridItem
+            data_object={resumeItemPropObjectMcdonalds}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectMcdonalds);
+            }}
+          />
+          <ProjectGridItem
+            data_object={resumeItemPropObjectSanPellegrino}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectSanPellegrino);
             }}
           />
           <ProjectGridItem
