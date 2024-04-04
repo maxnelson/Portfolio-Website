@@ -31,7 +31,6 @@ export function PostDescriptionPage() {
       setPostObject(postObjectData);
     }
   }, [postDescription.status]);
-  console.log(postObject);
 
   return (
     <>
@@ -39,11 +38,8 @@ export function PostDescriptionPage() {
         <>
           <div className="sketchblog_page_background"></div>
           <div className="sketchblog_detail_page_container">
-            <div className="margin-bottom-1rem">
-              <h2>{postObject.title}</h2>
-            </div>
             <div className="sketchblog_post_detail_container">
-              <div className="sketchblog_post_detail_content_container">
+              <div className="display-flex">
                 <div className="sketchblog_post_detail_images_container">
                   {postObject.images.map((image, index) => {
                     return (
@@ -54,11 +50,20 @@ export function PostDescriptionPage() {
                   })}
                   <hr className="sketchblog_post_hr" />
                   <div className="post_text_container">
-                    <p className="post_date">{"January 8th, 2014"}</p>
+                    <p className="post_date">
+                      {postObject.date.toDate().toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "2-digit",
+                        year: "numeric",
+                      })}
+                    </p>
                   </div>
                 </div>
 
                 <div className="sketchblog_post_detail_description_container">
+                  <div className="margin-bottom-1rem">
+                    <h2>{postObject.title}</h2>
+                  </div>
                   <p>{postObject.description}</p>
                 </div>
               </div>

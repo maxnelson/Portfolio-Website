@@ -8,8 +8,6 @@ type resumeItemType = {
   startDateYear?: string;
   endDateMonth?: string;
   endDateYear?: string;
-  monthDuration?: string;
-  yearDuration?: string;
   client_name?: string;
   client_name_detail?: string;
   jobTitle?: string;
@@ -37,8 +35,6 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
   startDateYear: "",
   endDateMonth: "",
   endDateYear: "",
-  monthDuration: "",
-  yearDuration: "",
   client_name: "Sketchblog",
   client_name_detail: "Sketchblog",
   jobTitle: "",
@@ -62,8 +58,6 @@ export const resumeItemPropObjectLevis: resumeItemType = {
   startDateYear: "2012",
   endDateMonth: "Feb",
   endDateYear: "2013",
-  monthDuration: "May - Feb",
-  yearDuration: "2012 - 2013",
   client_name: "Levis",
   client_name_detail: "Levi Strauss & Co.",
   jobTitle: "Production Artist",
@@ -83,8 +77,6 @@ export const resumeItemPropObjectApple: resumeItemType = {
   startDateYear: "2020",
   endDateMonth: "Sept",
   endDateYear: "2023",
-  monthDuration: "Aug - Sept",
-  yearDuration: "2020 - 2023",
   client_name: "Apple",
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
@@ -109,8 +101,6 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   startDateYear: "2019",
   endDateMonth: "Feb",
   endDateYear: "2020",
-  monthDuration: "Jan - Feb",
-  yearDuration: "2019 - 2020",
   client_name: "Rubrik",
   client_name_detail: "Rubrik",
   jobTitle: "Front End Web Developer",
@@ -119,7 +109,7 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   description2:
     "• Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
   technologies_used:
-    "Javascript, HTML, CSS, Wordpress, Timber, Twig, AEM, Node, Git.",
+    "Wordpress, Timber, Twig, AEM, Node, Javascript, HTML, CSS, Git.",
 };
 
 export const resumeItemPropObjectApple2: resumeItemType = {
@@ -127,8 +117,6 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   startDateYear: "2018",
   endDateMonth: "Jan",
   endDateYear: "2019",
-  monthDuration: "June - Jan",
-  yearDuration: "2018 - 2019",
   client_name: "Apple",
   client_name_detail: "Apple (Contract)",
   jobTitle: "Email Template Developer",
@@ -149,8 +137,6 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   startDateYear: "2013",
   endDateMonth: "Aug",
   endDateYear: "2017",
-  monthDuration: "Oct - Aug",
-  yearDuration: "2013 - 2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
   jobTitle: "Web Content Production Assistant / Front End Web Developer",
@@ -161,7 +147,7 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   description3:
     "• Developed dynamic web form experiences, as well as front-end AEM components with integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
   technologies_used:
-    "Javascript, HTML, CSS, AEM Stack [Maven, JCR (JackRabbit Oak), JSP, HTL, CRX] Grunt, Jenkins, Git.",
+    "AEM Stack [Maven, JCR (JackRabbit Oak), JSP, HTL, CRX] Grunt, Jenkins, Javascript, HTML, CSS, Git. ",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {
@@ -169,8 +155,6 @@ export const resumeItemPropObjectChico: resumeItemType = {
   startDateYear: "2007",
   endDateMonth: "Sept",
   endDateYear: "2011",
-  monthDuration: "Sept - Sept",
-  yearDuration: "2007 - 2011",
   client_name: "California State university, Chico",
   client_name_detail: "California State university, Chico",
   jobTitle: "BA in Graphic Design",
@@ -187,14 +171,13 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
   startDateYear: "2014",
   endDateMonth: "Aug",
   endDateYear: "2015",
-  monthDuration: "Jan - Aug",
-  yearDuration: "2014 - 2015",
   client_name: "Gifhov",
   client_name_detail: "Gifhov",
-  jobTitle: "Developer",
-  description1: "Created a fun little gif + audio application in my free time.",
+  jobTitle: "",
+  description1:
+    "A web application for creating and sharing gif+audio combinations.",
   technologies_used:
-    "Google Cloud, Python2.7, Flask, Jinja2, HTML, CSS, Javascript",
+    "Google Cloud, Python2.7, Flask, Jinja2, Javascript, HTML, CSS",
 };
 
 export const resumeItemPropObjectMcdonalds: resumeItemType = {
@@ -212,8 +195,6 @@ export const resumeItemPropObjectMcdonalds: resumeItemType = {
   startDateYear: "2010",
   endDateMonth: "April",
   endDateYear: "2011",
-  monthDuration: "March - April",
-  yearDuration: "",
   client_name: "",
   client_name_detail: "",
   jobTitle: "",
@@ -234,12 +215,27 @@ export const resumeItemPropObjectSanPellegrino: resumeItemType = {
   startDateYear: "",
   endDateMonth: "",
   endDateYear: "",
-  monthDuration: "",
-  yearDuration: "",
   client_name: "",
   client_name_detail: "",
   jobTitle: "",
   description1:
     "Redesign of the San Pellegrino label for a packaging design class at CSU Chico. ",
   technologies_used: "Photoshop, Illustrator",
+};
+
+export const resumeItemPropObjectTimeline: resumeItemType = {
+  image_0:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_2.jpg?alt=media&token=d632a6c6-d838-4213-9f8a-70cba399ad22",
+  image_1:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_2.jpg?alt=media&token=d632a6c6-d838-4213-9f8a-70cba399ad22",
+
+  startDateMonth: "",
+  startDateYear: "",
+  endDateMonth: "",
+  endDateYear: "",
+  client_name: "Timeline",
+  client_name_detail: "Timeline",
+  jobTitle: "",
+  description1: "A web application for creating and sharing timelines.",
+  technologies_used: "Express, React, D3",
 };

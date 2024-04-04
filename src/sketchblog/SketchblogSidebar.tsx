@@ -14,7 +14,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/drawings"
             >
               drawings
@@ -29,7 +28,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/design"
             >
               design
@@ -44,7 +42,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/digital_art"
             >
               digital art
@@ -59,7 +56,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/mixed_media"
             >
               mixed media
@@ -74,7 +70,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/comics"
             >
               comics
@@ -89,7 +84,6 @@ export function SketchblogSidebar(props) {
               className={({ isActive }) =>
                 "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
               }
-              end
               to="/sketchblog/schoolwork"
             >
               schoolwork
@@ -107,7 +101,8 @@ export function SketchblogSidebar(props) {
               end
               to="/"
             >
-              Home
+              <i className="fa-solid fa-chevron-left"></i>
+              <i className="fa-solid fa-chevron-left"></i> Back to Portfolio
             </NavLink>
           </li>
         </ul>

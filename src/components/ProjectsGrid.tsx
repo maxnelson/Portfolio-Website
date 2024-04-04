@@ -10,6 +10,7 @@ import {
   resumeItemPropObjectGifhov,
   resumeItemPropObjectMcdonalds,
   resumeItemPropObjectSanPellegrino,
+  resumeItemPropObjectTimeline,
 } from "@/components/Resume/ResumeData";
 import { linkify_text } from "@/utility_functions/linkify_text";
 import { NavLink } from "react-router-dom";
@@ -82,7 +83,9 @@ export const ProjectsGrid = ({
     <>
       <p>{resumeItemPropObjectGifhov.description1}</p>
       <br />
-      <a href="https://gifhov2.appspot.com/">gifhov2.appspot.com</a>
+      <a href="https://gifhov2.appspot.com/" target="_blank">
+        gifhov2.appspot.com
+      </a>
       <br />
       <br />
 
@@ -96,7 +99,7 @@ export const ProjectsGrid = ({
       <br />
       <NavLink
         onClick={() => setProjectDescriptionVisible(false)}
-        to={"/sketchblog"}
+        to={"/sketchblog/design"}
       >
         sketchblog.maxnelsonart.com
       </NavLink>
@@ -120,6 +123,19 @@ export const ProjectsGrid = ({
       <p>{resumeItemPropObjectSanPellegrino.technologies_used}</p>
     </>
   );
+  const timelineDescription = (
+    <>
+      <p>{resumeItemPropObjectTimeline.description1}</p>
+      <br />
+      <a href="https://timeline-react.wl.r.appspot.com/" target="_blank">
+        https://timeline-react.wl.r.appspot.com/
+      </a>
+      <br />
+      <br />
+      <b>Technologies Used: </b>
+      <p>{resumeItemPropObjectTimeline.technologies_used}</p>
+    </>
+  );
   resumeItemPropObjectApple.descriptionFormatted = appleDescription;
   resumeItemPropObjectRubrik.descriptionFormatted = rubrikDescription;
   resumeItemPropObjectCloudera.descriptionFormatted = clouderaDescription;
@@ -129,6 +145,7 @@ export const ProjectsGrid = ({
   resumeItemPropObjectMcdonalds.descriptionFormatted = mcdonaldsDescription;
   resumeItemPropObjectSanPellegrino.descriptionFormatted =
     sanpellegrinoDescription;
+  resumeItemPropObjectTimeline.descriptionFormatted = timelineDescription;
 
   return (
     <>
@@ -157,6 +174,12 @@ export const ProjectsGrid = ({
             data_object={resumeItemPropObjectCloudera}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectCloudera);
+            }}
+          />
+          <ProjectGridItem
+            data_object={resumeItemPropObjectTimeline}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectTimeline);
             }}
           />
           <ProjectGridItem

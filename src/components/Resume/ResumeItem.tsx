@@ -7,9 +7,15 @@ export const ResumeItem = (props) => {
       <View style={styles.job_header_container}>
         <View style={styles.job_header_info_container}>
           <Text style={styles.month_duration}>
-            {props.monthDuration.toUpperCase()}
+            {props.startDateMonth.toUpperCase()}
+            {" - "}
+            {props.endDateMonth.toUpperCase()}
           </Text>
-          <Text>{props.yearDuration}</Text>
+          <Text>
+            {props.startDateYear}
+            {" - "}
+            {props.endDateYear}
+          </Text>
         </View>
         <View style={styles.job_header_info_container}>
           <Text style={styles.client_name}>

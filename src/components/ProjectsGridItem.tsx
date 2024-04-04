@@ -7,7 +7,8 @@ export const ProjectGridItem = ({ data_object, clickHandler }) => {
           <p>
             {data_object.popoverDescription || data_object.description1}
             <br />
-            {data_object.yearDuration}
+            {data_object.startDateYear &&
+              data_object.startDateYear + " - " + data_object.endDateYear}
           </p>
         </div>
       </div>

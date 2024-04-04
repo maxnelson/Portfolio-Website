@@ -48,7 +48,7 @@
 .main_section {
   display: inline-block;
   vertical-align: top;
-  width: 75%;
+  width: 78%;
   border-top: 2px solid black;
   padding-top: 2rem;
   margin-left: 5%;
@@ -125,6 +125,9 @@ a.external_link {
 
 .display-inline-block {
   display: inline-block;
+}
+.display-flex {
+  display: flex;
 }
 .width-10rem {
   width: 10rem;

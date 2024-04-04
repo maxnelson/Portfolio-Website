@@ -17,18 +17,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             <img src="/images/icons/rocket_hands_logo.jpg" />
           </NavLink>
         </li>
-        <li className="sidebar_navigation_link_container">
-          <NavLink
-            onClick={() => setProjectDescriptionVisible(false)}
-            className={({ isActive }) =>
-              "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
-            }
-            end
-            to={"/"}
-          >
-            Projects
-          </NavLink>
-        </li>
+
         <li className="sidebar_navigation_link_container">
           <NavLink
             className={({ isActive }) =>
@@ -52,17 +41,16 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
           </NavLink>
         </li>
         <li className="sidebar_navigation_link_container">
-          <a className={"sidebar_navigation_link disabled "}>Timeline</a>
+          <NavLink
+            className={({ isActive }) =>
+              "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
+            }
+            end
+            to={"/sketchblog/design"}
+          >
+            Sketchblog
+          </NavLink>
         </li>
-        <NavLink
-          className={({ isActive }) =>
-            "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
-          }
-          end
-          to={"/contact"}
-        >
-          Contact
-        </NavLink>
       </ul>
     </div>
   );

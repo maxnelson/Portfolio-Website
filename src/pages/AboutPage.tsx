@@ -15,7 +15,7 @@ export function AboutPage(_, setProjectDescriptionVisible) {
           <div className="display-inline-block width-80pc vertical-align-top margin-left-1">
             <h2 className="section_header">Hi, I'm Max Nelson</h2>
             <p className="section_text">
-              I am a front-end web developer with 8 years of experience
+              I am a Frontend Web Developer with 8 years of experience
               developing scalable and maintainable websites and applications
               using a variety of languages and frameworks, including Javascript,
               HTML, CSS, and Python. And integrating with a variety of web
