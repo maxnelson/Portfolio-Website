@@ -104,14 +104,15 @@ body.sketchblog_background {
 }
 .sketchblog_post_detail_images_container {
   display: inline-block;
-  max-width: 45%;
+  .post_image_container {
+    max-width: 40%;
+  }
 }
 
 .sketchblog_post_detail_description_container {
   display: inline-block;
   vertical-align: top;
-  margin-left: 2rem;
-  margin-right: 4rem;
+  max-width: 82%;
   p {
     font-size: 11pt;
     color: #555;

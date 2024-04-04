@@ -39,7 +39,7 @@ export function PostDescriptionPage() {
           <div className="sketchblog_page_background"></div>
           <div className="sketchblog_detail_page_container">
             <div className="sketchblog_post_detail_container">
-              <div className="display-flex">
+              <div>
                 <div className="sketchblog_post_detail_images_container">
                   {postObject.images.map((image, index) => {
                     return (

@@ -81,11 +81,13 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Used an internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, visible on display devices in Apple stores globally.",
+    "Served as one of the first users of a new internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, visible on display devices in Apple stores globally.",
   description2:
-    "• Oversaw the implementation of static designs and functional requirements from Marcom into shippable iPhone applications, with Apple-level scrutiny towards layout specifications and animation behavior.",
+    "• Worked closely with Retail Engineering team, providing QA, troubleshooting issues, and guiding development of native mac application, while also using it to produce shippable iPhone applications for the Apple Store.",
   description3:
-    "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors.",
+    "• Oversaw the implementation of static designs and functional requirements from Marcom into pixel-perfect iPhone applications, with Apple-level scrutiny towards layout specifications and animation behavior.",
+  description4:
+    "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during seasonal projects with extremely firm deadlines.",
   technologies_used:
     "Internal iPhone Application Development Tool, SwiftUI, AEM, JSON, Proxyman, Git.",
   popoverDescription:
@@ -212,9 +214,9 @@ export const resumeItemPropObjectSanPellegrino: resumeItemType = {
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fsan_pellegrino%2Fnewbottle.jpg?alt=media&token=4213c7d2-379e-436c-b6ba-b7f2c4fb0b26",
 
   startDateMonth: "",
-  startDateYear: "",
   endDateMonth: "",
-  endDateYear: "",
+  startDateYear: "2010",
+  endDateYear: "2011",
   client_name: "",
   client_name_detail: "",
   jobTitle: "",
@@ -230,8 +232,8 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_2.jpg?alt=media&token=d632a6c6-d838-4213-9f8a-70cba399ad22",
 
   startDateMonth: "",
-  startDateYear: "",
   endDateMonth: "",
+  startDateYear: "",
   endDateYear: "",
   client_name: "Timeline",
   client_name_detail: "Timeline",
