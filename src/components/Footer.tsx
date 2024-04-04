@@ -38,9 +38,6 @@ export const Footer = () => {
               Resumé
             </NavLink>
           </div>
-          <div className="footer_item ">
-            <a className={"internal_link disabled"}>Timeline</a>
-          </div>
           <div className="footer_item">
             <NavLink
               className={({ isActive }) =>

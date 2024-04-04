@@ -81,7 +81,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Used an internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, available on display devices in Apple stores globally.",
+    "Used an internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, visible on display devices in Apple stores globally.",
   description2:
     "• Oversaw the implementation of static designs and functional requirements from Marcom into shippable iPhone applications, with Apple-level scrutiny towards layout specifications and animation behavior.",
   description3:
