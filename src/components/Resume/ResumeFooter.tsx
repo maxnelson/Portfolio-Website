@@ -27,7 +27,7 @@ export const ResumeFooter = () => {
         </Text>
 
         <Text style={styles.body_copy}>
-          • Experience analyzing network behaviors within complex server
+          • Experience troubleshooting network issues within complex server
           architectures.
         </Text>
         <Text style={styles.body_copy}>

@@ -29,6 +29,7 @@ export const ResumeItem = (props) => {
         <Text style={styles.body_copy}>{props.description2}</Text>
         <Text style={styles.body_copy}>{props.description3}</Text>
         <Text style={styles.body_copy}>{props.description4}</Text>
+        <Text style={styles.body_copy}>{props.description5}</Text>
         {props.technologies_used && (
           <Text style={styles.body_copy}>
             Technologies Used: {props.technologies_used}

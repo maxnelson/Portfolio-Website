@@ -15,6 +15,7 @@ type resumeItemType = {
   description2?: string;
   description3?: string;
   description4?: string;
+  description5?: string;
   popoverDescription?: string;
   technologies_used?: string;
   descriptionFormatted?: JSX.Element;
@@ -81,15 +82,17 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Served as one of the first users of a new internal iPhone application development tool to produce and deploy Retail Experience applications for iPhone, visible on display devices in Apple stores globally.",
+    "Served as one of the first users of a new internal iOS application builder tool, using SwiftUI syntax and patterns to produce and deploy Retail Experience applications for iPhone, highly visible on display devices in Apple stores globally.",
   description2:
-    "• Worked closely with Retail Engineering team, providing QA, troubleshooting issues, and guiding development of native mac application, while also using it to produce shippable iPhone applications for the Apple Store.",
+    "• Used the aforementioned tool to implement designs and functional requirements from Marcom into polished iOS applications, with Apple-level scrutiny towards design detail, layout specifications, and animation behavior.",
   description3:
-    "• Oversaw the implementation of static designs and functional requirements from Marcom into pixel-perfect iPhone applications, with Apple-level scrutiny towards layout specifications and animation behavior.",
+    "• Worked closely with Retail Engineering, providing QA and troubleshooting issues at most levels of the iOS application stack.",
   description4:
-    "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during seasonal projects with extremely firm deadlines.",
+    "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during projects with extremely firm deadlines.",
+  description5:
+    "• Developed Python scripts to verify the file signature of image files, as well as safely restructure JSON in a repository with content in 33 different languages.",
   technologies_used:
-    "Internal iPhone Application Development Tool, SwiftUI, AEM, JSON, Proxyman, Git.",
+    "Internal iOS application builder tool, SwiftUI, JSON, Python, Proxyman, AEM, Git.",
   popoverDescription:
     "Worked with Marcom and Retail Engineering to produce and deploy Retail Experience applications for iPhone.",
 };
@@ -105,9 +108,9 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   endDateYear: "2020",
   client_name: "Rubrik",
   client_name_detail: "Rubrik",
-  jobTitle: "Front End Web Developer",
+  jobTitle: "Frontend Web Developer",
   description1:
-    "Worked with team and agencies to develop and maintain the rubrik.com website and it's associated web properties.",
+    "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
   description2:
     "• Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
   technologies_used:
@@ -124,10 +127,7 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   jobTitle: "Email Template Developer",
   description1:
     "Developed Email templates using HTML and CSS. Templates built to be responsive, customizable, and adherent to Apple brand standards and guidelines.",
-  description2:
-    "• Helped design UI / UX system for internal web service. Worked with team to produce visually compelling and consistent page layouts.",
-  technologies_used:
-    "HTML, CSS, Internal Development Tool, Node, Gulp, Stylus, Git.",
+  technologies_used: "HTML, CSS, Stylus, Node, Gulp, Git.",
 };
 
 export const resumeItemPropObjectCloudera: resumeItemType = {
@@ -141,13 +141,13 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   endDateYear: "2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Web Content Production Assistant / Front End Web Developer",
+  jobTitle: "Web Content Production Assistant / Frontend Web Developer",
   description1:
-    "Worked with team and agencies to develop and maintain the cloudera.com website and it’s associated web properties.",
+    "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties.",
   description2:
     "• Administered the publication of website content, image assets, and internal user accounts within the AEM CMS.",
   description3:
-    "• Developed dynamic web form experiences, as well as front-end AEM components with integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
+    "• Developed dynamic web form experiences, as well as Frontend AEM components with integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
   technologies_used:
     "AEM Stack [Maven, JCR (JackRabbit Oak), JSP, HTL, CRX] Grunt, Jenkins, Javascript, HTML, CSS, Git. ",
 };
@@ -161,7 +161,7 @@ export const resumeItemPropObjectChico: resumeItemType = {
   client_name_detail: "California State university, Chico",
   jobTitle: "BA in Graphic Design",
   description1:
-    "Studied many mediums of graphic design, including information design, packaging, corporate identity, typography, illustration and website design with an upper-division theme in computer programming.",
+    "Studied many mediums of Graphic Design, including Information Design, Packaging, Corporate Identity, Typography, Illustration and Website Design with an upper-division theme in computer programming.",
 };
 
 export const resumeItemPropObjectGifhov: resumeItemType = {
