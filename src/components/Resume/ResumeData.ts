@@ -82,9 +82,9 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Served as one of the first users of a new internal iOS application builder tool, using SwiftUI syntax and patterns to produce and deploy Retail Experience applications for iPhone, highly visible on display devices in Apple stores globally.",
+    "Served as one of the first users of an internal iOS application builder tool, using SwiftUI syntax and patterns to produce and deploy Retail Experience applications for iPhone, highly visible on display devices in Apple stores globally.",
   description2:
-    "• Used the aforementioned tool to implement designs and functional requirements from Marcom into polished iOS applications, with Apple-level scrutiny towards design detail, layout specifications, and animation behavior.",
+    "• Used internal iOS application builder tool to implement designs and functional requirements from Marcom into polished iOS applications, with Apple-level scrutiny towards design detail, layout specifications, and animation behavior.",
   description3:
     "• Worked closely with Retail Engineering, providing QA and troubleshooting issues at most levels of the iOS application stack.",
   description4:

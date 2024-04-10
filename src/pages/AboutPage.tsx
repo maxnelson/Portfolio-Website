@@ -10,7 +10,7 @@ export function AboutPage(_, setProjectDescriptionVisible) {
         />
         <div className="main_section about_page">
           <div className="display-inline-block width-20pc margin-right-1">
-            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fassets%2Fprofile_picture_3.png?alt=media&token=da062237-240f-4d64-ac7b-188fdbeb4c14" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fassets%2Fprofile_picture.png?alt=media&token=e8c85ebc-3169-4c3b-8984-ded19c32e2f3" />
           </div>
           <div className="display-inline-block width-80pc vertical-align-top margin-left-1">
             <h2 className="section_header">Hi, I'm Max Nelson</h2>
