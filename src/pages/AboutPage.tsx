@@ -16,11 +16,11 @@ export function AboutPage(_, setProjectDescriptionVisible) {
             <h2 className="section_header">Hi, I'm Max Nelson</h2>
             <p className="section_text">
               I am a Frontend Web Developer with 8 years of experience
-              developing scalable and maintainable websites and applications
-              using a variety of languages and frameworks, including Javascript,
-              HTML, CSS, and Python. And integrating with a variety of web
-              services, databases and content repositories, such as Google Cloud
-              and AEM.
+              developing scalable and maintainable website components and
+              applications using a variety of languages and frameworks,
+              including Javascript, HTML, CSS, and Python. And integrating with
+              a variety of web services, databases and content repositories,
+              including Google Cloud and AEM.
             </p>
           </div>
         </div>

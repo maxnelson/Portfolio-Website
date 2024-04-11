@@ -48,11 +48,11 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     </Svg>
                     <Text style={styles.body_copy}>
                       Frontend Web Developer with 8 years of experience
-                      developing maintainable websites and applications using a
-                      variety of languages and frameworks, including Javascript,
-                      React, HTML, CSS, and integrating with a variety of web
-                      services, databases and content repositories, such as
-                      Google Cloud and AEM.
+                      developing maintainable website components and
+                      applications using a variety of languages and frameworks,
+                      including Javascript, React, HTML, CSS, and integrating
+                      with a variety of web services, databases and content
+                      repositories, including Google Cloud and AEM.
                     </Text>
                   </View>
                   <View>

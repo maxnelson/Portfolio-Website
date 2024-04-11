@@ -16,6 +16,8 @@ type resumeItemType = {
   description3?: string;
   description4?: string;
   description5?: string;
+  description6?: string;
+  description7?: string;
   popoverDescription?: string;
   technologies_used?: string;
   descriptionFormatted?: JSX.Element;
@@ -82,15 +84,12 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Served as one of the first users of an internal iOS application builder tool, using SwiftUI syntax and patterns to produce and deploy Retail Experience applications for iPhone, highly visible on display devices in Apple stores globally.",
+    "Used internal iOS application builder tool, utilizing SwiftUI syntax and patterns, to implement design, animation, and functional requirements from Marcom into polished iOS applications, highly visible on display devices in Apple stores globally.",
   description2:
-    "• Used internal iOS application builder tool to implement designs and functional requirements from Marcom into polished iOS applications, with Apple-level scrutiny towards design detail, layout specifications, and animation behavior.",
+    "• Advanced from UI Editor to UI Dev Lead by working closely with Retail engineering to troubleshoot application issues.",
   description3:
-    "• Worked closely with Retail Engineering, providing QA and troubleshooting issues at most levels of the iOS application stack.",
-  description4:
-    "• Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, and creating resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during projects with extremely firm deadlines.",
-  description5:
-    "• Developed Python scripts to verify the file signature of image files, as well as safely restructure JSON in a repository with content in 33 different languages.",
+    "• Organized projects, automated processes (wrote Python scripts), and created resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during projects with very firm deadlines.",
+
   technologies_used:
     "Internal iOS application builder tool, SwiftUI, JSON, Python, Proxyman, AEM, Git.",
   popoverDescription:
@@ -110,9 +109,11 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   client_name_detail: "Rubrik",
   jobTitle: "Frontend Web Developer",
   description1:
-    "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
+    "Maintained, improved, and added new components to rubrik.com using HTML, CSS (BEM), Javascript, PHP (Timber, Twig), and AEM Stack (HTL).",
   description2:
     "• Developed Wordpress page templates, dynamic web form experiences, and API integrations with multiple web services.",
+  description3:
+    "• Used Javascript to develop Frontend integration with Greenhouse API, in order to develop the careers listing, careers detail, and Job application form.",
   technologies_used:
     "Wordpress, Timber, Twig, AEM, Node, Javascript, HTML, CSS, Git.",
 };
@@ -126,7 +127,9 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "Email Template Developer",
   description1:
-    "Developed Email templates using HTML and CSS. Templates built to be responsive, customizable, and adherent to Apple brand standards and guidelines.",
+    "Used HTML, CSS (Stylus), and an internal templating framework to to develop a series of user-customizable email templates (newsletter, onboarding, announcements, etc) for use within global B2B sales department and across the company.",
+  description2:
+    "• Worked closely with designers to negotiate cusomization boundaries and develop a modular design system capable of yielding consistent treatments for a range of possible component configurations and viewport sizes.",
   technologies_used: "HTML, CSS, Stylus, Node, Gulp, Git.",
 };
 
@@ -141,15 +144,21 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   endDateYear: "2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Web Content Production Assistant / Frontend Web Developer",
+  jobTitle: "Frontend Web Developer",
   description1:
     "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties.",
   description2:
-    "• Administered the publication of website content, image assets, and internal user accounts within the AEM CMS.",
+    "• Maintained, improved, and added new components to cloudera.com using HTML, CSS, Javascript, JSP and HTL.",
   description3:
-    "• Developed dynamic web form experiences, as well as Frontend AEM components with integrations to several APIs including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
+    "• Developed a variety of Frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Used AEMs templating language (JSP scriptlets, later updating to HTL) to make the website components authorable by Marketing personnel within the AEM CMS.",
+  description5:
+    "• Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for Frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different teams of developers. ",
+  description6:
+    "• Administered the publication of website content. Used CRXDE Lite to replicate content across instances (dev, stage, prod, pub). Assisted in educating and empowering Marketing personnel to use AEM components to publish web content.",
+  description7:
+    "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders. ",
   technologies_used:
-    "AEM Stack [Maven, JCR (JackRabbit Oak), JSP, HTL, CRX] Grunt, Jenkins, Javascript, HTML, CSS, Git. ",
+    "AEM Stack, Apache Maven, JSP, HTL, Grunt, Jenkins, Javascript, HTML, CSS (SCSS), Git. ",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {

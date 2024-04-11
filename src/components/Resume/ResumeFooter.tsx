@@ -18,17 +18,12 @@ export const ResumeFooter = () => {
           <Line x1="0" y1="5" x2="350" y2="5" strokeWidth={1} stroke="black" />
         </Svg>
         <Text style={styles.body_copy}>
-          • Intermediate experience in React framework. This resume was
-          generated using React-PDF :).
+          • Experience administering Google Analytics and Google Tag manager
+          accounts. Publishing events, triggers, and reports.
         </Text>
         <Text style={styles.body_copy}>
-          • Experience implementing Oauth2 protocol in Python and Javascript
+          • Experience implementing Oauth2 protocol in Python and Javascript,
           integrating with a variety of federated login services.
-        </Text>
-
-        <Text style={styles.body_copy}>
-          • Experience troubleshooting network issues within complex server
-          architectures.
         </Text>
         <Text style={styles.body_copy}>
           • Completed the 'AEM Developer' and 'Advanced AEM Developer' training
