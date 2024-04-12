@@ -2,8 +2,8 @@ import { StyleSheet } from "@react-pdf/renderer";
 
 export const resumeStyles = StyleSheet.create({
   page_container: {
-    paddingTop: "30",
-    paddingBottom: "20",
+    paddingTop: "10",
+    paddingBottom: "10",
     paddingLeft: "30",
     paddingRight: "30",
   },
@@ -85,5 +85,10 @@ export const resumeStyles = StyleSheet.create({
   footer_section_right: {
     width: "50%",
     //marginLeft: "5%",
+  },
+  bullet_point_container: {
+    display: "flex",
+    flexDirection: "row",
+    //marginLeft: "3",
   },
 });

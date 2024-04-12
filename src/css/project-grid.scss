@@ -26,7 +26,7 @@
   }
   li {
     color: #777;
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
   }
 
   .project_description_text_container {
@@ -48,8 +48,8 @@
   color: var(--blue-100);
 }
 
-//the new hover treatment
-
+//NEW HOVER TREATMENT
+/*
 .project_grid_item_overlay {
   position: absolute;
   top: 0;
@@ -60,11 +60,6 @@
   backdrop-filter: blur(2px);
   opacity: 0;
   transition: all 0.25s ease-in-out;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
-  //align-items: center;
-
   .project_grid_item_overlay_text {
     color: white;
     opacity: 0;
@@ -83,12 +78,11 @@
 
 .project_grid_item:hover .project_grid_item_overlay_text {
   transition: all 0.25s ease-in-out;
-  //transform: translateY(50%);
   opacity: 1;
 }
+*/
 
-//Here's the flashy hover treatment for posterity
-/*
+//OLD HOVER TREATMENT
 .project_grid_item_overlay {
   position: absolute;
   top: 0;
@@ -119,7 +113,6 @@
   }
 }
 
-
 .project_grid_item:hover .project_grid_item_overlay {
   opacity: 1;
 }
@@ -129,4 +122,3 @@
   transform: translateY(50%);
   opacity: 1;
 }
-*/

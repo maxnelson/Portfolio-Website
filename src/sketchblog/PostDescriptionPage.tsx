@@ -40,7 +40,13 @@ export function PostDescriptionPage() {
           <div className="sketchblog_detail_page_container">
             <div className="sketchblog_post_detail_container">
               <div>
-                <div className="sketchblog_post_detail_images_container">
+                <div
+                  className={
+                    "sketchblog_post_detail_images_container" +
+                    "post_detail_images_container_" +
+                    postObject.format
+                  }
+                >
                   {postObject.images.map((image, index) => {
                     return (
                       <div className="post_image_container" key={index}>
@@ -61,10 +67,12 @@ export function PostDescriptionPage() {
                 </div>
 
                 <div className="sketchblog_post_detail_description_container">
-                  <div className="margin-bottom-1rem">
+                  <div>
                     <h2>{postObject.title}</h2>
                   </div>
-                  <p>{postObject.description}</p>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: postObject.description }}
+                  />
                 </div>
               </div>
               <SketchblogSidebar />

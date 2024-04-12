@@ -51,8 +51,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                       developing maintainable website components and
                       applications using a variety of languages and frameworks,
                       including Javascript, React, HTML, CSS, and integrating
-                      with a variety of web services, databases and content
-                      repositories, including Google Cloud and AEM.
+                      with a variety of Web APIs.
                     </Text>
                   </View>
                   <View>

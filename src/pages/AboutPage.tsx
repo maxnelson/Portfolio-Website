@@ -13,14 +13,13 @@ export function AboutPage(_, setProjectDescriptionVisible) {
             <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fassets%2Fprofile_picture.png?alt=media&token=e8c85ebc-3169-4c3b-8984-ded19c32e2f3" />
           </div>
           <div className="display-inline-block width-80pc vertical-align-top margin-left-1">
-            <h2 className="section_header">Hi, I'm Max Nelson</h2>
+            <h2 className="section_header">Hi, I'm Max Nelson :)</h2>
             <p className="section_text">
-              I am a Frontend Web Developer with 8 years of experience
-              developing scalable and maintainable website components and
-              applications using a variety of languages and frameworks,
-              including Javascript, HTML, CSS, and Python. And integrating with
-              a variety of web services, databases and content repositories,
-              including Google Cloud and AEM.
+              I am a Web Developer with 8 years of experience developing
+              maintainable website components and applications using a variety
+              of web languages and frameworks, including Javascript, React,
+              HTML, CSS, and integrating with a variety of web services, content
+              repositories and APIs.
             </p>
           </div>
         </div>

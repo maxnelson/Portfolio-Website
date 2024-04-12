@@ -1,9 +1,9 @@
-runtime: nodejs18 # closest available runtime to your local version
+runtime: nodejs20
 env: standard
-instance_class: F1 # You can choose different classes based on your needs
+instance_class: F1
 
 automatic_scaling:
-  max_instances: 1 # Adjust based on expected traffic
+  max_instances: 1
 
 handlers:
   - url: /.*
@@ -12,4 +12,3 @@ handlers:
 
 env_variables:
   NODE_ENV: "production"
-  # Add other environment variables here, if needed

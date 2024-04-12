@@ -2,6 +2,7 @@ import { PostCollection } from "@/sketchblog/PostCollection";
 import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { SketchblogFooter } from "@/sketchblog/SketchblogFooter";
 
 export function SketchblogPage() {
   const [category, setCategory] = useState<string | null>(null);
@@ -18,6 +19,7 @@ export function SketchblogPage() {
       <div className="sketchblog_page_container">
         <PostCollection category={category} />
         <SketchblogSidebar setCategory={setCategory} />
+        <SketchblogFooter />
       </div>
     </>
   );

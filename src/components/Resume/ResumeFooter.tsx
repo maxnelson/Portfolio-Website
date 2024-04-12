@@ -18,8 +18,7 @@ export const ResumeFooter = () => {
           <Line x1="0" y1="5" x2="350" y2="5" strokeWidth={1} stroke="black" />
         </Svg>
         <Text style={styles.body_copy}>
-          • Experience administering Google Analytics and Google Tag manager
-          accounts. Publishing events, triggers, and reports.
+          • Proficient in React, this Resumé was generated using React-PDF :)
         </Text>
         <Text style={styles.body_copy}>
           • Experience implementing Oauth2 protocol in Python and Javascript,

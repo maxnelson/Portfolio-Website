@@ -28,17 +28,14 @@ export const ProjectsGrid = ({
   const rubrik_description_formatted = {
     __html: linkify_text(resumeItemPropObjectRubrik.description1),
   };
-  const cloudera_description_formatted = {
-    __html: linkify_text(resumeItemPropObjectCloudera.description1),
-  };
 
   const appleDescription = (
     <>
       <p>{resumeItemPropObjectApple.description1}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectApple.description2?.slice(2)}</li>
-        <li>{resumeItemPropObjectApple.description3?.slice(2)}</li>
+        <li>{resumeItemPropObjectApple.description2}</li>
+        <li>{resumeItemPropObjectApple.description3}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
@@ -52,7 +49,12 @@ export const ProjectsGrid = ({
       <p dangerouslySetInnerHTML={rubrik_description_formatted}></p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectRubrik.description2?.slice(2)}</li>
+        <li>{resumeItemPropObjectRubrik.description2}</li>
+        <li>{resumeItemPropObjectRubrik.description3}</li>
+        <li>{resumeItemPropObjectRubrik.description10}</li>
+        <li>{resumeItemPropObjectRubrik.description11}</li>
+        <li>{resumeItemPropObjectRubrik.description12}</li>
+        <li>{resumeItemPropObjectRubrik.description13}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
@@ -62,11 +64,16 @@ export const ProjectsGrid = ({
   );
   const clouderaDescription = (
     <>
-      <p dangerouslySetInnerHTML={cloudera_description_formatted}></p>
+      <p> {resumeItemPropObjectCloudera.description1}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectCloudera.description2?.slice(2)}</li>
-        <li>{resumeItemPropObjectCloudera.description3?.slice(2)}</li>
+        <li>{resumeItemPropObjectCloudera.description2}</li>
+        <li>{resumeItemPropObjectCloudera.description3}</li>
+        <li>{resumeItemPropObjectCloudera.description4}</li>
+        <li>{resumeItemPropObjectCloudera.description5}</li>
+        <li>{resumeItemPropObjectCloudera.description6}</li>
+        <li>{resumeItemPropObjectCloudera.description7}</li>
+        <li>{resumeItemPropObjectCloudera.description8}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
@@ -77,11 +84,19 @@ export const ProjectsGrid = ({
   const levisDescription = (
     <>
       <p>{resumeItemPropObjectLevis.description1}</p>
+      <br />
+      <ul>
+        <li>{resumeItemPropObjectLevis.description2}</li>
+        <li>{resumeItemPropObjectLevis.description3}</li>
+        <li>{resumeItemPropObjectLevis.description4}</li>
+      </ul>
     </>
   );
   const gifhovDescription = (
     <>
       <p>{resumeItemPropObjectGifhov.description1}</p>
+      <br />
+      <p>{resumeItemPropObjectGifhov.description2}</p>
       <br />
       <a href="https://gifhov2.appspot.com/" target="_blank">
         gifhov2.appspot.com
@@ -126,6 +141,8 @@ export const ProjectsGrid = ({
   const timelineDescription = (
     <>
       <p>{resumeItemPropObjectTimeline.description1}</p>
+      <br />
+      <p>{resumeItemPropObjectTimeline.description2}</p>
       <br />
       <a href="https://timeline-react.wl.r.appspot.com/" target="_blank">
         https://timeline-react.wl.r.appspot.com/
