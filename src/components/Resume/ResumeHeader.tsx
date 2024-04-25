@@ -1,5 +1,7 @@
 import { View, Text, Svg, Line } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
+const line_padding = "1";
+const svg_height = "2";
 const contact_info_container_width = "170";
 export const ResumeHeader = () => {
   return (
@@ -16,13 +18,13 @@ export const ResumeHeader = () => {
             <Svg
               viewBox="0 0 0 0"
               width={contact_info_container_width}
-              height="10"
+              height={svg_height}
             >
               <Line
                 x1="0"
-                y1="5"
+                y1={line_padding}
                 x2={contact_info_container_width}
-                y2="5"
+                y2={line_padding}
                 strokeWidth={1}
                 stroke="black"
               />
@@ -34,23 +36,23 @@ export const ResumeHeader = () => {
             <Svg
               viewBox="0 0 0 0"
               width={contact_info_container_width}
-              height="10"
+              height={svg_height}
             >
               {/* 
               <Line
                 x1="0"
-                y1="5"
+                y1={line_padding}
                 x2={contact_info_container_width}
-                y2="5"
+                y2={line_padding}
                 strokeWidth={15}
                 stroke="#9b9b9b"
               />
               */}
               <Line
                 x1="0"
-                y1="5"
+                y1={line_padding}
                 x2={contact_info_container_width}
-                y2="5"
+                y2={line_padding}
                 strokeWidth={1}
                 stroke="black"
               />
@@ -64,13 +66,13 @@ export const ResumeHeader = () => {
             <Svg
               viewBox="0 0 0 0"
               width={contact_info_container_width}
-              height="10"
+              height={svg_height}
             >
               <Line
                 x1="0"
-                y1="5"
+                y1={line_padding}
                 x2={contact_info_container_width}
-                y2="5"
+                y2={line_padding}
                 strokeWidth={1}
                 stroke="black"
               />

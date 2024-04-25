@@ -36,22 +36,23 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                   <ResumeHeader />
                   <View style={styles.summary_section}>
                     <Text style={styles.section_title}>SUMMARY</Text>
-                    <Svg viewBox="0 0 0 0" height="15">
+                    <Svg viewBox="0 0 0 0" height="5">
                       <Line
                         x1="0"
-                        y1="5"
+                        y1="1"
                         x2="570"
-                        y2="5"
+                        y2="1"
                         strokeWidth={1}
                         stroke="black"
                       />
                     </Svg>
                     <Text style={styles.body_copy}>
-                      Frontend Web Developer with 8 years of experience
-                      developing maintainable website components and
-                      applications using a variety of languages and frameworks,
-                      including Javascript, React, HTML, CSS, and integrating
-                      with a variety of Web APIs.
+                      Web Developer with 8 years of experience developing
+                      maintainable frontend systems; implementing them into
+                      website components and applications using Javascript,
+                      React, HTML, and CSS. Optimizing and maintaining high
+                      visibility websites and applications, managing project
+                      deployments as well as content across environments.
                     </Text>
                   </View>
                   <View>

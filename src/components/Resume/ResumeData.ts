@@ -44,8 +44,19 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Used an internal iOS application builder tool, utilizing SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into iOS applications, visible on display devices in Apple stores globally.",
-  description2:
+    "Used an internal iOS application builder tool, utilizing SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into polished iOS applications, highly visible on display devices in Apple stores globally.",
+  description2: "Advanced from UI Editor to UI Dev Lead by:",
+  description3:
+    "Organizing Projects - Architecting project content into JSON data structures that satisfied complex business and application requirements.",
+  description4:
+    "Automating Processes - Writing Python scripts to verify the file signature of image files, compare and modify JSON documents. ",
+  description5:
+    "Troubleshooting Application Issues - Using tools like Proxyman, Xcode, and iOS Simulator, to QA and assist in resolving issues at many levels of the iOS application stack.",
+  description6:
+    "Managing - The day-to-day work of 2-5 other UI Editors during projects with firm deadlines dictated by Apple’s seasonal product release dates. Created educational resources used to onboard new UI Editors.",
+
+  /*
+    description2:
     "Advanced from UI Editor to UI Dev Lead by working closely with Retail engineering to troubleshoot application issues.",
   description3:
     "Organized projects, automated processes (wrote Python scripts), and created resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during projects with very firm deadlines.",
@@ -53,6 +64,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
     "Internal iOS application builder tool, SwiftUI syntax and patterns, JSON, Python, Proxyman, AEM, Git.",
   popoverDescription:
     "Worked with Marcom and Retail Engineering to produce and deploy Retail Experience applications for iPhone.",
+*/
 };
 
 export const resumeItemPropObjectRubrik: resumeItemType = {
@@ -117,18 +129,11 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   description2:
     "Maintained, improved, and added new components to cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
   description3:
-    "Developed a variety of Frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
-  description4:
-    "Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
+    "Developed a variety of Frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
   description5:
     "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for Frontend component development. Used Git, Gitflow, and SourceTree to maintain version control. ",
   description6:
     "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
-  description7:
-    "Updated, maintained, and developed page templates and components for two separate Wordpress blogs, built components and functionality using HTML, CSS, PHP, and Javascript.",
-  description8:
-    "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders. ",
-
   technologies_used:
     "AEM Stack, Apache Maven, JSP, HTL, Grunt, Jenkins, Javascript, HTML, CSS (SCSS), Git. ",
 };

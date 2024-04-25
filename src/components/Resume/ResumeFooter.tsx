@@ -1,4 +1,4 @@
-import { View, Text, Svg, Line } from "@react-pdf/renderer";
+import { View, Text, Svg, Circle, Line } from "@react-pdf/renderer";
 import { ResumeItem } from "@/components/Resume/ResumeItem";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { resumeItemPropObjectChico } from "@/components/Resume/ResumeData";
@@ -17,17 +17,32 @@ export const ResumeFooter = () => {
         <Svg viewBox="0 0 0 0" height="10">
           <Line x1="0" y1="5" x2="350" y2="5" strokeWidth={1} stroke="black" />
         </Svg>
-        <Text style={styles.body_copy}>
-          • Proficient in React, this Resumé was generated using React-PDF :)
-        </Text>
-        <Text style={styles.body_copy}>
-          • Experience implementing Oauth2 protocol in Python and Javascript,
-          integrating with a variety of federated login services.
-        </Text>
-        <Text style={styles.body_copy}>
-          • Completed the 'AEM Developer' and 'Advanced AEM Developer' training
-          courses at Adobe.
-        </Text>
+        <View style={styles.bullet_point_container}>
+          <Svg width={8} height={8}>
+            <Circle cx="3" cy="5" r="1.25" fill="black" />
+          </Svg>
+          <Text style={styles.body_copy}>
+            Proficient in React. This Resumé was generated using React-PDF :)
+          </Text>
+        </View>
+        <View style={styles.bullet_point_container}>
+          <Svg width={8} height={8}>
+            <Circle cx="3" cy="5" r="1.25" fill="black" />
+          </Svg>
+          <Text style={styles.body_copy}>
+            Experience implementing Oauth2 protocol in Python and Javascript,
+            integrating with a variety of federated login services.
+          </Text>
+        </View>
+        <View style={styles.bullet_point_container}>
+          <Svg width={8} height={8}>
+            <Circle cx="3" cy="5" r="1.25" fill="black" />
+          </Svg>
+          <Text style={styles.body_copy}>
+            Completed the 'AEM Developer' and 'Advanced AEM Developer' training
+            courses at Adobe.
+          </Text>
+        </View>
       </View>
     </View>
   );

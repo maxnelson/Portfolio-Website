@@ -32,10 +32,13 @@ export const ProjectsGrid = ({
   const appleDescription = (
     <>
       <p>{resumeItemPropObjectApple.description1}</p>
+      <p>{resumeItemPropObjectApple.description2}</p>
       <br />
       <ul>
-        <li>{resumeItemPropObjectApple.description2}</li>
         <li>{resumeItemPropObjectApple.description3}</li>
+        <li>{resumeItemPropObjectApple.description4}</li>
+        <li>{resumeItemPropObjectApple.description5}</li>
+        <li>{resumeItemPropObjectApple.description6}</li>
       </ul>
       <div>
         <b>Technologies Used: </b>
