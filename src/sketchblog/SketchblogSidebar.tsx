@@ -90,7 +90,6 @@ export function SketchblogSidebar(props) {
             </NavLink>
           </li>
           <li>
-            {" "}
             <NavLink
               onClick={() => {
                 window.scrollTo(0, 0);

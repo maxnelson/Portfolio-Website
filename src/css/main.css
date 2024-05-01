@@ -2,6 +2,7 @@
 @import "project-grid.scss";
 @import "portfolio-website.scss";
 @import "mobile.scss";
+@import "post-formats.scss";
 @import "sketchblog.scss";
 @import "classy-css/margin.scss";
 @import "classy-css/color.scss";
@@ -11,7 +12,9 @@
 @import "classy-css/width.scss";
 @import "classy-css/font-size.scss";
 @import "classy-css/cursor.scss";
-
+@import "classy-css/vertical-align.scss";
+@import "classy-css/flexbox.scss";
+@import "classy-css/background.scss";
 /*
 @import "classy-css/align-content.scss";
 @import "classy-css/align-items.scss";

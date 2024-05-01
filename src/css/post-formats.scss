@@ -1,0 +1,76 @@
+.post_format_1 {
+  .post_image_container {
+    max-width: 43rem;
+    vertical-align: top;
+  }
+}
+.post_format_1s {
+  .post_image_container {
+    max-width: 28rem;
+    vertical-align: top;
+  }
+}
+
+.post_format_2 {
+  .post_image_container {
+    max-width: 21rem;
+    vertical-align: top;
+  }
+}
+.post_format_3 {
+  .post_image_container {
+    max-width: 13.67rem;
+    vertical-align: top;
+  }
+}
+.post_format_4 {
+  .post_image_container {
+    max-width: 10rem;
+    vertical-align: top;
+  }
+}
+
+.post_format_4x2 {
+  .post_image_container {
+    max-width: 10rem;
+    vertical-align: top;
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      max-width: 21rem;
+    }
+  }
+}
+.post_format_1x2 {
+  .post_image_container {
+    max-width: 43rem;
+    vertical-align: top;
+    &:nth-child(3),
+    &:nth-child(4) {
+      max-width: 21rem;
+    }
+  }
+}
+.post_format_1x2s {
+  .post_image_container {
+    max-width: 43rem;
+    vertical-align: top;
+    &:nth-child(2),
+    &:nth-child(3) {
+      max-width: 21rem;
+    }
+  }
+}
+
+.post_format_2x3 {
+  .post_image_container {
+    max-width: 21rem;
+    vertical-align: top;
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      max-width: 13.67rem;
+    }
+  }
+}

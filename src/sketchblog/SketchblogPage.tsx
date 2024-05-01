@@ -8,19 +8,18 @@ export function SketchblogPage() {
   const [category, setCategory] = useState<string | null>(null);
   const params = useParams();
   const category_safe = params.category ? params.category : "drawings";
-  document.body.classList.add("sketchblog_background");
+  document.body.classList.add(
+    "background-image-image-1 background-repeat-repeat"
+  );
   useEffect(() => {
     setCategory(category_safe);
   }, [category_safe]);
 
   return (
-    <>
-      <div className="sketchblog_page_background"></div>
-      <div className="sketchblog_page_container">
-        <PostCollection category={category} />
-        <SketchblogSidebar setCategory={setCategory} />
-        <SketchblogFooter />
-      </div>
-    </>
+    <div className="width-70-percent margin-left-auto margin-right-auto margin-top-10rem display-flex flex-wrap-wrap justify-content-space-between">
+      <PostCollection category={category} />
+      <SketchblogSidebar setCategory={setCategory} />
+      <SketchblogFooter />
+    </div>
   );
 }

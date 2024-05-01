@@ -10,6 +10,7 @@
   --gray-175: #ddd;
   --gray-400: #777;
   --gray-500: #666;
+  --image-1: url("/public/images/sketchblog/background_texture.gif");
 }
 
 *,
@@ -25,6 +26,12 @@
 
 #root {
   font-family: "Helvetica";
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 a,

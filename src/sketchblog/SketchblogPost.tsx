@@ -5,7 +5,9 @@ export function SketchblogPost(props) {
     DateTime.fromJSDate(dateParsed).toFormat("MMMM dd, yyyy");
   return (
     <>
-      <div className={"post_container post_format_" + props.postData.format}>
+      <div
+        className={"margin-bottom-10rem post_format_" + props.postData.format}
+      >
         {
           <h2 className="margin-bottom-2rem color-aaa">
             {props.postData.title}
@@ -33,7 +35,7 @@ export function SketchblogPost(props) {
         />
         <hr className="sketchblog_post_hr" />
         <div className="post_text_container">
-          <p className="post_date">{formattedDate}</p>
+          <p className="font-size-9pt color-aaa">{formattedDate}</p>
         </div>
       </div>
     </>

@@ -21,7 +21,6 @@ import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
 
 export const ResumePage = (_, setProjectDescriptionVisible) => {
-  document.body.classList.remove("sketchblog_background");
   return (
     <>
       <div className="page_container">
