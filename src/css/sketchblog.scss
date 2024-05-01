@@ -1,6 +1,4 @@
 .sketchblog_sidebar {
-  display: inline-block;
-  position: sticky;
   top: 100px;
   height: fit-content;
   width: 12%;
@@ -67,13 +65,5 @@
 .sketchblog_post_detail_images_container.post_detail_images_container_1s {
   .post_image_container {
     max-width: 60%;
-  }
-}
-
-.sketchblog_post_detail_description_container {
-  max-width: 82%;
-  p {
-    font-size: 11pt;
-    color: #777;
   }
 }

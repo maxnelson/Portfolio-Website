@@ -8,9 +8,8 @@ export function SketchblogPage() {
   const [category, setCategory] = useState<string | null>(null);
   const params = useParams();
   const category_safe = params.category ? params.category : "drawings";
-  document.body.classList.add(
-    "background-image-image-1 background-repeat-repeat"
-  );
+  document.body.classList.add("background-image-image-1");
+  document.body.classList.add("background-repeat-repeat");
   useEffect(() => {
     setCategory(category_safe);
   }, [category_safe]);

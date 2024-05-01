@@ -68,6 +68,7 @@ export function PostDescriptionPage() {
                   {postObject.title}
                 </h2>
                 <div
+                  className="font-size-11pt color-777"
                   dangerouslySetInnerHTML={{ __html: postObject.description }}
                 />
               </div>

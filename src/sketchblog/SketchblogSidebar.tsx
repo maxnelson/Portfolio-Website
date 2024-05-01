@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 export function SketchblogSidebar(props) {
   return (
     <>
-      <div className="sketchblog_sidebar">
+      <div className="display-inline-block  sketchblog_sidebar position-sticky">
         <hr className="sketchblog_post_hr" />
         <ul>
           <li>
