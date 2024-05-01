@@ -107,6 +107,13 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectGifhov.description2}</p>
       <br />
+      <iframe
+        scrolling="no"
+        frameBorder="0"
+        src="gifhov2.appspot.com/embed/b51999b34395"
+        height="236"
+        width="449"
+      ></iframe>
       <a href="https://new-gifhov.wl.r.appspot.com/" target="_blank">
         https://new-gifhov.wl.r.appspot.com/
       </a>

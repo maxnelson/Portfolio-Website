@@ -178,3 +178,9 @@
 .max-width-5-percent {
   width: 5%;
 }
+.width-20-percent-minus-1rem {
+  width: calc(20% - 1rem);
+}
+.width-80-percent-minus-1rem {
+  width: calc(80% - 1rem);
+}

@@ -30,7 +30,7 @@ export function SketchblogPost(props) {
           );
         })}
         <div
-          className="project_description margin-top-2rem margin-bottom-1rem"
+          className="project_description color-777 margin-top-2rem margin-bottom-1rem"
           dangerouslySetInnerHTML={{ __html: props.postData.description }}
         />
         <hr className="sketchblog_post_hr" />

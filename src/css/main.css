@@ -6,15 +6,18 @@
 @import "sketchblog.scss";
 @import "classy-css/margin.scss";
 @import "classy-css/color.scss";
+@import "classy-css/display.scss";
 @import "classy-css/word-wrap.scss";
 @import "classy-css/opacity.scss";
 @import "classy-css/position.scss";
 @import "classy-css/width.scss";
+@import "classy-css/height.scss";
 @import "classy-css/font-size.scss";
 @import "classy-css/cursor.scss";
-@import "classy-css/vertical-align.scss";
+@import "classy-css/alignment.scss";
 @import "classy-css/flexbox.scss";
 @import "classy-css/background.scss";
+@import "classy-css/top-left-bottom-right.scss";
 /*
 @import "classy-css/align-content.scss";
 @import "classy-css/align-items.scss";

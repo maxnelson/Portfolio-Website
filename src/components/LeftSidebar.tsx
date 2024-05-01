@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
   return (
-    <div className="sidebar">
+    <div className="sidebar display-inline-block">
       <ul>
         <li className="sidebar_navigation_link_container_img">
           <NavLink

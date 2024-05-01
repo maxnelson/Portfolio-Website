@@ -21,7 +21,7 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
             </span>
           </div>
         )}
-        <div className={data_object.client_name_detail && "padding-top-1"}>
+        <div className={data_object.client_name_detail && "padding-top-1rem"}>
           {data_object.descriptionFormatted}
         </div>
         <div className="back-button" onClick={clickHandler}>
