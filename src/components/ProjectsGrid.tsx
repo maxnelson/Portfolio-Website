@@ -41,8 +41,10 @@ export const ProjectsGrid = ({
         <li>{resumeItemPropObjectApple.description6}</li>
       </ul>
       <div>
-        <b>Technologies Used: </b>
-        <p>{resumeItemPropObjectApple.technologies_used}</p>
+        <p>
+          <b>Technologies Used: </b>
+          {resumeItemPropObjectApple.technologies_used}
+        </p>
       </div>
     </>
   );
@@ -60,8 +62,10 @@ export const ProjectsGrid = ({
         <li>{resumeItemPropObjectRubrik.description13}</li>
       </ul>
       <div>
-        <b>Technologies Used: </b>
-        <p>{resumeItemPropObjectRubrik.technologies_used}</p>
+        <p>
+          <b>Technologies Used: </b>
+          {resumeItemPropObjectRubrik.technologies_used}
+        </p>
       </div>
     </>
   );
@@ -79,8 +83,10 @@ export const ProjectsGrid = ({
         <li>{resumeItemPropObjectCloudera.description8}</li>
       </ul>
       <div>
-        <b>Technologies Used: </b>
-        <p>{resumeItemPropObjectCloudera.technologies_used}</p>
+        <p>
+          <b>Technologies Used: </b>
+          {resumeItemPropObjectCloudera.technologies_used}
+        </p>
       </div>
     </>
   );
@@ -101,14 +107,16 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectGifhov.description2}</p>
       <br />
-      <a href="https://gifhov2.appspot.com/" target="_blank">
-        gifhov2.appspot.com
+      <a href="https://new-gifhov.wl.r.appspot.com/" target="_blank">
+        https://new-gifhov.wl.r.appspot.com/
       </a>
       <br />
       <br />
 
-      <b>Technologies Used: </b>
-      <p>{resumeItemPropObjectGifhov.technologies_used}</p>
+      <p>
+        <b>Technologies Used: </b>
+        {resumeItemPropObjectGifhov.technologies_used}
+      </p>
     </>
   );
   const sketchblogDescription = (
@@ -127,9 +135,28 @@ export const ProjectsGrid = ({
     <>
       <p>{resumeItemPropObjectMcdonalds.description1}</p>
       <br />
+      <p>
+        Feel free to check out my old schoolwork and more on my Design Blog:
+      </p>
 
-      <b>Technologies Used: </b>
-      <p>{resumeItemPropObjectMcdonalds.technologies_used}</p>
+      <br />
+      <p>
+        <a
+          target="_blank"
+          href={
+            window.location.origin +
+            "/sketchblog/schoolwork/schoolwork_mcdonalds"
+          }
+        >
+          {window.location.origin +
+            "/sketchblog/schoolwork/schoolwork_mcdonalds"}
+        </a>
+      </p>
+      <br />
+      <p>
+        <b>Technologies Used: </b>
+        {resumeItemPropObjectMcdonalds.technologies_used}
+      </p>
     </>
   );
   const sanpellegrinoDescription = (
@@ -137,8 +164,10 @@ export const ProjectsGrid = ({
       <p>{resumeItemPropObjectSanPellegrino.description1}</p>
       <br />
 
-      <b>Technologies Used: </b>
-      <p>{resumeItemPropObjectSanPellegrino.technologies_used}</p>
+      <p>
+        <b>Technologies Used: </b>
+        {resumeItemPropObjectSanPellegrino.technologies_used}
+      </p>
     </>
   );
   const timelineDescription = (
@@ -152,8 +181,10 @@ export const ProjectsGrid = ({
       </a>
       <br />
       <br />
-      <b>Technologies Used: </b>
-      <p>{resumeItemPropObjectTimeline.technologies_used}</p>
+      <p>
+        <b>Technologies Used: </b>
+        {resumeItemPropObjectTimeline.technologies_used}
+      </p>
     </>
   );
   resumeItemPropObjectApple.descriptionFormatted = appleDescription;
@@ -177,7 +208,7 @@ export const ProjectsGrid = ({
           }}
         />
       ) : (
-        <div className="project_grid_container" id="project_grid_container">
+        <div className="project_grid_container">
           <ProjectGridItem
             data_object={resumeItemPropObjectApple}
             clickHandler={() => {
@@ -214,18 +245,21 @@ export const ProjectsGrid = ({
               clickHandler(resumeItemPropObjectLevis);
             }}
           />
+
           <ProjectGridItem
             data_object={resumeItemPropObjectMcdonalds}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectMcdonalds);
             }}
           />
+          {/*
           <ProjectGridItem
             data_object={resumeItemPropObjectSanPellegrino}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectSanPellegrino);
             }}
           />
+          */}
           <ProjectGridItem
             data_object={resumeItemPropObjectSketchblog}
             clickHandler={() => {

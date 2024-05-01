@@ -5,8 +5,13 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
         <img src={data_object.image_1}></img>
         <img src={data_object.image_2}></img>
         <img src={data_object.image_3}></img>
+        <img src={data_object.image_4}></img>
+        <img src={data_object.image_5}></img>
+        <img src={data_object.image_6}></img>
+        <img src={data_object.image_7}></img>
+        <img src={data_object.image_8}></img>
       </div>
-      <div className="project_description_text_container">
+      <div className="project_description_text_container word-wrap-break-word">
         {data_object.client_name_detail && (
           <div>
             <h2>{data_object.jobTitle}</h2>

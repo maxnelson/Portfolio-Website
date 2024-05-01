@@ -4,6 +4,11 @@ type resumeItemType = {
   image_2?: string;
   image_3?: string;
   image_4?: string;
+  image_5?: string;
+  image_6?: string;
+  image_7?: string;
+  image_8?: string;
+
   startDateMonth?: string;
   startDateYear?: string;
   endDateMonth?: string;
@@ -146,8 +151,8 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
 
   startDateMonth: "",
   endDateMonth: "",
-  startDateYear: "",
-  endDateYear: "",
+  startDateYear: "2023",
+  endDateYear: "Current",
   client_name: "Timeline",
   client_name_detail: "Timeline",
   jobTitle: "",
@@ -213,7 +218,16 @@ export const resumeItemPropObjectMcdonalds: resumeItemType = {
   image_3:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-03.png?alt=media&token=9677320d-e027-4225-977a-0b6eeff8191f",
   image_4:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-04.png?alt=media&token=67634957-b7fc-4c56-9b70-533dc4db86f2",
+  image_5:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-05.png?alt=media&token=a32b64de-3531-4ad1-a8ac-0466f144c746",
+  image_6:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-07.png?alt=media&token=81d4d5f8-4135-4340-a93d-08b18781d11f",
+  image_7:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-07.png?alt=media&token=81d4d5f8-4135-4340-a93d-08b18781d11f",
+  image_8:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fschoolwork%2Fmcdonalds%2Fmcdonalds-06.png?alt=media&token=d747f1dd-b87e-49e4-a556-5852c72dfdc8",
+
   startDateMonth: "March",
   startDateYear: "2010",
   endDateMonth: "April",
@@ -257,9 +271,9 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_4.jpg?alt=media&token=176f8bab-c7b8-4564-9c89-b9fedee4a6cd",
 
   startDateMonth: "",
-  startDateYear: "",
+  startDateYear: "2008",
   endDateMonth: "",
-  endDateYear: "",
+  endDateYear: "2013",
   client_name: "Sketchblog",
   client_name_detail: "Sketchblog",
   jobTitle: "",

@@ -19,7 +19,7 @@ body.sketchblog_background {
   flex-wrap: wrap;
   justify-content: space-between;
   a {
-    color: #555;
+    color: var(--blue-100);
   }
 }
 
@@ -31,10 +31,6 @@ body.sketchblog_background {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  a {
-    color: #555;
-  }
 }
 
 .post_collection_container {
@@ -52,6 +48,7 @@ body.sketchblog_background {
     white-space: nowrap;
     margin-bottom: 10px;
     a {
+      color: #555;
       padding: 5px;
       font-size: 10pt;
       &:hover {
@@ -124,20 +121,12 @@ body.sketchblog_background {
   max-width: 82%;
   p {
     font-size: 11pt;
-    color: #555;
+    color: #777;
   }
   h2 {
     margin-top: 1rem;
     color: #aaa;
   }
-}
-
-.margin-bottom-1rem {
-  margin-bottom: 1rem;
-}
-
-.display-inline-block {
-  display: inline-block;
 }
 .sketchblog_post_detail_container {
   display: flex;
@@ -219,28 +208,4 @@ body.sketchblog_background {
       max-width: 13.67rem;
     }
   }
-}
-.sketchblog_sidebar_link {
-  i {
-    font-size: 9pt;
-  }
-}
-
-.sketchblog_footer {
-  width: 100%;
-  font-size: 10pt;
-  margin-top: 15rem;
-  margin-bottom: 5rem;
-  a {
-    color: var(--blue-100);
-    font-size: 10pt;
-    cursor: pointer;
-  }
-  p {
-    font-size: 10pt;
-    color: #aaa;
-  }
-}
-.width-85-percent {
-  width: 85%;
 }

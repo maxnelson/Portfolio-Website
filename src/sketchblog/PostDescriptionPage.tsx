@@ -67,7 +67,7 @@ export function PostDescriptionPage() {
               </div>
 
               <div className="sketchblog_post_detail_description_container">
-                <h2>{postObject.title}</h2>
+                <h2 className="margin-bottom-1rem">{postObject.title}</h2>
                 <div
                   dangerouslySetInnerHTML={{ __html: postObject.description }}
                 />

@@ -1,11 +1,22 @@
 export function SketchblogFooter() {
   return (
-    <div className="sketchblog_footer">
+    <div className="sketchblog_footer width-100-percent margin-top-15rem  margin-bottom-5rem">
       <hr className="sketchblog_post_hr" />
       <div>
-        <p>
-          <a href="/sketchblog">Home </a> • <a href="/about">About </a> •{" "}
-          <a href="/contact">Contact </a> • Max Nelson © 2024
+        <p className="font-size-10pt color-aaa">
+          <a className="font-size-10pt cursor-pointer" href="/sketchblog">
+            Home
+          </a>
+          {" • "}
+          <a className="font-size-10pt cursor-pointer" href="/about">
+            About
+          </a>
+          {" • "}
+          <a className="font-size-10pt cursor-pointer" href="/contact">
+            Contact
+          </a>
+          {" • "}
+          Max Nelson © 2024
         </p>
       </div>
     </div>

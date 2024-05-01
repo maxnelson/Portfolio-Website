@@ -12,7 +12,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/drawings"
             >
@@ -26,7 +26,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/design"
             >
@@ -40,7 +40,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/digital_art"
             >
@@ -54,7 +54,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/mixed_media"
             >
@@ -68,7 +68,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/comics"
             >
@@ -82,7 +82,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               to="/sketchblog/schoolwork"
             >
@@ -96,7 +96,7 @@ export function SketchblogSidebar(props) {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "sketchblog_sidebar_link" + (isActive ? " active_nav_link" : "")
+                "font-size-9pt" + (isActive ? " active_nav_link" : "")
               }
               end
               to="/"
