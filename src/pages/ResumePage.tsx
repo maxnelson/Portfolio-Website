@@ -48,11 +48,9 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     </Svg>
                     <Text style={styles.body_copy}>
                       Web Developer with 8 years of experience developing
-                      maintainable frontend systems; implementing them into
-                      website components and applications using Javascript,
-                      React, HTML, and CSS. Optimizing and maintaining high
-                      visibility websites and applications, managing project
-                      deployments as well as content across environments.
+                      maintainable website applications and components using
+                      Python, Javascript, HTML, and CSS, and integrating with a
+                      variety of APIs, databases, and content repositories.
                     </Text>
                   </View>
                   <View>

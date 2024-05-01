@@ -16,10 +16,9 @@ export function AboutPage(_, setProjectDescriptionVisible) {
             <h2 className="section_header">Hi, I'm Max Nelson :)</h2>
             <p className="section_text">
               I am a Web Developer with 8 years of experience developing
-              maintainable website components and applications using a variety
-              of web languages and frameworks, including Javascript, React,
-              HTML, CSS, and integrating with a variety of web services, content
-              repositories and APIs.
+              maintainable website applications and components using Python,
+              Javascript, HTML, and CSS, and integrating with a variety of APIs,
+              databases, and content repositories.
             </p>
           </div>
         </div>

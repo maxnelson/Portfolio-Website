@@ -44,7 +44,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
   client_name_detail: "Apple (Contract)",
   jobTitle: "UI Dev Lead",
   description1:
-    "Used an internal iOS application builder tool, utilizing SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into polished iOS applications, highly visible on display devices in Apple stores globally.",
+    "Used an internal iOS application builder tool, using SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into polished iOS applications, highly visible on display devices in Apple stores globally.",
   description2: "Advanced from UI Editor to UI Dev Lead by:",
   description3:
     "Organizing Projects - Architecting project content into JSON data structures that satisfied complex business and application requirements.",
