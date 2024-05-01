@@ -1,6 +1,8 @@
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
 export function AboutPage(_, setProjectDescriptionVisible) {
+  document.body.classList.remove("background-image-image-1");
+  document.body.classList.remove("background-repeat-repeat");
   return (
     <>
       <div className="page_container">

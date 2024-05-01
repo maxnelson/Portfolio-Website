@@ -8,11 +8,12 @@ export function SketchblogPost(props) {
       <div
         className={"margin-bottom-10rem post_format_" + props.postData.format}
       >
-        {
+        {props.postData.title && (
           <h2 className="margin-bottom-2rem color-aaa">
             {props.postData.title}
           </h2>
-        }
+        )}
+
         {props.postData.images.map((image, index) => {
           return (
             <div className="post_image_container" key={index}>
@@ -29,10 +30,20 @@ export function SketchblogPost(props) {
             </div>
           );
         })}
-        <div
-          className="project_description color-777 margin-top-2rem margin-bottom-1rem"
-          dangerouslySetInnerHTML={{ __html: props.postData.description }}
-        />
+
+        <p className="project_description color-777 margin-bottom-1rem">
+          {props.postData.shortDescription}
+        </p>
+        <div>
+          <a
+            href={
+              "/sketchblog/" + props.postData.category + "/" + props.postData.id
+            }
+          >
+            Read More{" "}
+            <i className="fa-solid fa-chevron-right font-size-12px padding-bottom-2px"></i>
+          </a>
+        </div>
         <hr className="sketchblog_post_hr" />
         <div className="post_text_container">
           <p className="font-size-9pt color-aaa">{formattedDate}</p>

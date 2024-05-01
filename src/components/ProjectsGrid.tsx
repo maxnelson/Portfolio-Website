@@ -76,11 +76,9 @@ export const ProjectsGrid = ({
       <ul>
         <li>{resumeItemPropObjectCloudera.description2}</li>
         <li>{resumeItemPropObjectCloudera.description3}</li>
-        <li>{resumeItemPropObjectCloudera.description4}</li>
+
         <li>{resumeItemPropObjectCloudera.description5}</li>
         <li>{resumeItemPropObjectCloudera.description6}</li>
-        <li>{resumeItemPropObjectCloudera.description7}</li>
-        <li>{resumeItemPropObjectCloudera.description8}</li>
       </ul>
       <div>
         <p>
@@ -99,6 +97,12 @@ export const ProjectsGrid = ({
         <li>{resumeItemPropObjectLevis.description3}</li>
         <li>{resumeItemPropObjectLevis.description4}</li>
       </ul>
+      <div>
+        <p>
+          <b>Technologies Used: </b>
+          {resumeItemPropObjectLevis.technologies_used}
+        </p>
+      </div>
     </>
   );
   const gifhovDescription = (

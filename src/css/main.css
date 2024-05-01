@@ -5,6 +5,7 @@
 @import "post-formats.scss";
 @import "sketchblog.scss";
 @import "classy-css/margin.scss";
+@import "classy-css/padding.scss";
 @import "classy-css/color.scss";
 @import "classy-css/display.scss";
 @import "classy-css/word-wrap.scss";
@@ -57,7 +58,6 @@
 @import "classy-css/max-height.scss";
 @import "classy-css/min-width.scss";
 @import "classy-css/min-height.scss";
-@import "classy-css/padding.scss";
 @import "classy-css/margin.scss";
 @import "classy-css/outline.scss";
 @import "classy-css/opacity.scss";

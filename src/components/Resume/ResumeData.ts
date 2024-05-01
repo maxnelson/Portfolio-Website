@@ -60,13 +60,15 @@ export const resumeItemPropObjectApple: resumeItemType = {
   description6:
     "Managing - The day-to-day work of 2-5 other UI Editors during projects with firm deadlines dictated by Apple’s seasonal product release dates. Created educational resources used to onboard new UI Editors.",
 
+  technologies_used:
+    "Internal iOS application builder tool, SwiftUI syntax and patterns, JSON, Python, Proxyman, AEM, Git.",
+
   /*
     description2:
     "Advanced from UI Editor to UI Dev Lead by working closely with Retail engineering to troubleshoot application issues.",
   description3:
     "Organized projects, automated processes (wrote Python scripts), and created resources for other UI Editors. Managed the day-to-day work of 2-5 other UI Editors during projects with very firm deadlines.",
-  technologies_used:
-    "Internal iOS application builder tool, SwiftUI syntax and patterns, JSON, Python, Proxyman, AEM, Git.",
+  
   popoverDescription:
     "Worked with Marcom and Retail Engineering to produce and deploy Retail Experience applications for iPhone.",
 */
@@ -204,6 +206,7 @@ export const resumeItemPropObjectLevis: resumeItemType = {
   description3:
     "Monthly Store Layout Instructions (printed and distributed to employees in Retail Stores globally)",
   description4: "Conference graphics (banners, signage, badges)",
+  technologies_used: "Adobe Indesign, Adobe Photoshop, Adobe Illustrator",
   popoverDescription:
     "Worked with Store Operations and Brand Environment to design and produce a variety of Retail communications.",
 };
@@ -236,7 +239,7 @@ export const resumeItemPropObjectMcdonalds: resumeItemType = {
   client_name_detail: "",
   jobTitle: "",
   description1: "An assignment for a Corporate Design class at CSU Chico.",
-  technologies_used: "Photoshop, Illustrator",
+  technologies_used: "Adobe Indesign, Adobe Photoshop, Adobe Illustrator",
 };
 
 export const resumeItemPropObjectSanPellegrino: resumeItemType = {
