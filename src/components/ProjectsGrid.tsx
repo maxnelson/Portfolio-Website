@@ -97,6 +97,15 @@ export const ProjectsGrid = ({
         <li>{resumeItemPropObjectLevis.description3}</li>
         <li>{resumeItemPropObjectLevis.description4}</li>
       </ul>
+      <p>
+        You can read more about the experience here on my Blog:
+        <br />
+        <a href={window.location.origin + "/sketchblog/design/design_levis"}>
+          https://maxnelsonwebsite.com/sketchblog/design/design_levis
+        </a>
+      </p>
+      <br />
+
       <div>
         <p>
           <b>Technologies Used: </b>
@@ -111,13 +120,6 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectGifhov.description2}</p>
       <br />
-      <iframe
-        scrolling="no"
-        frameBorder="0"
-        src="gifhov2.appspot.com/embed/b51999b34395"
-        height="236"
-        width="449"
-      ></iframe>
       <a href="https://new-gifhov.wl.r.appspot.com/" target="_blank">
         https://new-gifhov.wl.r.appspot.com/
       </a>
@@ -250,19 +252,22 @@ export const ProjectsGrid = ({
               clickHandler(resumeItemPropObjectGifhov);
             }}
           />
+          {/*
           <ProjectGridItem
             data_object={resumeItemPropObjectLevis}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectLevis);
             }}
           />
-
+          */}
+          {/* 
           <ProjectGridItem
             data_object={resumeItemPropObjectMcdonalds}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectMcdonalds);
             }}
           />
+          */}
           {/*
           <ProjectGridItem
             data_object={resumeItemPropObjectSanPellegrino}

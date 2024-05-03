@@ -166,7 +166,7 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
 
 export const resumeItemPropObjectGifhov: resumeItemType = {
   image_0:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_screenshot_1.jpg?alt=media&token=ca52c3c8-29a8-439a-8555-74cebde5401d",
   image_1:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
   startDateMonth: "Jan",
@@ -263,15 +263,16 @@ export const resumeItemPropObjectSanPellegrino: resumeItemType = {
 };
 
 export const resumeItemPropObjectSketchblog: resumeItemType = {
-  image_0: "/images/projects/sketchblog/sketchblog_image_1.jpg",
+  image_0:
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
   image_1:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_1.jpg?alt=media&token=32b6fb7e-7b4b-4c8e-a4f5-e991a4e6117e",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
   image_2:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_2.jpg?alt=media&token=7db3b66c-31c5-4209-b738-fb75ac9e8281",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot.jpg?alt=media&token=c8b96986-9fa6-4745-b857-2813f0e026a7",
   image_3:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_3.jpg?alt=media&token=1b22f275-6d31-47b9-9b5f-754765190e7f",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_3.jpg?alt=media&token=a61ec311-389f-4491-9ea7-b40c7f0cac1e",
   image_4:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fmixed_media%2Fcoasters%2Fcoasters_4.jpg?alt=media&token=176f8bab-c7b8-4564-9c89-b9fedee4a6cd",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_2.jpg?alt=media&token=b5b37db3-937d-4d19-9542-52932dbee7df",
 
   startDateMonth: "",
   startDateYear: "2008",
@@ -281,10 +282,10 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
   client_name_detail: "Sketchblog",
   jobTitle: "",
   description1:
-    "My sketchblog is where I used to post a lot of my design work, as well as drawings and digital art. Feel free to check it out!",
+    "My sketchblog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
   description2: "sketchblog.maxnelsonwebsite.com",
   popoverDescription:
-    "My sketchblog is where I post a lot of my old design work, as well as drawings and digital art.",
+    "My sketchblog is where I have posted a lot of my old design work, as well as drawings and digital art.",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {

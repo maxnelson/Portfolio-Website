@@ -13,7 +13,7 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
       </div>
       <div className="project_description_text_container word-wrap-break-word">
         {data_object.client_name_detail && (
-          <div>
+          <div className="margin-bottom-1rem">
             <h2>{data_object.jobTitle}</h2>
             <h3>{data_object.client_name_detail}</h3>
             <span>
@@ -21,9 +21,7 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
             </span>
           </div>
         )}
-        <div className={data_object.client_name_detail && "padding-top-1rem"}>
-          {data_object.descriptionFormatted}
-        </div>
+        <div>{data_object.descriptionFormatted}</div>
         <div className="back-button" onClick={clickHandler}>
           <i className="fa-solid fa-chevron-left"></i>
           <i className="fa-solid fa-chevron-left"></i>
