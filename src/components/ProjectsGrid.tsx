@@ -120,6 +120,8 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectGifhov.description2}</p>
       <br />
+      <p>{resumeItemPropObjectGifhov.description3}</p>
+      <br />
       <a href="https://new-gifhov.wl.r.appspot.com/" target="_blank">
         https://new-gifhov.wl.r.appspot.com/
       </a>

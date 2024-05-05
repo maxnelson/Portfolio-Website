@@ -179,7 +179,9 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
   description1:
     "A web application for creating and sharing gif+audio combinations.",
   description2:
-    "This is a self-initiated project that I haven't touched in a while, but which was a great vessel for my early learning into technologies like Python, Flask, the Web File API and more.",
+    "This is a self-initiated project that I built in 2015 as a way of getting more familiar with a few of the built-in (browser-implemented) Web APIs like the Web Audio API and the File API.",
+  description3:
+    "Originally built using Python Flask, Jinja2 templating engine, PostGreSQL and Heroku, I recently rebuilt it using Express, React, Google Cloud Platform and Firestore.",
   technologies_used: "Google Cloud, Python2.7, Flask, Jinja2, Javascript",
 };
 

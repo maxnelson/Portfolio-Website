@@ -35,9 +35,9 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
-            to={"/resume"}
+            to={"/sketchblog/design"}
           >
-            Resumé
+            Blog
           </NavLink>
         </li>
         <li className="sidebar_navigation_link_container">
@@ -46,9 +46,9 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
-            to={"/sketchblog/design"}
+            to={"/resume"}
           >
-            Sketchblog
+            Resumé
           </NavLink>
         </li>
       </ul>

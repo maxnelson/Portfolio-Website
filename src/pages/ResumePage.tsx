@@ -47,9 +47,10 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     </Svg>
                     <Text style={styles.body_copy}>
                       Web Developer with 8 years of experience developing
-                      maintainable website applications and components using
-                      Python, Javascript, HTML, and CSS, and integrating with a
-                      variety of APIs, databases, and content repositories.
+                      maintainable website applications and components using a
+                      variety of web languages, including Javascript, Python,
+                      HTML and CSS, and implementing integrations with a variety
+                      of APIs, databases, and content repositories.
                     </Text>
                   </View>
                   <View>
