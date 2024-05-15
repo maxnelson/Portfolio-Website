@@ -33,8 +33,15 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
               <Page size="LETTER">
                 <View style={styles.page_container}>
                   <ResumeHeader />
-                  <View style={styles.summary_section}>
-                    <Text style={styles.section_title}>SUMMARY</Text>
+                  <View style={styles.margin_bottom_10}>
+                    <Text
+                      style={[
+                        styles.font_family_helvetica_bold,
+                        styles.font_size_11pt,
+                      ]}
+                    >
+                      SUMMARY
+                    </Text>
                     <Svg viewBox="0 0 0 0" height="5">
                       <Line
                         x1="0"
@@ -45,7 +52,13 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                         stroke="black"
                       />
                     </Svg>
-                    <Text style={styles.body_copy}>
+                    <Text
+                      style={[
+                        styles.white_space_nowrap,
+                        styles.margin_bottom_1,
+                        styles.font_size_10pt,
+                      ]}
+                    >
                       Web Developer with 8 years of experience developing
                       maintainable website applications and components using a
                       variety of web languages, including Javascript, Python,
@@ -54,7 +67,14 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     </Text>
                   </View>
                   <View>
-                    <Text style={styles.section_title}>EXPERIENCE</Text>
+                    <Text
+                      style={[
+                        styles.font_family_helvetica_bold,
+                        styles.font_size_11pt,
+                      ]}
+                    >
+                      EXPERIENCE
+                    </Text>
                     <Svg viewBox="0 0 0 0" height="10">
                       <Line
                         x1="0"
@@ -65,7 +85,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                         stroke="black"
                       />
                     </Svg>
-                    <View style={styles.experience_section}>
+                    <View style={styles.margin_top_5}>
                       <ResumeItem {...resumeItemPropObjectApple} />
                       <ResumeItem {...resumeItemPropObjectRubrik} />
                       <ResumeItem {...resumeItemPropObjectApple2} />

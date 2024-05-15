@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import envelope from "/images/icons/envelope.svg";
 
 export const Footer = () => {
   return (

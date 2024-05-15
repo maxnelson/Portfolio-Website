@@ -191,8 +191,8 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectTimeline.description2}</p>
       <br />
-      <a href="https://timeline-react.wl.r.appspot.com/" target="_blank">
-        https://timeline-react.wl.r.appspot.com/
+      <a href="https://timelinelineapp.io" target="_blank">
+        https://timelinelineapp.io
       </a>
       <br />
       <br />

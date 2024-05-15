@@ -160,7 +160,7 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
   jobTitle: "",
   description1: "A web application for creating and sharing timelines.",
   description2:
-    "This is a self-initiated project that is still in development, but which has been very valuable as a vessel for teaching myself new technologies, such as D3.js, Oauth2 protocol, Firebase rules configuration and more.",
+    "This is a self-initiated project that I have built in order to keep up to date with a few of the technologies I’m interested, including React, D3.js and the OAuth2 protocol.",
   technologies_used: "Express, React, D3, Firebase, Google Cloud",
 };
 
@@ -179,10 +179,11 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
   description1:
     "A web application for creating and sharing gif+audio combinations.",
   description2:
-    "This is a self-initiated project that I built in 2015 as a way of getting more familiar with a few of the built-in (browser-implemented) Web APIs like the Web Audio API and the File API.",
+    "This is a self-initiated project that I built in 2015 as a way of getting more familiar with server and database technologies like Python Flask and PostgreSQL. Although I ended up learning a good deal about a few of the built-in (browser-implemented) Web APIs like the Web Audio API and the File API, as well.",
   description3:
-    "Originally built using Python Flask, Jinja2 templating engine, PostGreSQL and Heroku, I recently rebuilt it using Express, React, Google Cloud Platform and Firestore.",
-  technologies_used: "Google Cloud, Python2.7, Flask, Jinja2, Javascript",
+    "Back then, this took me a couple months to build, but I recently rebuilt it using Express, React and Firestore, and it took me only a handful of hours. ",
+  technologies_used:
+    "Python, Flask, PostgreSQL, Javascript, Express, React HTML, CSS, Google Cloud Platform ",
 };
 
 export const resumeItemPropObjectLevis: resumeItemType = {
