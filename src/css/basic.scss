@@ -25,7 +25,7 @@
 }
 
 #root {
-  font-family: "Helvetica";
+  font-family: Helvetica, "Helvetica, sans-serif";
 }
 html,
 body {
@@ -143,6 +143,12 @@ span > i {
   appearance: none;
 }
 
-.list-style-position-inside {
-  list-style-position: inside;
+.background-image-image-1 {
+  background-image: var(--image-1);
+}
+.width-20-percent-minus-1rem {
+  width: calc(20% - 1rem);
+}
+.width-80-percent-minus-1rem {
+  width: calc(80% - 1rem);
 }

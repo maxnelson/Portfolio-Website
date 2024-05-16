@@ -4,7 +4,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
   return (
     <div className="sidebar display-inline-block">
       <ul>
-        <li className="sidebar_navigation_link_container_img">
+        <li className="sidebar_navigation_link_container_img cursor_pointer">
           <NavLink
             onClick={() => setProjectDescriptionVisible(false)}
             className={({ isActive }) =>
@@ -18,7 +18,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
           </NavLink>
         </li>
 
-        <li className="sidebar_navigation_link_container">
+        <li className="sidebar_navigation_link_container cursor_pointer">
           <NavLink
             className={({ isActive }) =>
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
@@ -29,7 +29,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             About
           </NavLink>
         </li>
-        <li className="sidebar_navigation_link_container">
+        <li className="sidebar_navigation_link_container cursor_pointer">
           <NavLink
             className={({ isActive }) =>
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
@@ -40,7 +40,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             Resumé
           </NavLink>
         </li>
-        <li className="sidebar_navigation_link_container">
+        <li className="sidebar_navigation_link_container cursor_pointer">
           <NavLink
             className={({ isActive }) =>
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")

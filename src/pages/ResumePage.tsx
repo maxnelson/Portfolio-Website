@@ -36,34 +36,16 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                   <View style={styles.margin_bottom_10}>
                     <Text
                       style={[
-                        styles.font_family_helvetica_bold,
-                        styles.font_size_11pt,
-                      ]}
-                    >
-                      SUMMARY
-                    </Text>
-                    <Svg viewBox="0 0 0 0" height="5">
-                      <Line
-                        x1="0"
-                        y1="1"
-                        x2="570"
-                        y2="1"
-                        strokeWidth={1}
-                        stroke="black"
-                      />
-                    </Svg>
-                    <Text
-                      style={[
                         styles.white_space_nowrap,
-                        styles.margin_bottom_1,
+                        styles.margin_top_10,
                         styles.font_size_10pt,
                       ]}
                     >
-                      Web Developer with 8 years of experience developing
-                      maintainable website applications and components using a
-                      variety of web languages, including Javascript, Python,
-                      HTML and CSS, and implementing integrations with a variety
-                      of APIs, databases, and content repositories.
+                      Frontend Web Engineer with eight years of experience
+                      developing website applications and components using Java,
+                      Python, Node, Javascript, HTML and CSS, and integrating
+                      with a variety of web services, databases, and content
+                      repositories.
                     </Text>
                   </View>
                   <View>
@@ -75,17 +57,17 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     >
                       EXPERIENCE
                     </Text>
-                    <Svg viewBox="0 0 0 0" height="10">
+                    <Svg viewBox="0 0 0 0" height="5">
                       <Line
                         x1="0"
-                        y1="5"
+                        y1="2"
                         x2="570"
-                        y2="5"
+                        y2="2"
                         strokeWidth={1}
                         stroke="black"
                       />
                     </Svg>
-                    <View style={styles.margin_top_5}>
+                    <View>
                       <ResumeItem {...resumeItemPropObjectApple} />
                       <ResumeItem {...resumeItemPropObjectRubrik} />
                       <ResumeItem {...resumeItemPropObjectApple2} />

@@ -8,7 +8,7 @@ type resumeItemType = {
   image_6?: string;
   image_7?: string;
   image_8?: string;
-
+  id?: string;
   startDateMonth?: string;
   startDateYear?: string;
   endDateMonth?: string;
@@ -16,6 +16,7 @@ type resumeItemType = {
   client_name?: string;
   client_name_detail?: string;
   jobTitle?: string;
+  location?: string;
   descriptio0?: string;
   description1?: string;
   description2?: string;
@@ -46,11 +47,13 @@ export const resumeItemPropObjectApple: resumeItemType = {
   endDateMonth: "Sept",
   endDateYear: "2023",
   client_name: "Apple",
-  client_name_detail: "Apple (Contract)",
-  jobTitle: "UI Dev Lead",
+  client_name_detail: "Apple",
+  jobTitle: "Lead UI Developer",
+  location: "Cupertino, CA",
   description1:
-    "Used an internal iOS application builder tool, using SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into polished iOS applications, highly visible on display devices in Apple stores globally.",
-  description2: "Advanced from UI Editor to UI Dev Lead by:",
+    "Implemented Frontend production requirements for Retail display applications, including the ’Explore’ app, which is the default retail display application for iPhone (the one that opens when you interrupt the screensaver on iPhone display models).",
+  description2:
+    "Used an internal Swift application builder tool, utilizing SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements from Marcom into pixel-perfect, highly-performant iOS applications, with high traffic volume, as the default display application in Apple Stores globally. Advanced from UI Editor to UI Dev Lead by:",
   description3:
     "Organizing Projects - Architecting project content into JSON data structures that satisfied complex business and application requirements.",
   description4:
@@ -86,6 +89,7 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   client_name: "Rubrik",
   client_name_detail: "Rubrik",
   jobTitle: "Frontend Web Developer",
+  location: "Palo Alto, CA",
   description1:
     "Updated, maintained, and developed new page templates and components for the rubrik.com website using HTML, CSS (BEM), Javascript and PHP (Timber, Twig).",
   description2:
@@ -101,7 +105,7 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   description13:
     "Managed Google Analytics reports, as well as website performance testing for Marketing department.",
   technologies_used:
-    "Wordpress, Timber, Twig, AEM, Node, Javascript, HTML, CSS, Git.",
+    "Docker, Wordpress, Timber, Twig, Javascript, Node, HTML, CSS (BEM), Git, AEM",
 };
 
 export const resumeItemPropObjectApple2: resumeItemType = {
@@ -110,8 +114,9 @@ export const resumeItemPropObjectApple2: resumeItemType = {
   endDateMonth: "Jan",
   endDateYear: "2019",
   client_name: "Apple",
-  client_name_detail: "Apple (Contract)",
+  client_name_detail: "Apple",
   jobTitle: "Email Template Developer",
+  location: "Sunnyvale, CA",
   description1:
     "Used HTML, CSS (Stylus), and an internal templating framework to to develop a series of user-customizable email templates (newsletter, onboarding, announcements, etc) for use within global B2B sales department and across the company.",
   description2:
@@ -131,6 +136,7 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
   jobTitle: "Frontend Web Developer",
+  location: "San Francisco, CA",
   description1:
     "Worked with small team and agencies to develop and maintain the cloudera.com website and its associated web properties during a time of rapid company growth. Wore many hats, including the following:",
   description2:
@@ -299,6 +305,8 @@ export const resumeItemPropObjectChico: resumeItemType = {
   client_name: "California State university, Chico",
   client_name_detail: "California State university, Chico",
   jobTitle: "BA in Graphic Design",
+  location: "Chico, CA",
+  id: "Chico",
   description1:
     "Studied many mediums of Graphic Design, including Information Design, Packaging, Corporate Identity, Typography, Illustration and Website Design with an upper-division theme in computer programming.",
 };
