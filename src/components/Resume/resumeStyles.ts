@@ -8,6 +8,7 @@ Font.register({
     { src: "/public/fonts/Roboto/Roboto-Bold.ttf", fontStyle: "bold" },
   ],
 });
+Font.registerHyphenationCallback((word) => [word]);
 
 export const resumeStyles = StyleSheet.create({
   page_container: {
@@ -331,6 +332,15 @@ export const resumeStyles = StyleSheet.create({
   },
   margin_left_15: {
     marginLeft: "15",
+  },
+  margin_left_20: {
+    marginLeft: "20",
+  },
+  margin_left_30: {
+    marginLeft: "30",
+  },
+  margin_left_40: {
+    marginLeft: "40",
   },
   margin_left_50: {
     marginLeft: "50",

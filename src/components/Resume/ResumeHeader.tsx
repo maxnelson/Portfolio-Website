@@ -1,4 +1,4 @@
-import { View, Text, Svg, Line, Image, Path } from "@react-pdf/renderer";
+import { View, Text, Svg, Path } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 
 const line_padding = "1";
@@ -21,7 +21,7 @@ export const ResumeHeader = () => {
           MAX NELSON
         </Text>
         <Text style={[styles.font_family_helvetica_bold]}>
-          Frontend Web Engineer
+          Frontend Web Developer
         </Text>
       </View>
 
