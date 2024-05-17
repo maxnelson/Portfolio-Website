@@ -1,4 +1,4 @@
-import { View, Text, Svg, Path } from "@react-pdf/renderer";
+import { View, Text } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { ContactInfoItem } from "./ContactInfoItem";
 
@@ -36,23 +36,24 @@ export const ResumeHeader = () => {
       <View style={[styles.margin_top_5]}>
         <ContactInfoItem
           icon={email_icon}
-          width="15"
-          height="15"
+          width="14"
+          height="14"
           viewBox="0 0 512 512"
           text="maxnelson88@gmail.com"
         />
         <ContactInfoItem
           icon={phone_icon}
-          width="12"
-          height="12"
+          width="11"
+          height="11"
           viewBox="0 0 512 512"
           text="+1.510-508-1392"
+          svgStyles={styles.margin_left_3}
         />
         <ContactInfoItem
           icon={website_icon}
-          width="18"
-          height="12"
-          viewBox="0 0 512 512"
+          width="15"
+          height="13"
+          viewBox="0 0 512 612"
           text="maxnelsonwebsite.com"
         />
       </View>

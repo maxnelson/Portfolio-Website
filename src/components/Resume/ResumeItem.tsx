@@ -1,4 +1,4 @@
-import { View, Text, Circle, Svg, Path } from "@react-pdf/renderer";
+import { View, Text, Svg, Path } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { BulletPoint } from "@/components/Resume/BulletPoint";
 
@@ -7,7 +7,7 @@ export const ResumeItem = (props) => {
     <>
       <View
         style={[
-          //styles.margin_top_5,
+          styles.margin_top_5,
           styles.font_size_medium,
           styles.flex_direction_row,
           styles.align_items_center,
@@ -44,7 +44,7 @@ export const ResumeItem = (props) => {
               d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
             />
           </Svg>
-          <Text style={[styles.font_size_10pt]}>
+          <Text style={[styles.font_size_small]}>
             {props.startDateYear + " - " + props.endDateYear}
           </Text>
         </View>
@@ -61,17 +61,12 @@ export const ResumeItem = (props) => {
               d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
             />
           </Svg>
-          <Text style={[]}>{props.location}</Text>
+          <Text style={[styles.font_size_small]}>{props.location}</Text>
         </View>
       </View>
 
       <View style={styles.font_size_medium}>
-        <Text
-          wrap={false}
-          style={[styles.margin_bottom_1, styles.margin_top_2]}
-        >
-          {props.description1}
-        </Text>
+        <Text style={[styles.margin_top_2]}>{props.description1}</Text>
         {props.description2 && <BulletPoint text={props.description2} />}
         {props.description3 && <BulletPoint text={props.description3} />}
         {props.description4 && <BulletPoint text={props.description4} />}
@@ -79,7 +74,7 @@ export const ResumeItem = (props) => {
         {props.description6 && <BulletPoint text={props.description6} />}
         {props.description7 && <BulletPoint text={props.description7} />}
         {props.description8 && <BulletPoint text={props.description8} />}
-        {props.technologies_used && (
+        {props.technologies_used2 && (
           <Text style={[styles.white_space_nowrap, styles.margin_bottom_1]}>
             Technologies Used: {props.technologies_used}
           </Text>

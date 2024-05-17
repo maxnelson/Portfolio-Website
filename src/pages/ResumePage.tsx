@@ -1,12 +1,12 @@
 import { ResumeHeader } from "@/components/Resume/ResumeHeader";
 import { ResumeFooter } from "@/components/Resume/ResumeFooter";
 import { ResumeItem } from "@/components/Resume/ResumeItem";
-import { PDFViewer, Document, Page, View, Text } from "@react-pdf/renderer";
+import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import {
   resumeItemPropObjectApple,
   resumeItemPropObjectRubrik,
-  resumeItemPropObjectApple2,
+  //resumeItemPropObjectApple2,
   resumeItemPropObjectCloudera,
 } from "@/components/Resume/ResumeData";
 import { LeftSidebar } from "@/components/LeftSidebar";
@@ -22,9 +22,9 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
           setProjectDescriptionVisible={setProjectDescriptionVisible}
         />
         <div className="main_section">
-          <PDFViewer style={{ width: "100%", height: "71rem" }}>
+          <PDFViewer style={{ width: "100%", height: "81rem" }}>
             <Document>
-              <Page size="LEGAL">
+              <Page size="LETTER">
                 <View style={styles.page_container}>
                   <ResumeHeader />
                   <SummarySection />
@@ -32,7 +32,9 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                   <View>
                     <ResumeItem {...resumeItemPropObjectApple} />
                     <ResumeItem {...resumeItemPropObjectRubrik} />
+                    {/*}
                     <ResumeItem {...resumeItemPropObjectApple2} />
+                    */}
                     <ResumeItem {...resumeItemPropObjectCloudera} />
                     <ResumeFooter />
                   </View>

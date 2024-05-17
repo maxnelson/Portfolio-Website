@@ -1,4 +1,4 @@
-import { View, Text, Circle, Svg, Path } from "@react-pdf/renderer";
+import { View, Text, Circle, Svg } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 
 export const BulletPoint = (props) => {

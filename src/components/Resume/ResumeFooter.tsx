@@ -1,5 +1,4 @@
 import { View } from "@react-pdf/renderer";
-import { ResumeItem } from "@/components/Resume/ResumeItem";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { resumeItemPropObjectChico } from "@/components/Resume/ResumeData";
 import { ResumeSectionHeader } from "@/components/Resume/ResumeSectionHeader";

@@ -11,7 +11,7 @@ Font.register({
 Font.registerHyphenationCallback((word) => [word]);
 
 const font_size_small = "10pt";
-const font_size_medium = "12pt";
+const font_size_medium = "11pt";
 const font_size_large = "14pt";
 
 export const resumeStyles = StyleSheet.create({
@@ -58,43 +58,44 @@ export const resumeStyles = StyleSheet.create({
     color: "#3382b0",
   },
   white_space_nowrap: {
-    whiteSpace: "nowrap",
+    //whiteSpace: "nowrap",
   },
   display_flex: {
     display: "flex",
   },
   vertical_align_middle: {
-    verticalAlign: "middle",
+    //verticalAlign: "middle",
   },
   align_items_left: {
-    alignItems: "left",
+    //alignItems: "left",
   },
   align_items_right: {
-    alignItems: "right",
+    //alignItems: "right",
   },
   align_items_bottom: {
-    alignItems: "bottom",
+    //alignItems: "bottom",
   },
-  align_items_center: {
-    alignItems: "center",
-  },
+
   align_items_top: {
-    alignItems: "top",
+    //alignItems: "top",
   },
   align_self_left: {
-    alignSelf: "left",
+    //alignSelf: "left",
   },
   align_self_right: {
-    alignSelf: "right",
+    //alignSelf: "right",
   },
   align_self_bottom: {
-    alignSelf: "bottom",
+    //alignSelf: "bottom",
   },
   align_self_center: {
     alignSelf: "center",
   },
   align_self_top: {
-    alignSelf: "top",
+    //alignSelf: "top",
+  },
+  align_items_center: {
+    alignItems: "center",
   },
   justify_content_flex_start: {
     justifyContent: "flex-start",
@@ -403,12 +404,12 @@ export const resumeStyles = StyleSheet.create({
     paddingRight: "30",
   },
   word_break_keep_all: {
-    wordBreak: "keep-all",
+    //wordBreak: "keep-all",
   },
   overflow_wrap_normal: {
-    overflowWrap: "normal",
+    //overflowWrap: "normal",
   },
   whitespace_pre: {
-    whiteSpace: "pre",
+    //whiteSpace: "pre",
   },
 });
