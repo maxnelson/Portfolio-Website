@@ -10,17 +10,20 @@ Font.register({
 });
 Font.registerHyphenationCallback((word) => [word]);
 
+const font_size_small = "10pt";
+const font_size_medium = "12pt";
+const font_size_large = "14pt";
+
 export const resumeStyles = StyleSheet.create({
   page_container: {
-    paddingTop: "10",
-    paddingBottom: "10",
+    paddingTop: "20",
+    paddingBottom: "0",
     paddingLeft: "30",
     paddingRight: "30",
   },
   color_black: {
     color: "#000",
   },
-
   color_555: {
     color: "#555",
   },
@@ -99,8 +102,14 @@ export const resumeStyles = StyleSheet.create({
   justify_content_space_between: {
     justifyContent: "space-between",
   },
+  line_height_0: {
+    lineHeight: "0",
+  },
   line_height_0_8: {
     lineHeight: "0.8",
+  },
+  line_height_1: {
+    lineHeight: "1",
   },
   font_size_8pt: {
     fontSize: "8pt",
@@ -114,8 +123,41 @@ export const resumeStyles = StyleSheet.create({
   font_size_11pt: {
     fontSize: "11pt",
   },
+  font_size_12pt: {
+    fontSize: "12pt",
+  },
+  font_size_13pt: {
+    fontSize: "13pt",
+  },
+  font_size_14pt: {
+    fontSize: "14pt",
+  },
+  font_size_15pt: {
+    fontSize: "15pt",
+  },
+  font_size_30pt: {
+    fontSize: "30pt",
+  },
+  font_size_35pt: {
+    fontSize: "35pt",
+  },
+  font_size_40pt: {
+    fontSize: "40pt",
+  },
+  font_size_45pt: {
+    fontSize: "45pt",
+  },
   font_size_50pt: {
     fontSize: "50pt",
+  },
+  font_size_small: {
+    fontSize: font_size_small,
+  },
+  font_size_medium: {
+    fontSize: font_size_medium,
+  },
+  font_size_large: {
+    fontSize: font_size_large,
   },
   font_family_helvetica_bold: {
     fontFamily: "Helvetica-Bold",

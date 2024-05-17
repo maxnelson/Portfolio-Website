@@ -4,9 +4,9 @@ import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 export const ResumeSectionHeader = (props) => {
   return (
     <>
-      <View style={styles.margin_top_10}>
+      <View style={styles.margin_top_5}>
         <Text
-          style={[styles.font_family_helvetica_bold, styles.font_size_11pt]}
+          style={[styles.font_family_helvetica_bold, styles.font_size_medium]}
         >
           {props.headerText}
         </Text>

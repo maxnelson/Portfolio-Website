@@ -1,13 +1,14 @@
 import { View, Text, Circle, Svg, Path } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
+import { BulletPoint } from "@/components/Resume/BulletPoint";
 
 export const ResumeItem = (props) => {
   return (
     <>
       <View
         style={[
-          styles.margin_top_5,
-          styles.font_size_10pt,
+          //styles.margin_top_5,
+          styles.font_size_medium,
           styles.flex_direction_row,
           styles.align_items_center,
           styles.vertical_align_middle,
@@ -64,137 +65,22 @@ export const ResumeItem = (props) => {
         </View>
       </View>
 
-      <View>
+      <View style={styles.font_size_medium}>
         <Text
           wrap={false}
-          style={[
-            styles.margin_bottom_1,
-            styles.margin_top_2,
-            styles.font_size_10pt,
-          ]}
+          style={[styles.margin_bottom_1, styles.margin_top_2]}
         >
           {props.description1}
         </Text>
-        {props.description2 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description2}
-            </Text>
-          </View>
-        )}
-        {props.description3 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description3}
-            </Text>
-          </View>
-        )}
-        {props.description4 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description4}
-            </Text>
-          </View>
-        )}
-        {props.description5 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description5}
-            </Text>
-          </View>
-        )}
-        {props.description6 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description6}
-            </Text>
-          </View>
-        )}
-        {props.description7 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description7}
-            </Text>
-          </View>
-        )}
-        {props.description8 && (
-          <View style={[styles.display_flex, styles.flex_direction_row]}>
-            <Svg width={8} height={8}>
-              <Circle cx="3" cy="5" r="1.25" fill="black" />
-            </Svg>
-            <Text
-              style={[
-                styles.white_space_nowrap,
-                styles.margin_bottom_1,
-                styles.font_size_10pt,
-              ]}
-            >
-              {props.description8}
-            </Text>
-          </View>
-        )}
+        {props.description2 && <BulletPoint text={props.description2} />}
+        {props.description3 && <BulletPoint text={props.description3} />}
+        {props.description4 && <BulletPoint text={props.description4} />}
+        {props.description5 && <BulletPoint text={props.description5} />}
+        {props.description6 && <BulletPoint text={props.description6} />}
+        {props.description7 && <BulletPoint text={props.description7} />}
+        {props.description8 && <BulletPoint text={props.description8} />}
         {props.technologies_used && (
-          <Text
-            style={[
-              styles.white_space_nowrap,
-              styles.margin_bottom_1,
-              styles.font_size_10pt,
-            ]}
-          >
+          <Text style={[styles.white_space_nowrap, styles.margin_bottom_1]}>
             Technologies Used: {props.technologies_used}
           </Text>
         )}
