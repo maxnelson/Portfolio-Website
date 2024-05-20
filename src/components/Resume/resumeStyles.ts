@@ -1,13 +1,6 @@
 import { Font } from "@react-pdf/renderer";
 import { StyleSheet } from "@react-pdf/renderer";
 
-Font.register({
-  family: "Roboto",
-  fonts: [
-    { src: "/public/fonts/Roboto/Roboto-Regular.ttf" },
-    { src: "/public/fonts/Roboto/Roboto-Bold.ttf", fontStyle: "bold" },
-  ],
-});
 Font.registerHyphenationCallback((word) => [word]);
 
 const font_size_small = "10pt";
@@ -97,6 +90,12 @@ export const resumeStyles = StyleSheet.create({
   align_items_center: {
     alignItems: "center",
   },
+  font_weight_bold: {
+    fontWeight: "bold",
+  },
+  font_style_bold: {
+    fontWeight: "bold",
+  },
   justify_content_flex_start: {
     justifyContent: "flex-start",
   },
@@ -165,12 +164,6 @@ export const resumeStyles = StyleSheet.create({
   },
   font_family_roboto: {
     fontFamily: "Roboto",
-  },
-  font_weight_bold: {
-    fontWeight: "bold",
-  },
-  font_style_bold: {
-    fontStyle: "bold",
   },
   flex_direction_row: {
     flexDirection: "row",

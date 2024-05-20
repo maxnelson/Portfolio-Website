@@ -22,7 +22,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
           setProjectDescriptionVisible={setProjectDescriptionVisible}
         />
         <div className="main_section">
-          <PDFViewer style={{ width: "100%", height: "81rem" }}>
+          <PDFViewer style={{ width: "100%", height: "64.5rem" }}>
             <Document>
               <Page size="LETTER">
                 <View style={styles.page_container}>
@@ -42,6 +42,9 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
               </Page>
             </Document>
           </PDFViewer>
+        </div>
+        <div className="display_block">
+          <p>Decided to have some fun and build my Resume using React-PDF.</p>
         </div>
         <Footer />
       </div>
