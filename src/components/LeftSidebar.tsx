@@ -48,7 +48,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
             end
             to={"/sketchblog/design"}
           >
-            Blog
+            Design Blog
           </NavLink>
         </li>
       </ul>

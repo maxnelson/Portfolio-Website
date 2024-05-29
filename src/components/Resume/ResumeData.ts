@@ -159,8 +159,8 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
 
   startDateMonth: "",
   endDateMonth: "",
-  startDateYear: "2023",
-  endDateYear: "Current",
+  startDateYear: "",
+  endDateYear: "",
   client_name: "Timeline",
   client_name_detail: "Timeline",
   jobTitle: "",
@@ -175,10 +175,10 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_screenshot_1.jpg?alt=media&token=ca52c3c8-29a8-439a-8555-74cebde5401d",
   image_1:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
-  startDateMonth: "Jan",
-  startDateYear: "2014",
-  endDateMonth: "Aug",
-  endDateYear: "2015",
+  startDateMonth: "",
+  startDateYear: "",
+  endDateMonth: "",
+  endDateYear: "",
   client_name: "Gifhov",
   client_name_detail: "Gifhov",
   jobTitle: "",
@@ -291,10 +291,10 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
   client_name_detail: "Sketchblog",
   jobTitle: "",
   description1:
-    "My sketchblog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
+    "My Design Blog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
   description2: "sketchblog.maxnelsonwebsite.com",
   popoverDescription:
-    "My sketchblog is where I have posted a lot of my old design work, as well as drawings and digital art.",
+    "My Design Blog is where I have posted a lot of my old design work, as well as drawings and digital art.",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {
