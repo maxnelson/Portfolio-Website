@@ -1,6 +1,6 @@
 export function SketchblogFooter() {
   return (
-    <div className="sketchblog_footer width-100-percent margin-bottom-5rem">
+    <div className="sketchblog_footer width-100-percent margin-top-5rem">
       <hr className="sketchblog_post_hr" />
       <div>
         <p className="font-size-10pt color-aaa">

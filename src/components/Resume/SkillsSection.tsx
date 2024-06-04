@@ -6,8 +6,8 @@ export const SkillsSection = () => {
     <View style={[styles.margin_top_5, styles.font_size_medium]}>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>Javascript:</Text>{" "}
-        React • Node • D3 • JS and CSS pre/post processing tools (Webpack •
-        Babel • Rollup • Grunt • Gulp • Vite) • Express
+        React • Node • D3 • Tpescript • JS and CSS pre/post processing tools
+        (Webpack • Babel • Rollup • Grunt • Gulp • Vite) • Express
       </Text>
       <View style={[]}>
         <Text style={[]}>
@@ -31,7 +31,7 @@ export const SkillsSection = () => {
       <View style={[]}>
         <Text style={[]}>
           <Text style={[styles.font_family_helvetica_bold]}>Devops:</Text>{" "}
-          Docker • Jenkins • Proxyman • Oauth2 • Google Cloud Build
+          Docker • Jenkins • Proxyman • Oauth2 • Google Cloud Build • Git
         </Text>
       </View>
     </View>
