@@ -16,7 +16,7 @@ export function AboutPage(_, setProjectDescriptionVisible) {
           <div className="display-inline-block width-80-percent-minus-1rem vertical-align-top margin-left-1rem">
             <h2 className="margin-bottom-1rem">Hi, I'm Max Nelson :)</h2>
             <p className="color-777 line-height-1-5">
-              I am a Web Developer with 8 years of experience developing
+              I am a Web Developer with eight years of experience developing
               maintainable website applications and components using a variety
               of web languages, including Javascript, Python, HTML and CSS, and
               implementing integrations with a variety of APIs, databases, and

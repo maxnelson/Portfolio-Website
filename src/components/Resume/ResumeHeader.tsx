@@ -21,7 +21,7 @@ export const ResumeHeader = () => {
             styles.margin_left_2n,
           ]}
         >
-          MAX NELSON
+          Max Nelson
         </Text>
         <Text
           style={[
@@ -55,6 +55,8 @@ export const ResumeHeader = () => {
           height="13"
           viewBox="0 0 512 612"
           text="maxnelsonwebsite.com"
+          type="link"
+          linkSRC="https://maxnelsonwebsite.com"
         />
       </View>
     </View>

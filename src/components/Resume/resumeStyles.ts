@@ -405,4 +405,7 @@ export const resumeStyles = StyleSheet.create({
   whitespace_pre: {
     //whiteSpace: "pre",
   },
+  text_decoration_none: {
+    textDecoration: "none",
+  },
 });

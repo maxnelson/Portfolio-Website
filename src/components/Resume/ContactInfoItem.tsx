@@ -1,4 +1,4 @@
-import { View, Text, Svg, Path } from "@react-pdf/renderer";
+import { View, Text, Svg, Path, Link } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 export const ContactInfoItem = (props) => {
   return (
@@ -18,16 +18,29 @@ export const ContactInfoItem = (props) => {
       >
         <Path fill="#000" d={props.icon} />
       </Svg>
-      <Text
-        style={[
-          //styles.font_family_helvetica_bold,
-          styles.font_size_medium,
-          styles.color_black,
-          styles.margin_left_10,
-        ]}
-      >
-        {props.text}
-      </Text>
+      {props.type === "link" ? (
+        <Link
+          src={props.linkSRC}
+          style={[
+            styles.font_size_medium,
+            styles.color_black,
+            styles.margin_left_10,
+            styles.text_decoration_none,
+          ]}
+        >
+          {props.text}
+        </Link>
+      ) : (
+        <Text
+          style={[
+            styles.font_size_medium,
+            styles.color_black,
+            styles.margin_left_10,
+          ]}
+        >
+          {props.text}
+        </Text>
+      )}
     </View>
   );
 };

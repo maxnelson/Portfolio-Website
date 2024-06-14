@@ -74,7 +74,7 @@ export const ResumeItem = (props) => {
         {props.description6 && <BulletPoint text={props.description6} />}
         {props.description7 && <BulletPoint text={props.description7} />}
         {props.description8 && <BulletPoint text={props.description8} />}
-        {props.technologies_used2 && (
+        {props.technologies_used && (
           <Text style={[styles.white_space_nowrap, styles.margin_bottom_1]}>
             Technologies Used: {props.technologies_used}
           </Text>

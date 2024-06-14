@@ -51,18 +51,16 @@ export const resumeItemPropObjectApple: resumeItemType = {
   jobTitle: "Lead UI Developer",
   location: "Cupertino, CA",
   description1:
-    "Implemented Frontend production requirements for Retail display applications, including the default retail display application for iPhone. Served as one of the first users of an internal Swift application builder tool, utilizing SwiftUI syntax and patterns (HStacks, VStacks, etc.), to implement design, animation, and functional requirements into pixel-perfect, highly-performant iOS applications. Advanced from UI Editor to UI Dev Lead by:",
+    "Implemented Frontend production requirements for Retail display applications, including the default retail display application for iPhone.",
+  description2:
+    "Used SwiftUI syntax and patterns (HStacks, VStacks, etc.) to implement design, animation, and functional requirements into pixel-perfect, highly-accessible, iOS applications.",
   description3:
-    "Organizing Projects - Designed the JSON structures responsible for providing application content to devices, satisfying complex business and application requirements (8 different floor models, 33 different languages).",
+    "Designed JSON structures responsible for providing application content to devices, satisfying complex business and application requirements.",
   description4:
-    "Automating Processes - Wrote Python scripts do a variety of bulk tasks, including verifying the file signature of image files; comparing and modifying JSON documents.",
+    "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; comparing and modifying JSON documents within a large repository containing content in 33 different languages.",
   description5:
-    "Troubleshooting Application Issues - Used tools like Proxyman, Xcode, and iOS Simulator, to QA and assist Engineering in resolving issues at many levels of the iOS application stack.",
-  description6:
-    "Managing - The day-to-day work of 2-5 other UI Editors during projects with firm deadlines dictated by Apple’s seasonal product release dates. Created educational resources used to onboard new UI Editors.",
-
-  technologies_used:
-    "Internal iOS application builder tool, SwiftUI syntax and patterns, JSON, Python, Proxyman, AEM, Git.",
+    "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+  technologies_used: "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git",
 
   /*
     description2:
@@ -89,13 +87,15 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   jobTitle: "Frontend Web Developer",
   location: "Palo Alto, CA",
   description1:
-    "Worked with team and agencies to develop and maintain the rubrik.com web property. Developing Wordpress page templates with advanced front end requirements, dynamic web form experiences, and API integrations with multiple web services.",
+    "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
   description2:
+    "Developed Wordpress page templates with advanced front end requirements, dynamic web form experiences with strict frontend validation requirements, and API integrations with multiple web services.",
+  description3:
     "Updated, maintained, and developed new page templates and components for the rubrik.com website using HTML, CSS (BEM), Javascript and PHP (Timber, Twig).",
+  description4:
+    "Developed Frontend integrations with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
   description9:
     "Developed marketing page sections, navigation menus, dynamic web forms with strict frontend validation, and more.",
-  description3:
-    "Developed Frontend integrations with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
   description10:
     "Used Java build tools (Maven) to maintain local instance of AEM for Frontend component development.",
   description11:
@@ -105,7 +105,7 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   description13:
     "Managed Google Analytics reports, as well as website performance testing for Marketing department.",
   technologies_used:
-    "Docker, Wordpress, Timber, Twig, Javascript, Node, HTML, CSS (BEM), Git, AEM",
+    "Docker, Wordpress, PHP, Timber, Twig, Javascript, Node, HTML, CSS (BEM), AEM, Git",
 };
 
 export const resumeItemPropObjectApple2: resumeItemType = {
@@ -138,17 +138,17 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   jobTitle: "Frontend Web Developer",
   location: "San Francisco, CA",
   description1:
-    "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties, during a time of rapid company growth.",
+    "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
   description2:
-    "Maintained, improved, and added new components to cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
+    "Maintained, improved, and developed new components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
   description3:
     "Developed a variety of Frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
-  description5:
+  description10:
     "Used Java build tools (Maven) to maintain local AEM instance for Frontend component development. Used Git, Gitflow, SourceTree and Jenkins to maintain version control, build and test individual AEM instances (dev, stage, prod, pub), as well as to deploy code along instances.",
   description6:
     "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
   technologies_used:
-    "AEM Stack, Apache Maven, JSP, HTL, Grunt, Jenkins, Javascript, HTML, CSS (SCSS), Git. ",
+    "AEM Stack (Java, Maven, JSP, JCR, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt, Git",
 };
 
 export const resumeItemPropObjectTimeline: resumeItemType = {
@@ -308,5 +308,5 @@ export const resumeItemPropObjectChico: resumeItemType = {
   location: "Chico, CA",
   id: "Chico",
   description1:
-    "Studied many mediums of Graphic Design, including Information Design, Typography, and User Interface Design, with an upper-division theme in computer programming.",
+    "Studied many aspects of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming.",
 };
