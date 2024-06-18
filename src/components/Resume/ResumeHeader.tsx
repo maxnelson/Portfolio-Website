@@ -29,7 +29,7 @@ export const ResumeHeader = () => {
             styles.font_size_15pt,
           ]}
         >
-          Frontend Web Developer
+          Web Developer
         </Text>
       </View>
 
