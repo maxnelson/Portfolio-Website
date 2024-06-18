@@ -17,8 +17,9 @@ export function AboutPage(_, setProjectDescriptionVisible) {
             <h2 className="margin-bottom-1rem">Hi, I'm Max Nelson :)</h2>
             <p className="color-777 line-height-1-5">
               I am a Web Developer with eight years of experience developing
-              maintainable web applications using Java, Python, and Node, and
-              website components using Javascript, HTML and CSS.
+              maintainable web applications using Python and Node, and website
+              components using Javascript, HTML and CSS, and integrating with a
+              variety of web services, APIs, and content repositories.
             </p>
           </div>
         </div>
