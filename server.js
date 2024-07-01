@@ -5,11 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-
-// Serve static files
 app.use(express.static(path.join(__dirname, "dist")));
-
-// SPA fallback
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });

@@ -37,8 +37,8 @@ type resumeItemType = {
 };
 
 export const resumeItemPropObjectApple: resumeItemType = {
-  image_0: "/images/projects/apple/explore_app_simulator_1.jpg",
-  image_1: "/images/projects/apple/explore_app_simulator_1.jpg",
+  image_0: "/images/projects/apple/explore_app_simulator_1_optimized.jpg",
+  image_1: "/images/projects/apple/explore_app_simulator_1_optimized.jpg",
   image_2: "/images/projects/apple/explore_app_simulator_2.png",
   image_3: "/images/projects/apple/explore_app_simulator_3.png",
 
@@ -74,8 +74,8 @@ export const resumeItemPropObjectApple: resumeItemType = {
 };
 
 export const resumeItemPropObjectRubrik: resumeItemType = {
-  image_0: "/images/projects/rubrik/rubrik_homepage_1.png",
-  image_1: "/images/projects/rubrik/rubrik_homepage_1.png",
+  image_0: "/images/projects/rubrik/rubrik_homepage_1_optimized.jpg",
+  image_1: "/images/projects/rubrik/rubrik_homepage_1_optimized.jpg",
   image_2: "/images/projects/rubrik/rubrik_homepage_2.png",
   image_3: "/images/projects/rubrik/rubrik_homepage_3.png",
   startDateMonth: "Jan",
@@ -125,8 +125,8 @@ export const resumeItemPropObjectApple2: resumeItemType = {
 };
 
 export const resumeItemPropObjectCloudera: resumeItemType = {
-  image_0: "/images/projects/cloudera/cloudera_homepage_1.png",
-  image_1: "/images/projects/cloudera/cloudera_homepage_1.png",
+  image_0: "/images/projects/cloudera/cloudera_homepage_1_optimized.jpg",
+  image_1: "/images/projects/cloudera/cloudera_homepage_1_optimized.jpg",
   image_2: "/images/projects/cloudera/cloudera_homepage_2.png",
   image_3: "/images/projects/cloudera/cloudera_homepage_3.png",
   startDateMonth: "Oct",
@@ -152,14 +152,11 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
 };
 
 export const resumeItemPropObjectTimeline: resumeItemType = {
-  image_0:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_2.jpg?alt=media&token=d632a6c6-d838-4213-9f8a-70cba399ad22",
-  image_1:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_2.jpg?alt=media&token=d632a6c6-d838-4213-9f8a-70cba399ad22",
-
+  image_0: "/images/projects/timeline/timeline_homepage_1_optimized.jpg",
+  image_1: "/images/projects/timeline/timeline_homepage_1_optimized.jpg",
   startDateMonth: "",
   endDateMonth: "",
-  startDateYear: "",
+  startDateYear: "Current",
   endDateYear: "",
   client_name: "Timeline",
   client_name_detail: "Timeline",
@@ -171,12 +168,11 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
 };
 
 export const resumeItemPropObjectGifhov: resumeItemType = {
-  image_0:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_screenshot_1.jpg?alt=media&token=ca52c3c8-29a8-439a-8555-74cebde5401d",
+  image_0: "/images/projects/gifhov/gifhov_homepage_image_optimized.jpg",
   image_1:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/sketchblog%2Fdigital_art%2Fgifhov%2Fgifhov_project_grid_1.jpg?alt=media&token=8167e2a0-1355-4d3e-a2be-3e4773d2f5c3",
   startDateMonth: "",
-  startDateYear: "",
+  startDateYear: "2015",
   endDateMonth: "",
   endDateYear: "",
   client_name: "Gifhov",

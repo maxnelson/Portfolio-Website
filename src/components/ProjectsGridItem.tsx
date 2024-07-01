@@ -18,8 +18,9 @@ export const ProjectGridItem = ({ data_object, clickHandler }) => {
           </h3>
         </div>
         <div className="project_grid_item_overlay_text project_grid_item_overlay_text_bottom">
-          {data_object.startDateYear &&
-            data_object.startDateYear + " - " + data_object.endDateYear}
+          {data_object.startDateYear && data_object.endDateYear
+            ? data_object.startDateYear + " - " + data_object.endDateYear
+            : data_object.startDateYear}
         </div>
       </div>
     </div>
