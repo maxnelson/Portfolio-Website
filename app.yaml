@@ -7,11 +7,10 @@ automatic_scaling:
 
 handlers:
   # Serve static files
-  - url: /(.*\.(gif|png|jpg|css|js|ico))$
-    static_files: dist/\1
-    upload: dist/.*\.(gif|png|jpg|css|js|ico)$
+  #- url: /(.*\.(gif|png|jpg|css|js|ico))$
+  #  static_files: dist/\1
+  #  upload: dist/.*\.(gif|png|jpg|css|js|ico)$
 
-  # Serve index.html for all other routes
   - url: /.*
     static_files: dist/index.html
     upload: dist/index.html
