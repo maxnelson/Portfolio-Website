@@ -50,6 +50,13 @@ export const resumeStyles = StyleSheet.create({
   color_blue_50: {
     color: "#3382b0",
   },
+  color_blue_100: {
+    color: "#0e71b8",
+  },
+  color_gray_50: {
+    color: "#555",
+    fill: "#555",
+  },
   white_space_nowrap: {
     //whiteSpace: "nowrap",
   },

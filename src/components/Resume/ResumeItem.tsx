@@ -18,13 +18,17 @@ export const ResumeItem = (props) => {
           style={[
             styles.display_flex,
             styles.flex_direction_column,
-            styles.width_60_percent,
+            styles.width_75_percent,
           ]}
         >
+          <Text
+            style={[styles.color_blue_50, styles.font_family_helvetica_bold]}
+          >
+            {props.client_name_detail}
+          </Text>
           <Text style={[styles.font_family_helvetica_bold]}>
             {props.jobTitle}
           </Text>
-          <Text>{props.client_name_detail}</Text>
         </View>
         <View
           style={[
@@ -45,9 +49,16 @@ export const ResumeItem = (props) => {
             />
           </Svg>
           <Text style={[styles.font_size_small]}>
-            {props.startDateYear + " - " + props.endDateYear}
+            {props.startDateMonth +
+              " " +
+              props.startDateYear +
+              " - " +
+              props.endDateMonth +
+              " " +
+              props.endDateYear}
           </Text>
         </View>
+        {/*
         <View
           style={[
             styles.flex_direction_row,
@@ -63,10 +74,13 @@ export const ResumeItem = (props) => {
           </Svg>
           <Text style={[styles.font_size_small]}>{props.location}</Text>
         </View>
+        */}
       </View>
 
       <View style={styles.font_size_medium}>
-        <Text style={[styles.margin_top_2]}>{props.description1}</Text>
+        <Text style={[styles.margin_top_2, styles.margin_bottom_2]}>
+          {props.description1}
+        </Text>
         {props.description2 && <BulletPoint text={props.description2} />}
         {props.description3 && <BulletPoint text={props.description3} />}
         {props.description4 && <BulletPoint text={props.description4} />}
@@ -75,8 +89,11 @@ export const ResumeItem = (props) => {
         {props.description7 && <BulletPoint text={props.description7} />}
         {props.description8 && <BulletPoint text={props.description8} />}
         {props.technologies_used && (
-          <Text style={[styles.white_space_nowrap, styles.margin_bottom_1]}>
-            Technologies Used: {props.technologies_used}
+          <Text style={[styles.white_space_nowrap, styles.margin_bottom_3]}>
+            <Text style={[styles.font_family_helvetica_bold]}>
+              Technologies Used:
+            </Text>{" "}
+            {props.technologies_used}
           </Text>
         )}
       </View>

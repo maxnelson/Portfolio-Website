@@ -21,16 +21,9 @@ export const ResumeHeader = () => {
             styles.margin_left_2n,
           ]}
         >
-          Max Nelson
+          MAX NELSON
         </Text>
-        <Text
-          style={[
-            //styles.font_family_helvetica_bold,
-            styles.font_size_15pt,
-          ]}
-        >
-          Web Developer
-        </Text>
+        <Text style={[styles.font_size_15pt]}>Web Developer</Text>
       </View>
 
       <View style={[styles.margin_top_5]}>
@@ -51,9 +44,9 @@ export const ResumeHeader = () => {
         />
         <ContactInfoItem
           icon={website_icon}
-          width="15"
-          height="13"
-          viewBox="0 0 512 612"
+          width="16"
+          height="14"
+          viewBox="0 0 612 612"
           text="maxnelsonwebsite.com"
           type="link"
           linkSRC="https://maxnelsonwebsite.com"

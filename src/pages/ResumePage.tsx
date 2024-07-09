@@ -22,7 +22,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
           setProjectDescriptionVisible={setProjectDescriptionVisible}
         />
         <div className="main_section">
-          <PDFViewer style={{ width: "100%", height: "64.5rem" }}>
+          <PDFViewer style={{ width: "100%", height: "75rem" }}>
             <Document>
               <Page size="LETTER">
                 <View style={styles.page_container}>
