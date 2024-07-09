@@ -4,10 +4,9 @@ export const SummarySection = () => {
   return (
     <View>
       <Text style={[styles.margin_top_5, styles.font_size_medium]}>
-        Web Developer with eight years of experience developing maintainable web
-        applications using Python and Node, and website components using
-        Javascript, HTML and CSS, and integrating with a variety of web
-        services, APIs, and content repositories.
+        Web Developer with eight years of experience developing web applications
+        using a variety of languages and frameworks, and website components
+        using Javascript, HTML, and CSS.
       </Text>
     </View>
   );
