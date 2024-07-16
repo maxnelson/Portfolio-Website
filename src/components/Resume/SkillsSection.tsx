@@ -12,7 +12,7 @@ export const SkillsSection = () => {
         <Text style={[styles.font_family_helvetica_bold]}>
           Pre/Post Processing Tools:
         </Text>{" "}
-        Rollup • Grunt • Gulp • Vite
+        PostCSS • Rollup • Vite • Grunt • Gulp
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>Databases:</Text>{" "}
