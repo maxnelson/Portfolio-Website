@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function SketchblogSidebarSectionComponent({ name, children }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   return (
     <>
       <li

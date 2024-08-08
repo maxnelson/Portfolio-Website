@@ -156,8 +156,8 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
   image_1: "/images/projects/timeline/timeline_homepage_1_optimized.jpg",
   startDateMonth: "",
   endDateMonth: "",
-  startDateYear: "Current",
-  endDateYear: "",
+  startDateYear: "2023",
+  endDateYear: "Current",
   client_name: "Timeline",
   client_name_detail: "Timeline",
   jobTitle: "",
@@ -280,17 +280,17 @@ export const resumeItemPropObjectSketchblog: resumeItemType = {
     "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_2.jpg?alt=media&token=b5b37db3-937d-4d19-9542-52932dbee7df",
 
   startDateMonth: "",
-  startDateYear: "2008",
+  startDateYear: "",
   endDateMonth: "",
-  endDateYear: "2013",
-  client_name: "Sketchblog",
-  client_name_detail: "Sketchblog",
+  endDateYear: "",
+  client_name: "Blog",
+  client_name_detail: "Blog",
   jobTitle: "",
   description1:
-    "My Design Blog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
+    "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
   description2: "sketchblog.maxnelsonwebsite.com",
   popoverDescription:
-    "My Design Blog is where I have posted a lot of my old design work, as well as drawings and digital art.",
+    "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art.",
 };
 
 export const resumeItemPropObjectChico: resumeItemType = {

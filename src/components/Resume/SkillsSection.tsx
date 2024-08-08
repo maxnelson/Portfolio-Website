@@ -31,7 +31,7 @@ export const SkillsSection = () => {
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
-          Cloud Environments:
+          Cloud Platforms:
         </Text>{" "}
         Google Cloud Platform
       </Text>

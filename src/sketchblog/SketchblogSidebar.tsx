@@ -18,7 +18,7 @@ export function SketchblogSidebar(props) {
                 }
                 to="/sketchblog/css"
               >
-                css
+                CSS
               </NavLink>
             </li>
           </SketchblogSidebarSectionComponent>

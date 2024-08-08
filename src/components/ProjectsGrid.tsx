@@ -150,9 +150,7 @@ export const ProjectsGrid = ({
     <>
       <p>{resumeItemPropObjectMcdonalds.description1}</p>
       <br />
-      <p>
-        Feel free to check out my old schoolwork and more on my Design Blog:
-      </p>
+      <p>Feel free to check out my old schoolwork and more on my Blog:</p>
 
       <br />
       <p>
@@ -225,6 +223,12 @@ export const ProjectsGrid = ({
       ) : (
         <div className="project_grid_container">
           <ProjectGridItem
+            data_object={resumeItemPropObjectTimeline}
+            clickHandler={() => {
+              clickHandler(resumeItemPropObjectTimeline);
+            }}
+          />
+          <ProjectGridItem
             data_object={resumeItemPropObjectApple}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectApple);
@@ -242,12 +246,7 @@ export const ProjectsGrid = ({
               clickHandler(resumeItemPropObjectCloudera);
             }}
           />
-          <ProjectGridItem
-            data_object={resumeItemPropObjectTimeline}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectTimeline);
-            }}
-          />
+
           <ProjectGridItem
             data_object={resumeItemPropObjectGifhov}
             clickHandler={() => {
