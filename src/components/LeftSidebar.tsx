@@ -46,7 +46,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
               "sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
             }
             end
-            to={"/sketchblog/design"}
+            to={"/sketchblog/css"}
           >
             Blog
           </NavLink>
