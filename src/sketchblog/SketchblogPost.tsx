@@ -8,12 +8,6 @@ export function SketchblogPost(props) {
       <div
         className={"margin-bottom-10rem post_format_" + props.postData.format}
       >
-        {props.postData.title && (
-          <h2 className="margin-bottom-2rem color-aaa">
-            {props.postData.title}
-          </h2>
-        )}
-
         {props.postData.images.map((image, index) => {
           return (
             <div className="post_image_container" key={index}>
@@ -30,6 +24,11 @@ export function SketchblogPost(props) {
             </div>
           );
         })}
+        {props.postData.title && (
+          <h2 className="margin-bottom-1rem color-aaa">
+            {props.postData.title}
+          </h2>
+        )}
 
         <p className="project_description color-777 margin-bottom-1rem">
           {props.postData.shortDescription}

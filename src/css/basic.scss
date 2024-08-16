@@ -64,7 +64,8 @@ textarea,
 button,
 ol,
 ul,
-li {
+li,
+blockquote {
   font-family: Helvetica, "Helvetica, sans-serif";
   margin: 0;
   padding: 0;
@@ -151,4 +152,11 @@ span > i {
 }
 .width-80-percent-minus-1rem {
   width: calc(80% - 1rem);
+}
+
+blockquote {
+  padding-left: 2rem;
+  border-left: 4px solid #ddd;
+  font-size: 20px;
+  color: #aaa;
 }
