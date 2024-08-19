@@ -163,8 +163,9 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
   jobTitle: "",
   description1: "A web application for creating and sharing timelines.",
   description2:
-    "This is a self-initiated project that I have built in order to keep up to date with a few of the technologies I’m interested, including React, D3.js and the OAuth2 protocol.",
-  technologies_used: "Express, React, D3, Firebase, Google Cloud",
+    "This is a self-initiated project, currently under development, that I am building in order to learn and keep up to date with a few of the technologies I’m interested, including React, D3.js and the OAuth2 protocol.",
+  technologies_used:
+    "Google Cloud Platform, Firebase, Firestore, Node, Vite, Express, React, D3, OAuth2",
 };
 
 export const resumeItemPropObjectGifhov: resumeItemType = {

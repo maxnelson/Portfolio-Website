@@ -78,6 +78,11 @@
   .post_image_container {
     max-width: 13.67rem;
     display: inline-block;
+    &:nth-child(1) {
+      max-width: 43rem;
+      vertical-align: top;
+      display: block;
+    }
     &:nth-child(2) {
       max-width: 43rem;
       vertical-align: top;

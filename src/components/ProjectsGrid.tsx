@@ -28,6 +28,9 @@ export const ProjectsGrid = ({
   const rubrik_description_formatted = {
     __html: linkify_text(resumeItemPropObjectRubrik.description1),
   };
+  const cloudera_description_formatted = {
+    __html: linkify_text(resumeItemPropObjectCloudera.description1),
+  };
 
   const appleDescription = (
     <>
@@ -71,7 +74,7 @@ export const ProjectsGrid = ({
   );
   const clouderaDescription = (
     <>
-      <p> {resumeItemPropObjectCloudera.description1}</p>
+      <p dangerouslySetInnerHTML={cloudera_description_formatted}></p>
       <br />
       <ul>
         <li>{resumeItemPropObjectCloudera.description2}</li>
@@ -122,8 +125,13 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectGifhov.description3}</p>
       <br />
-      <a href="https://new-gifhov.wl.r.appspot.com/" target="_blank">
+      <a
+        href="https://new-gifhov.wl.r.appspot.com/"
+        target="_blank"
+        className="external_link"
+      >
         https://new-gifhov.wl.r.appspot.com/
+        <i className="fas fa-external-link"></i>
       </a>
       <br />
       <br />
@@ -189,8 +197,12 @@ export const ProjectsGrid = ({
       <br />
       <p>{resumeItemPropObjectTimeline.description2}</p>
       <br />
-      <a href="https://timelineapp.io" target="_blank">
-        https://timelineapp.io
+      <a
+        href="https://timelineapp.io"
+        target="_blank"
+        className="external_link"
+      >
+        https://timelineapp.io<i className="fas fa-external-link"></i>
       </a>
       <br />
       <br />

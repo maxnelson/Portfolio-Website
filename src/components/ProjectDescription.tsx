@@ -2,14 +2,14 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
   return (
     <div className="project_description_container">
       <div className="project_description_container_images">
-        <img src={data_object.image_1}></img>
-        <img src={data_object.image_2}></img>
-        <img src={data_object.image_3}></img>
-        <img src={data_object.image_4}></img>
-        <img src={data_object.image_5}></img>
-        <img src={data_object.image_6}></img>
-        <img src={data_object.image_7}></img>
-        <img src={data_object.image_8}></img>
+        {data_object.image_1 ? <img src={data_object.image_1}></img> : null}
+        {data_object.image_2 ? <img src={data_object.image_2}></img> : null}
+        {data_object.image_3 ? <img src={data_object.image_3}></img> : null}
+        {data_object.image_4 ? <img src={data_object.image_4}></img> : null}
+        {data_object.image_5 ? <img src={data_object.image_5}></img> : null}
+        {data_object.image_6 ? <img src={data_object.image_6}></img> : null}
+        {data_object.image_7 ? <img src={data_object.image_7}></img> : null}
+        {data_object.image_8 ? <img src={data_object.image_8}></img> : null}
       </div>
       <div className="project_description_text_container word-wrap-break-word">
         {data_object.client_name_detail && (
