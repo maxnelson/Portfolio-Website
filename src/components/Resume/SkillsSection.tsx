@@ -22,14 +22,6 @@ export const SkillsSection = () => {
         <Text style={[styles.font_family_helvetica_bold]}>Python:</Text> Flask
       </Text>
       <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>Devops Tools:</Text>{" "}
-        Docker • Jenkins • Proxyman • Git
-      </Text>
-      <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>Protocols:</Text> HTTP
-        • Oauth2
-      </Text>
-      <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
           Cloud Platforms:
         </Text>{" "}

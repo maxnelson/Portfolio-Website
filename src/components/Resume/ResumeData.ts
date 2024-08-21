@@ -48,18 +48,18 @@ export const resumeItemPropObjectApple: resumeItemType = {
   endDateYear: "2023",
   client_name: "Apple",
   client_name_detail: "Apple",
-  jobTitle: "Lead UI Developer",
+  jobTitle: "UI Dev Lead",
   location: "Cupertino, CA",
   description1:
     "Implemented front-end production requirements for Retail display applications, including the default retail display application for iPhone.",
   description2:
     "Used SwiftUI syntax and patterns (HStacks, VStacks, etc.) to implement design, animation, and functional requirements into pixel-perfect, highly-accessible, iOS applications.",
   description3:
-    "Designed JSON structures responsible for providing application content to devices, satisfying complex business and application requirements.",
-  description4:
+    "Designed JSON structures responsible for providing application content to devices, allowing for complex features / functionality; satisfying complex business and application requirements (33 different languages, 8 different in-store devices).",
+  description10:
     "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; comparing and modifying JSON documents within a large repository containing content in 33 different languages.",
   description5:
-    "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+    "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
   technologies_used: "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git",
 
   /*
@@ -135,12 +135,12 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   endDateYear: "2017",
   client_name: "Cloudera",
   client_name_detail: "Cloudera",
-  jobTitle: "Frontend Web Developer",
+  jobTitle: "Web Content Production Assistant",
   location: "San Francisco, CA",
   description1:
     "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
   description2:
-    "Maintained, improved, and developed new components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
+    "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
   description3:
     "Developed a variety of front-end components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
   description10:

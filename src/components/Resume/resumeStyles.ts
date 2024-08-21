@@ -217,6 +217,9 @@ export const resumeStyles = StyleSheet.create({
   width_100_percent: {
     width: "100%",
   },
+  margin_top_0: {
+    marginTop: "0",
+  },
   margin_top_1: {
     marginTop: "1",
   },

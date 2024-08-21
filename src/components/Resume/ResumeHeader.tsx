@@ -23,7 +23,7 @@ export const ResumeHeader = () => {
         >
           MAX NELSON
         </Text>
-        <Text style={[styles.font_size_15pt]}>Web Developer</Text>
+        <Text style={[styles.font_size_15pt]}>Senior Web Engineer</Text>
       </View>
 
       <View style={[styles.margin_top_5]}>
