@@ -1,6 +1,6 @@
 # Max Nelson's Portfolio Website
 
-This is the repository hosting the front-end code for https://www.maxnelsonwebsite.com.
+This is the repository hosting the frontend code for https://www.maxnelsonwebsite.com.
 
 ## Summary
 

@@ -51,7 +51,7 @@ export const resumeItemPropObjectApple: resumeItemType = {
   jobTitle: "UI Dev Lead",
   location: "Cupertino, CA",
   description1:
-    "Implemented front-end production requirements for Retail display applications, including the default retail display application for iPhone.",
+    "Implemented frontend production requirements for Retail display applications, including the default retail display application for iPhone.",
   description2:
     "Used SwiftUI syntax and patterns (HStacks, VStacks, etc.) to implement design, animation, and functional requirements into pixel-perfect, highly-accessible, iOS applications.",
   description3:
@@ -89,15 +89,15 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
   description1:
     "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
   description3:
-    "Developed Wordpress page templates with advanced front-end requirements, dynamic web form experiences with strict front-end validation requirements, and API integrations with multiple web services.",
+    "Developed Wordpress page templates with advanced frontend requirements, dynamic web form experiences with strict frontend validation requirements, and API integrations with multiple web services.",
   description2:
     "Updated, maintained, and developed new page templates and components for the rubrik.com website using HTML, CSS (BEM), Javascript and PHP (Timber, Twig).",
   description4:
-    "Developed front-end integration with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
+    "Developed frontend integration with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
   description9:
-    "Developed marketing page sections, navigation menus, dynamic web forms with strict front-end validation, and more.",
+    "Developed marketing page sections, navigation menus, dynamic web forms with strict frontend validation, and more.",
   description10:
-    "Used Java build tools (Maven) to maintain local instance of AEM for front-end component development.",
+    "Used Java build tools (Maven) to maintain local instance of AEM for frontend component development.",
   description11:
     "Used CRXDE Lite and AEM CMS to manage, sync and replicate content (marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
   description12:
@@ -142,9 +142,9 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   description2:
     "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
   description3:
-    "Developed a variety of front-end components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
+    "Developed a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
   description10:
-    "Used Java build tools (Maven) to maintain local AEM instance for front-end component development. Used Git, Gitflow, SourceTree and Jenkins to maintain version control, build and test individual AEM instances (dev, stage, prod, pub), as well as to deploy code along instances.",
+    "Used Java build tools (Maven) to maintain local AEM instance for frontend component development. Used Git, Gitflow, SourceTree and Jenkins to maintain version control, build and test individual AEM instances (dev, stage, prod, pub), as well as to deploy code along instances.",
   description6:
     "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
   technologies_used:
