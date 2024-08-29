@@ -63,7 +63,7 @@ export function PostDescriptionPage() {
                 </div>
               </div>
 
-              <div className="sketchblog_post_detail_description_container vertical-align-top">
+              <div className="sketchblog_post_detail_description_container _vertical-align--top">
                 <h2 className="margin-bottom-1rem margin-top-1rem color-aaa">
                   {postObject.title}
                 </h2>

@@ -148,7 +148,7 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   description6:
     "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
   technologies_used:
-    "AEM Stack (Java, Maven, JSP, JCR, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt, Git",
+    "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt",
 };
 
 export const resumeItemPropObjectTimeline: resumeItemType = {

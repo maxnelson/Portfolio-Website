@@ -12,7 +12,7 @@ export function SketchblogFooter() {
             About
           </a>
           {" • "}
-          <a className="font-size-10pt cursor-pointer" href="/contact">
+          <a className="font-size-10pt cursor-pointer testthis" href="/contact">
             Contact
           </a>
           {" • "}

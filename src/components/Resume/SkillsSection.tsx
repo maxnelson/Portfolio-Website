@@ -6,13 +6,13 @@ export const SkillsSection = () => {
     <View style={[styles.margin_top_5, styles.font_size_medium]}>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>Javascript:</Text>{" "}
-        Typescript • React • D3 • Node • Express
+        Typescript • Node • Express • React • D3
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
           Pre/Post Processing Tools:
         </Text>{" "}
-        PostCSS • Rollup • Vite • Grunt • Gulp
+        PostCSS • Rollup • Vite
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>Databases:</Text>{" "}
@@ -20,6 +20,9 @@ export const SkillsSection = () => {
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>Python:</Text> Flask
+      </Text>
+      <Text style={[]}>
+        <Text style={[styles.font_family_helvetica_bold]}>PHP:</Text> WordPress
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
