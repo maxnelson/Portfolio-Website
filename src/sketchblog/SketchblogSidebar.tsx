@@ -3,7 +3,7 @@ import { SketchblogSidebarSectionComponent } from "@/sketchblog/SketchblogSideba
 export function SketchblogSidebar(props) {
   return (
     <>
-      <div className="display-inline-block  sketchblog_sidebar position-sticky top-100px height-fit-content">
+      <div className="_display--inline-block  sketchblog_sidebar _position--sticky _top--100px _height--fit-content">
         <hr className="sketchblog_post_hr" />
         <ul>
           <SketchblogSidebarSectionComponent name="Engineering">
@@ -14,7 +14,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/css"
               >
@@ -30,7 +30,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/design"
               >
@@ -44,7 +44,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/schoolwork"
               >
@@ -60,7 +60,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/drawings"
               >
@@ -74,7 +74,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/digital_art"
               >
@@ -88,7 +88,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/mixed_media"
               >
@@ -102,7 +102,7 @@ export function SketchblogSidebar(props) {
                   window.scrollTo(0, 0);
                 }}
                 className={({ isActive }) =>
-                  "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                  "_font-size--9pt" + (isActive ? " active_nav_link" : "")
                 }
                 to="/sketchblog/comics"
               >
@@ -111,13 +111,13 @@ export function SketchblogSidebar(props) {
             </li>
           </SketchblogSidebarSectionComponent>
 
-          <li className="margin-top-3rem">
+          <li className="_margin-top--3rem">
             <NavLink
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
               className={({ isActive }) =>
-                "font-size-9pt" + (isActive ? " active_nav_link" : "")
+                "_font-size--9pt" + (isActive ? " active_nav_link" : "")
               }
               end
               to="/"

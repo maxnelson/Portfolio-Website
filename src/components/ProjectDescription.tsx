@@ -11,9 +11,9 @@ export const ProjectDescription = ({ data_object, clickHandler }) => {
         {data_object.image_7 ? <img src={data_object.image_7}></img> : null}
         {data_object.image_8 ? <img src={data_object.image_8}></img> : null}
       </div>
-      <div className="project_description_text_container word-wrap-break-word">
+      <div className="project_description_text_container _word-wrap--break-word">
         {data_object.client_name_detail && (
-          <div className="margin-bottom-1rem">
+          <div className="_margin-bottom--1rem">
             <h2>{data_object.jobTitle}</h2>
             <h3>{data_object.client_name_detail}</h3>
             <span>

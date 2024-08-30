@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer_items_container">
-        <div className="display-inline-block">
+        <div className="_display--inline-block">
           <div className="footer_item">
             <NavLink
               className={({ isActive }) =>

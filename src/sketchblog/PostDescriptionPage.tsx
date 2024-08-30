@@ -35,8 +35,8 @@ export function PostDescriptionPage() {
       {postObject && (
         <>
           <div></div>
-          <div className="width-80-percent margin-left-auto margin-right-auto margin-top-10rem display-flex flex-wrap-wrap justify-content-space-between">
-            <div className="width-85-percent">
+          <div className="_width--80percent _margin-left--auto _margin-right--auto _margin-top--10rem _display--flex _flex-wrap--wrap _justify-content--space-between">
+            <div className="_width--85percent">
               <div
                 className={
                   "sketchblog_post_detail_images_container " +
@@ -53,7 +53,7 @@ export function PostDescriptionPage() {
                 })}
                 <hr className="sketchblog_post_hr" />
                 <div className="post_text_container">
-                  <p className="font-size-9pt color-aaa">
+                  <p className="_font-size--9pt color-aaa">
                     {postObject.date.toDate().toLocaleDateString("en-US", {
                       month: "short",
                       day: "2-digit",
@@ -64,11 +64,11 @@ export function PostDescriptionPage() {
               </div>
 
               <div className="sketchblog_post_detail_description_container _vertical-align--top">
-                <h2 className="margin-bottom-1rem margin-top-1rem color-aaa">
+                <h2 className="_margin-bottom--1rem _margin-top--1rem color-aaa">
                   {postObject.title}
                 </h2>
                 <div
-                  className="font-size-11pt color-777 list-style-position-inside"
+                  className="_font-size--11pt color-777 _list-style-position--inside"
                   dangerouslySetInnerHTML={{ __html: postObject.description }}
                 />
               </div>

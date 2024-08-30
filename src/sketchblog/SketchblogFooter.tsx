@@ -1,18 +1,21 @@
 export function SketchblogFooter() {
   return (
-    <div className="width-100-percent margin-top-5rem margin-bottom-5rem">
+    <div className="_width--100percent _margin-top--5rem _margin-bottom--5rem">
       <hr className="sketchblog_post_hr" />
       <div>
-        <p className="font-size-10pt color-aaa">
-          <a className="font-size-10pt cursor-pointer" href="/sketchblog">
+        <p className="_font-size--10pt color-aaa">
+          <a className="_font-size--10pt _cursor--pointer" href="/sketchblog">
             Home
           </a>
           {" • "}
-          <a className="font-size-10pt cursor-pointer" href="/about">
+          <a className="_font-size--10pt _cursor--pointer" href="/about">
             About
           </a>
           {" • "}
-          <a className="font-size-10pt cursor-pointer testthis" href="/contact">
+          <a
+            className="_font-size--10pt _cursor--pointer testthisoutagain3333"
+            href="/contact"
+          >
             Contact
           </a>
           {" • "}

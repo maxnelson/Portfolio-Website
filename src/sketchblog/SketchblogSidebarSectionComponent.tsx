@@ -11,7 +11,7 @@ export function SketchblogSidebarSectionComponent({ name, children }) {
           setIsVisible(!isVisible);
         }}
       >
-        <a className="display-block">
+        <a className="_display--block">
           <span
             className={
               "sidebar_section_container_arrow " +
@@ -23,7 +23,7 @@ export function SketchblogSidebarSectionComponent({ name, children }) {
           {name}
         </a>
       </li>
-      {isVisible && <ul className="margin-left-1rem">{children}</ul>}
+      {isVisible && <ul className="_margin-left--1rem">{children}</ul>}
     </>
   );
 }

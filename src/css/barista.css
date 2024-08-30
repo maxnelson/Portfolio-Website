@@ -1,3 +1,102 @@
+._display--inline-block {
+  display: inline-block;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
+}
+._margin-bottom--1rem {
+  margin-bottom: 1rem;
+}
+._position--relative {
+  position: relative;
+}
+._max-width--80percent {
+  max-width: 80%;
+}
+._width--80percent {
+  width: 80%;
+}
+._margin-left--auto {
+  margin-left: auto;
+}
+._margin-right--auto {
+  margin-right: auto;
+}
+._margin-top--10rem {
+  margin-top: 10rem;
+}
+._display--flex {
+  display: flex;
+}
+._flex-wrap--wrap {
+  flex-wrap: wrap;
+}
+._justify-content--space-between {
+  justify-content: space-between;
+}
+._width--85percent {
+  width: 85%;
+}
+._font-size--9pt {
+  font-size: 9pt;
+}
 ._vertical-align--top {
   vertical-align: top;
+}
+._margin-top--1rem {
+  margin-top: 1rem;
+}
+._font-size--11pt {
+  font-size: 11pt;
+}
+._list-style-position--inside {
+  list-style-position: inside;
+}
+._width--100percent {
+  width: 100%;
+}
+._margin-top--5rem {
+  margin-top: 5rem;
+}
+._margin-bottom--5rem {
+  margin-bottom: 5rem;
+}
+._font-size--10pt {
+  font-size: 10pt;
+}
+._cursor--pointer {
+  cursor: pointer;
+}
+._width--70percent {
+  width: 70%;
+}
+._font-size--12px {
+  font-size: 12px;
+}
+._padding-bottom--2px {
+  padding-bottom: 2px;
+}
+._position--sticky {
+  position: sticky;
+}
+._top--100px {
+  top: 100px;
+}
+._height--fit-content {
+  height: fit-content;
+}
+._margin-top--3rem {
+  margin-top: 3rem;
+}
+._display--block {
+  display: block;
+}
+._margin-left--1rem {
+  margin-left: 1rem;
+}
+._margin-right--1rem {
+  margin-right: 1rem;
+}
+._margin-top--2rem {
+  margin-top: 2rem;
 }

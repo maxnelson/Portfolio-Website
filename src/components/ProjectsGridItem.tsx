@@ -1,7 +1,7 @@
 export const ProjectGridItem = ({ data_object, clickHandler }) => {
   return (
     <div
-      className="project_grid_item aspect-ratio-1-1 position-relative"
+      className="project_grid_item aspect-ratio-1-1 _position--relative"
       onClick={clickHandler}
     >
       <img src={data_object.image_0}></img>

@@ -147,10 +147,10 @@ span > i {
 ._background-image--var_--image-1_ {
   background-image: var(--image-1);
 }
-.width-20-percent-minus-1rem {
+.width-20percent-minus-1rem {
   width: calc(20% - 1rem);
 }
-.width-80-percent-minus-1rem {
+.width--80percent-minus-1rem {
   width: calc(80% - 1rem);
 }
 
@@ -159,4 +159,14 @@ blockquote {
   border-left: 4px solid #ddd;
   font-size: 20px;
   color: #aaa;
+}
+
+.line-height-1-5 {
+  line-height: 1.5;
+}
+.width-20percent-minus-1rem {
+  width: calc(20% - 1rem);
+}
+.width--80percent-minus-1rem {
+  width: calc(80% - 1rem);
 }

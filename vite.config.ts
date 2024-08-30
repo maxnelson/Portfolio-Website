@@ -1,16 +1,11 @@
 import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react";
-import classyCSSPlugin from "@modularmoon/classycss";
 import baristaCSS from "@modularmoon/barista";
 
 export default defineConfig({
   plugins: [
     react(),
-    classyCSSPlugin({
-      contentPaths: ["src/**/*.{js,jsx,ts,tsx,vue}"],
-      outputFilePath: "src/css/classyCSS.css",
-    }),
     baristaCSS({
       include: ["src/**/*.{js,ts,jsx,tsx,html}"],
       outputFilepath: "src/css/barista.css",

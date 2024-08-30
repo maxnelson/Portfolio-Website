@@ -11,7 +11,7 @@ export function ContactPage(_, setProjectDescriptionVisible) {
         />
         <div className="main_section">
           <div>
-            <h2 className="margin-bottom-1rem">Contact</h2>
+            <h2 className="_margin-bottom--1rem">Contact</h2>
             <p className="line-height-1-5 color-777">
               Please feel free to send me an Email at{" "}
               <a

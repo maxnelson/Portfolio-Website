@@ -15,7 +15,7 @@ export function SketchblogPage() {
   }, [category_safe]);
 
   return (
-    <div className="width-70-percent margin-left-auto margin-right-auto margin-top-10rem display-flex flex-wrap-wrap justify-content-space-between">
+    <div className="_width--70percent _margin-left--auto _margin-right--auto _margin-top--10rem _display--flex _flex-wrap--wrap _justify-content--space-between">
       <PostCollection category={category} />
       <SketchblogSidebar setCategory={setCategory} />
       <SketchblogFooter />

@@ -161,7 +161,8 @@ export const resumeItemPropObjectTimeline: resumeItemType = {
   client_name: "Timeline",
   client_name_detail: "Timeline",
   jobTitle: "",
-  description1: "A web application for creating and sharing timelines.",
+  description1:
+    "Timeline is a web application for creating and sharing timelines.",
   description2:
     "This is a self-initiated project, currently under development, that I am building in order to learn and keep up to date with a few of the technologies I’m interested, including React, D3.js and the OAuth2 protocol.",
   technologies_used:

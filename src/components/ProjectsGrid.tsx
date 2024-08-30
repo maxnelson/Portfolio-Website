@@ -148,7 +148,7 @@ export const ProjectsGrid = ({
       <br />
       <NavLink
         onClick={() => setProjectDescriptionVisible(false)}
-        to={"/sketchblog/design"}
+        to={"/sketchblog/css"}
       >
         sketchblog.maxnelsonart.com
       </NavLink>
