@@ -181,13 +181,13 @@ export const resumeItemPropObjectGifhov: resumeItemType = {
   client_name_detail: "Gifhov",
   jobTitle: "",
   description1:
-    "A web application for creating and sharing gif+audio combinations.",
+    "A web application for creating gifs that play music when you hover over them.",
   description2:
     "This is a self-initiated project that I built in 2015 as a way of getting more familiar with server and database technologies like Python Flask and PostgreSQL. Although I ended up learning a good deal about a few of the built-in (browser-implemented) Web APIs like the Web Audio API and the File API, as well.",
   description3:
-    "Back then, this took me a couple months to build, but I recently rebuilt it using Express, React and Firestore, and it took me only a handful of hours. ",
+    "Back in 2015, this took me a couple of months to build using Python Flask, PostreSQL, Javascript, HTML and CSS. I recently rebuilt it using Node Express, Firestore, and React, and it took me only a handful of hours.",
   technologies_used:
-    "Python, Flask, PostgreSQL, Javascript, Express, React HTML, CSS, Google Cloud Platform ",
+    "Python, Flask, PostgreSQL, Javascript, Node Express, React, HTML, CSS, Google Cloud Platform",
 };
 
 export const resumeItemPropObjectLevis: resumeItemType = {

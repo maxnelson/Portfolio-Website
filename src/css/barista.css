@@ -1,17 +1,8 @@
-._display--inline-block {
-  display: inline-block;
-}
-._word-wrap--break-word {
-  word-wrap: break-word;
-}
-._margin-bottom--1rem {
-  margin-bottom: 1rem;
-}
-._position--relative {
-  position: relative;
-}
 ._max-width--80percent {
   max-width: 80%;
+}
+._display--inline-block {
+  display: inline-block;
 }
 ._width--80percent {
   width: 80%;
@@ -43,6 +34,9 @@
 ._vertical-align--top {
   vertical-align: top;
 }
+._margin-bottom--1rem {
+  margin-bottom: 1rem;
+}
 ._margin-top--1rem {
   margin-top: 1rem;
 }
@@ -70,6 +64,9 @@
 ._width--70percent {
   width: 70%;
 }
+._margin-bottom--10rem {
+  margin-bottom: 10rem;
+}
 ._font-size--12px {
   font-size: 12px;
 }
@@ -93,6 +90,12 @@
 }
 ._margin-left--1rem {
   margin-left: 1rem;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
+}
+._position--relative {
+  position: relative;
 }
 ._margin-right--1rem {
   margin-right: 1rem;

@@ -43,7 +43,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
             </Document>
           </PDFViewer>
           <div className="display_block _margin-top--2rem">
-            <p>This Resume was generated using React-PDF.</p>
+            <p>This Resume was generated using React-PDF :)</p>
           </div>
         </div>
 
