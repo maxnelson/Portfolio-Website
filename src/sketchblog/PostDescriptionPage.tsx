@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getPost } from "@/sketchblog/GetPostCategory";
+import { getPost } from "@/sketchblog/getPostCategory";
 import { useState, useEffect } from "react";
 import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
 import { DocumentData } from "@firebase/firestore";

@@ -1,5 +1,5 @@
 import { SketchblogPost } from "@/sketchblog/SketchblogPost";
-import { getPostCategory } from "@/sketchblog/GetPostCategory";
+import { getPostCategory } from "@/sketchblog/getPostCategory";
 import { useState, useEffect } from "react";
 
 export function PostCollection(props) {

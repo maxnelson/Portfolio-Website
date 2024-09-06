@@ -6,8 +6,10 @@ import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import {
   resumeItemPropObjectApple,
   resumeItemPropObjectRubrik,
-  //resumeItemPropObjectApple2,
+  resumeItemPropObjectApple2,
   resumeItemPropObjectCloudera,
+  resumeItemPropObjectLevis,
+  resumeItemPropObjectTimeline,
 } from "@/components/Resume/ResumeData";
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
@@ -30,12 +32,12 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                   <SummarySection />
                   <ResumeSectionHeader headerText="EXPERIENCE" />
                   <View>
+                    <ResumeItem {...resumeItemPropObjectTimeline} />
                     <ResumeItem {...resumeItemPropObjectApple} />
                     <ResumeItem {...resumeItemPropObjectRubrik} />
-                    {/*}
                     <ResumeItem {...resumeItemPropObjectApple2} />
-                    */}
                     <ResumeItem {...resumeItemPropObjectCloudera} />
+                    <ResumeItem {...resumeItemPropObjectLevis} />
                     <ResumeFooter />
                   </View>
                 </View>

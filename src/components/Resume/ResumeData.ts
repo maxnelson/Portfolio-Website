@@ -58,8 +58,10 @@ export const resumeItemPropObjectApple: resumeItemType = {
     "Designed JSON structures responsible for providing application content to devices, allowing for complex features / functionality; satisfying complex business and application requirements (33 different languages, 8 different in-store devices).",
   description10:
     "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; comparing and modifying JSON documents within a large repository containing content in 33 different languages.",
-  description5:
+  description4:
     "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
+  description5:
+    "Created a series of video training resources used to onboard and train new hires. Documenting technical workflows, explaining complex topics, narrating over screen recordings, editing in iMovie.",
   technologies_used: "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git",
 
   /*
@@ -92,7 +94,7 @@ export const resumeItemPropObjectRubrik: resumeItemType = {
     "Developed Wordpress page templates with advanced frontend requirements, dynamic web form experiences with strict frontend validation requirements, and API integrations with multiple web services.",
   description2:
     "Updated, maintained, and developed new page templates and components for the rubrik.com website using HTML, CSS (BEM), Javascript and PHP (Timber, Twig).",
-  description4:
+  description8:
     "Developed frontend integration with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
   description9:
     "Developed marketing page sections, navigation menus, dynamic web forms with strict frontend validation, and more.",
@@ -138,15 +140,17 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
   jobTitle: "Web Content Production Assistant",
   location: "San Francisco, CA",
   description1:
-    "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
+    "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of high company growth.",
   description2:
     "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
   description3:
     "Developed a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
   description10:
     "Used Java build tools (Maven) to maintain local AEM instance for frontend component development. Used Git, Gitflow, SourceTree and Jenkins to maintain version control, build and test individual AEM instances (dev, stage, prod, pub), as well as to deploy code along instances.",
-  description6:
+  description4:
     "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
+  description5:
+    "Created and distributed PDF documentation to Marketing, Sales and Engineering Personnel detailing how to Author content using AEM components; Illustrating complex workflows using screenshots, icons, and well formated layouts.",
   technologies_used:
     "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt",
 };
@@ -154,16 +158,19 @@ export const resumeItemPropObjectCloudera: resumeItemType = {
 export const resumeItemPropObjectTimeline: resumeItemType = {
   image_0: "/images/projects/timeline/timeline_homepage_1_optimized.jpg",
   image_1: "/images/projects/timeline/timeline_homepage_1_optimized.jpg",
-  startDateMonth: "",
+  startDateMonth: "Aug",
   endDateMonth: "",
   startDateYear: "2023",
   endDateYear: "Current",
   client_name: "Timeline",
   client_name_detail: "Timeline",
-  jobTitle: "",
+  //jobTitle: "Founding Engineer",
+  location: "Berkeley, CA",
   description1:
+    "While pursuing my next opportunity I have kept busy studying several modern javascript frameworks including Vite, Express and React; utilizing them towards a self-initiated project currently hosted at https://timelineapp.io.",
+  description10:
     "Timeline is a web application for creating and sharing timelines.",
-  description2:
+  description11:
     "This is a self-initiated project, currently under development, that I am building in order to learn and keep up to date with a few of the technologies I’m interested, including React, D3.js and the OAuth2 protocol.",
   technologies_used:
     "Google Cloud Platform, Firebase, Firestore, Node, Vite, Express, React, D3, OAuth2",
