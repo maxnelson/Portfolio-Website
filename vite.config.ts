@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     baristaCSS({
       include: ["src/**/*.{js,ts,jsx,tsx,html}"],
-      outputFilepath: "src/css/barista.css",
+      outputFilepath: "dist/css/barista.css",
       delimiter1: "_",
       delimiter2: "--",
     }),

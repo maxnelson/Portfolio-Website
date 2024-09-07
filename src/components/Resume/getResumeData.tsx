@@ -5,6 +5,6 @@ export const getResumeData = async () => {
   const docRef = doc(firestore_database, "resumeData", "resumeData");
   const docSnap = await getDoc(docRef);
   const docSnapData = docSnap.data();
-  const docSnapDataValue = docSnapData.resumeData;
+  const docSnapDataValue = docSnapData?.resumeData;
   return docSnapDataValue;
 };
