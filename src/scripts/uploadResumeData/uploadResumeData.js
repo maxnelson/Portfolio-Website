@@ -1,5 +1,5 @@
 import { updateDoc, doc } from "firebase/firestore";
-import { firestore_database } from "#src/utility_functions/firebaseConfig.js";
+import { firestore_database } from "#root/src/utility_functions/firebaseConfig.js";
 import resumeData from "#src/scripts/uploadResumeData/resumeData.json" with { type: "json" };
 export const uploadResumeData = async () => {
   console.log(resumeData);
