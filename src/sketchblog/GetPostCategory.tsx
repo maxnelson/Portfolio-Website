@@ -6,7 +6,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { firestore_database } from "#root/src/utility_functions/firebaseConfig.js";
+import { firestore_database } from "#root/src/utility_functions/config/firebaseConfig.js";
 import { useQuery } from "@tanstack/react-query";
 
 export const getPostCategory = (category) => {
