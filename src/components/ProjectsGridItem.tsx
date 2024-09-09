@@ -1,26 +1,18 @@
-export const ProjectGridItem = ({ data_object, clickHandler }) => {
+export const ProjectGridItem = (props) => {
   return (
     <div
       className="project_grid_item aspect-ratio-1-1 _position--relative"
-      onClick={clickHandler}
+      onClick={props.clickHandler}
     >
-      <img src={data_object.image_0}></img>
+      <img src={props.image1}></img>
       <div className="project_grid_item_overlay">
         <div className="project_grid_item_overlay_text project_grid_item_overlay_text_top">
-          <h3>
-            {data_object.client_name}
-            {/*<>
-            data_object.popoverDescription || data_object.description1
-            <br />
-            data_object.startDateYear &&
-              data_object.startDateYear + " - " + data_object.endDateYear
-  </>*/}
-          </h3>
+          <h3>{props.clientName}</h3>
         </div>
         <div className="project_grid_item_overlay_text project_grid_item_overlay_text_bottom">
-          {data_object.startDateYear && data_object.endDateYear
-            ? data_object.startDateYear + " - " + data_object.endDateYear
-            : data_object.startDateYear}
+          {props.startDateYear && props.endDateYear
+            ? props.startDateYear + " - " + props.endDateYear
+            : props.startDateYear}
         </div>
       </div>
     </div>

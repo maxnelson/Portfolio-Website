@@ -3,20 +3,12 @@ import { ResumeFooter } from "@/components/Resume/ResumeFooter";
 import { ResumeItem } from "@/components/Resume/ResumeItem";
 import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
-import {
-  resumeItemPropObjectApple,
-  resumeItemPropObjectRubrik,
-  resumeItemPropObjectApple2,
-  resumeItemPropObjectCloudera,
-  resumeItemPropObjectLevis,
-  resumeItemPropObjectTimeline,
-} from "@/components/Resume/ResumeData";
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
 import { ResumeSectionHeader } from "@/components/Resume/ResumeSectionHeader";
 import { SummarySection } from "@/components/Resume/SummarySection";
 import { useEffect, useState } from "react";
-import { getResumeData } from "@/components/Resume/getResumeData";
+import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
 
 export const ResumePage = (_, setProjectDescriptionVisible) => {
   const [resumeData, setResumeData] = useState(null);
@@ -27,7 +19,6 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     };
     fetchData();
   }, []);
-  console.log(resumeData);
   return (
     <>
       <div className="page_container">

@@ -1,233 +1,50 @@
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectGridItem } from "./ProjectsGridItem";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   resumeItemPropObjectApple,
   resumeItemPropObjectRubrik,
   resumeItemPropObjectCloudera,
-  resumeItemPropObjectLevis,
   resumeItemPropObjectSketchblog,
   resumeItemPropObjectGifhov,
-  resumeItemPropObjectMcdonalds,
-  resumeItemPropObjectSanPellegrino,
-  resumeItemPropObjectTimeline,
 } from "@/components/Resume/ResumeData";
 import { linkify_text } from "@/utility_functions/linkify_text";
 import { NavLink } from "react-router-dom";
+import { getProjectGridData } from "@/utility_functions/fetchData/getProjectGridData";
 
 export const ProjectsGrid = ({
   projectDescriptionVisible,
   setProjectDescriptionVisible,
 }) => {
   const [projectDescriptionContent, setProjectDescriptionContent] = useState();
+  const [projectGridData, setProjectGridData] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedProjectGridData = await getProjectGridData();
+      setProjectGridData(fetchedProjectGridData);
+    };
+    fetchData();
+  }, []);
+  console.log(projectGridData);
 
-  const clickHandler = (prop_object) => {
+  const clickHandler = (gridItemDataObject) => {
     setProjectDescriptionVisible(true);
-    setProjectDescriptionContent(prop_object);
+    setProjectDescriptionContent(gridItemDataObject);
   };
-  const rubrik_description_formatted = {
-    __html: linkify_text(resumeItemPropObjectRubrik.description1),
-  };
-  const cloudera_description_formatted = {
-    __html: linkify_text(resumeItemPropObjectCloudera.description1),
-  };
-
-  const appleDescription = (
-    <>
-      <p>{resumeItemPropObjectApple.description1}</p>
-      <p>{resumeItemPropObjectApple.description2}</p>
-      <br />
-      <ul>
-        <li>{resumeItemPropObjectApple.description3}</li>
-        <li>{resumeItemPropObjectApple.description4}</li>
-        <li>{resumeItemPropObjectApple.description5}</li>
-        <li>{resumeItemPropObjectApple.description6}</li>
-      </ul>
-      <div>
-        <p>
-          <b>Technologies Used: </b>
-          {resumeItemPropObjectApple.technologies_used}
-        </p>
-      </div>
-    </>
-  );
-
-  const rubrikDescription = (
-    <>
-      <p dangerouslySetInnerHTML={rubrik_description_formatted}></p>
-      <br />
-      <ul>
-        <li>{resumeItemPropObjectRubrik.description2}</li>
-        <li>{resumeItemPropObjectRubrik.description3}</li>
-        <li>{resumeItemPropObjectRubrik.description10}</li>
-        <li>{resumeItemPropObjectRubrik.description11}</li>
-        <li>{resumeItemPropObjectRubrik.description12}</li>
-        <li>{resumeItemPropObjectRubrik.description13}</li>
-      </ul>
-      <div>
-        <p>
-          <b>Technologies Used: </b>
-          {resumeItemPropObjectRubrik.technologies_used}
-        </p>
-      </div>
-    </>
-  );
-  const clouderaDescription = (
-    <>
-      <p dangerouslySetInnerHTML={cloudera_description_formatted}></p>
-      <br />
-      <ul>
-        <li>{resumeItemPropObjectCloudera.description2}</li>
-        <li>{resumeItemPropObjectCloudera.description3}</li>
-
-        <li>{resumeItemPropObjectCloudera.description5}</li>
-        <li>{resumeItemPropObjectCloudera.description6}</li>
-      </ul>
-      <div>
-        <p>
-          <b>Technologies Used: </b>
-          {resumeItemPropObjectCloudera.technologies_used}
-        </p>
-      </div>
-    </>
-  );
-  const levisDescription = (
-    <>
-      <p>{resumeItemPropObjectLevis.description1}</p>
-      <br />
-      <ul>
-        <li>{resumeItemPropObjectLevis.description2}</li>
-        <li>{resumeItemPropObjectLevis.description3}</li>
-        <li>{resumeItemPropObjectLevis.description4}</li>
-      </ul>
-      <p>
-        You can read more about the experience here on my Blog:
-        <br />
-        <a href={window.location.origin + "/sketchblog/design/design_levis"}>
-          https://maxnelsonwebsite.com/sketchblog/design/design_levis
-        </a>
-      </p>
-      <br />
-
-      <div>
-        <p>
-          <b>Technologies Used: </b>
-          {resumeItemPropObjectLevis.technologies_used}
-        </p>
-      </div>
-    </>
-  );
-  const gifhovDescription = (
-    <>
-      <p>{resumeItemPropObjectGifhov.description1}</p>
-      <br />
-      <p>{resumeItemPropObjectGifhov.description2}</p>
-      <br />
-      <p>{resumeItemPropObjectGifhov.description3}</p>
-      <br />
-      <a
-        href="https://new-gifhov.wl.r.appspot.com/"
-        target="_blank"
-        className="external_link"
-      >
-        https://new-gifhov.wl.r.appspot.com/
-        <i className="fas fa-external-link"></i>
-      </a>
-      <br />
-      <br />
-
-      <p>
-        <b>Technologies Used: </b>
-        {resumeItemPropObjectGifhov.technologies_used}
-      </p>
-    </>
-  );
-  const sketchblogDescription = (
-    <>
-      <p>{resumeItemPropObjectSketchblog.description1}</p>
-      <br />
-      <NavLink
-        onClick={() => setProjectDescriptionVisible(false)}
-        to={"/sketchblog/css"}
-      >
-        sketchblog.maxnelsonart.com
-      </NavLink>
-    </>
-  );
-  const mcdonaldsDescription = (
-    <>
-      <p>{resumeItemPropObjectMcdonalds.description1}</p>
-      <br />
-      <p>Feel free to check out my old schoolwork and more on my Blog:</p>
-
-      <br />
-      <p>
-        <a
-          target="_blank"
-          href={
-            window.location.origin +
-            "/sketchblog/schoolwork/schoolwork_mcdonalds"
-          }
-        >
-          {window.location.origin +
-            "/sketchblog/schoolwork/schoolwork_mcdonalds"}
-        </a>
-      </p>
-      <br />
-      <p>
-        <b>Technologies Used: </b>
-        {resumeItemPropObjectMcdonalds.technologies_used}
-      </p>
-    </>
-  );
-  const sanpellegrinoDescription = (
-    <>
-      <p>{resumeItemPropObjectSanPellegrino.description1}</p>
-      <br />
-
-      <p>
-        <b>Technologies Used: </b>
-        {resumeItemPropObjectSanPellegrino.technologies_used}
-      </p>
-    </>
-  );
-  const timelineDescription = (
-    <>
-      <p>{resumeItemPropObjectTimeline.description1}</p>
-      <br />
-      <p>{resumeItemPropObjectTimeline.description2}</p>
-      <br />
-      <a
-        href="https://timelineapp.io"
-        target="_blank"
-        className="external_link"
-      >
-        https://timelineapp.io<i className="fas fa-external-link"></i>
-      </a>
-      <br />
-      <br />
-      <p>
-        <b>Technologies Used: </b>
-        {resumeItemPropObjectTimeline.technologies_used}
-      </p>
-    </>
-  );
-  resumeItemPropObjectApple.descriptionFormatted = appleDescription;
-  resumeItemPropObjectRubrik.descriptionFormatted = rubrikDescription;
-  resumeItemPropObjectCloudera.descriptionFormatted = clouderaDescription;
-  resumeItemPropObjectLevis.descriptionFormatted = levisDescription;
-  resumeItemPropObjectSketchblog.descriptionFormatted = sketchblogDescription;
-  resumeItemPropObjectGifhov.descriptionFormatted = gifhovDescription;
-  resumeItemPropObjectMcdonalds.descriptionFormatted = mcdonaldsDescription;
-  resumeItemPropObjectSanPellegrino.descriptionFormatted =
-    sanpellegrinoDescription;
-  resumeItemPropObjectTimeline.descriptionFormatted = timelineDescription;
-
   return (
     <>
       {projectDescriptionVisible ? (
         <ProjectDescription
           data_object={projectDescriptionContent}
+          image1={projectDescriptionContent?.image1}
+          image2={projectDescriptionContent?.image2}
+          image3={projectDescriptionContent?.image3}
+          image4={projectDescriptionContent?.image4}
+          clientName={projectDescriptionContent?.clientName}
+          jobTitle={projectDescriptionContent?.jobTitle}
+          startDateYear={projectDescriptionContent?.startDateYear}
+          endDateYear={projectDescriptionContent?.endDateYear}
+          description={projectDescriptionContent?.description}
           clickHandler={() => {
             setProjectDescriptionVisible(false);
           }}
@@ -235,17 +52,22 @@ export const ProjectsGrid = ({
       ) : (
         <div className="project_grid_container">
           <ProjectGridItem
-            data_object={resumeItemPropObjectTimeline}
+            image1={projectGridData?.timeline.image1}
+            clientName={projectGridData?.timeline.clientName}
+            startDateYear={projectGridData?.timeline.startDateYear}
+            endDateYear={projectGridData?.timeline.endDateYear}
             clickHandler={() => {
-              clickHandler(resumeItemPropObjectTimeline);
+              clickHandler(projectGridData?.timeline);
             }}
           />
+          {/* 
           <ProjectGridItem
             data_object={resumeItemPropObjectApple}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectApple);
             }}
           />
+          
           <ProjectGridItem
             data_object={resumeItemPropObjectRubrik}
             clickHandler={() => {
@@ -265,36 +87,13 @@ export const ProjectsGrid = ({
               clickHandler(resumeItemPropObjectGifhov);
             }}
           />
-          {/*
-          <ProjectGridItem
-            data_object={resumeItemPropObjectLevis}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectLevis);
-            }}
-          />
-          */}
-          {/* 
-          <ProjectGridItem
-            data_object={resumeItemPropObjectMcdonalds}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectMcdonalds);
-            }}
-          />
-          */}
-          {/*
-          <ProjectGridItem
-            data_object={resumeItemPropObjectSanPellegrino}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectSanPellegrino);
-            }}
-          />
-          */}
           <ProjectGridItem
             data_object={resumeItemPropObjectSketchblog}
             clickHandler={() => {
               clickHandler(resumeItemPropObjectSketchblog);
             }}
           />
+          */}
         </div>
       )}
     </>

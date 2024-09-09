@@ -1,28 +1,23 @@
-export const ProjectDescription = ({ data_object, clickHandler }) => {
+export const ProjectDescription = (props) => {
   return (
     <div className="project_description_container">
       <div className="project_description_container_images">
-        {data_object.image_1 ? <img src={data_object.image_1}></img> : null}
-        {data_object.image_2 ? <img src={data_object.image_2}></img> : null}
-        {data_object.image_3 ? <img src={data_object.image_3}></img> : null}
-        {data_object.image_4 ? <img src={data_object.image_4}></img> : null}
-        {data_object.image_5 ? <img src={data_object.image_5}></img> : null}
-        {data_object.image_6 ? <img src={data_object.image_6}></img> : null}
-        {data_object.image_7 ? <img src={data_object.image_7}></img> : null}
-        {data_object.image_8 ? <img src={data_object.image_8}></img> : null}
+        {props.image1 ? <img src={props.image1}></img> : null}
+        {props.image2 ? <img src={props.image2}></img> : null}
+        {props.image3 ? <img src={props.image3}></img> : null}
+        {props.image4 ? <img src={props.image4}></img> : null}
       </div>
       <div className="project_description_text_container _word-wrap--break-word">
-        {data_object.client_name_detail && (
+        {props.clientName && (
           <div className="_margin-bottom--1rem">
-            <h2>{data_object.jobTitle}</h2>
-            <h3>{data_object.client_name_detail}</h3>
-            <span>
-              {data_object.startDateYear + " - " + data_object.endDateYear}
-            </span>
+            <h2>{props.jobTitle}</h2>
+            <h3>{props.clientName}</h3>
+            <span>{props.startDateYear + " - " + props.endDateYear}</span>
           </div>
         )}
-        <div>{data_object.descriptionFormatted}</div>
-        <div className="back-button" onClick={clickHandler}>
+        <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
+
+        <div className="back-button" onClick={props.clickHandler}>
           <i className="fa-solid fa-chevron-left"></i>
           <i className="fa-solid fa-chevron-left"></i>
         </div>

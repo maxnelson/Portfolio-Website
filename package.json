@@ -11,6 +11,7 @@
     "dev": "node --env-file=.env -- node_modules/vite/bin/vite.js",
     "build": "node --env-file=.env -- node_modules/typescript/bin/tsc && node node_modules/vite/bin/vite.js build",
     "uploadResume": "node --env-file=.env -- src/utility_functions/uploadData/uploadResumeData.js",
+    "uploadProjectGridData": "node --env-file=.env -- src/utility_functions/uploadData/uploadProjectGridData.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "node server.js",
