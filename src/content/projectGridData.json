@@ -1,0 +1,57 @@
+{
+  "timeline": {
+    "image1": "",
+    "image2": "",
+    "image3": ""
+  },
+  "apple": {
+    "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_1_optimized.jpg?alt=media&token=289ec263-6758-496b-b2ab-61273f999b05",
+    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_2.png?alt=media&token=3f9386fa-ccba-4450-a55e-004402edd2b6",
+    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_3.png?alt=media&token=117e5216-bdb8-48ae-b16b-92cd07192a78",
+    "image4": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_4.png?alt=media&token=4553fa4b-9d81-4e00-89ce-76b00d57e60f",
+    "clientName": "Apple",
+    "jobTitle": "UI Dev Lead",
+    "location": "Cupertino, CA",
+    "startDateMonth": "Aug",
+    "startDateYear": "2020",
+    "endDateMonth": "Sept",
+    "endDateYear": "2023",
+    "description1": "description1",
+    "description2": "description1",
+    "description3": "description1"
+  },
+  "rubrik": {
+    "clientName": "Rubrik",
+    "jobTitle": "Frontend Web Developer",
+    "location": "Palo Alto, CA",
+    "startDateMonth": "Jan",
+    "startDateYear": "2019",
+    "endDateMonth": "Feb",
+    "endDateYear": "2020",
+    "image1": "",
+    "image2": "",
+    "image3": ""
+  },
+  "cloudera": {
+    "clientName": "Cloudera",
+    "jobTitle": "Web Content Production Assistant",
+    "location": "San Francisco, CA",
+    "startDateMonth": "Oct",
+    "startDateYear": "2013",
+    "endDateMonth": "Aug",
+    "endDateYear": "2017",
+    "image1": "",
+    "image2": "",
+    "image3": ""
+  },
+  "gifhov": {
+    "image1": "",
+    "image2": "",
+    "image3": ""
+  },
+  "blog": {
+    "image1": "",
+    "image2": "",
+    "image3": ""
+  }
+}

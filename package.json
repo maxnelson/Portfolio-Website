@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "node --env-file=.env -- node_modules/vite/bin/vite.js",
     "build": "node --env-file=.env -- node_modules/typescript/bin/tsc && node node_modules/vite/bin/vite.js build",
-    "uploadResume": "node --env-file=.env -- src/scripts/uploadResumeData/uploadResumeData.js",
+    "uploadResume": "node --env-file=.env -- src/utility_functions/uploadData/uploadResumeData.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "node server.js",
@@ -27,6 +27,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1"
+  },
+  "overrides": {
+    "@react-pdf/layout": "3.11.5"
   },
   "devDependencies": {
     "@modularmoon/barista": "^1.1.0",

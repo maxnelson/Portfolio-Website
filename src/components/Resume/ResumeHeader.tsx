@@ -2,7 +2,7 @@ import { View, Text } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { ContactInfoItem } from "./ContactInfoItem";
 
-export const ResumeHeader = () => {
+export const ResumeHeader = (props) => {
   const email_icon =
     "M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z";
   const phone_icon =
@@ -21,9 +21,9 @@ export const ResumeHeader = () => {
             styles.margin_left_2n,
           ]}
         >
-          MAX NELSON
+          {props.name}
         </Text>
-        <Text style={[styles.font_size_15pt]}>Senior Web Engineer</Text>
+        <Text style={[styles.font_size_15pt]}>{props.title}</Text>
       </View>
 
       <View style={[styles.margin_top_5]}>
@@ -32,14 +32,14 @@ export const ResumeHeader = () => {
           width="14"
           height="14"
           viewBox="0 0 512 512"
-          text="maxnelson88@gmail.com"
+          text={props.email}
         />
         <ContactInfoItem
           icon={phone_icon}
           width="11"
           height="11"
           viewBox="0 0 512 512"
-          text="+1.510-508-1392"
+          text={props.phone}
           svgStyles={styles.margin_left_3}
         />
         <ContactInfoItem
@@ -47,7 +47,7 @@ export const ResumeHeader = () => {
           width="16"
           height="14"
           viewBox="0 0 612 612"
-          text="maxnelsonwebsite.com"
+          text={props.website}
           type="link"
           linkSRC="https://maxnelsonwebsite.com"
         />

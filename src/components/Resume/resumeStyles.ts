@@ -57,51 +57,14 @@ export const resumeStyles = StyleSheet.create({
     color: "#555",
     fill: "#555",
   },
-  white_space_nowrap: {
-    //whiteSpace: "nowrap",
-  },
   display_flex: {
     display: "flex",
-  },
-  vertical_align_middle: {
-    //verticalAlign: "middle",
-  },
-  align_items_left: {
-    //alignItems: "left",
-  },
-  align_items_right: {
-    //alignItems: "right",
-  },
-  align_items_bottom: {
-    //alignItems: "bottom",
-  },
-
-  align_items_top: {
-    //alignItems: "top",
-  },
-  align_self_left: {
-    //alignSelf: "left",
-  },
-  align_self_right: {
-    //alignSelf: "right",
-  },
-  align_self_bottom: {
-    //alignSelf: "bottom",
   },
   align_self_center: {
     alignSelf: "center",
   },
-  align_self_top: {
-    //alignSelf: "top",
-  },
   align_items_center: {
     alignItems: "center",
-  },
-  font_weight_bold: {
-    fontWeight: "bold",
-  },
-  font_style_bold: {
-    fontWeight: "bold",
   },
   justify_content_flex_start: {
     justifyContent: "flex-start",
@@ -168,7 +131,6 @@ export const resumeStyles = StyleSheet.create({
   },
   font_family_helvetica_bold: {
     fontFamily: "Helvetica-Bold",
-    fontWeight: "800",
   },
   font_family_roboto: {
     fontFamily: "Roboto",
@@ -406,15 +368,6 @@ export const resumeStyles = StyleSheet.create({
   },
   padding_right_30: {
     paddingRight: "30",
-  },
-  word_break_keep_all: {
-    //wordBreak: "keep-all",
-  },
-  overflow_wrap_normal: {
-    //overflowWrap: "normal",
-  },
-  whitespace_pre: {
-    //whiteSpace: "pre",
   },
   text_decoration_none: {
     textDecoration: "none",

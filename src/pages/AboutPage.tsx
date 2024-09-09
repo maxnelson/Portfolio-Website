@@ -1,19 +1,9 @@
-import { useEffect, useState } from "react";
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
-import { getResumeData } from "@/components/Resume/getResumeData";
 
 export function AboutPage(_, setProjectDescriptionVisible) {
-  const [resumeData, setResumeData] = useState(null);
   document.body.classList.remove("_background-image--var_--image-1_");
   document.body.classList.remove("background-repeat--repeat");
-  useEffect(() => {
-    const fetchData = async () => {
-      const fetchedResumeData = await getResumeData();
-      setResumeData(fetchedResumeData);
-    };
-    fetchData();
-  }, []);
   return (
     <>
       <div className="page_container">
@@ -34,7 +24,6 @@ export function AboutPage(_, setProjectDescriptionVisible) {
             </p>
           </div>
         </div>
-        <p>{resumeData}</p>
         <Footer />
       </div>
     </>

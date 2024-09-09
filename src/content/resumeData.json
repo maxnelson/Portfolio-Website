@@ -1,0 +1,91 @@
+{
+  "name": "Max Nelson",
+  "title": "Senior Web Engineer",
+  "contactInfo": {
+    "email": "maxnelson88@gmail.com",
+    "phone": "+1.510-508-1392",
+    "website": "maxnelsonwebsite.com"
+  },
+  "summary1": "Web developer with eight years of experience developing high-traffic, highly-visible web applications and website components.",
+  "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features and components using many languages and frameworks including, Node, Python, AEM, Wordpress, GCP, Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
+  "section1": {
+    "title": "Experience",
+    "apple": {
+      "clientName": "Apple",
+      "jobTitle": "UI Dev Lead",
+      "startDateMonth": "Aug",
+      "startDateYear": "2020",
+      "endDateMonth": "Sept",
+      "endDateYear": "2023",
+      "location": "Cupertino, CA",
+      "description1": "Implemented frontend production requirements for Retail display applications, including the default retail display application for iPhone.",
+      "description2": "Used SwiftUI syntax and patterns (HStacks, VStacks, etc.) to implement design, animation, and functional requirements into pixel-perfect, highly-accessible, iOS applications.",
+      "description3": "Designed JSON structures responsible for providing application content to devices, allowing for complex features / functionality; satisfying complex business and application requirements (33 different languages, 8 different in-store devices).",
+      "description4": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
+      "technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
+    },
+    "rubrik": {
+      "clientName": "Rubrik",
+      "jobTitle": "Frontend Web Developer",
+      "location": "Palo Alto, CA",
+      "startDateMonth": "Jan",
+      "startDateYear": "2019",
+      "endDateMonth": "Feb",
+      "endDateYear": "2020",
+      "description1": "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
+      "description3": "Developed Wordpress page templates with advanced frontend requirements, dynamic web form experiences with strict frontend validation requirements, and API integrations with multiple web services.",
+      "description2": "Updated, maintained, and developed new page templates and components for the rubrik.com website using HTML, CSS (BEM), Javascript and PHP (Timber, Twig).",
+      "description4": "Developed frontend integration with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
+      "technologies_used": "Docker, Wordpress, PHP, Timber, Twig, Javascript, Node, HTML, CSS (BEM), AEM, Git"
+    },
+    "cloudera": {
+      "clientName": "Cloudera",
+      "jobTitle": "Web Content Production Assistant",
+      "location": "San Francisco, CA",
+      "startDateMonth": "Oct",
+      "startDateYear": "2013",
+      "endDateMonth": "Aug",
+      "endDateYear": "2017",
+      "description1": "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
+      "description2": "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
+      "description3": "Developed a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
+      "description4": "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
+      "technologies_used": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt"
+    }
+  },
+  "section2": {
+    "education": {
+      "degree": "BA in Graphic Design",
+      "School": "California State University, Chico",
+      "startDateYear": "2007",
+      "endDateYear": "2011",
+      "description1": "Studied many mediums of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming."
+    },
+    "skills": {
+      "skill1": {
+        "language": "Javascript",
+        "frameworks": "Typescript • Node • Express • React • D3"
+      },
+      "skill2": {
+        "language": "Pre/Post Processing Tools",
+        "frameworks": "PostCSS • Rollup • Vite"
+      },
+      "skill3": {
+        "language": "Databases",
+        "frameworks": "Firebase • Firestore"
+      },
+      "skill4": {
+        "language": "Python",
+        "frameworks": "Flask"
+      },
+      "skill5": {
+        "language": "PHP",
+        "frameworks": "WordPress"
+      },
+      "skill6": {
+        "language": "Cloud Platforms",
+        "frameworks": "Google Cloud Platform"
+      }
+    }
+  }
+}

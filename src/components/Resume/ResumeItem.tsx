@@ -24,7 +24,7 @@ export const ResumeItem = (props) => {
           <Text
             style={[styles.color_blue_50, styles.font_family_helvetica_bold]}
           >
-            {props.client_name_detail}
+            {props.clientName}
           </Text>
           <Text style={[styles.font_family_helvetica_bold]}>
             {props.jobTitle}
@@ -58,36 +58,15 @@ export const ResumeItem = (props) => {
               props.endDateYear}
           </Text>
         </View>
-        {/*
-        <View
-          style={[
-            styles.flex_direction_row,
-            styles.width_20_percent,
-            styles.align_items_center,
-          ]}
-        >
-          <Svg style={[]} width="12" height="12" viewBox="0 0 512 512">
-            <Path
-              fill="#000"
-              d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
-            />
-          </Svg>
-          <Text style={[styles.font_size_small]}>{props.location}</Text>
-        </View>
-        */}
       </View>
 
       <View style={styles.font_size_medium}>
         <Text style={[styles.margin_top_2, styles.margin_bottom_2]}>
-          {props.description1}
+          {props.description1 && props.description1}
         </Text>
         {props.description2 && <BulletPoint text={props.description2} />}
         {props.description3 && <BulletPoint text={props.description3} />}
         {props.description4 && <BulletPoint text={props.description4} />}
-        {props.description5 && <BulletPoint text={props.description5} />}
-        {props.description6 && <BulletPoint text={props.description6} />}
-        {props.description7 && <BulletPoint text={props.description7} />}
-        {props.description8 && <BulletPoint text={props.description8} />}
         {props.technologies_used && (
           <Text style={[styles.white_space_nowrap, styles.margin_bottom_3]}>
             <Text style={[styles.font_family_helvetica_bold]}>
