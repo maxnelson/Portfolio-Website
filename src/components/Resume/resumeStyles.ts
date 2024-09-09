@@ -168,6 +168,7 @@ export const resumeStyles = StyleSheet.create({
   },
   font_family_helvetica_bold: {
     fontFamily: "Helvetica-Bold",
+    fontWeight: "800",
   },
   font_family_roboto: {
     fontFamily: "Roboto",
