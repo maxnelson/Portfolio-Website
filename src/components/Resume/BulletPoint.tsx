@@ -5,12 +5,10 @@ export const BulletPoint = (props) => {
   return (
     <>
       <View style={[styles.display_flex, styles.flex_direction_row]}>
-        <Svg width={8} height={8}>
-          <Circle cx="3" cy="5" r="1.25" fill="black" />
+        <Svg width={8} height={9}>
+          <Circle cx="3" cy="6" r="1.3" fill="black" />
         </Svg>
-        <Text style={[styles.white_space_nowrap, styles.margin_bottom_1]}>
-          {props.text}
-        </Text>
+        <Text style={[styles.margin_bottom_1]}>{props.text}</Text>
       </View>
     </>
   );

@@ -10,8 +10,104 @@ import { SummarySection } from "@/components/Resume/SummarySection";
 import { useEffect, useState } from "react";
 import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
 
+interface resumeDataInterface {
+  name: string;
+  title: string;
+  contactInfo: {
+    email: string;
+    phone: string;
+    website: string;
+  };
+  summary1: string;
+  summary2: string;
+  section1: {
+    title: string;
+    apple: {
+      clientName: string;
+      jobTitle: string;
+      startDateMonth: string;
+      startDateYear: string;
+      endDateMonth: string;
+      endDateYear: string;
+      location: string;
+      description1: string;
+      description2: string;
+      description3: string;
+      description4: string;
+      technologies_used: string;
+    };
+    rubrik: {
+      clientName: string;
+      jobTitle: string;
+      location: string;
+      startDateMonth: string;
+      startDateYear: string;
+      endDateMonth: string;
+      endDateYear: string;
+      description1: string;
+      description3: string;
+      description2: string;
+      description4: string;
+      technologies_used: string;
+    };
+    cloudera: {
+      clientName: string;
+      jobTitle: string;
+      location: string;
+      startDateMonth: string;
+      startDateYear: string;
+      endDateMonth: string;
+      endDateYear: string;
+      description1: string;
+      description2: string;
+      description3: string;
+      description4: string;
+      technologies_used: string;
+    };
+  };
+  section2: {
+    education: {
+      title: string;
+      degree: string;
+      school: string;
+      startDateYear: string;
+      endDateYear: string;
+      description: string;
+    };
+    skills: {
+      title: string;
+      skill1: {
+        title: string;
+        description: string;
+      };
+      skill2: {
+        title: string;
+        description: string;
+      };
+      skill3: {
+        title: string;
+        description: string;
+      };
+      skill4: {
+        title: string;
+        description: string;
+      };
+      skill5: {
+        title: string;
+        description: string;
+      };
+      skill6: {
+        title: string;
+        description: string;
+      };
+    };
+  };
+}
+
 export const ResumePage = (_, setProjectDescriptionVisible) => {
-  const [resumeData, setResumeData] = useState(null);
+  const [resumeData, setResumeData] = useState<resumeDataInterface | null>(
+    null
+  );
   useEffect(() => {
     const fetchData = async () => {
       const fetchedResumeData = await getResumeData();
@@ -19,8 +115,6 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     };
     fetchData();
   }, []);
-  console.log(resumeData);
-  console.log(resumeData?.section2.skills.skill1.description);
   return (
     <>
       <div className="page_container">
@@ -43,9 +137,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     summary1={resumeData?.summary1}
                     summary2={resumeData?.summary2}
                   />
-                  <ResumeSectionHeader
-                    title={resumeData?.section1.title.toUpperCase()}
-                  />
+                  <ResumeSectionHeader title={resumeData?.section1.title} />
                   <View>
                     <ResumeItem
                       clientName={resumeData?.section1.apple.clientName}

@@ -1,16 +1,107 @@
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectGridItem } from "./ProjectsGridItem";
 import { useState, useEffect } from "react";
-import { linkify_text } from "@/utility_functions/linkify_text";
-import { NavLink } from "react-router-dom";
+//import { linkify_text } from "@/utility_functions/linkify_text";
+//import { NavLink } from "react-router-dom";
 import { getProjectGridData } from "@/utility_functions/fetchData/getProjectGridData";
+
+interface projectDescriptionContentInterface {
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
+  clientName: string;
+  jobTitle: string;
+  location: string;
+  startDateMonth: string;
+  startDateYear: string;
+  endDateMonth: string;
+  endDateYear: string;
+  description: string;
+}
+interface projectGridDataInterface {
+  timeline: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+  apple: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+  rubrik: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+  cloudera: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+  gifhov: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+  blog: {
+    image1: string;
+    image2: string;
+    image3: string;
+    image4: string;
+    clientName: string;
+    jobTitle: string;
+    location: string;
+    startDateYear: string;
+    endDateYear: string;
+    description: string;
+  };
+}
 
 export const ProjectsGrid = ({
   projectDescriptionVisible,
   setProjectDescriptionVisible,
 }) => {
-  const [projectDescriptionContent, setProjectDescriptionContent] = useState();
-  const [projectGridData, setProjectGridData] = useState(null);
+  const [projectDescriptionContent, setProjectDescriptionContent] =
+    useState<projectDescriptionContentInterface | null>(null);
+  const [projectGridData, setProjectGridData] =
+    useState<projectGridDataInterface | null>(null);
   useEffect(() => {
     const fetchData = async () => {
       const fetchedProjectGridData = await getProjectGridData();

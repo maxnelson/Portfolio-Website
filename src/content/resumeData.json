@@ -6,7 +6,7 @@
     "phone": "+1.510-508-1392",
     "website": "maxnelsonwebsite.com"
   },
-  "summary1": "Web developer with eight years of experience developing high-traffic, highly-visible web applications and website components.",
+  "summary1": "Senior Web Engineer with eight years of experience developing high-traffic, highly-visible web applications and website components.",
   "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features and components using many languages and frameworks including, Node, Python, AEM, Wordpress, GCP, Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
   "section1": {
     "title": "Experience",
@@ -57,7 +57,7 @@
     "education": {
       "title": "Education",
       "degree": "BA in Graphic Design",
-      "School": "California State University, Chico",
+      "school": "California State University, Chico",
       "startDateYear": "2007",
       "endDateYear": "2011",
       "description": "Studied many mediums of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming."
