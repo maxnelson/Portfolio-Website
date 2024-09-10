@@ -15,7 +15,7 @@
       "jobTitle": "UI Dev Lead",
       "startDateMonth": "Aug",
       "startDateYear": "2020",
-      "endDateMonth": "Sept",
+      "endDateMonth": "Oct",
       "endDateYear": "2023",
       "location": "Cupertino, CA",
       "description1": "Implemented frontend production requirements for Retail display applications, including the default retail display application for iPhone.",
@@ -44,7 +44,7 @@
       "location": "San Francisco, CA",
       "startDateMonth": "Oct",
       "startDateYear": "2013",
-      "endDateMonth": "Aug",
+      "endDateMonth": "Sept",
       "endDateYear": "2017",
       "description1": "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
       "description2": "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
@@ -55,36 +55,38 @@
   },
   "section2": {
     "education": {
+      "title": "Education",
       "degree": "BA in Graphic Design",
       "School": "California State University, Chico",
       "startDateYear": "2007",
       "endDateYear": "2011",
-      "description1": "Studied many mediums of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming."
+      "description": "Studied many mediums of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming."
     },
     "skills": {
+      "title": "Skills",
       "skill1": {
-        "language": "Javascript",
-        "frameworks": "Typescript • Node • Express • React • D3"
+        "title": "Javascript",
+        "description": "Typescript • Node • Express • React • D3"
       },
       "skill2": {
-        "language": "Pre/Post Processing Tools",
-        "frameworks": "PostCSS • Rollup • Vite"
+        "title": "Pre/Post Processing Tools",
+        "description": "PostCSS • Rollup • Vite"
       },
       "skill3": {
-        "language": "Databases",
-        "frameworks": "Firebase • Firestore"
+        "title": "Databases",
+        "description": "Firebase • Firestore"
       },
       "skill4": {
-        "language": "Python",
-        "frameworks": "Flask"
+        "title": "Python",
+        "description": "Flask"
       },
       "skill5": {
-        "language": "PHP",
-        "frameworks": "WordPress"
+        "title": "PHP",
+        "description": "WordPress"
       },
       "skill6": {
-        "language": "Cloud Platforms",
-        "frameworks": "Google Cloud Platform"
+        "title": "Cloud Platforms",
+        "description": "Google Cloud Platform"
       }
     }
   }

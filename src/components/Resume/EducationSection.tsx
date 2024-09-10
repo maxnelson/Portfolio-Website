@@ -10,22 +10,15 @@ export const EducationSection = (props) => {
           styles.font_size_medium,
           styles.flex_direction_row,
           styles.align_items_center,
-          styles.vertical_align_middle,
           styles.justify_content_space_between,
         ]}
       >
-        <View
-          style={[
-            styles.display_flex,
-            styles.flex_direction_column,
-            //styles.width_60_percent,
-          ]}
-        >
+        <View style={[styles.display_flex, styles.flex_direction_column]}>
           <Text style={[styles.font_family_helvetica_bold]}>
-            {props.jobTitle}
+            {props.degree}
           </Text>
 
-          <Text>{props.client_name_detail}</Text>
+          <Text>{props.school}</Text>
         </View>
         <View
           style={[
@@ -55,7 +48,7 @@ export const EducationSection = (props) => {
           wrap={false}
           style={[styles.margin_top_2, styles.font_size_medium]}
         >
-          {props.description1}
+          {props.description}
         </Text>
       </View>
     </>

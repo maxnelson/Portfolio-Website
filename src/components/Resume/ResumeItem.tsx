@@ -11,7 +11,6 @@ export const ResumeItem = (props) => {
           styles.font_size_medium,
           styles.flex_direction_row,
           styles.align_items_center,
-          styles.vertical_align_middle,
         ]}
       >
         <View

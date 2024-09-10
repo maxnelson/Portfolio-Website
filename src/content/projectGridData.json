@@ -19,11 +19,11 @@
     "clientName": "Apple",
     "jobTitle": "UI Dev Lead",
     "location": "Cupertino, CA",
+    "startDateMonth": "Aug",
     "startDateYear": "2020",
+    "endDateMonth": "Oct",
     "endDateYear": "2023",
-    "description1": "description1",
-    "description2": "description1",
-    "description3": "description1"
+    "description": ""
   },
   "rubrik": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.jpg?alt=media&token=5155d803-c079-40c7-af99-0807c4d8dab3",
@@ -33,11 +33,11 @@
     "clientName": "Rubrik",
     "jobTitle": "Frontend Web Developer",
     "location": "Palo Alto, CA",
+    "startDateMonth": "Jan",
     "startDateYear": "2019",
+    "endDateMonth": "Feb",
     "endDateYear": "2020",
-    "description1": "description1",
-    "description2": "description1",
-    "description3": "description1"
+    "description": ""
   },
   "cloudera": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.jpg?alt=media&token=73ba2e8f-1367-4a4a-8ef1-bda55032eebd",
@@ -47,11 +47,11 @@
     "clientName": "Cloudera",
     "jobTitle": "Web Content Production Assistant",
     "location": "San Francisco, CA",
+    "startDateMonth": "Oct",
     "startDateYear": "2013",
+    "endDateMonth": "Sept",
     "endDateYear": "2017",
-    "description1": "description1",
-    "description2": "description1",
-    "description3": "description1"
+    "description": ""
   },
   "gifhov": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.jpg?alt=media&token=0dd63c8f-0204-49ad-9b95-8de1a6088b49",
@@ -63,22 +63,21 @@
     "location": "",
     "startDateYear": "2015",
     "endDateYear": "",
-    "description1": "description1",
-    "description2": "description1",
-    "description3": "description1"
+    "description": ""
   },
   "blog": {
-    "image1": "",
-    "image2": "",
-    "image3": "",
-    "image4": "",
+    "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
+    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
+    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot.jpg?alt=media&token=c8b96986-9fa6-4745-b857-2813f0e026a7",
+    "image4": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_3.jpg?alt=media&token=a61ec311-389f-4491-9ea7-b40c7f0cac1e",
+    "image5": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_2.jpg?alt=media&token=b5b37db3-937d-4d19-9542-52932dbee7df",
+    "startDateYear": "",
+    "endDateYear": "",
     "clientName": "Blog",
     "jobTitle": "",
     "location": "",
-    "startDateYear": "",
-    "endDateYear": "",
-    "description1": "description1",
-    "description2": "description1",
-    "description3": "description1"
+    "description1": "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
+    "description2": "sketchblog.maxnelsonwebsite.com",
+    "popoverDescription": "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art."
   }
 }

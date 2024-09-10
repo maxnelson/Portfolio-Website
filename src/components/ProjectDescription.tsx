@@ -10,9 +10,16 @@ export const ProjectDescription = (props) => {
       <div className="project_description_text_container _word-wrap--break-word">
         {props.clientName && (
           <div className="_margin-bottom--1rem">
-            <h2>{props.jobTitle}</h2>
             <h3>{props.clientName}</h3>
-            <span>{props.startDateYear + " - " + props.endDateYear}</span>
+            <p style={{ fontSize: "12pt", marginTop: "0" }}>{props.jobTitle}</p>
+            <span>
+              {(props.startDateYear
+                ? props.startDateMonth + " " + props.startDateYear
+                : "") +
+                (props.endDateYear
+                  ? " - " + props.endDateMonth + " " + props.endDateYear
+                  : "")}
+            </span>
           </div>
         )}
         <div dangerouslySetInnerHTML={{ __html: props.description }}></div>

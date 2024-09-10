@@ -19,6 +19,8 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     };
     fetchData();
   }, []);
+  console.log(resumeData);
+  console.log(resumeData?.section2.skills.skill1.description);
   return (
     <>
       <div className="page_container">
@@ -42,7 +44,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                     summary2={resumeData?.summary2}
                   />
                   <ResumeSectionHeader
-                    sectionTitle={resumeData?.section1.title.toUpperCase()}
+                    title={resumeData?.section1.title.toUpperCase()}
                   />
                   <View>
                     <ResumeItem
@@ -96,7 +98,41 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                         resumeData?.section1.cloudera.technologies_used
                       }
                     />
-                    <ResumeFooter />
+                    <ResumeFooter
+                      educationTitle={resumeData?.section2.education.title}
+                      degree={resumeData?.section2.education.degree}
+                      school={resumeData?.section2.education.school}
+                      startDateYear={
+                        resumeData?.section2.education.startDateYear
+                      }
+                      endDateYear={resumeData?.section2.education.endDateYear}
+                      description={resumeData?.section2.education.description}
+                      skillsTitle={resumeData?.section2.skills.title}
+                      skill1Title={resumeData?.section2.skills.skill1.title}
+                      skill2Title={resumeData?.section2.skills.skill2.title}
+                      skill3Title={resumeData?.section2.skills.skill3.title}
+                      skill4Title={resumeData?.section2.skills.skill4.title}
+                      skill5Title={resumeData?.section2.skills.skill5.title}
+                      skill6Title={resumeData?.section2.skills.skill6.title}
+                      skill1Description={
+                        resumeData?.section2.skills.skill1.description
+                      }
+                      skill2Description={
+                        resumeData?.section2.skills.skill2.description
+                      }
+                      skill3Description={
+                        resumeData?.section2.skills.skill3.description
+                      }
+                      skill4Description={
+                        resumeData?.section2.skills.skill4.description
+                      }
+                      skill5Description={
+                        resumeData?.section2.skills.skill5.description
+                      }
+                      skill6Description={
+                        resumeData?.section2.skills.skill6.description
+                      }
+                    />
                   </View>
                 </View>
               </Page>
@@ -106,7 +142,6 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
             <p>This Resume was generated using React-PDF :)</p>
           </div>
         </div>
-
         <Footer />
       </div>
     </>

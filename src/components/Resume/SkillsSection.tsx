@@ -1,34 +1,55 @@
 import { View, Text } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 
-export const SkillsSection = () => {
+export const SkillsSection = (props) => {
   return (
     <View style={[styles.margin_top_5, styles.font_size_medium]}>
       <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>Javascript:</Text>{" "}
-        Typescript • Node • Express • React • D3
+        <Text style={[styles.font_family_helvetica_bold]}>
+          {props.skill1Title} {": "}
+        </Text>
+
+        {props.skill1Description}
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
-          Pre/Post Processing Tools:
-        </Text>{" "}
-        PostCSS • Rollup • Vite
-      </Text>
-      <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>Databases:</Text>{" "}
-        Firebase • Firestore
-      </Text>
-      <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>Python:</Text> Flask
-      </Text>
-      <Text style={[]}>
-        <Text style={[styles.font_family_helvetica_bold]}>PHP:</Text> WordPress
+          {props.skill2Title}
+          {": "}
+        </Text>
+
+        {props.skill2Description}
       </Text>
       <Text style={[]}>
         <Text style={[styles.font_family_helvetica_bold]}>
-          Cloud Platforms:
-        </Text>{" "}
-        Google Cloud Platform
+          {props.skill3Title}
+          {": "}
+        </Text>
+
+        {props.skill3Description}
+      </Text>
+      <Text style={[]}>
+        <Text style={[styles.font_family_helvetica_bold]}>
+          {props.skill4Title}
+          {": "}
+        </Text>
+
+        {props.skill4Description}
+      </Text>
+      <Text style={[]}>
+        <Text style={[styles.font_family_helvetica_bold]}>
+          {props.skill5Title}
+          {": "}
+        </Text>
+
+        {props.skill5Description}
+      </Text>
+      <Text style={[]}>
+        <Text style={[styles.font_family_helvetica_bold]}>
+          {props.skill6Title}
+          {": "}
+        </Text>
+
+        {props.skill6Description}
       </Text>
     </View>
   );

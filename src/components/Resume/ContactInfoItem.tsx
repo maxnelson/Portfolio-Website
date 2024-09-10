@@ -2,14 +2,7 @@ import { View, Text, Svg, Path, Link } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 export const ContactInfoItem = (props) => {
   return (
-    <View
-      style={[
-        styles.margin_bottom_5,
-        styles.flex_direction_row,
-        //styles.align_items_center,
-        //styles.vertical_align_middle,
-      ]}
-    >
+    <View style={[styles.margin_bottom_5, styles.flex_direction_row]}>
       <Svg
         style={props.svgStyles}
         width={props.width}

@@ -1,13 +1,6 @@
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectGridItem } from "./ProjectsGridItem";
 import { useState, useEffect } from "react";
-import {
-  resumeItemPropObjectApple,
-  resumeItemPropObjectRubrik,
-  resumeItemPropObjectCloudera,
-  resumeItemPropObjectSketchblog,
-  resumeItemPropObjectGifhov,
-} from "@/components/Resume/ResumeData";
 import { linkify_text } from "@/utility_functions/linkify_text";
 import { NavLink } from "react-router-dom";
 import { getProjectGridData } from "@/utility_functions/fetchData/getProjectGridData";
@@ -42,7 +35,9 @@ export const ProjectsGrid = ({
           image4={projectDescriptionContent?.image4}
           clientName={projectDescriptionContent?.clientName}
           jobTitle={projectDescriptionContent?.jobTitle}
+          startDateMonth={projectDescriptionContent?.startDateMonth}
           startDateYear={projectDescriptionContent?.startDateYear}
+          endDateMonth={projectDescriptionContent?.endDateMonth}
           endDateYear={projectDescriptionContent?.endDateYear}
           description={projectDescriptionContent?.description}
           clickHandler={() => {
@@ -60,40 +55,51 @@ export const ProjectsGrid = ({
               clickHandler(projectGridData?.timeline);
             }}
           />
-          {/* 
           <ProjectGridItem
-            data_object={resumeItemPropObjectApple}
+            image1={projectGridData?.apple.image1}
+            clientName={projectGridData?.apple.clientName}
+            startDateYear={projectGridData?.apple.startDateYear}
+            endDateYear={projectGridData?.apple.endDateYear}
             clickHandler={() => {
-              clickHandler(resumeItemPropObjectApple);
-            }}
-          />
-          
-          <ProjectGridItem
-            data_object={resumeItemPropObjectRubrik}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectRubrik);
+              clickHandler(projectGridData?.apple);
             }}
           />
           <ProjectGridItem
-            data_object={resumeItemPropObjectCloudera}
+            image1={projectGridData?.rubrik.image1}
+            clientName={projectGridData?.rubrik.clientName}
+            startDateYear={projectGridData?.rubrik.startDateYear}
+            endDateYear={projectGridData?.rubrik.endDateYear}
             clickHandler={() => {
-              clickHandler(resumeItemPropObjectCloudera);
-            }}
-          />
-
-          <ProjectGridItem
-            data_object={resumeItemPropObjectGifhov}
-            clickHandler={() => {
-              clickHandler(resumeItemPropObjectGifhov);
+              clickHandler(projectGridData?.rubrik);
             }}
           />
           <ProjectGridItem
-            data_object={resumeItemPropObjectSketchblog}
+            image1={projectGridData?.cloudera.image1}
+            clientName={projectGridData?.cloudera.clientName}
+            startDateYear={projectGridData?.cloudera.startDateYear}
+            endDateYear={projectGridData?.cloudera.endDateYear}
             clickHandler={() => {
-              clickHandler(resumeItemPropObjectSketchblog);
+              clickHandler(projectGridData?.cloudera);
             }}
           />
-          */}
+          <ProjectGridItem
+            image1={projectGridData?.gifhov.image1}
+            clientName={projectGridData?.gifhov.clientName}
+            startDateYear={projectGridData?.gifhov.startDateYear}
+            endDateYear={projectGridData?.gifhov.endDateYear}
+            clickHandler={() => {
+              clickHandler(projectGridData?.gifhov);
+            }}
+          />
+          <ProjectGridItem
+            image1={projectGridData?.blog.image1}
+            clientName={projectGridData?.blog.clientName}
+            startDateYear={projectGridData?.blog.startDateYear}
+            endDateYear={projectGridData?.blog.endDateYear}
+            clickHandler={() => {
+              clickHandler(projectGridData?.blog);
+            }}
+          />
         </div>
       )}
     </>

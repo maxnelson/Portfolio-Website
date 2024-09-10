@@ -1,20 +1,38 @@
 import { View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
-import { resumeItemPropObjectChico } from "@/components/Resume/ResumeData";
 import { ResumeSectionHeader } from "@/components/Resume/ResumeSectionHeader";
 import { SkillsSection } from "@/components/Resume/SkillsSection";
 import { EducationSection } from "@/components/Resume/EducationSection";
 
-export const ResumeFooter = () => {
+export const ResumeFooter = (props) => {
   return (
     <View style={[styles.flex_direction_row]}>
       <View style={[styles.width_45_percent, styles.margin_right_5_percent]}>
-        <ResumeSectionHeader headerText="EDUCATION" />
-        <EducationSection {...resumeItemPropObjectChico} />
+        <ResumeSectionHeader title={props.educationTitle} />
+        <EducationSection
+          degree={props.degree}
+          school={props.school}
+          startDateYear={props.startDateYear}
+          endDateYear={props.endDateYear}
+          description={props.description}
+        />
       </View>
       <View style={styles.width_50_percent}>
-        <ResumeSectionHeader headerText="SKILLS" />
-        <SkillsSection />
+        <ResumeSectionHeader title={props.skillsTitle} />
+        <SkillsSection
+          skill1Title={props.skill1Title}
+          skill2Title={props.skill2Title}
+          skill3Title={props.skill3Title}
+          skill4Title={props.skill4Title}
+          skill5Title={props.skill5Title}
+          skill6Title={props.skill6Title}
+          skill1Description={props.skill1Description}
+          skill2Description={props.skill2Description}
+          skill3Description={props.skill3Description}
+          skill4Description={props.skill41Description}
+          skill5Description={props.skill5Description}
+          skill6Description={props.skill6Description}
+        />
       </View>
     </View>
   );

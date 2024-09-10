@@ -7,7 +7,7 @@ export function HomePage({
   setProjectDescriptionVisible,
 }) {
   document.body.classList.remove("_background-image--var_--image-1_");
-  document.body.classList.remove("background-repeat--repeat");
+  document.body.classList.remove("_background-repeat--repeat");
   return (
     <>
       <div className="page_container">
