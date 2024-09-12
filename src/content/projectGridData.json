@@ -1,7 +1,7 @@
 {
   "timeline": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_1_optimized.jpg?alt=media&token=cf6f5f90-f16d-4d36-9960-4b39ce0ce1ca",
-    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_1_optimized.jpg?alt=media&token=cf6f5f90-f16d-4d36-9960-4b39ce0ce1ca",
+    "image2": "",
     "image3": "",
     "image4": "",
     "clientName": "Timeline",
@@ -69,17 +69,14 @@
   },
   "blog": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
-    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
-    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot.jpg?alt=media&token=c8b96986-9fa6-4745-b857-2813f0e026a7",
+    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot.jpg?alt=media&token=c8b96986-9fa6-4745-b857-2813f0e026a7",
+    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_2.jpg?alt=media&token=b5b37db3-937d-4d19-9542-52932dbee7df",
     "image4": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_3.jpg?alt=media&token=a61ec311-389f-4491-9ea7-b40c7f0cac1e",
-    "image5": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_2.jpg?alt=media&token=b5b37db3-937d-4d19-9542-52932dbee7df",
     "startDateYear": "",
     "endDateYear": "",
     "clientName": "Blog",
     "jobTitle": "",
     "location": "",
-    "description1": "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art. Feel free to check it out!",
-    "description2": "sketchblog.maxnelsonwebsite.com",
-    "popoverDescription": "My Blog is where I have posted a lot of my old design work, as well as drawings and digital art."
+    "description": ""
   }
 }

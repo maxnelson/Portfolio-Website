@@ -23,6 +23,8 @@ export function PostDescriptionPage() {
   const [postObject, setPostObject] = useState<DocumentData | null>(null);
   const params = useParams();
   const postDescription = getPost(params.postname);
+  document.body.classList.add("_background-image--var_--image-1_");
+  document.body.classList.add("_background-repeat--repeat");
   useEffect(() => {
     if (postDescription.status === "success") {
       const postObjectData = postDescription.data.data();
@@ -34,7 +36,6 @@ export function PostDescriptionPage() {
     <>
       {postObject && (
         <>
-          <div></div>
           <div className="_width--80percent _margin-left--auto _margin-right--auto _margin-top--10rem _display--flex _flex-wrap--wrap _justify-content--space-between">
             <div className="_width--85percent">
               <div
