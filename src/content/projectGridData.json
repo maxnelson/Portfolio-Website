@@ -1,9 +1,6 @@
 {
   "timeline": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_1_optimized.jpg?alt=media&token=cf6f5f90-f16d-4d36-9960-4b39ce0ce1ca",
-    "image2": "",
-    "image3": "",
-    "image4": "",
     "clientName": "Timeline",
     "jobTitle": "",
     "location": "",
@@ -29,9 +26,8 @@
   },
   "rubrik": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.jpg?alt=media&token=5155d803-c079-40c7-af99-0807c4d8dab3",
-    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.jpg?alt=media&token=5155d803-c079-40c7-af99-0807c4d8dab3",
-    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_2.png?alt=media&token=bcc21571-d9fd-40af-98bd-174833bd3b8f",
-    "image4": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_3.png?alt=media&token=0103d41f-57f3-4b0c-be8e-b41fcaf12ee2",
+    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_2.png?alt=media&token=bcc21571-d9fd-40af-98bd-174833bd3b8f",
+    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_3.png?alt=media&token=0103d41f-57f3-4b0c-be8e-b41fcaf12ee2",
     "clientName": "Rubrik",
     "jobTitle": "Frontend Web Developer",
     "location": "Palo Alto, CA",
@@ -43,9 +39,8 @@
   },
   "cloudera": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.jpg?alt=media&token=73ba2e8f-1367-4a4a-8ef1-bda55032eebd",
-    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.jpg?alt=media&token=73ba2e8f-1367-4a4a-8ef1-bda55032eebd",
-    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_2.png?alt=media&token=aa77e3b1-1ced-4049-a3a6-7bc55e13a1f3",
-    "image4": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_3.png?alt=media&token=08bdc02f-9d1e-4eb2-b2d0-0100bfaa8666",
+    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_2.png?alt=media&token=aa77e3b1-1ced-4049-a3a6-7bc55e13a1f3",
+    "image3": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_3.png?alt=media&token=08bdc02f-9d1e-4eb2-b2d0-0100bfaa8666",
     "clientName": "Cloudera",
     "jobTitle": "Web Content Production Assistant",
     "location": "San Francisco, CA",
@@ -57,9 +52,6 @@
   },
   "gifhov": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.jpg?alt=media&token=0dd63c8f-0204-49ad-9b95-8de1a6088b49",
-    "image2": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.jpg?alt=media&token=0dd63c8f-0204-49ad-9b95-8de1a6088b49",
-    "image3": "",
-    "image4": "",
     "clientName": "Gifhov",
     "jobTitle": "",
     "location": "",

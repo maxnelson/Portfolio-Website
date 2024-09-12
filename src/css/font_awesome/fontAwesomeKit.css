@@ -760,7 +760,48 @@
 .fa-chevron-right::before {
   content: "\f054";
 }
-
+.fa-pencil::before {
+  content: "\f303";
+}
+.fa-chevron-down::before {
+  content: "\f078";
+}
+.fa-file-export::before {
+  content: "\f56e";
+}
+.fa-file::before {
+  content: "\f15b";
+}
+.fa-eye::before {
+  content: "\f06e";
+}
+.fa-eye-slash::before {
+  content: "\f070";
+}
+.fa-circle-info::before {
+  content: "\f05a";
+}
+.fa-plus::before {
+  content: "\2b";
+}
+.fa-clock::before {
+  content: "\f017";
+}
+.fa-calendar-alt::before {
+  content: "\f073";
+}
+.fa-calendar-check::before {
+  content: "\f274";
+}
+.fa-circle::before {
+  content: "\f111";
+}
+.fa-bars::before {
+  content: "\f0c9";
+}
+.fa-circle-plus::before {
+  content: "\f055";
+}
 :root,
 :host {
   --fa-style-family-classic: "Font Awesome 6 Pro";

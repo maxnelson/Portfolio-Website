@@ -11,7 +11,9 @@ export const ProjectDescription = (props) => {
         {props.clientName && (
           <div className="_margin-bottom--1rem">
             <h3>{props.clientName}</h3>
-            <p style={{ fontSize: "12pt", marginTop: "0" }}>{props.jobTitle}</p>
+            <p style={{ fontSize: "12pt", marginTop: "0", marginBottom: "0" }}>
+              {props.jobTitle}
+            </p>
             <span>
               {(props.startDateYear
                 ? props.startDateMonth + " " + props.startDateYear

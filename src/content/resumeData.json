@@ -7,7 +7,7 @@
     "website": "maxnelsonwebsite.com"
   },
   "summary1": "Senior Web Engineer with eight years of experience developing high-traffic, highly-visible web applications and website components.",
-  "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features and components using many languages and frameworks including, Node, Python, AEM, Wordpress, GCP, Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
+  "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems, and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features and components using many platforms, languages and frameworks including, AEM, GCP, Node, Python, PHP, Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
   "section1": {
     "title": "Experience",
     "apple": {
@@ -46,7 +46,7 @@
       "startDateYear": "2013",
       "endDateMonth": "Sept",
       "endDateYear": "2017",
-      "description1": "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of rapid company growth.",
+      "description1": "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of high company growth.",
       "description2": "Developed page templates and components for cloudera.com, using HTML, CSS, Javascript, JSP and HTL.",
       "description3": "Developed a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules. Built corresponding authorable components in the AEM CMS using Granite and Coral UI, consumed author input values into website components using JSP scriptlets, later updating to HTL.",
       "description4": "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) between AEM instances (dev, stage, prod, pub).",
