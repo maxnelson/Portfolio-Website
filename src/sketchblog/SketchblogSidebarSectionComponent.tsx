@@ -7,7 +7,6 @@ export function SketchblogSidebarSectionComponent({ name, children }) {
       <li
         className=""
         onClick={() => {
-          console.log(children);
           setIsVisible(!isVisible);
         }}
       >

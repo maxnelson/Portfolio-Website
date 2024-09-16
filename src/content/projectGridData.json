@@ -5,10 +5,11 @@
     "jobTitle": "",
     "location": "",
     "startDateMonth": "Nov",
-    "startDateYear": "2023",
+    "startDateYear": 2023,
     "endDateMonth": "",
     "endDateYear": "Current",
-    "description": ""
+    "description": "",
+    "gridSequence": 1
   },
   "apple": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_1_optimized.jpg?alt=media&token=289ec263-6758-496b-b2ab-61273f999b05",
@@ -19,10 +20,11 @@
     "jobTitle": "UI Dev Lead",
     "location": "Cupertino, CA",
     "startDateMonth": "Aug",
-    "startDateYear": "2020",
+    "startDateYear": 2020,
     "endDateMonth": "Oct",
-    "endDateYear": "2023",
-    "description": ""
+    "endDateYear": 2023,
+    "description": "",
+    "gridSequence": 2
   },
   "rubrik": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.jpg?alt=media&token=5155d803-c079-40c7-af99-0807c4d8dab3",
@@ -32,10 +34,11 @@
     "jobTitle": "Frontend Web Developer",
     "location": "Palo Alto, CA",
     "startDateMonth": "Jan",
-    "startDateYear": "2019",
+    "startDateYear": 2019,
     "endDateMonth": "Feb",
-    "endDateYear": "2020",
-    "description": ""
+    "endDateYear": 2020,
+    "description": "",
+    "gridSequence": 3
   },
   "cloudera": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.jpg?alt=media&token=73ba2e8f-1367-4a4a-8ef1-bda55032eebd",
@@ -45,19 +48,21 @@
     "jobTitle": "Web Content Production Assistant",
     "location": "San Francisco, CA",
     "startDateMonth": "Oct",
-    "startDateYear": "2013",
+    "startDateYear": 2013,
     "endDateMonth": "Sept",
-    "endDateYear": "2017",
-    "description": ""
+    "endDateYear": 2017,
+    "description": "",
+    "gridSequence": 4
   },
   "gifhov": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.jpg?alt=media&token=0dd63c8f-0204-49ad-9b95-8de1a6088b49",
     "clientName": "Gifhov",
     "jobTitle": "",
     "location": "",
-    "startDateYear": "2015",
+    "startDateYear": 2015,
     "endDateYear": "",
-    "description": ""
+    "description": "",
+    "gridSequence": 5
   },
   "blog": {
     "image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_screenshot_4.jpg?alt=media&token=a452d951-eb22-43d0-9541-89e1d66d4fac",
@@ -69,6 +74,7 @@
     "clientName": "Blog",
     "jobTitle": "",
     "location": "",
-    "description": ""
+    "description": "",
+    "gridSequence": 6
   }
 }

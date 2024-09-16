@@ -10,17 +10,19 @@ import { PostDescriptionPage } from "@/sketchblog/PostDescriptionPage";
 export function Router() {
   const [projectDescriptionVisible, setProjectDescriptionVisible] =
     useState(false);
+
   return (
     <>
       <Routes>
         <Route
           path="/"
           element={
-            <HomePage
-              projectDescriptionVisible={projectDescriptionVisible}
-              setProjectDescriptionVisible={setProjectDescriptionVisible}
-            />
+            <HomePage projectDescriptionVisible={projectDescriptionVisible} />
           }
+        ></Route>
+        <Route
+          path="/project/:project"
+          element={<HomePage projectDescriptionVisible={true} />}
         ></Route>
         <Route
           path="/about"
