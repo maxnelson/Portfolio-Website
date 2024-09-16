@@ -34,6 +34,7 @@ interface resumeDataInterface {
       description2: string;
       description3: string;
       description4: string;
+      description5: string;
       technologies_used: string;
     };
     rubrik: {
@@ -140,6 +141,25 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                   <ResumeSectionHeader title={resumeData?.section1.title} />
                   <View>
                     <ResumeItem
+                      clientName={resumeData?.section1.timeline.clientName}
+                      jobTitle={resumeData?.section1.timeline.jobTitle}
+                      startDateMonth={
+                        resumeData?.section1.timeline.startDateMonth
+                      }
+                      endDateMonth={resumeData?.section1.timeline.endDateMonth}
+                      startDateYear={
+                        resumeData?.section1.timeline.startDateYear
+                      }
+                      endDateYear={resumeData?.section1.timeline.endDateYear}
+                      description1={resumeData?.section1.timeline.description1}
+                      description2={resumeData?.section1.timeline.description2}
+                      description3={resumeData?.section1.timeline.description3}
+                      description4={resumeData?.section1.timeline.description4}
+                      technologies_used={
+                        resumeData?.section1.timeline.technologies_used
+                      }
+                    />
+                    <ResumeItem
                       clientName={resumeData?.section1.apple.clientName}
                       jobTitle={resumeData?.section1.apple.jobTitle}
                       startDateMonth={resumeData?.section1.apple.startDateMonth}
@@ -150,6 +170,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
                       description2={resumeData?.section1.apple.description2}
                       description3={resumeData?.section1.apple.description3}
                       description4={resumeData?.section1.apple.description4}
+                      description5={resumeData?.section1.apple.description5}
                       technologies_used={
                         resumeData?.section1.apple.technologies_used
                       }
