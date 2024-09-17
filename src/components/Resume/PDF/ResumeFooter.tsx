@@ -1,8 +1,8 @@
 import { View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
-import { ResumeSectionHeader } from "@/components/Resume/ResumeSectionHeader";
-import { SkillsSection } from "@/components/Resume/SkillsSection";
-import { EducationSection } from "@/components/Resume/EducationSection";
+import { ResumeSectionHeader } from "@/components/Resume/PDF/ResumeSectionHeader";
+import { SkillsSection } from "@/components/Resume/PDF/SkillsSection";
+import { EducationSection } from "@/components/Resume/PDF/EducationSection";
 
 export const ResumeFooter = (props) => {
   return (

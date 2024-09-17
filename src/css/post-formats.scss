@@ -90,3 +90,26 @@
     }
   }
 }
+
+.resumeSelectorContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  .resumeSelectorButton {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    color: var(--gray-125);
+    background-color: transparent;
+    &.resumeTypeActive {
+      color: black;
+      border-bottom: 2px solid black;
+      //font-weight: 500;
+    }
+  }
+  .resumeSelectorButtonSeparator {
+    font-size: 16px;
+    font-weight: 200;
+    display: inline-block;
+    margin: 0rem 2rem;
+  }
+}
