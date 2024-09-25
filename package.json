@@ -12,13 +12,14 @@
     "build": "node --env-file=.env -- node_modules/typescript/bin/tsc && node node_modules/vite/bin/vite.js build",
     "uploadResume": "node --env-file=.env -- src/utility_functions/uploadData/uploadResumeData.js",
     "uploadProjectGridData": "node --env-file=.env -- src/utility_functions/uploadData/uploadProjectGridData.js",
+    "uploadAboutPageData": "node --env-file=.env -- src/utility_functions/uploadData/uploadAboutPageData.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "node server.js",
     "start_dev": "nodemon server.js"
   },
   "dependencies": {
-    "@modularmoon/barista": "^1.1.1",
+    "@modularmoon/barista": "^1.1.2",
     "@firebase/storage": "^0.13.1",
     "@react-pdf/renderer": "^3.4.4",
     "@tanstack/react-query": "^5.55.2",

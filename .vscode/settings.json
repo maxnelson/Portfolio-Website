@@ -12,6 +12,6 @@
   },
   "[json]": {
     "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 20
+    "editor.wordWrapColumn": 60
   }
 }
