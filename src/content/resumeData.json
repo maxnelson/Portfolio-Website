@@ -6,8 +6,8 @@
     "phone": "+1.510-508-1392",
     "website": "maxnelsonwebsite.com"
   },
-  "summary1": "Senior Web Engineer with eight years of experience developing high-traffic, highly-visible websites and applications.",
-  "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems, and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features and components using many platforms, languages and frameworks including, AEM, GCP, Node, Python, PHP, Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
+  "summary1": "Senior Web Engineer with eight years of experience developing high-traffic, highly-visible, websites and applications.",
+  "summary2": "Experienced in developing maintainable frontend build systems, solving complex problems, and delivering quality solutions to fast-growing startups and large companies alike. Developing website applications, tools, features, and components, using many different languages, frameworks, and platforms, and integrating data from a variety of web services, databases, and content repositories.",
   "section1": {
     "title": "Experience",
     "timeline": {
@@ -28,11 +28,11 @@
       "endDateMonth": "Oct",
       "endDateYear": "2023",
       "location": "Cupertino, CA",
-      "description1": "Implemented frontend production requirements for Retail display applications, including the default retail display application for iPhone.",
-      "description2": "Used an internal tool, similar to XCodes' Storyboard, to layout SwiftUI elements (HStacks, VStacks, etc.) and configure their properties to create pixel-perfect, highly robust, accessible, and dynamic widgets and components.",
-      "description3": "Components built to be dynamic and adapt to fit content in 33 different languages, as well as content featured in eight different in-store devices, which each ran slightly different experiences, accomodated by the flexibility of the component system.",
-      "description4": "Designed JSON structures responsible for providing application content to devices, allowing for complex features / functionality, and satisfying complex business and application requirements.",
-      "description5": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
+      "description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
+      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust, iOS applications featured on Apple's in-store devices.",
+      "description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
+      "description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
+      "description5": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
       "technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
     },
     "rubrik": {
@@ -43,11 +43,11 @@
       "startDateYear": "2019",
       "endDateMonth": "Feb",
       "endDateYear": "2020",
-      "description1": "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
-      "description2": "Updated, maintained, and developed Wordpress page templates and components, using PHP (Timber, Twig), HTML, CSS (BEM), and Javascript.",
-      "description3": "Developed the Frontend of many AEM components, using Javascript, HTML, CSS, HTL (Sightly), and Apache Sling to integrate with OSGI-registered Java servlet applications, and a JCR Jackrabbit Oak repository.",
-      "description4": "Developed a variety of components, including everything from marketing page sections to dynamic web forms with strict frontend validation. For example, developed a Frontend integration with the Greenhouse API; used data to develop the careers listing, careers detail, and Job application form components.",
-      "technologies_used": "Docker, Wordpress, PHP, Timber, Twig, Javascript, Node, HTML, CSS (BEM), AEM, Git"
+      "description1": "Functioned as the only in-house web developer, underneath marketing, working closely with agencies to develop and maintain the rubrik.com website and its associated web properties.",
+      "description2": "Developed Wordpress page templates and components with advanced frontend requirements, including frontend integration with API data from multiple web services, using PHP (Timber, Twig), HTML, CSS (BEM), and Javascript.",
+      "description3": "Oversaw platform migration from Wordpress to Adobe Experience Manager (AEM). Developed AEM components using HTL (Sightly), JavaScript, and Apache Sling, integrating with a JSR-170 repository.",
+      "description4": "Oversaw CDN migration from Cloudflare to Akamai. Configured DNS records for new web properties.",
+      "technologies_used": "Docker, Wordpress, PHP (Timber, Twig), Javascript, Node, HTML, CSS (BEM), AEM, Git"
     },
     "cloudera": {
       "clientName": "Cloudera",
@@ -57,11 +57,13 @@
       "startDateYear": "2013",
       "endDateMonth": "Sept",
       "endDateYear": "2017",
-      "description1": "Worked with team and agencies to develop and maintain the cloudera.com website and its associated web properties during a period of high company growth.",
-      "description2": "Developed a variety of page templates and components using HTML, CSS, Javascript, JSP and HTL (Sightly), components including: marketing page sections, filter-able grids with animation, navigation menus, dynamic forms with strict Frontend validation requirements.",
-      "description3": "Built corresponding authorable components in the AEM CMS using Granite and Coral UI. These form widgets consumed author input values and made them accessible to the Frontend components via the templating language (JSP scriptlets, later updating to HTL [Sightly]).",
-      "description4": "Administered the publication of website content. Used tools like CRXDE Lite, VLT-RPC, Query Builder to manage, sync and replicate JCR content (user accounts, marketing copy, image assets) across AEM instances (dev, stage, prod, pub).",
-      "technologies_used": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Javascript, HTML, CSS, Grunt"
+      "description1": "Worked with team and agencies to develop the cloudera.com website and its associated web properties.",
+      "description2": "Hired as employee #334, grew the web team from 2 to 5 developers while contributing to the rapid company growth towards 1800 employees at the time of my departure.",
+      "description3": "Developed dynamic frontend AEM components using JSP (later upgrading to HTL [Sightly]), Javascript, HTML and CSS. Built forms corresponding to each component using ExtJS, Granite and Coral UI, allowing Marketing stakeholders to author and publish content. Trained authors, hosted office hours, created PDF documentation.",
+      "description4": "Developed frontend integrations and utilized data from a variety of APIs and web services including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
+      "description5": "Managed the publication of web content, used AEM Admin tools like CRXDELite, QueryBuilder, Bulk Editor, and VLT-RPC to manage, sync, and replicate JCR content across AEM instances (dev, auth, stage, prod, pub).",
+
+      "technologies_used": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
     }
   },
   "section2": {
@@ -71,17 +73,17 @@
       "school": "California State University, Chico",
       "startDateYear": "2007",
       "endDateYear": "2011",
-      "description": "Studied many mediums of Graphic Design, including Information Design, Typography, Branding, and User Interface Design, with an upper-division theme in computer programming."
+      "description": "Studied many mediums of Graphic Design, including User Interface Design, with an upper-division theme in computer programming."
     },
     "skills": {
       "title": "Skills",
       "skill1": {
         "title": "Javascript",
-        "description": "Typescript • Node • Express • React • D3"
+        "description": "React • Typescript • Node • Express • D3"
       },
       "skill2": {
         "title": "Pre/Post Processing Tools",
-        "description": "PostCSS • Rollup • Vite"
+        "description": "Vite • Rollup • PostCSS"
       },
       "skill3": {
         "title": "Databases",

@@ -9,5 +9,9 @@
   },
   "[typescript]": {
     "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 20
   }
 }

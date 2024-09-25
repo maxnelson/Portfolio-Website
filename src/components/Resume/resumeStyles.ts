@@ -372,4 +372,7 @@ export const resumeStyles = StyleSheet.create({
   text_decoration_none: {
     textDecoration: "none",
   },
+  lineHeight: {
+    lineHeight: 1.2,
+  },
 });

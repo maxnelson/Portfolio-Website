@@ -1,16 +1,12 @@
-import { ResumeHeader } from "@/components/Resume/PDF/ResumeHeader";
-import { ResumeFooter } from "@/components/Resume/PDF/ResumeFooter";
-import { ResumeItem } from "@/components/Resume/PDF/ResumeItem";
-import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
-import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
-import { ResumeSectionHeader } from "@/components/Resume/PDF/ResumeSectionHeader";
-import { SummarySection } from "@/components/Resume/PDF/SummarySection";
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useState,
+} from "react";
 import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
-import { ResumePicker } from "#src/components/Resume/ResumePicker/ResumePicker";
-import { ResumePDF } from "#src/components/Resume/PDF/ResumePDF";
+import { ResumePicker } from "@/components/Resume/ResumePicker/ResumePicker";
+import { ResumePDF } from "@/components/Resume/PDF/ResumePDF";
 interface resumeDataInterface {
   name: string;
   title: string;
@@ -106,14 +102,20 @@ interface resumeDataInterface {
   };
 }
 
-export const ResumePage = (_, setProjectDescriptionVisible) => {
-  const [resumeData, setResumeData] = useState<resumeDataInterface | null>(
-    null
-  );
-  const [resumeType, setResumeType] = useState("single");
+export const ResumePage = (
+  _,
+  setProjectDescriptionVisible
+) => {
+  const [resumeData, setResumeData] =
+    useState<resumeDataInterface | null>(
+      null
+    );
+  const [resumeType, setResumeType] =
+    useState("single");
   useEffect(() => {
     const fetchData = async () => {
-      const fetchedResumeData = await getResumeData();
+      const fetchedResumeData =
+        await getResumeData();
       setResumeData(fetchedResumeData);
     };
     fetchData();
@@ -122,14 +124,27 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     <>
       <div className="page_container">
         <LeftSidebar
-          setProjectDescriptionVisible={setProjectDescriptionVisible}
+          setProjectDescriptionVisible={
+            setProjectDescriptionVisible
+          }
         />
         <div className="main_section">
-          <ResumePicker resumeType={resumeType} setResumeType={setResumeType} />
-          <ResumePDF resumeType={resumeType} resumeData={resumeData} />
+          <ResumePicker
+            resumeType={resumeType}
+            setResumeType={
+              setResumeType
+            }
+          />
+          <ResumePDF
+            resumeType={resumeType}
+            resumeData={resumeData}
+          />
 
           <div className="display_block _margin-top--2rem">
-            <p>This Resume was generated using React-PDF :)</p>
+            <p>
+              This Resume was generated
+              using React-PDF :)
+            </p>
           </div>
         </div>
         <Footer />

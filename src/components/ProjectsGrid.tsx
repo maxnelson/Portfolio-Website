@@ -1,22 +1,11 @@
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectGridItem } from "./ProjectsGridItem";
-import { useState, useEffect } from "react";
+import {
+  useState,
+  useEffect,
+} from "react";
 import { getProjectGridData } from "@/utility_functions/fetchData/getProjectGridData";
 
-interface projectDescriptionContentInterface {
-  image1: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  clientName: string;
-  jobTitle: string;
-  location: string;
-  startDateMonth: string;
-  startDateYear: string;
-  endDateMonth: string;
-  endDateYear: string;
-  description: string;
-}
 interface projectGridDataInterface {
   timeline: {
     image1: string;
@@ -96,42 +85,72 @@ export const ProjectsGrid = ({
   projectDescriptionVisible,
   projectDescriptionContentName,
 }) => {
-  const [projectGridData, setProjectGridData] =
-    useState<projectGridDataInterface | null>(null);
+  const [
+    projectGridData,
+    setProjectGridData,
+  ] =
+    useState<projectGridDataInterface | null>(
+      null
+    );
   useEffect(() => {
     const fetchData = async () => {
-      const fetchedProjectGridData = await getProjectGridData();
-      setProjectGridData(fetchedProjectGridData);
+      const fetchedProjectGridData =
+        await getProjectGridData();
+      setProjectGridData(
+        fetchedProjectGridData
+      );
     };
     fetchData();
   }, []);
 
-  const sortedProjectGridData = projectGridData
-    ? Object.values(projectGridData).sort((a, b) => {
-        return a.gridSequence - b.gridSequence;
-      })
-    : [];
+  const sortedProjectGridData =
+    projectGridData
+      ? Object.values(
+          projectGridData
+        ).sort((a, b) => {
+          return (
+            a.gridSequence -
+            b.gridSequence
+          );
+        })
+      : [];
 
   return (
     <>
       {projectDescriptionVisible ? (
         <ProjectDescription
-          data_object={projectGridData[projectDescriptionContentName]}
+          data_object={
+            projectGridData?.[
+              projectDescriptionContentName
+            ]
+          }
         />
       ) : (
         <div className="project_grid_container">
-          {sortedProjectGridData.map((projectData) => {
-            return (
-              <ProjectGridItem
-                image1={projectData?.image1}
-                clientName={projectData?.clientName}
-                startDateYear={projectData?.startDateYear}
-                endDateYear={projectData?.endDateYear}
-                projectDescriptionContentName={projectData?.clientName.toLowerCase()}
-                key={projectData?.clientName}
-              />
-            );
-          })}
+          {sortedProjectGridData.map(
+            (projectData) => {
+              return (
+                <ProjectGridItem
+                  image1={
+                    projectData?.image1
+                  }
+                  clientName={
+                    projectData?.clientName
+                  }
+                  startDateYear={
+                    projectData?.startDateYear
+                  }
+                  endDateYear={
+                    projectData?.endDateYear
+                  }
+                  projectDescriptionContentName={projectData?.clientName.toLowerCase()}
+                  key={
+                    projectData?.clientName
+                  }
+                />
+              );
+            }
+          )}
         </div>
       )}
     </>
