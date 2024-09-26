@@ -1,23 +1,28 @@
 import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react";
-import baristaCSS from "@modularmoon/barista";
+//import baristaCSS from "@modularmoon/barista";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    baristaCSS({
-      include: ["src/**/*.{js,ts,jsx,tsx,html}"],
-      outputFilepath: "dist/css/barista.css",
-      delimiter1: "_",
-      delimiter2: "--",
-    }),
-  ],
+  plugins: [react()],
   server: { port: 5100 },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@server": path.resolve(__dirname, "./server"),
+      "@": path.resolve(
+        __dirname,
+        "./src"
+      ),
+      "@server": path.resolve(
+        __dirname,
+        "./server"
+      ),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+      },
     },
   },
 });

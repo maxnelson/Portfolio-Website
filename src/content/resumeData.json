@@ -29,7 +29,7 @@
       "endDateYear": "2023",
       "location": "Cupertino, CA",
       "description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
-      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust, iOS applications featured on Apple's in-store devices.",
+      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust, iOS applications highly visible on display devices in Apple stores globally.",
       "description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
       "description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
       "description5": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
@@ -83,7 +83,7 @@
       },
       "skill2": {
         "title": "Pre/Post Processing Tools",
-        "description": "Vite • Rollup • PostCSS"
+        "description": "Vite • Rollup • Babel • PostCSS"
       },
       "skill3": {
         "title": "Databases",

@@ -11,7 +11,7 @@
   --gray-150: #9b9b9b;
   --gray-400: #777;
   --gray-500: #666;
-  --image-1: url("/public/images/sketchblog/background_texture.gif");
+  --image-1: url("/images/sketchblog/background_texture.gif");
 }
 
 *,
@@ -26,7 +26,8 @@
 }
 
 #root {
-  font-family: Helvetica, "Helvetica, sans-serif";
+  font-family: Helvetica,
+    "Helvetica, sans-serif";
 }
 html,
 body {
@@ -67,7 +68,8 @@ ol,
 ul,
 li,
 blockquote {
-  font-family: Helvetica, "Helvetica, sans-serif";
+  font-family: Helvetica,
+    "Helvetica, sans-serif";
   margin: 0;
   padding: 0;
 }
@@ -99,7 +101,8 @@ table {
 a,
 a > p {
   color: var(--blue-50);
-  transition: background 0.25s ease-in-out;
+  transition: background 0.25s
+    ease-in-out;
   transition: color 0s ease-in-out;
   text-decoration: none;
   &:hover {

@@ -23,11 +23,15 @@
     padding-bottom: 1rem;
     border-bottom: 5px solid transparent;
     &:hover {
-      border-bottom-color: var(--blue-100);
+      border-bottom-color: var(
+        --blue-100
+      );
     }
   }
   .active_nav_image img {
-    border-bottom-color: var(--blue-100);
+    border-bottom-color: var(
+      --blue-100
+    );
   }
   a.sidebar_navigation_link {
     display: block;
@@ -98,7 +102,8 @@ a.internal_link {
   &:hover {
     color: white;
     background: var(--blue-100);
-    transition: background 0.25s ease-in-out;
+    transition: background 0.25s
+      ease-in-out;
   }
 }
 
@@ -120,9 +125,16 @@ a.external_link {
   font-size: 2rem !important;
 }
 
-ol {
+ol,
+.about_section_div ul {
   margin-bottom: 1rem;
   list-style-position: inside;
   text-indent: -1rem;
   padding-left: 1rem;
+}
+
+.about_section_div {
+  p {
+    margin-bottom: 1rem;
+  }
 }
