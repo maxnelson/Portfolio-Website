@@ -13,5 +13,16 @@
   "[json]": {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 60
+  },
+  {
+    "printWidth": 80,
+    "overrides": [
+      {
+        "files": "*.tsx",
+        "options": {
+          "printWidth": 120 
+        }
+      }
+    ]
   }
 }

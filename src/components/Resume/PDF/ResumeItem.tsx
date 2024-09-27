@@ -16,6 +16,7 @@ export const ResumeItem = (props) => {
           styles.font_size_medium,
           styles.flex_direction_row,
           styles.align_items_center,
+          props.customStyle,
         ]}
       >
         <View
@@ -112,6 +113,26 @@ export const ResumeItem = (props) => {
         {props.description6 && (
           <BulletPoint
             text={props.description6}
+          />
+        )}
+        {props.description7 && (
+          <BulletPoint
+            text={props.description7}
+          />
+        )}
+        {props.description8 && (
+          <BulletPoint
+            text={props.description8}
+          />
+        )}
+        {props.description9 && (
+          <BulletPoint
+            text={props.description9}
+          />
+        )}
+        {props.description10 && (
+          <BulletPoint
+            text={props.description10}
           />
         )}
         {props.technologies_used && (

@@ -17,8 +17,8 @@
       "endDateMonth": "",
       "endDateYear": "Current",
       "location": "Berkeley, CA",
-      "description1": "While pursuing my next opportunity, I have kept busy studying several modern javascript frameworks including: D3.js, Vite, Express, and React; utilizing them towards a self-initiated project, a data visualization web application currently hosted at https://timelineapp.io.",
-      "technologies_used": "D3, Google Cloud Platform, Firestore, Node, Vite, Express, React, OAuth2"
+      "description1": "While pursuing my next opportunity I have kept busy studying several modern javascript frameworks including Vite, Express, React and D3; utilizing them towards a self-initiated project, a data visualization web application currently hosted at https://timelineapp.io.",
+      "technologies_used": "Google Cloud Platform, Firestore, Node, Vite, Express, React, D3, OAuth2"
     },
     "apple": {
       "clientName": "Apple",
@@ -29,11 +29,27 @@
       "endDateYear": "2023",
       "location": "Cupertino, CA",
       "description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
-      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust, iOS applications highly visible on display devices in Apple stores globally.",
+      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust iOS applications, featured on display devices in Apple stores globally.",
       "description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
       "description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
       "description5": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
+      "description6": "Managed QA and UAT among the primary user base of an internal macOS tool. Worked closely with Marcom to identify feature / requirement gaps, ideated and generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
+      "description7": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
+      "description8": "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; safely managing content, comparing and modifying JSON, within a large JSON repository containing content in 33 different languages.",
+      "description9": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
+      "description10": "Identified subtle and complex discrepancies between the rendering system found in macOS design tools (Sketch, Figma), macOS’ iOS Simulator and physical iOS devices themselves, conducting frequent on-device testing to ensure pixel-perfect visual accuracy.",
       "technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
+    },
+    "aquent": {
+      "clientName": "Aquent Studios",
+      "jobTitle": "UI Editor",
+      "startDateMonth": "Mar",
+      "startDateYear": "2020",
+      "endDateMonth": "Aug",
+      "endDateYear": "2020",
+      "location": "San Francisco, CA",
+      "description1": "Configured and maintained the frontend component-based architecture of a client microsite, built using pre-existing AEM components.",
+      "technologies_used": "Adobe Experience Manager"
     },
     "rubrik": {
       "clientName": "Rubrik",
@@ -43,11 +59,28 @@
       "startDateYear": "2019",
       "endDateMonth": "Feb",
       "endDateYear": "2020",
-      "description1": "Functioned as the only in-house web developer, underneath marketing, working closely with agencies to develop and maintain the rubrik.com website and its associated web properties.",
+      "description1": "Worked with team and agencies to develop and maintain the rubrik.com website and its associated web properties.",
       "description2": "Developed Wordpress page templates and components with advanced frontend requirements, including frontend integration with API data from multiple web services, using PHP (Timber, Twig), HTML, CSS (BEM), and Javascript.",
       "description3": "Oversaw platform migration from Wordpress to Adobe Experience Manager (AEM). Developed AEM components using HTL (Sightly), JavaScript, and Apache Sling, integrating with a JSR-170 repository.",
       "description4": "Oversaw CDN migration from Cloudflare to Akamai. Configured DNS records for new web properties.",
+      "description5": "Managed Google Analytics and Tag Manager integration, generated events, triggers, and reports for website stakeholders, later assisting in migration to Adobe Analytics.",
+      "description6": "Developed frontend integration with Greenhouse API; used data to develop various frontend components including dynamic web form with strict frontend validation requirements.",
+      "description7": "Administered the publication of website content. Used AEM Admin tools like VLT-RPC, QueryBuilder, Bulk Editor, and CRXDE Lite, to manage, sync, and replicate JCR content across AEM instances (dev, auth, stage, prod, pub).",
       "technologies_used": "Docker, Wordpress, PHP (Timber, Twig), Javascript, Node, HTML, CSS (BEM), AEM, Git"
+    },
+    "apple2": {
+      "clientName": "Apple",
+      "jobTitle": "Email Template Developer",
+      "startDateMonth": "July",
+      "startDateYear": "2018",
+      "endDateMonth": "Dec",
+      "endDateYear": "2018",
+      "location": "Sunnyvale, CA",
+      "description1": "Used HTML, CSS (Stylus), and an internal templating framework to to develop a series of user-customizable email templates (newsletter, onboarding, announcements) for use within global B2B sales department and across the company.",
+      "description2": "Worked closely with designers to develop a modular design system capable of yielding consistent treatments for a range of possible component configurations.",
+      "description3": "Worked closely with business and designers to negotiate functional requirements, customization boundaries, and mobile treatments / behavior.",
+      "description4": "Developed Email templates using HTML and CSS. Templates built to be responsive, customizable, and adherent to Apple brand standards and guidelines.",
+      "technologies_used": "Node, Gulp, SASS, Stylus, Kit, HTML, CSS, Git"
     },
     "cloudera": {
       "clientName": "Cloudera",
@@ -61,9 +94,90 @@
       "description2": "Hired as employee #334, grew the web team from 2 to 5 developers while contributing to the rapid company growth towards 1800 employees at the time of my departure.",
       "description3": "Developed dynamic frontend AEM components using JSP (later upgrading to HTL [Sightly]), Javascript, HTML and CSS. Built forms corresponding to each component using ExtJS, Granite and Coral UI, allowing Marketing stakeholders to author and publish content. Trained authors, hosted office hours, created PDF documentation.",
       "description4": "Developed frontend integrations and utilized data from a variety of APIs and web services including Learndot, Demandbase, Jobvite, Eloqua and SFDC.",
-      "description5": "Managed the publication of web content, used AEM Admin tools like CRXDELite, QueryBuilder, Bulk Editor, and VLT-RPC to manage, sync, and replicate JCR content across AEM instances (dev, auth, stage, prod, pub).",
-
+      "description5": "Managed the publication of web content, used AEM Admin tools like CRXDE Lite, QueryBuilder, Bulk Editor, and VLT-RPC to manage, sync, and replicate JCR content across AEM instances (dev, auth, stage, prod, pub).",
+      "description6": "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders.",
+      "description7": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS",
+      "description8": "Updated, maintained, and developed page templates and components for two separate Wordpress blogs, built components and functionality using PHP, Javascript, HTML, CSS.",
+      "description9": "Developed and updated a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
+      "description10": "Used Jenkins to build, test, and deploy code along AEM instances (dev, auth, stage, prod, pub).",
+      "description11": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
       "technologies_used": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
+    },
+    "levis": {
+      "clientName": "Levis",
+      "jobTitle": "Graphic Production Artist",
+      "location": "San Francisco, CA",
+      "startDateMonth": "May",
+      "startDateYear": "2012",
+      "endDateMonth": "May",
+      "endDateYear": "2013",
+      "description1": "Worked with Store Operations and Brand Environment, using Adobe Photoshop and Adobe Indesign to design and produce a variety of Retail communications including:",
+      "description2": "Monthly Retail Newsletter: Printed and distributed to employees in Retail Stores globally.",
+      "description3": "Monthly Store Layout Instructions: Printed and distributed to employees in Retail Stores globally.",
+      "description4": "Conference graphics: Banners, signage, badges.",
+      "technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign"
+    },
+    "numi": {
+      "clientName": "Numi Organic Tea",
+      "jobTitle": "Production Artist",
+      "location": "Oakland, CA",
+      "startDateMonth": "Nov",
+      "startDateYear": "2012",
+      "endDateMonth": "Dec",
+      "endDateYear": "2012",
+      "description2": "Formatted and produced marketing Emails using HTML/CSS.",
+      "description3": "Created package mockups from physical components.",
+      "description4": "Edited visual resources including menus, catalogs and recipe guides.",
+      "technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, HTML, CSS"
+    },
+    "stringLetterPublishing": {
+      "clientName": "String Letter Publishing",
+      "jobTitle": "Production Artist",
+      "location": "San Rafael, CA",
+      "startDateMonth": "Sep",
+      "startDateYear": "2011",
+      "endDateMonth": "Nov",
+      "endDateYear": "2011",
+      "description2": "Constructed and distributed Email Newsletters.",
+      "description3": "Formatted images for integration with iPad application.",
+      "description4": "Arranged text and images into magazine page templates.",
+      "technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, HTML, CSS"
+    },
+    "autumnPress": {
+      "clientName": "Autumn Press",
+      "jobTitle": "Print Technician",
+      "location": "San Francisco, CA",
+      "startDateMonth": "June",
+      "startDateYear": "2011",
+      "endDateMonth": "July",
+      "endDateYear": "2011",
+      "description1": "Corresponded with clients to define their printing requirements.",
+      "description2": "Formatted PDF and other file types to achieve proper color, margins, and other print detail for customer orders.",
+      "description3": "Operated specialty printers and die-cut machines to produce a variety of printed assets including corporate brochures, pamphlets, leaflets, wedding invitations, business cards, and more.",
+      "technologies_used": "Adobe Photoshop, Adobe InDesign, Adobe Acrobat"
+    },
+    "theOrion": {
+      "clientName": "The Orion",
+      "jobTitle": "Advertising Design Intern",
+      "location": "Chico, CA",
+      "startDateMonth": "Jan",
+      "startDateYear": "2011",
+      "endDateMonth": "May",
+      "endDateYear": "2011",
+      "description1": "Designed and produced advertisements for local businesses in the largely student-run weekly newspaper.",
+      "description2": "Produced a weekly comic.",
+      "technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign"
+    },
+    "truckerDeluxe": {
+      "clientName": "Trucker Deluxe",
+      "jobTitle": "Design Intern",
+      "location": "Chico, CA",
+      "startDateMonth": "May",
+      "startDateYear": "2010",
+      "endDateMonth": "Jul",
+      "endDateYear": "2010",
+      "description1": "Designed promotional material for a popular local clothing store, including stickers, online ads, and t-shirts.",
+      "technologies_used": "Adobe Photoshop, Adobe Illustrator"
     }
   },
   "section2": {
@@ -73,7 +187,8 @@
       "school": "California State University, Chico",
       "startDateYear": "2007",
       "endDateYear": "2011",
-      "description": "Studied many mediums of Graphic Design, including User Interface Design, with an upper-division theme in computer programming."
+      "description": "Studied many aspects of Graphic Design, including Information Design, with an upper-division theme in computer programming.",
+      "longDescription": "Studied many aspects of graphic design, including Information Design, Packaging, Corporate Identity, Typography, Illustration and Website Design, as well as an upper-division theme in computer programming."
     },
     "skills": {
       "title": "Skills",

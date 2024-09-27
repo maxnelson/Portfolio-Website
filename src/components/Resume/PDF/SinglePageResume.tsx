@@ -2,6 +2,7 @@ import { ResumeHeader } from "@/components/Resume/PDF/ResumeHeader";
 import { ResumeFooter } from "@/components/Resume/PDF/ResumeFooter";
 import { ResumeItem } from "@/components/Resume/PDF/ResumeItem";
 import {
+  PDFDownloadLink,
   PDFViewer,
   Document,
   Page,
@@ -128,11 +129,6 @@ export const SinglePageResume = (
                       props.resumeData
                         ?.section1.apple
                         .description5
-                    }
-                    description6={
-                      props.resumeData
-                        ?.section1.apple
-                        .description6
                     }
                   />
                   <ResumeItem
@@ -262,12 +258,6 @@ export const SinglePageResume = (
                         ?.section1
                         .cloudera
                         .description5
-                    }
-                    description6={
-                      props.resumeData
-                        ?.section1
-                        .cloudera
-                        .description6
                     }
                   />
                   <ResumeFooter
