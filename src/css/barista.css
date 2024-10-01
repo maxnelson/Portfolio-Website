@@ -10,6 +10,18 @@
 ._position--relative {
   position: relative;
 }
+._margin-right--1rem {
+  margin-right: 1rem;
+}
+._vertical-align--top {
+  vertical-align: top;
+}
+._margin-left--1rem {
+  margin-left: 1rem;
+}
+._margin-top--2rem {
+  margin-top: 2rem;
+}
 ._max-width--80percent {
   max-width: 80%;
 }
@@ -40,9 +52,6 @@
 ._font-size--9pt {
   font-size: 9pt;
 }
-._vertical-align--top {
-  vertical-align: top;
-}
 ._margin-top--1rem {
   margin-top: 1rem;
 }
@@ -62,7 +71,7 @@
   margin-bottom: 5rem;
 }
 ._font-size--10pt {
-  font-size: 10pt;
+  font-size: 10.t;
 }
 ._cursor--pointer {
   cursor: pointer;
@@ -94,12 +103,9 @@
 ._display--block {
   display: block;
 }
-._margin-left--1rem {
-  margin-left: 1rem;
+._color--var_gray-400_ {
+  color: var(--gray-400);
 }
-._margin-right--1rem {
-  margin-right: 1rem;
-}
-._margin-top--2rem {
-  margin-top: 2rem;
+._font-size--2rem {
+  font-size: 2rem;
 }

@@ -19,8 +19,8 @@
     "start_dev": "nodemon server.js"
   },
   "dependencies": {
-    "@firebase/storage": "^0.13.1",
     "@modularmoon/barista": "^1.1.4",
+    "@firebase/storage": "^0.13.1",
     "@react-pdf/renderer": "^3.4.4",
     "@tanstack/react-query": "^5.55.2",
     "buffer": "^6.0.3",

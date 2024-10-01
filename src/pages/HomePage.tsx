@@ -6,19 +6,32 @@ export function HomePage({
   projectDescriptionVisible,
   setProjectDescriptionVisible,
 }) {
-  document.body.classList.remove("_background-image--var_--image-1_");
-  document.body.classList.remove("_background-repeat--repeat");
+  document.body.classList.remove(
+    "_background-image--var_--image-1_"
+  );
+  document.body.classList.remove(
+    "_background-repeat--repeat"
+  );
   const params = useParams();
   return (
     <>
       <div className="page_container">
         <LeftSidebar
-          setProjectDescriptionVisible={setProjectDescriptionVisible}
+          setProjectDescriptionVisible={
+            setProjectDescriptionVisible
+          }
         />
         <div className="main_section">
           <ProjectsGrid
-            projectDescriptionVisible={projectDescriptionVisible}
-            projectDescriptionContentName={params.project}
+            projectDescriptionVisible={
+              projectDescriptionVisible
+            }
+            setProjectDescriptionVisible={
+              setProjectDescriptionVisible
+            }
+            projectDescriptionContentName={
+              params.project
+            }
           />
         </div>
         <Footer />

@@ -5,14 +5,33 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
+        w[l].push({
+          "gtm.start":
+            new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f =
+            d.getElementsByTagName(
+              s
+            )[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl =
+            l != "dataLayer"
+              ? "&l=" + l
+              : "";
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=" +
+          i +
+          dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5XVMK64Z");
+      })(
+        window,
+        document,
+        "script",
+        "dataLayer",
+        "GTM-5XVMK64Z"
+      );
     </script>
     <!-- End Google Tag Manager -->
     <!-- Google Analytics -->
@@ -21,7 +40,8 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-1638H8T4HJ"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer =
+        window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
@@ -30,15 +50,26 @@
     </script>
     <!-- End Google Analytics -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link
       rel="icon"
       type="image/svg+xml"
       href="/images/favicons/favicon_spaceboy.svg"
     />
-    <link href="/src/css/font_awesome/fontAwesomeKit.css" rel="stylesheet" />
-    <link href="/dist/css/barista.css" rel="stylesheet" />
-    <title>Max Nelson - Portfolio</title>
+    <link
+      href="/src/css/font_awesome/fontAwesomeKit.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/src/css/barista.css"
+      rel="stylesheet"
+    />
+    <title>
+      Max Nelson - Portfolio
+    </title>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -47,12 +78,18 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-5XVMK64Z"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
+        style="
+          display: none;
+          visibility: hidden;
+        "
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <div id="page_modal"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>

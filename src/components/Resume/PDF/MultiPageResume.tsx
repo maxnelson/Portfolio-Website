@@ -64,9 +64,15 @@ export const MultiPageResume = (
                   props.resumeData
                     ?.section1.title
                 }
+                customStyle={
+                  styles.margin_bottom_5
+                }
               />
               <View>
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1
@@ -116,6 +122,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1.apple
@@ -203,6 +212,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1.aquent
@@ -246,7 +258,7 @@ export const MultiPageResume = (
                 />
                 <ResumeItem
                   customStyle={
-                    styles.margin_top_90
+                    styles.margin_bottom_5
                   }
                   clientName={
                     props.resumeData
@@ -321,6 +333,9 @@ export const MultiPageResume = (
                 />
 
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1.apple2
@@ -377,7 +392,11 @@ export const MultiPageResume = (
                       .technologies_used
                   }
                 />
+
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1
@@ -486,9 +505,10 @@ export const MultiPageResume = (
                       .technologies_used
                   }
                 />
+
                 <ResumeItem
                   customStyle={
-                    styles.margin_top_60
+                    styles.margin_bottom_5
                   }
                   clientName={
                     props.resumeData
@@ -547,6 +567,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1.numi
@@ -599,6 +622,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1
@@ -661,6 +687,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                   clientName={
                     props.resumeData
                       ?.section1
@@ -716,6 +745,9 @@ export const MultiPageResume = (
                   }
                 />
                 <ResumeItem
+                  customStyle={
+                    styles.margin_bottom_10
+                  }
                   clientName={
                     props.resumeData
                       ?.section1

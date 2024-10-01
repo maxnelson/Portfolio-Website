@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
-import projectGridData from "#src/content/projectGridData.json" with { type: "json" };
-import { firestore_database_service_account } from "#root/src/utility_functions/config/firebaseAdminConfig.js";
+import projectGridData from "#src/content/projectGridData.json";
+import { firestore_database_service_account } from "#src/utility_functions/config/firebaseAdminConfig.js";
 
 export const uploadProjectGridData =
   async () => {

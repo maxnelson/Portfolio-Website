@@ -246,6 +246,9 @@ export const resumeStyles =
     margin_top_10: {
       marginTop: "10",
     },
+    margin_bottom_0: {
+      marginBottom: "0",
+    },
     margin_bottom_1: {
       marginBottom: "1",
     },
@@ -263,6 +266,15 @@ export const resumeStyles =
     },
     margin_bottom_10: {
       marginBottom: "10",
+    },
+    margin_bottom_50: {
+      marginBottom: "50",
+    },
+    margin_bottom_80: {
+      marginBottom: "80",
+    },
+    margin_bottom_90: {
+      marginBottom: "90",
     },
     margin_right_1: {
       marginRight: "1",

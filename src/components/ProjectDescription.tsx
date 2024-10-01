@@ -1,54 +1,100 @@
-export const ProjectDescription = (props) => {
+import {
+  useState,
+  useEffect,
+} from "react";
+import { getProjectData } from "#src/utility_functions/fetchData/getProjectGridData.js";
+import { projectDataModel } from "#src/types/models.ts";
+
+export const ProjectDescription = (
+  props
+) => {
+  const [projectData, setProjectData] =
+    useState<projectDataModel | null>(
+      null
+    );
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedProjectData =
+        await getProjectData(
+          props.projectDescriptionContentName
+        );
+      setProjectData(
+        fetchedProjectData
+      );
+    };
+    fetchData();
+  }, []);
+  console.log(
+    props.projectDescriptionContentName
+  );
+  console.log(projectData);
   return (
     <div className="project_description_container">
       <div className="project_description_container_images">
-        {props.data_object.image1 ? (
-          <img src={props.data_object.image1}></img>
+        {projectData?.image1 ? (
+          <img
+            src={projectData?.image1}
+          ></img>
         ) : null}
-        {props.data_object.image2 ? (
-          <img src={props.data_object.image2}></img>
+        {projectData?.image2 ? (
+          <img
+            src={projectData?.image2}
+          ></img>
         ) : null}
-        {props.data_object.image3 ? (
-          <img src={props.data_object.image3}></img>
+        {projectData?.image3 ? (
+          <img
+            src={projectData?.image3}
+          ></img>
         ) : null}
-        {props.data_object.image4 ? (
-          <img src={props.data_object.image4}></img>
+        {projectData?.image4 ? (
+          <img
+            src={projectData?.image4}
+          ></img>
         ) : null}
       </div>
       <div className="project_description_text_container _word-wrap--break-word">
-        {props.data_object.clientName && (
+        {projectData?.clientName && (
           <div className="_margin-bottom--1rem">
-            <h3>{props.data_object.clientName}</h3>
-            <p style={{ fontSize: "12pt", marginTop: "0", marginBottom: "0" }}>
-              {props.data_object.jobTitle}
+            <h3>
+              {projectData?.clientName}
+            </h3>
+            <p
+              style={{
+                fontSize: "12pt",
+                marginTop: "0",
+                marginBottom: "0",
+              }}
+            >
+              {projectData?.jobTitle}
             </p>
             <span>
-              {(props.data_object.startDateYear
-                ? props.data_object.startDateMonth +
+              {(projectData?.startDateYear
+                ? projectData?.startDateMonth +
                   " " +
-                  props.data_object.startDateYear
+                  projectData?.startDateYear
                 : "") +
-                (props.data_object.endDateYear
+                (projectData?.endDateYear
                   ? " - " +
-                    props.data_object.endDateMonth +
+                    projectData?.endDateMonth +
                     " " +
-                    props.data_object.endDateYear
+                    projectData?.endDateYear
                   : "")}
             </span>
           </div>
         )}
         <div
-          dangerouslySetInnerHTML={{ __html: props.data_object.description }}
+          dangerouslySetInnerHTML={{
+            __html:
+              projectData?.description ||
+              "",
+          }}
         ></div>
 
-        <div
-          className="back-button"
-          onClick={() => {
-            props.setProjectDescriptionVisible(false);
-          }}
-        >
-          <i className="fa-solid fa-chevron-left"></i>
-          <i className="fa-solid fa-chevron-left"></i>
+        <div className="back-button">
+          <a href="/">
+            <i className="fa-solid fa-chevron-left"></i>
+            <i className="fa-solid fa-chevron-left"></i>
+          </a>
         </div>
       </div>
     </div>

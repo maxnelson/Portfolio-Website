@@ -84,6 +84,7 @@ interface projectGridDataInterface {
 export const ProjectsGrid = ({
   projectDescriptionVisible,
   projectDescriptionContentName,
+  setProjectDescriptionVisible,
 }) => {
   const [
     projectGridData,
@@ -123,6 +124,15 @@ export const ProjectsGrid = ({
             projectGridData?.[
               projectDescriptionContentName
             ]
+          }
+          projectDescriptionVisible={
+            projectDescriptionVisible
+          }
+          setProjectDescriptionVisible={
+            setProjectDescriptionVisible
+          }
+          projectDescriptionContentName={
+            projectDescriptionContentName
           }
         />
       ) : (

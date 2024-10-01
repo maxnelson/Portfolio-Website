@@ -2,7 +2,6 @@ import { ResumeHeader } from "@/components/Resume/PDF/ResumeHeader";
 import { ResumeFooter } from "@/components/Resume/PDF/ResumeFooter";
 import { ResumeItem } from "@/components/Resume/PDF/ResumeItem";
 import {
-  PDFDownloadLink,
   PDFViewer,
   Document,
   Page,
@@ -72,9 +71,15 @@ export const SinglePageResume = (
                     props.resumeData
                       ?.section1.title
                   }
+                  customStyle={
+                    styles.margin_bottom_5
+                  }
                 />
                 <View>
                   <ResumeItem
+                    customStyle={
+                      styles.margin_bottom_5
+                    }
                     clientName={
                       props.resumeData
                         ?.section1.apple
@@ -132,6 +137,9 @@ export const SinglePageResume = (
                     }
                   />
                   <ResumeItem
+                    customStyle={
+                      styles.margin_bottom_5
+                    }
                     clientName={
                       props.resumeData
                         ?.section1
@@ -193,6 +201,9 @@ export const SinglePageResume = (
                     }
                   />
                   <ResumeItem
+                    customStyle={
+                      styles.margin_bottom_5
+                    }
                     clientName={
                       props.resumeData
                         ?.section1
