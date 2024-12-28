@@ -11,7 +11,7 @@ export const AbridgeDisclaimer = (props) => {
             <Text style={[]}>This Resume has been abridged to fit on a single page. Click </Text>
           </View>
           <View style={[styles.margin_left_10, styles.padding_left_10]}>
-            <Link src={"https://maxnelsonwebsite.com"} style={[styles.color_blue_100, styles.font_weight_bold, styles.text_decoration_none]}>
+            <Link src={"https://maxnelsonwebsite.com/resume/full"} style={[styles.color_blue_100, styles.font_weight_bold, styles.text_decoration_none]}>
               {"here "}
             </Link>
           </View>

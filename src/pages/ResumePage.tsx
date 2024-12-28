@@ -1,6 +1,7 @@
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
 import { ResumePicker } from "@/components/Resume/ResumePicker/ResumePicker";
 import { ResumePDF } from "@/components/Resume/PDF/ResumePDF";
@@ -105,7 +106,9 @@ interface resumeDataInterface {
 
 export const ResumePage = (_, setProjectDescriptionVisible) => {
   const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
-  const [resumeType, setResumeType] = useState("single");
+  const { resumetype } = useParams();
+  const defaultResumeType = resumetype ? resumetype : "single";
+  const [resumeType, setResumeType] = useState(defaultResumeType);
   useEffect(() => {
     const fetchData = async () => {
       const fetchedResumeData = await getResumeData();
@@ -113,12 +116,18 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     };
     fetchData();
   }, []);
+  console.log("URLParam");
+  console.log(resumetype);
+  console.log("defaultResumeType");
+  console.log(defaultResumeType);
   return (
     <>
       <div className="page_container">
         <LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
         <div className="main_section">
           <ResumePicker resumeType={resumeType} setResumeType={setResumeType} />
+          <h1>{defaultResumeType}</h1>
+          <h1>Test</h1>
           <ResumePDF resumeType={resumeType} resumeData={resumeData} />
 
           <div className="display_block _margin-top--2rem">
