@@ -1,9 +1,6 @@
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
-import {
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
 import { ResumePicker } from "@/components/Resume/ResumePicker/ResumePicker";
 import { ResumePDF } from "@/components/Resume/PDF/ResumePDF";
@@ -98,24 +95,20 @@ interface resumeDataInterface {
         title: string;
         description: string;
       };
+      skill7: {
+        title: string;
+        description: string;
+      };
     };
   };
 }
 
-export const ResumePage = (
-  _,
-  setProjectDescriptionVisible
-) => {
-  const [resumeData, setResumeData] =
-    useState<resumeDataInterface | null>(
-      null
-    );
-  const [resumeType, setResumeType] =
-    useState("single");
+export const ResumePage = (_, setProjectDescriptionVisible) => {
+  const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
+  const [resumeType, setResumeType] = useState("single");
   useEffect(() => {
     const fetchData = async () => {
-      const fetchedResumeData =
-        await getResumeData();
+      const fetchedResumeData = await getResumeData();
       setResumeData(fetchedResumeData);
     };
     fetchData();
@@ -123,28 +116,13 @@ export const ResumePage = (
   return (
     <>
       <div className="page_container">
-        <LeftSidebar
-          setProjectDescriptionVisible={
-            setProjectDescriptionVisible
-          }
-        />
+        <LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
         <div className="main_section">
-          <ResumePicker
-            resumeType={resumeType}
-            setResumeType={
-              setResumeType
-            }
-          />
-          <ResumePDF
-            resumeType={resumeType}
-            resumeData={resumeData}
-          />
+          <ResumePicker resumeType={resumeType} setResumeType={setResumeType} />
+          <ResumePDF resumeType={resumeType} resumeData={resumeData} />
 
           <div className="display_block _margin-top--2rem">
-            <p>
-              This Resume was generated
-              using React-PDF :)
-            </p>
+            <p>This Resume was generated using React-PDF :)</p>
           </div>
         </div>
         <Footer />
