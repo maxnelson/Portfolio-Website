@@ -1,7 +1,7 @@
 import { View, Text, Link } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
 
-export const AbridgeDisclaimer = (props) => {
+export const AbridgeDisclaimer = () => {
   return (
     <>
       <View style={[styles.display_flex, styles.flex_direction_row, styles.font_size_smaller, styles.margin_top_40]}>

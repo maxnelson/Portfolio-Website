@@ -116,18 +116,12 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
     };
     fetchData();
   }, []);
-  console.log("URLParam");
-  console.log(resumetype);
-  console.log("defaultResumeType");
-  console.log(defaultResumeType);
   return (
     <>
       <div className="page_container">
         <LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
         <div className="main_section">
           <ResumePicker resumeType={resumeType} setResumeType={setResumeType} />
-          <h1>{defaultResumeType}</h1>
-          <h1>Test</h1>
           <ResumePDF resumeType={resumeType} resumeData={resumeData} />
 
           <div className="display_block _margin-top--2rem">

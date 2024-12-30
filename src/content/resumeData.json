@@ -10,14 +10,29 @@
   "summary2": "Experienced in developing frontend build systems, website applications, tools, features, and components, using many different languages, frameworks, and platforms, and integrating data from a variety of web services, databases, and content repositories.",
   "section1": {
     "title": "Experience",
+
+    "datafinitygroup": {
+      "clientName": "Datafinity Group",
+      "jobTitle": "Marketing Automation Specialist",
+      "startDateMonth": "Oct",
+      "startDateYear": "2024",
+      "endDateMonth": "",
+      "endDateYear": "Current",
+      "location": "San Jose, CA",
+      "description1": "Managing and configuring large-scale email marketing campaigns in Marketo for Adobe.",
+      "description2": "Scheduling the deployment of campaigns with send volumes ranging from hundreds of thousands to millions.",
+      "description3": "Composing and configuring nurture campaigns, attribution programs, and audience lists in Marketo.",
+      "description4": "Modifying, updating, and optimizing HTML Email Templates for Fortune 100 company.",
+      "technologies_used": "HTML, CSS, Marketo, Adobe Journey Optimizer"
+    },
     "timeline": {
       "clientName": "Timeline",
       "startDateMonth": "Oct",
       "startDateYear": "2023",
-      "endDateMonth": "",
-      "endDateYear": "Current",
+      "endDateMonth": "Oct",
+      "endDateYear": "2024",
       "location": "Berkeley, CA",
-      "description1": "While pursuing my next opportunity I have kept busy studying several modern javascript frameworks including Vite, Express, React and D3; utilizing them towards a self-initiated project, a data visualization web application currently hosted at https://timelineapp.io.",
+      "description1": "While22 pursuing my next opportunity, kept busy by developing a self-initiated project, a data visualization web application, built using Node, Express, React and D3, currently hosted at https://timelineapp.io.",
       "technologies_used": "Google Cloud Platform, Firestore, Node, Vite, Express, React, D3, OAuth2"
     },
     "apple": {
