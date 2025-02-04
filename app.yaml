@@ -6,29 +6,9 @@ automatic_scaling:
   max_instances: 1
 
 handlers:
-  - url: /(.*\.css)$
-    static_files: dist/\1
-    upload: dist/.*\.css$
-    mime_type: text/css
-
-  - url: /(.*\.js)$
-    static_files: dist/\1
-    upload: dist/.*\.js$
-    mime_type: application/javascript
-
-  - url: /(.*\.(png|jpg|jpeg|gif|ico|json))$
-    static_files: dist/\1
-    upload: dist/.*\.(png|jpg|jpeg|gif|ico|json)$
-
-  - url: /(.*\.(woff|woff2|ttf|eot|svg))$
-    static_files: dist/\1
-    upload: dist/.*\.(woff|woff2|ttf|eot|svg)$
-    mime_type: application/font-woff
-
   - url: /.*
-    static_files: dist/index.html
-    upload: dist/index.html
     secure: always
+    script: auto
 
 env_variables:
   NODE_ENV: "production"

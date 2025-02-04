@@ -190,6 +190,9 @@ export const resumeStyles = StyleSheet.create({
   width_30_percent: {
     width: "30%",
   },
+  width_35_percent: {
+    width: "35%",
+  },
   width_40_percent: {
     width: "40%",
   },

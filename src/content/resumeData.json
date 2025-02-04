@@ -1,28 +1,27 @@
 {
   "name": "Max Nelson",
-  "title": "Senior Web Engineer",
+  "title": "Frontend Web Developer",
   "contactInfo": {
     "email": "maxnelson88@gmail.com",
     "phone": "+1.510-508-1392",
     "website": "maxnelsonwebsite.com"
   },
-  "summary1": "Senior Web Engineer with eight years of experience developing high-traffic, highly-visible, websites and applications.",
+  "summary1": "Web Developer with eight years of experience developing high-traffic, highly-visible, websites and applications.",
   "summary2": "Experienced in developing frontend build systems, website applications, tools, features, and components, using many different languages, frameworks, and platforms, and integrating data from a variety of web services, databases, and content repositories.",
   "section1": {
     "title": "Experience",
-
     "datafinitygroup": {
       "clientName": "Datafinity Group",
       "jobTitle": "Marketing Automation Specialist",
       "startDateMonth": "Oct",
       "startDateYear": "2024",
-      "endDateMonth": "",
-      "endDateYear": "Current",
+      "endDateMonth": "Jan",
+      "endDateYear": "2025",
       "location": "San Jose, CA",
-      "description1": "Managing and configuring large-scale email marketing campaigns in Marketo for Adobe.",
-      "description2": "Scheduling the deployment of campaigns with send volumes ranging from hundreds of thousands to millions.",
+      "description1": "Managing and configuring large-scale email marketing campaigns in Marketo for Fortune 100 company.",
+      "description2": "Scheduling the deployment of Emails with send volumes ranging from hundreds of thousands to millions.",
       "description3": "Composing and configuring nurture campaigns, attribution programs, and audience lists in Marketo.",
-      "description4": "Modifying, updating, and optimizing HTML Email Templates for Fortune 100 company.",
+      "description4": "Modifying, updating, and optimizing Email Templates using HTML and CSS.",
       "technologies_used": "HTML, CSS, Marketo, Adobe Journey Optimizer"
     },
     "timeline": {
@@ -32,7 +31,7 @@
       "endDateMonth": "Oct",
       "endDateYear": "2024",
       "location": "Berkeley, CA",
-      "description1": "While22 pursuing my next opportunity, kept busy by developing a self-initiated project, a data visualization web application, built using Node, Express, React and D3, currently hosted at https://timelineapp.io.",
+      "description1": "Kept busy by working on a self-initiated project, a data visualization web application, built using Node, Express, React and D3, currently hosted at https://timelineapp.io.",
       "technologies_used": "Google Cloud Platform, Firestore, Node, Vite, Express, React, D3, OAuth2"
     },
     "apple": {
@@ -44,15 +43,15 @@
       "endDateYear": "2023",
       "location": "Cupertino, CA",
       "description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
-      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, highly robust iOS applications, featured on display devices in Apple stores globally.",
+      "description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements, creating pixel-perfect, robust iOS applications, featured on display devices in Apple stores globally.",
       "description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
       "description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
-      "description5": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
-      "description6": "Managed QA and UAT among the primary user base of an internal macOS tool. Worked closely with Marcom to identify feature / requirement gaps, ideated and generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
-      "description7": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
-      "description8": "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; safely managing content, comparing and modifying JSON, within a large JSON repository containing content in 33 different languages.",
-      "description9": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
-      "description10": "Identified subtle and complex discrepancies between the rendering system found in macOS design tools (Sketch, Figma), macOS’ iOS Simulator and physical iOS devices themselves, conducting frequent on-device testing to ensure pixel-perfect visual accuracy.",
+      "description10": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with very firm deadlines dictated by Apple’s seasonal product release dates.",
+      "description5": "Managed QA and UAT among the primary user base of an internal macOS tool. Worked closely with Marcom to identify feature / requirement gaps, ideated and generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
+      "description6": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
+      "description7": "Wrote Python scripts to automate a variety of tasks, including verifying the file signature of image files; safely managing content, comparing and modifying JSON, within a large JSON repository containing content in 33 different languages.",
+      "description8": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
+      "description9": "Identified subtle and complex visual discrepancies between the rendering systems found in macOS design tools (Sketch, Figma), macOS’ iOS Simulator, and physical iOS devices themselves, conducting frequent on-device testing to ensure pixel-perfect visual accuracy.",
       "technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
     },
     "aquent": {

@@ -26,6 +26,20 @@ export const SinglePageResume = (props) => {
                 <View>
                   <ResumeItem
                     customStyle={styles.margin_bottom_5}
+                    clientName={props.resumeData?.section1.datafinitygroup.clientName}
+                    jobTitle={props.resumeData?.section1.datafinitygroup.jobTitle}
+                    startDateMonth={props.resumeData?.section1.datafinitygroup.startDateMonth}
+                    endDateMonth={props.resumeData?.section1.datafinitygroup.endDateMonth}
+                    startDateYear={props.resumeData?.section1.datafinitygroup.startDateYear}
+                    endDateYear={props.resumeData?.section1.datafinitygroup.endDateYear}
+                    description1={props.resumeData?.section1.datafinitygroup.description1}
+                    description2={props.resumeData?.section1.datafinitygroup.description2}
+                    description3={props.resumeData?.section1.datafinitygroup.description3}
+                    description4={props.resumeData?.section1.datafinitygroup.description4}
+                    description5={props.resumeData?.section1.datafinitygroup.description5}
+                  />
+                  <ResumeItem
+                    customStyle={styles.margin_bottom_5}
                     clientName={props.resumeData?.section1.apple.clientName}
                     jobTitle={props.resumeData?.section1.apple.jobTitle}
                     startDateMonth={props.resumeData?.section1.apple.startDateMonth}
@@ -36,7 +50,12 @@ export const SinglePageResume = (props) => {
                     description2={props.resumeData?.section1.apple.description2}
                     description3={props.resumeData?.section1.apple.description3}
                     description4={props.resumeData?.section1.apple.description4}
-                    description5={props.resumeData?.section1.apple.description5}
+                    //description5={props.resumeData?.section1.apple.description5}
+                    //description6={props.resumeData?.section1.apple.description6}
+                    //description7={props.resumeData?.section1.apple.description7}
+                    //description8={props.resumeData?.section1.apple.description8}
+                    //description9={props.resumeData?.section1.apple.description9}
+                    description10={props.resumeData?.section1.apple.description10}
                   />
                   <ResumeItem
                     customStyle={styles.margin_bottom_5}
@@ -61,8 +80,6 @@ export const SinglePageResume = (props) => {
                     endDateYear={props.resumeData?.section1.cloudera.endDateYear}
                     description1={props.resumeData?.section1.cloudera.description1}
                     description2={props.resumeData?.section1.cloudera.description2}
-                    description3={props.resumeData?.section1.cloudera.description3}
-                    description4={props.resumeData?.section1.cloudera.description4}
                     description5={props.resumeData?.section1.cloudera.description5}
                   />
 
@@ -89,7 +106,7 @@ export const SinglePageResume = (props) => {
                     skill6Description={props.resumeData?.section2.skills.skill6.description}
                     skill7Description={props.resumeData?.section2.skills.skill7.description}
                   />
-                  {<AbridgeDisclaimer />}
+                  <AbridgeDisclaimer />
                 </View>
               </View>
             </View>
