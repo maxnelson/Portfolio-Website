@@ -24,12 +24,12 @@
 			"technologies_used": "HTML, CSS, Marketo, Adobe Journey Optimizer"
 		},
 		"timeline": {
-			"clientName": "Timeline (Self-Initiated Project)",
-			"jobTitle": "Full Stack Developer",
+			"clientName": "Timeline (Self-initiated Project)",
+			"jobTitle": "Fullstack Developer",
 			"startDateMonth": "Oct",
 			"startDateYear": "2023",
-			"endDateMonth": "Oct",
-			"endDateYear": "2024",
+			"endDateMonth": "",
+			"endDateYear": "Current",
 			"location": "Berkeley, CA",
 			"description1": "Designed and developed a fully-functional web application that allows users to build interactive visual timelines.",
 			"description2": "Developed custom authentication mechanisms and login flows with multiple federated login providers using OAuth2.",
@@ -48,12 +48,12 @@
 			"description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements into pixel-perfect, robust iOS applications, featured on display devices in Apple stores globally.",
 			"description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
 			"description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
-			"description5": "Managed QA and UAT among the primary user base of an internal macOS tool. Worked closely with Marcom to identify feature / requirement gaps, ideated and generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
-			"description6": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale repository, containing content in 33 different languages.",
+			"description5": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale repository, containing content in 33 different languages.",
+			"description6": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
 			"description7": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
 			"description8": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
 			"description9": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
-			"description10": "Identified visual discrepancies between macOS and iOS rendering systems, conducted routine testing using the iOS Simulator and multiple devices to ensure pixel-perfect visual accuracy across all in-store device models.",
+			"description10": "Conducted rigorous application testing using iOS Simulator as well as multiple devices to ensure pixel-perfect visual accuracy across all in-store device models. Identified subtle and complex visual and computational discrepancies between macOS and iOS rendering systems.",
 			"technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
 		},
 		"aquent": {

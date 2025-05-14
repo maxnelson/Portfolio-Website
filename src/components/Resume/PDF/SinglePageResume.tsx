@@ -32,6 +32,34 @@ export const SinglePageResume = (props) => {
 									customStyle={[styles.margin_bottom_5]}
 								/>
 								<View>
+									{/*
+									<ResumeItem
+										customStyle={styles.margin_bottom_5}
+										clientName={props.resumeData?.section1.timeline.clientName}
+										jobTitle={props.resumeData?.section1.timeline.jobTitle}
+										startDateMonth={
+											props.resumeData?.section1.timeline.startDateMonth
+										}
+										endDateMonth={
+											props.resumeData?.section1.timeline.endDateMonth
+										}
+										startDateYear={
+											props.resumeData?.section1.timeline.startDateYear
+										}
+										endDateYear={
+											props.resumeData?.section1.timeline.endDateYear
+										}
+										description1={
+											props.resumeData?.section1.timeline.description1
+										}
+										description2={
+											props.resumeData?.section1.timeline.description2
+										}
+										description3={
+											props.resumeData?.section1.timeline.description3
+										}
+									/>
+									*/}
 									<ResumeItem
 										customStyle={styles.margin_bottom_5}
 										clientName={props.resumeData?.section1.apple.clientName}
