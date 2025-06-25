@@ -1,12 +1,13 @@
 {
 	"name": "Max Nelson",
-	"title": "Senior Web Engineer",
+	"title": "Software Engineer - Web",
 	"contactInfo": {
 		"email": "maxnelson88@gmail.com",
 		"phone": "+1.510-508-1392",
 		"website": "maxnelsonwebsite.com"
 	},
-	"summary1": "Web Engineer with eight years of experience developing websites, applications, tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; integrating data from a variety of web services, databases, and content repositories.",
+	"summary1": "Software Engineer with eight years of experience developing high-traffic, highly-visible, websites and applications.",
+	"summary2": "Experienced in developing tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; developing integrations with a variety of web services, databases, and content repositories.",
 	"section1": {
 		"title": "Experience",
 		"datafinitygroup": {
@@ -17,22 +18,22 @@
 			"endDateMonth": "Jan",
 			"endDateYear": "2025",
 			"location": "San Jose, CA",
-			"description1": "Composed email marketing programs and campaigns in Marketo for Fortune 100 client.",
+			"description1": "Composed and configured email marketing programs and campaigns in Marketo for Adobe.",
 			"description2": "Configured nurture campaigns, attribution programs, batch-and-blast programs, and audience lists in Marketo.",
 			"description3": "Modified, updated, and optimized Email templates using HTML and CSS.",
-			"description4": "Ensured compatability with all major Email clients, including Outlook Classic.",
+			"description4": "Ensured compatibility with all major Email clients, including Outlook Classic.",
 			"technologies_used": "HTML, CSS, Marketo, Adobe Journey Optimizer"
 		},
 		"timeline": {
-			"clientName": "Timeline (Self-initiated Project)",
-			"jobTitle": "Fullstack Developer",
+			"clientName": "timelineapp.io",
+			"jobTitle": "Founder / Fullstack Developer",
 			"startDateMonth": "Oct",
 			"startDateYear": "2023",
-			"endDateMonth": "",
-			"endDateYear": "Current",
+			"endDateMonth": "Current",
+			"endDateYear": "",
 			"location": "Berkeley, CA",
 			"description1": "Designed and developed a fully-functional web application that allows users to build interactive visual timelines.",
-			"description2": "Developed custom authentication mechanisms and login flows with multiple federated login providers using OAuth2.",
+			"description2": "Developed authentication mechanisms and login flows with federated login providers using OAuth2 protocol.",
 			"description3": "Built interactive and customizable data visualizations using React and D3.js.",
 			"technologies_used": "Google Cloud Platform, Firestore, Node, Vite, Express, React, D3, OAuth2"
 		},
@@ -47,9 +48,9 @@
 			"description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
 			"description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements into pixel-perfect, robust iOS applications, featured on display devices in Apple stores globally.",
 			"description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
-			"description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
-			"description5": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale repository, containing content in 33 different languages.",
-			"description6": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to clarify details of implementation.",
+			"description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying business and application requirements.",
+			"description5": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale content repository.",
+			"description6": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to guide implementation.",
 			"description7": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
 			"description8": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
 			"description9": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
@@ -77,7 +78,7 @@
 			"endDateYear": "2020",
 			"description1": "Worked with team and agencies to develop the rubrik.com website and its associated web properties.",
 			"description2": "Developed Wordpress page templates and components using HTML, CSS, Javascript and PHP (Timber, Twig).",
-			"description3": "Developed Adobe Experience Manager (AEM) components using HTML, CSS, Javascript, Sightly / HTL; integrating with a JSR-170 JackRabbit Oak Java Content Repository (JCR).",
+			"description3": "Developed Adobe Experience Manager (AEM) components using HTML, CSS, Javascript, Sightly / HTL.",
 			"description4": "Built frontend integrations with multiple web service APIs; built multiple components utilizing the data retrieved.",
 			"description5": "Built frontend components including navigation menus with strict animation requirements, and web forms with frontend validations.",
 			"description6": "Oversaw CDN migration, configured DNS records for new and existing web properties. Managed Google Analytics.",
@@ -207,36 +208,36 @@
 			"school": "California State University, Chico",
 			"startDateYear": "2007",
 			"endDateYear": "2011",
-			"description": "Studied many mediums of Graphic Design with an upper-division theme in computer programming.",
+			"description": "Studied Graphic Design, with an upper-division theme in computer programming.",
 			"longDescription": "Studied many aspects of Graphic Design, including Information Design, Packaging, Corporate Identity, Typography, Illustration and Website Design, with an upper-division theme in computer programming."
 		},
 		"skills": {
 			"title": "Skills",
 			"skill1": {
 				"title": "Javascript",
-				"description": "React • Typescript • Node • Express • D3"
+				"description": "Typescript • Node • Express • React • D3"
 			},
 			"skill2": {
 				"title": "Pre/Post Processing Tools",
 				"description": "Rollup • Babel • PostCSS"
 			},
 			"skill3": {
-				"title": "Databases",
-				"description": "Firebase • Firestore"
+				"title": "Cloud Platforms",
+				"description": "Google Cloud Platform (GCP)"
 			},
 			"skill4": {
 				"title": "Misc",
-				"description": "Python • Flask • Oauth2"
+				"description": "Python • Git • Oauth2"
 			},
-			"skill7": {
+			"skill5": {
+				"title": "Databases",
+				"description": "Firebase • Firestore"
+			},
+			"skill6": {
 				"title": "PHP",
 				"description": "WordPress"
 			},
-			"skill6": {
-				"title": "Cloud Platforms",
-				"description": "Google Cloud Platform"
-			},
-			"skill5": {
+			"skill7": {
 				"title": "Misc",
 				"description": "OAuth2"
 			}

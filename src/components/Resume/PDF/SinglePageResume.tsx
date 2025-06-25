@@ -26,13 +26,51 @@ export const SinglePageResume = (props) => {
 									phone={props.resumeData?.contactInfo.phone}
 									website={props.resumeData?.contactInfo.website}
 								/>
-								<SummarySection summary1={props.resumeData?.summary1} />
+								<SummarySection
+									summary1={props.resumeData?.summary1}
+									summary2={props.resumeData?.summary2}
+								/>
 								<ResumeSectionHeader
 									title={props.resumeData?.section1.title}
 									customStyle={[styles.margin_bottom_5]}
 								/>
 								<View>
-									{/*
+									{/* 
+									<ResumeItem
+										customStyle={styles.margin_bottom_5}
+										clientName={
+											props.resumeData?.section1.datafinitygroup.clientName
+										}
+										jobTitle={
+											props.resumeData?.section1.datafinitygroup.jobTitle
+										}
+										startDateMonth={
+											props.resumeData?.section1.datafinitygroup
+												.startDateMonth
+										}
+										endDateMonth={
+											props.resumeData?.section1.datafinitygroup.endDateMonth
+										}
+										startDateYear={
+											props.resumeData?.section1.datafinitygroup.startDateYear
+										}
+										endDateYear={
+											props.resumeData?.section1.datafinitygroup.endDateYear
+										}
+										description1={
+											props.resumeData?.section1.datafinitygroup.description1
+										}
+										description2={
+											props.resumeData?.section1.datafinitygroup.description2
+										}
+										description3={
+											props.resumeData?.section1.datafinitygroup.description3
+										}
+										description4={
+											props.resumeData?.section1.datafinitygroup.description4
+										}
+									/>
+									*/}
 									<ResumeItem
 										customStyle={styles.margin_bottom_5}
 										clientName={props.resumeData?.section1.timeline.clientName}
@@ -59,7 +97,6 @@ export const SinglePageResume = (props) => {
 											props.resumeData?.section1.timeline.description3
 										}
 									/>
-									*/}
 									<ResumeItem
 										customStyle={styles.margin_bottom_5}
 										clientName={props.resumeData?.section1.apple.clientName}
@@ -77,7 +114,9 @@ export const SinglePageResume = (props) => {
 										description3={props.resumeData?.section1.apple.description3}
 										description4={props.resumeData?.section1.apple.description4}
 										description5={props.resumeData?.section1.apple.description5}
+										/*
 										description6={props.resumeData?.section1.apple.description6}
+										*/
 										description7={props.resumeData?.section1.apple.description7}
 										/*
 										description8={props.resumeData?.section1.apple.description8}
@@ -133,9 +172,11 @@ export const SinglePageResume = (props) => {
 										description2={
 											props.resumeData?.section1.cloudera.description2
 										}
+										/*
 										description3={
 											props.resumeData?.section1.cloudera.description3
 										}
+											*/
 										description4={
 											props.resumeData?.section1.cloudera.description4
 										}
