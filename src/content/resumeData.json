@@ -219,7 +219,7 @@
 			},
 			"skill2": {
 				"title": "Pre/Post Processing Tools",
-				"description": "Rollup • Babel • PostCSS"
+				"description": "Babel • Rollup • PostCSS"
 			},
 			"skill3": {
 				"title": "Cloud Platforms",
@@ -227,7 +227,7 @@
 			},
 			"skill4": {
 				"title": "Misc",
-				"description": "Python • Git • Oauth2"
+				"description": "Python • Flask • Git • Oauth2"
 			},
 			"skill5": {
 				"title": "Databases",
