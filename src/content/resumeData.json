@@ -3,7 +3,7 @@
 	"title": "Frontend / Fullstack Web Engineer",
 	"contactInfo": {
 		"email": "maxnelson88@gmail.com",
-		"phone": "+1.510-508-1392",
+		"phone": "510-508-1392",
 		"website": "maxnelsonwebsite.com"
 	},
 	"summary1": "Web Developer with ten years of experience developing high traffic, highly visible web sites and applications.",
@@ -46,16 +46,16 @@
 			"endDateYear": "2023",
 			"location": "Cupertino, CA",
 			"description1": "Implemented frontend production requirements for in-store display applications, including the default retail display application for iPhone.",
-			"description2": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
-			"description3": "Used an internal tool, similar to XCodes' storyboards, to compose and configure SwiftUI elements and their properties, in order to implement requirements (design, animation, functional) into robust, pixel-perfect iOS application components, featured on display devices in Apple stores globally.",
-			"description4": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
-			"description5": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying business and application requirements.",
+			"description3": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+			"description2": "Used an internal tool, similar to XCodes' storyboards, to compose and configure SwiftUI elements and their properties, in order to implement design, animation and functional requirements into iOS application components, featured on display devices in Apple stores globally.",
+			"description4": "Designed and developed a flexible frontend component system capable of adapting to the content of eight different in-store devices, in many different languages, at any of the ADA-compliant system-font sizes.",
+			"description5": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying complex business and application requirements.",
 			"description6": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale content repository.",
-			"description7": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to guide implementation.",
-			"description8": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+			"description7": "Assisted in the devlopment of a macOS application. Managed QA and UAT among the primary user base of the application. Identifed requirement gaps, proposed featured and created detailed UI/UX proposal documents, worked closely with Engineering to guide implementation.",
 			"description9": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
 			"description10": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
 			"description11": "Conducted rigorous application testing using iOS Simulator as well as multiple devices to ensure pixel-perfect visual accuracy across all in-store device models. Identified subtle and complex visual and computational discrepancies between macOS and iOS rendering systems.",
+
 			"technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
 		},
 		"aquent": {
@@ -77,9 +77,9 @@
 			"startDateYear": "2019",
 			"endDateMonth": "Feb",
 			"endDateYear": "2020",
-			"description1": "Worked with team and agencies to develop the rubrik.com website and its associated web properties.",
-			"description2": "Developed Wordpress page templates and components using HTML, CSS, Javascript and PHP (Timber, Twig).",
-			"description3": "Developed Adobe Experience Manager (AEM) components using HTML, CSS, Javascript, Sightly / HTL.",
+			"description1": "Developed website components, functionality, and tools in order to update and maintain the rubrik.com website and its associated web properties.",
+			"description2": "Developed Wordpress page templates and components using HTML, CSS, Javascript and PHP.",
+			"description3": "Developed Adobe Experience Manager components using HTML, CSS, Javascript, Sightly / HTL.",
 			"description4": "Built frontend integrations with multiple web service APIs; built multiple components utilizing the data retrieved.",
 			"description5": "Built frontend components including navigation menus with strict animation requirements, and web forms with frontend validations.",
 			"description6": "Oversaw CDN migration, configured DNS records for new and existing web properties. Managed Google Analytics.",
@@ -110,18 +110,21 @@
 			"startDateYear": "2013",
 			"endDateMonth": "Sept",
 			"endDateYear": "2017",
-			"description1": "Developed website components, functionality, and tools in order to update and maintain the cloudera.com website and its associated web properties.",
-			"description2": "Developed Adobe Experience Manager (AEM) components using HTML, CSS, Javascript, JSP scriptlets (later updating to Sightly / HTL), and Java; integrating with a JSR-170 JackRabbit Oak Java Content Repository (JCR).",
-			"description3": "Developed frontend integrations with multiple web service APIs, including Demandbase, Eloqua, Learndot and SFDC; utilized data from these services in forms and components on the website. ",
-			"description4": "Managed the publication of website content. Performed Admin operations such as transferring content across environments using tools like CRXDELite, QueryBuilder, Bulk Editor and VLT-RPC.",
+			"description1": "Worked with team and agencies to develop the cloudera.com website and its associated web properties.",
+			"description2": "Hired as employee #334, wore many hats; helped build the web team and support the company during a period of rapid growth towards 1800 employees at the time of my departure.",
+			"description3": "Developed Adobe Experience Manager components using HTML, CSS, Javascript, Sightly / HTL, JSP scriptlets, integrating with a JSR-170 JackRabbit Oak Java Content Repository.",
+			"description4": "Managed the publication of website content. Performed admin operations. Migrated content across environments using tools like CRXDELite, QueryBuilder, Bulk Editor and VLT-RPC.",
 			"description5": "Worked cross-functionally with stakeholders from all departments in order to prioritize content updates.",
-			"description6": "Developed frontend integrations with a variety of APIs and web services including Learndot, Demandbase, Jobvite, Eloqua and SFDC; used data from these services to drive functionality and content of website components.",
-			"descriptio7": "Published, synced, and replicated JCR content across AEM and DAM instances (dev, auth, stage, prod, pub) using AEM Admin tools like CRXDE Lite, QueryBuilder, Bulk Editor, and VLT-RPC.",
-			"description8": "Managed two Wordpress blogs. Developed and maintained page templates and components using HTML, CSS, Javascript, PHP.",
-			"description9": "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders.",
-			"description10": "Developed and updated a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
-			"description11": "Used Jenkins to build, test, and deploy code along AEM instances (dev, auth, stage, prod, pub).",
-			"description12": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
+			"description6": "Developed frontend integrations with multiple web service APIs, including Demandbase, Eloqua, Learndot and SFDC; utilized data from these services in forms and components on the website.",
+			"description7": "Managed the publication of website content. Performed admin operations. Migrated content across environments using tools like CRXDELite, QueryBuilder, Bulk Editor and VLT-RPC.",
+			"description8": "Worked cross-functionally with stakeholders from all departments in order to prioritize content updates.",
+			"description9": "Developed frontend integrations with a variety of APIs and web services including Learndot, Demandbase, Jobvite, Eloqua and SFDC; used data from these services to drive functionality and content of website components.",
+			"description10": "Published, synced, and replicated JCR content across AEM and DAM instances (dev, auth, stage, prod, pub) using AEM Admin tools like CRXDE Lite, QueryBuilder, Bulk Editor, and VLT-RPC.",
+			"description11": "Managed two Wordpress blogs. Developed and maintained page templates and components using HTML, CSS, Javascript, PHP.",
+			"description12": "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders.",
+			"description13": "Developed and updated a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
+			"description14": "Used Jenkins to build, test, and deploy code along AEM instances (dev, auth, stage, prod, pub).",
+			"description15": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
 			"technologies_used": "AEM (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
 		},
 		"levis": {
@@ -215,19 +218,19 @@
 			"title": "Skills",
 			"skill1": {
 				"title": "Javascript",
-				"description": "Typescript • Node • Express • React • D3"
+				"description": "Typescript • React • Node • Express • D3"
 			},
 			"skill2": {
-				"title": "Pre/Post Processing Tools",
-				"description": "Babel • Rollup • PostCSS"
+				"title": "Pre / Post Processing Tools",
+				"description": "Babel • Rollup"
 			},
 			"skill3": {
 				"title": "Cloud Platforms",
-				"description": "Google Cloud Platform (GCP)"
+				"description": "Google Cloud Platform"
 			},
 			"skill4": {
-				"title": "Misc",
-				"description": "Python • Flask • Git • Oauth2"
+				"title": "Miscellaneous",
+				"description": "Python • Flask • OAuth2 • Git"
 			},
 			"skill5": {
 				"title": "Databases",

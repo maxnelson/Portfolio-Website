@@ -10,7 +10,7 @@ const font_size_large = "14pt";
 
 export const resumeStyles = StyleSheet.create({
 	page_container: {
-		paddingTop: "30",
+		paddingTop: "20",
 		paddingBottom: "0",
 		paddingLeft: "30",
 		paddingRight: "30"

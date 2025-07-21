@@ -96,12 +96,12 @@ export const ResumeItem = (props) => {
 							bullet={"bullet"}
 						/>
 					)}
-					{props.technologies_used && (
+					{/*props.technologies_used && (
 						<BulletPoint
 							text={props.technologies_used}
 							bullet={"technologies"}
 						/>
-					)}
+					)*/}
 				</View>
 			</View>
 		</>

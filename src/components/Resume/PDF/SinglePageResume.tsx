@@ -32,7 +32,7 @@ export const SinglePageResume = (props) => {
 								/>
 								<ResumeSectionHeader
 									title={props.resumeData?.section1.title}
-									customStyle={[styles.margin_bottom_10]}
+									customStyle={[styles.margin_bottom_5]}
 								/>
 								<View>
 									{/* 
@@ -115,9 +115,9 @@ export const SinglePageResume = (props) => {
 										description2={props.resumeData?.section1.apple.description2}
 										description3={props.resumeData?.section1.apple.description3}
 										description4={props.resumeData?.section1.apple.description4}
-										/*
-										description4={props.resumeData?.section1.apple.description4}
 										description5={props.resumeData?.section1.apple.description5}
+										description7={props.resumeData?.section1.apple.description7}
+										/*
 										description6={props.resumeData?.section1.apple.description6}
 										description8={props.resumeData?.section1.apple.description8}
 										description9={props.resumeData?.section1.apple.description9}
@@ -178,11 +178,9 @@ export const SinglePageResume = (props) => {
 										description2={
 											props.resumeData?.section1.cloudera.description2
 										}
-										/*
 										description3={
 											props.resumeData?.section1.cloudera.description3
 										}
-											*/
 										description4={
 											props.resumeData?.section1.cloudera.description4
 										}
