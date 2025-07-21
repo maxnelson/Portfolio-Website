@@ -32,12 +32,12 @@ export const SinglePageResume = (props) => {
 								/>
 								<ResumeSectionHeader
 									title={props.resumeData?.section1.title}
-									customStyle={[styles.margin_bottom_5]}
+									customStyle={[styles.margin_bottom_10]}
 								/>
 								<View>
 									{/* 
 									<ResumeItem
-										customStyle={styles.margin_bottom_5}
+										customStyle={styles.margin_bottom_10}
 										clientName={
 											props.resumeData?.section1.datafinitygroup.clientName
 										}
@@ -71,8 +71,9 @@ export const SinglePageResume = (props) => {
 										}
 									/>
 									*/}
+									{/* 
 									<ResumeItem
-										customStyle={styles.margin_bottom_5}
+										customStyle={styles.margin_bottom_10}
 										clientName={props.resumeData?.section1.timeline.clientName}
 										jobTitle={props.resumeData?.section1.timeline.jobTitle}
 										startDateMonth={
@@ -97,8 +98,9 @@ export const SinglePageResume = (props) => {
 											props.resumeData?.section1.timeline.description3
 										}
 									/>
+									*/}
 									<ResumeItem
-										customStyle={styles.margin_bottom_5}
+										customStyle={styles.margin_bottom_10}
 										clientName={props.resumeData?.section1.apple.clientName}
 										jobTitle={props.resumeData?.section1.apple.jobTitle}
 										startDateMonth={
@@ -113,21 +115,22 @@ export const SinglePageResume = (props) => {
 										description2={props.resumeData?.section1.apple.description2}
 										description3={props.resumeData?.section1.apple.description3}
 										description4={props.resumeData?.section1.apple.description4}
+										/*
+										description4={props.resumeData?.section1.apple.description4}
 										description5={props.resumeData?.section1.apple.description5}
-										/*
 										description6={props.resumeData?.section1.apple.description6}
-										*/
-										description7={props.resumeData?.section1.apple.description7}
-										/*
 										description8={props.resumeData?.section1.apple.description8}
 										description9={props.resumeData?.section1.apple.description9}
 										description10={
 											props.resumeData?.section1.apple.description10
 										}
 										*/
+										technologies_used={
+											props.resumeData?.section1.apple.technologies_used
+										}
 									/>
 									<ResumeItem
-										customStyle={styles.margin_bottom_5}
+										customStyle={styles.margin_bottom_10}
 										clientName={props.resumeData?.section1.rubrik.clientName}
 										jobTitle={props.resumeData?.section1.rubrik.jobTitle}
 										startDateMonth={
@@ -149,9 +152,12 @@ export const SinglePageResume = (props) => {
 										description3={
 											props.resumeData?.section1.rubrik.description3
 										}
+										technologies_used={
+											props.resumeData?.section1.rubrik.technologies_used
+										}
 									/>
 									<ResumeItem
-										customStyle={styles.margin_bottom_5}
+										customStyle={styles.margin_bottom_10}
 										clientName={props.resumeData?.section1.cloudera.clientName}
 										jobTitle={props.resumeData?.section1.cloudera.jobTitle}
 										startDateMonth={
@@ -182,6 +188,9 @@ export const SinglePageResume = (props) => {
 										}
 										description5={
 											props.resumeData?.section1.cloudera.description5
+										}
+										technologies_used={
+											props.resumeData?.section1.cloudera.technologies_used
 										}
 									/>
 

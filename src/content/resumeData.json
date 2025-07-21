@@ -1,13 +1,13 @@
 {
 	"name": "Max Nelson",
-	"title": "Software Engineer - Web",
+	"title": "Frontend / Fullstack Web Engineer",
 	"contactInfo": {
 		"email": "maxnelson88@gmail.com",
 		"phone": "+1.510-508-1392",
 		"website": "maxnelsonwebsite.com"
 	},
-	"summary1": "Software Engineer with eight years of experience developing high-traffic, highly-visible, websites and applications.",
-	"summary2": "Experienced in developing tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; developing integrations with a variety of web services, databases, and content repositories.",
+	"summary1": "Web Developer with ten years of experience developing high traffic, highly visible web sites and applications.",
+	"summary2": "Experienced in developing tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; developing integrations with a variety of web services, databases, and content repositories, including Wordpress and AEM.",
 	"section1": {
 		"title": "Experience",
 		"datafinitygroup": {
@@ -32,7 +32,7 @@
 			"endDateMonth": "Current",
 			"endDateYear": "",
 			"location": "Berkeley, CA",
-			"description1": "Designed and developed a fully-functional web application that allows users to build interactive visual timelines.",
+			"description1": "Designed and implemented a fully-functional web application that allows users to build interactive visual timelines.",
 			"description2": "Developed authentication mechanisms and login flows with federated login providers using OAuth2 protocol.",
 			"description3": "Built interactive and customizable data visualizations using React and D3.js.",
 			"technologies_used": "Google Cloud Platform, Firestore, Node, Vite, Express, React, D3, OAuth2"
@@ -45,16 +45,17 @@
 			"endDateMonth": "Oct",
 			"endDateYear": "2023",
 			"location": "Cupertino, CA",
-			"description1": "Implemented frontend production requirements for retail display applications, including the default retail display application for iPhone.",
-			"description2": "Composed SwiftUI elements and configured their properties to implement design, animation, and functional requirements into pixel-perfect, robust iOS applications, featured on display devices in Apple stores globally.",
-			"description3": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
-			"description4": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying business and application requirements.",
-			"description5": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale content repository.",
-			"description6": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to guide implementation.",
-			"description7": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
-			"description8": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
-			"description9": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
-			"description10": "Conducted rigorous application testing using iOS Simulator as well as multiple devices to ensure pixel-perfect visual accuracy across all in-store device models. Identified subtle and complex visual and computational discrepancies between macOS and iOS rendering systems.",
+			"description1": "Implemented frontend production requirements for in-store display applications, including the default retail display application for iPhone.",
+			"description2": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+			"description3": "Used an internal tool, similar to XCodes' storyboards, to compose and configure SwiftUI elements and their properties, in order to implement requirements (design, animation, functional) into robust, pixel-perfect iOS application components, featured on display devices in Apple stores globally.",
+			"description4": "Designed and developed a flexible, dynamic component system, capable of adapting to the content of 8 different devices, in 33 different languages, at any of 12 ADA-compliant system font sizes.",
+			"description5": "Designed JSON structures responsible for providing application content, allowing for complex features / functionality; satisfying business and application requirements.",
+			"description6": "Wrote Python scripts to automate a variety of tasks, including: verifying the file signature of image files; safely modifying JSON content within a large-scale content repository.",
+			"description7": "Managed QA and UAT among the primary user base of an internal macOS application. Worked cross-functionally between Marcom and Retail Engineering to identify requirement gaps. Generated detailed UI/UX proposal documents, worked closely with Engineering to guide implementation.",
+			"description8": "Advanced from UI Editor to UI Dev Lead by organizing projects, automating processes, troubleshooting application issues, and managing the work of of 2-5 other UI Editors, during projects with firm deadlines dictated by Apple’s seasonal product release dates.",
+			"description9": "Worked closely with Retail Engineering to troubleshoot and resolve complex issues at many levels of the macOS application stack. Generated detailed radars with proposed technical solutions.",
+			"description10": "Developed components to be fully ADA-compliant, including multi-level support for VoiceOver (Labels and Hints), motion controls, text size adaptability, and color contrast standards.",
+			"description11": "Conducted rigorous application testing using iOS Simulator as well as multiple devices to ensure pixel-perfect visual accuracy across all in-store device models. Identified subtle and complex visual and computational discrepancies between macOS and iOS rendering systems.",
 			"technologies_used": "SwiftUI, XCode, Python, Node, JSON, Proxyman, AEM, Git"
 		},
 		"aquent": {
@@ -118,11 +119,10 @@
 			"descriptio7": "Published, synced, and replicated JCR content across AEM and DAM instances (dev, auth, stage, prod, pub) using AEM Admin tools like CRXDE Lite, QueryBuilder, Bulk Editor, and VLT-RPC.",
 			"description8": "Managed two Wordpress blogs. Developed and maintained page templates and components using HTML, CSS, Javascript, PHP.",
 			"description9": "Administered Google Analytics and Tag Manager accounts. Published events, triggers and reports for stakeholders.",
-			"description10": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS",
-			"description11": "Developed and updated a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
-			"description12": "Used Jenkins to build, test, and deploy code along AEM instances (dev, auth, stage, prod, pub).",
-			"description13": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
-			"technologies_used": "AEM Stack (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
+			"description10": "Developed and updated a variety of frontend components, including marketing page templates, filter-able grids, navigation menus, and dynamic forms with strict validation rules.",
+			"description11": "Used Jenkins to build, test, and deploy code along AEM instances (dev, auth, stage, prod, pub).",
+			"description12": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
+			"technologies_used": "AEM (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
 		},
 		"levis": {
 			"clientName": "Levis",
