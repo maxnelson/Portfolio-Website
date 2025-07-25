@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
 import { ResumePicker } from "@/components/Resume/ResumePicker/ResumePicker";
 import { ResumePDF } from "@/components/Resume/PDF/ResumePDF";
+import { ResumeControls } from "@/components/Resume/ResumeControls";
+
 interface resumeDataInterface {
 	name: string;
 	title: string;
@@ -118,7 +120,10 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
 	return (
 		<>
 			<div className="page_container">
-				<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+				<div className="sidebar _display--inline-block">
+					<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+					<ResumeControls />
+				</div>
 				<div className="main_section">
 					<ResumePicker
 						resumeType={resumeType}

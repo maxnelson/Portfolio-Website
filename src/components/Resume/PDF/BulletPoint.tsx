@@ -8,8 +8,8 @@ export const BulletPoint = (props) => {
 				style={[
 					styles.display_flex,
 					styles.flex_direction_row,
-					styles.margin_bottom_2,
-					styles.margin_top_2,
+					props.spaceBetweenBullets[0],
+					props.spaceBetweenBullets[1],
 					styles.font_size_11pt
 				]}>
 				{props.bullet === "bullet" && (

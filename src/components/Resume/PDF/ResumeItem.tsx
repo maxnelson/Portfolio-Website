@@ -18,7 +18,7 @@ export const ResumeItem = (props) => {
 							style={[
 								styles.color_blue_50,
 								styles.font_family_helvetica_bold,
-								styles.font_size_13pt
+								props.titleFontSize
 							]}>
 							{props.clientName}
 						</Text>
@@ -34,51 +34,59 @@ export const ResumeItem = (props) => {
 					/>
 				</View>
 
-				<View style={[styles.font_size_medium, styles.line_height_1_2]}>
+				<View style={[styles.font_size_medium, props.itemLineHeight]}>
 					{props.description1 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description1}
 							bullet={false}
 						/>
 					)}
 					{props.description2 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description2}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description3 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description3}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description4 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description4}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description5 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description5}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description6 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description6}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description7 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description7}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description8 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description8}
 							bullet={"bullet"}
 						/>
@@ -86,18 +94,21 @@ export const ResumeItem = (props) => {
 
 					{props.description9 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description9}
 							bullet={"bullet"}
 						/>
 					)}
 					{props.description10 && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description10}
 							bullet={"bullet"}
 						/>
 					)}
 					{/*props.technologies_used && (
 						<BulletPoint
+							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.technologies_used}
 							bullet={"technologies"}
 						/>

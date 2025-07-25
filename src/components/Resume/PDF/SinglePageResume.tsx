@@ -8,6 +8,24 @@ import { SummarySection } from "@/components/Resume/PDF/SummarySection";
 import { AbridgeDisclaimer } from "@/components/Resume/PDF/AbridgeDisclaimer";
 
 export const SinglePageResume = (props) => {
+	const resumeModeOptions = ["compact", "regular"];
+	const resumeMode = resumeModeOptions[1];
+	let marginBelowItem;
+	let titleFontSize;
+	let itemLineHeight;
+	let spaceBetweenBullets;
+
+	if (resumeMode === "compact") {
+		marginBelowItem = styles.margin_bottom_5;
+		titleFontSize = styles.font_size_12pt;
+		itemLineHeight = styles.line_height_1;
+		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
+	} else if (resumeMode === "regular") {
+		marginBelowItem = styles.margin_bottom_10;
+		titleFontSize = styles.font_size_13pt;
+		itemLineHeight = styles.line_height_1_2;
+		spaceBetweenBullets = [styles.margin_top_0, styles.margin_bottom_0];
+	}
 	return (
 		<>
 			<PDFViewer
@@ -32,48 +50,66 @@ export const SinglePageResume = (props) => {
 								/>
 								<ResumeSectionHeader
 									title={props.resumeData?.section1.title}
-									customStyle={[styles.margin_bottom_5]}
+									customStyle={[marginBelowItem]}
 								/>
 								<View>
+									{
+										<ResumeItem
+											spaceBetweenBullets={spaceBetweenBullets}
+											itemLineHeight={itemLineHeight}
+											titleFontSize={titleFontSize}
+											customStyle={[marginBelowItem]}
+											clientName={
+												props.resumeData?.section1.datafinitygroup
+													.clientName
+											}
+											jobTitle={
+												props.resumeData?.section1.datafinitygroup.jobTitle
+											}
+											startDateMonth={
+												props.resumeData?.section1.datafinitygroup
+													.startDateMonth
+											}
+											endDateMonth={
+												props.resumeData?.section1.datafinitygroup
+													.endDateMonth
+											}
+											startDateYear={
+												props.resumeData?.section1.datafinitygroup
+													.startDateYear
+											}
+											endDateYear={
+												props.resumeData?.section1.datafinitygroup
+													.endDateYear
+											}
+											description1={
+												props.resumeData?.section1.datafinitygroup
+													.description1
+											}
+											description2={
+												props.resumeData?.section1.datafinitygroup
+													.description2
+											}
+											description3={
+												props.resumeData?.section1.datafinitygroup
+													.description3
+											}
+											description4={
+												props.resumeData?.section1.datafinitygroup
+													.description4
+											}
+											description5={
+												props.resumeData?.section1.datafinitygroup
+													.description5
+											}
+										/>
+									}
 									{/* 
 									<ResumeItem
-										customStyle={styles.margin_bottom_10}
-										clientName={
-											props.resumeData?.section1.datafinitygroup.clientName
-										}
-										jobTitle={
-											props.resumeData?.section1.datafinitygroup.jobTitle
-										}
-										startDateMonth={
-											props.resumeData?.section1.datafinitygroup
-												.startDateMonth
-										}
-										endDateMonth={
-											props.resumeData?.section1.datafinitygroup.endDateMonth
-										}
-										startDateYear={
-											props.resumeData?.section1.datafinitygroup.startDateYear
-										}
-										endDateYear={
-											props.resumeData?.section1.datafinitygroup.endDateYear
-										}
-										description1={
-											props.resumeData?.section1.datafinitygroup.description1
-										}
-										description2={
-											props.resumeData?.section1.datafinitygroup.description2
-										}
-										description3={
-											props.resumeData?.section1.datafinitygroup.description3
-										}
-										description4={
-											props.resumeData?.section1.datafinitygroup.description4
-										}
-									/>
-									*/}
-									{/* 
-									<ResumeItem
-										customStyle={styles.margin_bottom_10}
+											spaceBetweenBullets={spaceBetweenBullets}
+											itemLineHeight={itemLineHeight}
+										titleFontSize={titleFontSize}
+										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.timeline.clientName}
 										jobTitle={props.resumeData?.section1.timeline.jobTitle}
 										startDateMonth={
@@ -100,7 +136,10 @@ export const SinglePageResume = (props) => {
 									/>
 									*/}
 									<ResumeItem
-										customStyle={styles.margin_bottom_10}
+										spaceBetweenBullets={spaceBetweenBullets}
+										itemLineHeight={itemLineHeight}
+										titleFontSize={titleFontSize}
+										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.apple.clientName}
 										jobTitle={props.resumeData?.section1.apple.jobTitle}
 										startDateMonth={
@@ -116,8 +155,8 @@ export const SinglePageResume = (props) => {
 										description3={props.resumeData?.section1.apple.description3}
 										description4={props.resumeData?.section1.apple.description4}
 										description5={props.resumeData?.section1.apple.description5}
-										description7={props.resumeData?.section1.apple.description7}
 										/*
+										description7={props.resumeData?.section1.apple.description7}
 										description6={props.resumeData?.section1.apple.description6}
 										description8={props.resumeData?.section1.apple.description8}
 										description9={props.resumeData?.section1.apple.description9}
@@ -130,7 +169,10 @@ export const SinglePageResume = (props) => {
 										}
 									/>
 									<ResumeItem
-										customStyle={styles.margin_bottom_10}
+										spaceBetweenBullets={spaceBetweenBullets}
+										itemLineHeight={itemLineHeight}
+										titleFontSize={titleFontSize}
+										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.rubrik.clientName}
 										jobTitle={props.resumeData?.section1.rubrik.jobTitle}
 										startDateMonth={
@@ -157,7 +199,10 @@ export const SinglePageResume = (props) => {
 										}
 									/>
 									<ResumeItem
-										customStyle={styles.margin_bottom_10}
+										spaceBetweenBullets={spaceBetweenBullets}
+										itemLineHeight={itemLineHeight}
+										titleFontSize={titleFontSize}
+										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.cloudera.clientName}
 										jobTitle={props.resumeData?.section1.cloudera.jobTitle}
 										startDateMonth={
