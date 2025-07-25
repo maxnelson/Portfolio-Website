@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://maxnelsonwebsite.com/sitemap.xml
