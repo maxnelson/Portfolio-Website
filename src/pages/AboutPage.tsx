@@ -8,9 +8,6 @@ interface aboutPageDataInterface {
 }
 
 export function AboutPage(_, setProjectDescriptionVisible) {
-	document.body.classList.remove("_background-image--var_--image-1_");
-	document.body.classList.remove("_background-repeat--repeat");
-
 	const [aboutPageData, setAboutPageData] = useState<aboutPageDataInterface | null>(null);
 	useEffect(() => {
 		const fetchData = async () => {

@@ -12,7 +12,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						}
 						end
 						to={"/"}>
-						<img src="/images/icons/rocket_hands_logo.jpg" />
+						<img src="/images/logos/rocket_hands_logo.jpg" />
 					</NavLink>
 				</li>
 

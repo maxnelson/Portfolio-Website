@@ -1,15 +1,6 @@
 ._display--inline-block {
   display: inline-block;
 }
-._word-wrap--break-word {
-  word-wrap: break-word;
-}
-._margin-bottom--1rem {
-  margin-bottom: 1rem;
-}
-._position--relative {
-  position: relative;
-}
 ._margin-right--1rem {
   margin-right: 1rem;
 }
@@ -18,6 +9,9 @@
 }
 ._margin-left--1rem {
   margin-left: 1rem;
+}
+._margin-bottom--1rem {
+  margin-bottom: 1rem;
 }
 ._margin-top--2rem {
   margin-top: 2rem;
@@ -76,6 +70,12 @@
 ._cursor--pointer {
   cursor: pointer;
 }
+._background-image--var_image-1_ {
+  background-image: var(--image-1);
+}
+._background-repeat--repeat {
+  background-repeat: repeat;
+}
 ._width--70percent {
   width: 70%;
 }
@@ -102,6 +102,12 @@
 }
 ._display--block {
   display: block;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
+}
+._position--relative {
+  position: relative;
 }
 ._color--var_gray-400_ {
   color: var(--gray-400);
