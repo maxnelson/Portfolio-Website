@@ -1,6 +1,6 @@
 import { LeftSidebar } from "@/components/LeftSidebar";
 import { Footer } from "@/components/Footer";
-export function ContactPage(_, setProjectDescriptionVisible) {
+export function ContactPage(setProjectDescriptionVisible) {
 	return (
 		<>
 			<div className="page_container">

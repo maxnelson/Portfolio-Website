@@ -105,7 +105,7 @@ interface resumeDataInterface {
 	};
 }
 
-export const ResumePage = (_, setProjectDescriptionVisible) => {
+export const ResumePage = (setProjectDescriptionVisible) => {
 	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
 	const { resumetype } = useParams();
 	const defaultResumeType = resumetype ? resumetype : "single";

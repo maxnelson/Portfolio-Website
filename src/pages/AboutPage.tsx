@@ -3,15 +3,19 @@ import { Footer } from "@/components/Footer";
 import { useState, useEffect } from "react";
 import { getAboutPageData } from "@/utility_functions/fetchData/getAboutPageData";
 
-interface aboutPageDataInterface {
+interface AboutPageProps {
+	setProjectDescriptionVisible: (visible: boolean) => void;
+}
+
+interface AboutPageData {
 	aboutPageDataField: string;
 }
 
-export function AboutPage(_, setProjectDescriptionVisible) {
-	const [aboutPageData, setAboutPageData] = useState<aboutPageDataInterface | null>(null);
+export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
+	const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(null);
 	useEffect(() => {
 		const fetchData = async () => {
-			const fetchedAboutPageData = await getAboutPageData();
+			const fetchedAboutPageData: AboutPageData = await getAboutPageData();
 			setAboutPageData(fetchedAboutPageData);
 		};
 		fetchData();
@@ -34,7 +38,7 @@ export function AboutPage(_, setProjectDescriptionVisible) {
 						{aboutPageData ?
 							<div
 								dangerouslySetInnerHTML={{
-									__html: aboutPageData
+									__html: aboutPageData.aboutPageDataField
 								}}></div>
 						:	null}
 					</div>
