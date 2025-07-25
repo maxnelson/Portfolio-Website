@@ -37,6 +37,7 @@ export const ResumeItem = (props) => {
 				<View style={[styles.font_size_medium, props.itemLineHeight]}>
 					{props.description1 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description1}
 							bullet={false}
@@ -44,6 +45,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description2 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description2}
 							bullet={"bullet"}
@@ -51,6 +53,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description3 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description3}
 							bullet={"bullet"}
@@ -58,6 +61,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description4 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description4}
 							bullet={"bullet"}
@@ -65,6 +69,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description5 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description5}
 							bullet={"bullet"}
@@ -72,6 +77,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description6 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description6}
 							bullet={"bullet"}
@@ -79,6 +85,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description7 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description7}
 							bullet={"bullet"}
@@ -86,6 +93,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description8 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description8}
 							bullet={"bullet"}
@@ -94,6 +102,7 @@ export const ResumeItem = (props) => {
 
 					{props.description9 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description9}
 							bullet={"bullet"}
@@ -101,6 +110,7 @@ export const ResumeItem = (props) => {
 					)}
 					{props.description10 && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description10}
 							bullet={"bullet"}
@@ -108,6 +118,7 @@ export const ResumeItem = (props) => {
 					)}
 					{/*props.technologies_used && (
 						<BulletPoint
+							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.technologies_used}
 							bullet={"technologies"}

@@ -55,6 +55,9 @@ export const SinglePageResume = (props) => {
 								<View>
 									{
 										<ResumeItem
+											marginBetweenExperiences={
+												props.marginBetweenExperiences
+											}
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
 											titleFontSize={titleFontSize}
@@ -106,6 +109,7 @@ export const SinglePageResume = (props) => {
 									}
 									{/* 
 									<ResumeItem
+										marginBetweenExperiences={props.marginBetweenExperiences}
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
 										titleFontSize={titleFontSize}
@@ -136,6 +140,7 @@ export const SinglePageResume = (props) => {
 									/>
 									*/}
 									<ResumeItem
+										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={titleFontSize}
@@ -169,6 +174,7 @@ export const SinglePageResume = (props) => {
 										}
 									/>
 									<ResumeItem
+										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={titleFontSize}
@@ -199,6 +205,7 @@ export const SinglePageResume = (props) => {
 										}
 									/>
 									<ResumeItem
+										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={titleFontSize}

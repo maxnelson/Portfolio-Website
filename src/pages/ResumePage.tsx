@@ -110,6 +110,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
 	const { resumetype } = useParams();
 	const defaultResumeType = resumetype ? resumetype : "single";
 	const [resumeType, setResumeType] = useState(defaultResumeType);
+	const [marginBetweenExperiences, setMarginBetweenExperiences] = useState(0);
 	useEffect(() => {
 		const fetchData = async () => {
 			const fetchedResumeData = await getResumeData();
@@ -122,7 +123,10 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
 			<div className="page_container">
 				<div className="sidebar _display--inline-block">
 					<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
-					<ResumeControls />
+					<ResumeControls
+						marginBetweenExperiences={marginBetweenExperiences}
+						setMarginBetweenExperiences={setMarginBetweenExperiences}
+					/>
 				</div>
 				<div className="main_section">
 					<ResumePicker
@@ -132,6 +136,7 @@ export const ResumePage = (_, setProjectDescriptionVisible) => {
 					<ResumePDF
 						resumeType={resumeType}
 						resumeData={resumeData}
+						marginBetweenExperiences={marginBetweenExperiences}
 					/>
 
 					<div className="display_block _margin-top--2rem">

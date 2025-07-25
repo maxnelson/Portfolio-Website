@@ -8,9 +8,13 @@ export const BulletPoint = (props) => {
 				style={[
 					styles.display_flex,
 					styles.flex_direction_row,
-					props.spaceBetweenBullets[0],
-					props.spaceBetweenBullets[1],
-					styles.font_size_11pt
+					//props.spaceBetweenBullets[0],
+					//props.spaceBetweenBullets[1],
+					styles.font_size_11pt,
+					{
+						marginBottom: `${props.marginBetweenExperiences}`,
+						marginTop: `${props.marginBetweenExperiences}`
+					}
 				]}>
 				{props.bullet === "bullet" && (
 					<Svg
