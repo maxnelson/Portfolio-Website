@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { ExternalLinkIcon } from "@src/components/icons/ExternalLinkIcon";
+import { CopyRightText } from "@src/components/Footer/CopyRightText";
 
 export const Footer = () => {
 	return (
@@ -65,7 +66,7 @@ export const Footer = () => {
 				</div>
 			</div>
 			<div className="footer_item_copyright">
-				<p>Max Nelson © {new Date().getFullYear()}</p>
+				<CopyRightText />
 			</div>
 		</footer>
 	);

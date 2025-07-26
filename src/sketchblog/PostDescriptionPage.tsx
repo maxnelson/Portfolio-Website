@@ -46,7 +46,7 @@ export function PostDescriptionPage() {
 								})}
 								<hr className="sketchblog_post_hr" />
 								<div className="post_text_container">
-									<p className="_font-size--9pt color-aaa">
+									<p className="_font-size--9pt _color--var_gray-125_">
 										{postObject.date.toDate().toLocaleDateString("en-US", {
 											month: "short",
 											day: "2-digit",
@@ -57,7 +57,7 @@ export function PostDescriptionPage() {
 							</div>
 
 							<div className="sketchblog_post_detail_description_container _vertical-align--top">
-								<h2 className="_margin-bottom--1rem _margin-top--1rem color-aaa">
+								<h2 className="_margin-bottom--1rem _margin-top--1rem _color--var_gray-125_">
 									{postObject.title}
 								</h2>
 								<div

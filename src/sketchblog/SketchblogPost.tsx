@@ -29,7 +29,9 @@ export function SketchblogPost(props) {
 					);
 				})}
 				{props.postData.title && (
-					<h2 className="_margin-bottom--1rem color-aaa">{props.postData.title}</h2>
+					<h2 className="_margin-bottom--1rem _color--var_gray-125_">
+						{props.postData.title}
+					</h2>
 				)}
 
 				<p className="project_description color-777 _margin-bottom--1rem">
@@ -43,7 +45,7 @@ export function SketchblogPost(props) {
 				</div>
 				<hr className="sketchblog_post_hr" />
 				<div className="post_text_container">
-					<p className="_font-size--9pt color-aaa">{formattedDate}</p>
+					<p className="_font-size--9pt _color--var_gray-125_">{formattedDate}</p>
 				</div>
 			</div>
 		</>

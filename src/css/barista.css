@@ -7,9 +7,6 @@
 ._position--relative {
   position: relative;
 }
-._display--inline-block {
-  display: inline-block;
-}
 ._margin-right--1rem {
   margin-right: 1rem;
 }
@@ -24,6 +21,9 @@
 }
 ._max-width--80percent {
   max-width: 80%;
+}
+._display--inline-block {
+  display: inline-block;
 }
 ._width--80percent {
   width: 80%;
@@ -51,6 +51,9 @@
 }
 ._font-size--9pt {
   font-size: 9pt;
+}
+._color--var_gray-125_ {
+  color: var(--gray-125);
 }
 ._margin-top--1rem {
   margin-top: 1rem;

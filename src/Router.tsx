@@ -8,9 +8,6 @@ const AboutPage = lazy(() =>
 const ResumePage = lazy(() =>
 	import("@src/pages/ResumePage").then((module) => ({ default: module.ResumePage }))
 );
-const TimelinePage = lazy(() =>
-	import("@src/pages/TimelinePage").then((module) => ({ default: module.TimelinePage }))
-);
 const ContactPage = lazy(() =>
 	import("@src/pages/ContactPage").then((module) => ({ default: module.ContactPage }))
 );
@@ -61,9 +58,7 @@ export function Router() {
 							setProjectDescriptionVisible={setProjectDescriptionVisible}
 						/>
 					}></Route>
-				<Route
-					path="/timeline"
-					element={<TimelinePage />}></Route>
+
 				<Route
 					path="/contact"
 					element={

@@ -1,5 +1,5 @@
 import { LeftSidebar } from "@src/components/LeftSidebar";
-import { Footer } from "@src/components/Footer";
+import { Footer } from "@src/components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getResumeData } from "@src/utility_functions/fetchData/getResumeData";
@@ -121,27 +121,31 @@ export const ResumePage = (setProjectDescriptionVisible) => {
 	return (
 		<>
 			<div className="page_container">
-				<div className="sidebar _display--inline-block">
-					<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
-					<ResumeControls
-						marginBetweenExperiences={marginBetweenExperiences}
-						setMarginBetweenExperiences={setMarginBetweenExperiences}
-					/>
-				</div>
-				<div className="main_section">
-					<ResumePicker
-						resumeType={resumeType}
-						setResumeType={setResumeType}
-					/>
-					<ResumePDF
-						resumeType={resumeType}
-						resumeData={resumeData}
-						marginBetweenExperiences={marginBetweenExperiences}
-					/>
-
-					<div className="display_block _margin-top--2rem">
-						<p>This Resume was generated using React-PDF :)</p>
+				<div
+					className="inner_page_container"
+					style={{ display: "flex" }}>
+					<div className="sidebar">
+						<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+						<ResumeControls
+							marginBetweenExperiences={marginBetweenExperiences}
+							setMarginBetweenExperiences={setMarginBetweenExperiences}
+						/>
 					</div>
+					<main className="main_section">
+						<ResumePicker
+							resumeType={resumeType}
+							setResumeType={setResumeType}
+						/>
+						<ResumePDF
+							resumeType={resumeType}
+							resumeData={resumeData}
+							marginBetweenExperiences={marginBetweenExperiences}
+						/>
+
+						<div className="display_block _margin-top--2rem">
+							<p>This Resume was generated using React-PDF :)</p>
+						</div>
+					</main>
 				</div>
 				<Footer />
 			</div>
