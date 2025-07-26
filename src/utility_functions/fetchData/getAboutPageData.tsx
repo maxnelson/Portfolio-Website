@@ -6,6 +6,5 @@ export const getAboutPageData = async () => {
 	const docSnap = await getDoc(docRef);
 	const docSnapData = docSnap.data();
 	const docSnapDataValue = docSnapData?.aboutPageDataField;
-	//console.log(docSnapDataValue);
 	return docSnapDataValue;
 };

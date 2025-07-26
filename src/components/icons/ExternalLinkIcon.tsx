@@ -3,13 +3,8 @@ export const ExternalLinkIcon = () => {
 		<>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 640 640"
-				style={{
-					display: "inline-block",
-					width: "0.9rem",
-					marginLeft: "0.25em",
-					verticalAlign: "inherit"
-				}}
+				viewBox="0 -30 640 640"
+				className="external_link_svg"
 				fill="currentColor"
 				aria-hidden="true"
 				focusable="false">

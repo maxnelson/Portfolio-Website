@@ -20,7 +20,7 @@ export const AbridgeDisclaimer = () => {
 					</View>
 					<View style={[]}>
 						<Link
-							src={"https://maxnelsonwebsite.com/resume/full"}
+							src={location.origin + "/resume/full"}
 							style={[
 								styles.color_blue_100,
 								styles.font_weight_bold,

@@ -33,10 +33,14 @@ export function PostDescriptionPage() {
 										<div
 											className="post_image_container"
 											key={index}>
-											<img
-												src={image}
-												alt="Blog Post Image"
-											/>
+											<a
+												href={image}
+												target="_blank">
+												<img
+													src={image}
+													alt="Blog Post Image"
+												/>
+											</a>
 										</div>
 									);
 								})}

@@ -2,12 +2,13 @@ import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react";
 import baristaCSS from "@modularmoon/barista";
+import Inspect from "vite-plugin-inspect";
 
-export default defineConfig(({ mode }) => ({
-	test: {},
+export default defineConfig({
 	base: "/",
 	plugins: [
 		react(),
+		Inspect(),
 		baristaCSS({
 			include: ["src/**/*.{js,ts,jsx,tsx,html}"],
 			outputFilepath: "src/css/barista.css",
@@ -23,29 +24,15 @@ export default defineConfig(({ mode }) => ({
 	css: {
 		devSourcemap: true
 	},
-
 	build: {
+		sourcemap: true,
 		outDir: "dist",
+		minify: "terser",
 		terserOptions: {
-			compress: {
-				drop_debugger: true
-			},
-			format: {
-				comments: false
+			sourceMap: {
+				filename: "out.js",
+				url: "out.js.map"
 			}
 		}
-	},
-	server:
-		mode === "development" ?
-			{
-				port: 5100,
-				proxy: {
-					"/server": {
-						target: "http://localhost:8080",
-						changeOrigin: true,
-						secure: false
-					}
-				}
-			}
-		:	{}
-}));
+	}
+});

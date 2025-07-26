@@ -20,8 +20,6 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 		};
 		fetchData();
 	}, []);
-	console.log("aboutPageData");
-	console.log(aboutPageData);
 
 	return (
 		<>
