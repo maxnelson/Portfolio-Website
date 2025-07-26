@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 	return (
 		<>
-			<ul>
-				<li className="sidebar_navigation_link_container_img cursor_pointer">
+			<aside>
+				<section className="sidebar_navigation_link_container_img cursor_pointer">
 					<NavLink
 						onClick={() => setProjectDescriptionVisible(false)}
 						className={({ isActive }) =>
@@ -13,14 +13,13 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						end
 						to={"/"}>
 						<img
-							loading="lazy"
+							className="rocketHandsLogo"
 							alt="Rocket Hands Logo"
 							src="/images/logos/rocket_hands_logo.jpg"
 						/>
 					</NavLink>
-				</li>
-
-				<li className="sidebar_navigation_link_container cursor_pointer">
+				</section>
+				<section className="sidebar_navigation_link_container cursor_pointer">
 					<NavLink
 						className={({ isActive }) =>
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
@@ -29,8 +28,8 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						to={"/about"}>
 						About
 					</NavLink>
-				</li>
-				<li className="sidebar_navigation_link_container cursor_pointer">
+				</section>
+				<section className="sidebar_navigation_link_container cursor_pointer">
 					<NavLink
 						className={({ isActive }) =>
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
@@ -39,8 +38,8 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						to={"/resume"}>
 						Resumé
 					</NavLink>
-				</li>
-				<li className="sidebar_navigation_link_container cursor_pointer">
+				</section>
+				<section className="sidebar_navigation_link_container cursor_pointer">
 					<NavLink
 						className={({ isActive }) =>
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
@@ -49,8 +48,8 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						to={"/sketchblog/css"}>
 						Blog
 					</NavLink>
-				</li>
-			</ul>
+				</section>
+			</aside>
 		</>
 	);
 };

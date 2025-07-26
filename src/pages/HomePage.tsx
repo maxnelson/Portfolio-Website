@@ -11,15 +11,19 @@ export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisib
 				href="https://maxnelsonwebsite.com"
 			/>
 			<div className="page_container">
-				<div className="sidebar _display--inline-block">
-					<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
-				</div>
-				<div className="main_section">
-					<ProjectsGrid
-						projectDescriptionVisible={projectDescriptionVisible}
-						setProjectDescriptionVisible={setProjectDescriptionVisible}
-						projectDescriptionContentName={params.project}
-					/>
+				<div
+					className="inner_page_container"
+					style={{ display: "flex" }}>
+					<div className="sidebar">
+						<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+					</div>
+					<main className="main_section">
+						<ProjectsGrid
+							projectDescriptionVisible={projectDescriptionVisible}
+							setProjectDescriptionVisible={setProjectDescriptionVisible}
+							projectDescriptionContentName={params.project}
+						/>
+					</main>
 				</div>
 				<Footer />
 			</div>
