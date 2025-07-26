@@ -9,6 +9,48 @@ const app = express();
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.static("public"));
 app.get("/sitemap.xml", sitemapGenerator);
+app.use(
+	helmet({
+		strictTransportSecurity: {
+			maxAge: 500,
+			includeSubDomains: true,
+			preload: true
+		},
+		crossOriginEmbedderPolicy: { policy: "require-corp" },
+		crossOriginOpenerPolicy: { policy: "same-origin" },
+		frameguard: { action: "deny" },
+		contentSecurityPolicy: {
+			directives: {
+				defaultSrc: ["'self'"],
+				scriptSrc: [
+					"'self'",
+					"https://www.googletagmanager.com",
+					"https://www.google-analytics.com",
+					"https://www.gstatic.com"
+				],
+				connectSrc: [
+					"'self'",
+					"https://firestore.googleapis.com",
+					"https://www.google-analytics.com",
+					"https://www.googleapis.com",
+					"https://firebase.googleapis.com",
+					"https://firebaseinstallations.googleapis.com",
+					"https://www.googletagmanager.com"
+				],
+				imgSrc: [
+					"'self'",
+					"https://www.google-analytics.com",
+					"https://www.googletagmanager.com",
+					"https://www.google.com",
+					"data:"
+				],
+				styleSrc: ["'self'", "https://fonts.googleapis.com"],
+				fontSrc: ["'self'", "https://fonts.gstatic.com"],
+				frameAncestors: ["'none'"]
+			}
+		}
+	})
+);
 
 app.get("/{*splat}", (req, res, next) => {
 	if (req.accepts("html")) {

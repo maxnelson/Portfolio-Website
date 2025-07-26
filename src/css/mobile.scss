@@ -1,34 +1,35 @@
 @media screen and (max-width: 480px) {
-  a,
-  p,
-  label,
-  span,
-  input,
-  select,
-  textarea,
-  button,
-  ol,
-  ul,
-  b,
-  li {
-    font-size: 9px;
-  }
-  h2 {
-    font-size: 14px;
-  }
-  a.external_link i {
-    font-size: 6pt;
-    vertical-align: text-top;
-  }
-  .sketchblog_post_detail_images_container {
-    .post_image_container {
-      max-width: 100%;
-    }
-  }
+	a,
+	p,
+	label,
+	span,
+	input,
+	select,
+	textarea,
+	button,
+	ol,
+	ul,
+	b,
+	li {
+		font-size: 12px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+	a.external_link i {
+		font-size: 6pt;
+		vertical-align: text-top;
+	}
+	.sketchblog_post_detail_images_container {
+		.post_image_container {
+			max-width: 100%;
+		}
+	}
+	//Fix sidebar layout
 }
 
 @media screen and (max-width: 1000px) {
-  .page_container {
-    width: 95%;
-  }
+	.page_container {
+		width: 95%;
+	}
 }

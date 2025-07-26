@@ -3,12 +3,14 @@ import path from "path";
 import react from "@vitejs/plugin-react";
 import baristaCSS from "@modularmoon/barista";
 import Inspect from "vite-plugin-inspect";
+import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
 	base: "/",
 	plugins: [
 		react(),
 		Inspect(),
+		visualizer(),
 		baristaCSS({
 			include: ["src/**/*.{js,ts,jsx,tsx,html}"],
 			outputFilepath: "src/css/barista.css",
@@ -25,6 +27,7 @@ export default defineConfig({
 		devSourcemap: true
 	},
 	build: {
+		target: "esnext",
 		sourcemap: true,
 		outDir: "dist",
 		minify: "terser",

@@ -1,15 +1,34 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { HomePage } from "@src/pages/HomePage";
-import { ResumePage } from "@src/pages/ResumePage";
-import { AboutPage } from "@src/pages/AboutPage";
-import { TimelinePage } from "@src/pages/TimelinePage";
-import { ContactPage } from "@src/pages/ContactPage";
-import { SketchblogPage } from "@src/sketchblog/SketchblogPage";
-import { PostDescriptionPage } from "@src/sketchblog/PostDescriptionPage";
+
+const AboutPage = lazy(() =>
+	import("./pages/AboutPage").then((module) => ({ default: module.AboutPage }))
+);
+const ResumePage = lazy(() =>
+	import("@src/pages/ResumePage").then((module) => ({ default: module.ResumePage }))
+);
+const TimelinePage = lazy(() =>
+	import("@src/pages/TimelinePage").then((module) => ({ default: module.TimelinePage }))
+);
+const ContactPage = lazy(() =>
+	import("@src/pages/ContactPage").then((module) => ({ default: module.ContactPage }))
+);
+const SketchblogPage = lazy(() =>
+	import("@src/sketchblog/SketchblogPage").then((module) => ({ default: module.SketchblogPage }))
+);
+const PostDescriptionPage = lazy(() =>
+	import("@src/sketchblog/PostDescriptionPage").then((module) => ({
+		default: module.PostDescriptionPage
+	}))
+);
+import { setLogLevel } from "firebase/firestore";
+
+// Set this before calling any Firestore APIs
+setLogLevel("debug");
+
 export function Router() {
 	const [projectDescriptionVisible, setProjectDescriptionVisible] = useState(false);
-
 	return (
 		<>
 			<Routes>
