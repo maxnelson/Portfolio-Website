@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { SketchblogSidebarSectionComponent } from "@src/sketchblog/SketchblogSidebarSectionComponent";
+import { ChevronLeftIcon } from "@src/components/icons/ChevronLeftIcon";
+
 export function SketchblogSidebar(props) {
 	return (
 		<>
@@ -114,8 +116,16 @@ export function SketchblogSidebar(props) {
 							}
 							end
 							to="/">
-							<i className="fa-solid fa-chevron-left"></i>
-							<i className="fa-solid fa-chevron-left"></i> Back to Portfolio
+							<div
+								style={{
+									display: "inline-block",
+									verticalAlign: "sub",
+									marginRight: "6px"
+								}}>
+								<ChevronLeftIcon size="8px" />
+								<ChevronLeftIcon size="8px" />
+							</div>
+							Back to Portfolio
 						</NavLink>
 					</li>
 				</ul>

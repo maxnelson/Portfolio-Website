@@ -1,4 +1,6 @@
 import { DateTime } from "luxon";
+import { ChevronRightIcon } from "@src/components/icons/ChevronRightIcon";
+
 export function SketchblogPost(props) {
 	const dateParsed = new Date(props.postData.date.toDate());
 	const formattedDate = DateTime.fromJSDate(dateParsed).toFormat("MMMM dd, yyyy");
@@ -35,8 +37,8 @@ export function SketchblogPost(props) {
 				</p>
 				<div>
 					<a href={"/sketchblog/" + props.postData.category + "/" + props.postData.id}>
-						Read More{" "}
-						<i className="fa-solid fa-chevron-right _font-size--12px _padding-bottom--2px"></i>
+						Read More
+						<ChevronRightIcon />
 					</a>
 				</div>
 				<hr className="sketchblog_post_hr" />

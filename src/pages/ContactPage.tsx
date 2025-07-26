@@ -11,7 +11,7 @@ export function ContactPage(setProjectDescriptionVisible) {
 					<div>
 						<h2 className="_margin-bottom--1rem">Contact</h2>
 						<p className="line-height-1-5 color-777">
-							Please feel free to send me an Email at{" "}
+							Please feel free to send me an Email at&nbsp;
 							<a
 								className="external_link"
 								href="mailto:maxnelson88@gmail.com"

@@ -51,7 +51,8 @@ export const Footer = () => {
 							className="external_link"
 							href="https://www.linkedin.com/in/maxnelson88/"
 							target="_blank">
-							LinkedIn<i className="fas fa-external-link"></i>
+							LinkedIn
+							<ExternalLinkIcon />
 						</a>
 					</div>
 					<div className="footer_item">
@@ -59,7 +60,8 @@ export const Footer = () => {
 							className="external_link"
 							href="https://twitter.com/modularmoon"
 							target="_blank">
-							Twitter<i className="fas fa-external-link"></i>
+							Twitter
+							<ExternalLinkIcon />
 						</a>
 					</div>
 				</div>

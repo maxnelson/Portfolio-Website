@@ -15,7 +15,7 @@ export const AbridgeDisclaimer = () => {
 				<View style={[styles.display_flex, styles.flex_direction_row]}>
 					<View style={[]}>
 						<Text style={[]}>
-							This Resume has been abridged to fit on a single page. Click{" "}
+							This Resume has been abridged to fit on a single page. Click&nbsp;
 						</Text>
 					</View>
 					<View style={[]}>

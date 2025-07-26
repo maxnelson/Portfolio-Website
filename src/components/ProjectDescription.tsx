@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { getProjectData } from "#src/utility_functions/fetchData/getProjectGridData.js";
-import { projectDataModel } from "#src/types/models.ts";
+import { getProjectData } from "@src/utility_functions/fetchData/getProjectGridData.js";
+import { projectDataModel } from "@src/types/models.ts";
+import { ChevronLeftIcon } from "@src/components/icons/ChevronLeftIcon";
 
 export const ProjectDescription = (props) => {
 	const [projectData, setProjectData] = useState<projectDataModel | null>(null);
@@ -52,15 +53,11 @@ export const ProjectDescription = (props) => {
 							{projectData?.jobTitle}
 						</p>
 						<span>
-							{(projectData?.startDateYear ?
-								projectData?.startDateMonth + " " + projectData?.startDateYear
-							:	"") +
-								(projectData?.endDateYear ?
-									" - " +
-									projectData?.endDateMonth +
-									" " +
-									projectData?.endDateYear
-								:	"")}
+							{projectData?.startDateMonth && projectData?.startDateMonth}
+							{projectData?.startDateYear && " " + projectData?.startDateYear}
+							{projectData?.endDateYear && " - "}
+							{projectData?.endDateMonth && projectData?.endDateMonth}
+							{projectData?.endDateYear && " " + projectData?.endDateYear}
 						</span>
 					</div>
 				)}
@@ -71,8 +68,8 @@ export const ProjectDescription = (props) => {
 
 				<div className="back-button">
 					<a href="/">
-						<i className="fa-solid fa-chevron-left"></i>
-						<i className="fa-solid fa-chevron-left"></i>
+						<ChevronLeftIcon size="10px" />
+						<ChevronLeftIcon size="10px" />
 					</a>
 				</div>
 			</div>
