@@ -8,7 +8,6 @@ export const ProjectGridItem = (props) => {
 					className="project_grid_item aspect-ratio-1-1 _position--relative"
 					onClick={props.clickHandler}>
 					<img
-						loading="lazy"
 						alt="Project Image"
 						src={props.image1}></img>
 					<div className="project_grid_item_overlay">

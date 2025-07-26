@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { ExternalLinkIcon } from "@/components/icons/ExternalLinkIcon";
 
 export const Footer = () => {
 	return (
