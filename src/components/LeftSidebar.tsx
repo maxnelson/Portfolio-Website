@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { RocketHandsLogo } from "@src/components/icons/RocketHandsLogo";
 
 export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 	return (
@@ -12,11 +13,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						}
 						end
 						to={"/"}>
-						<img
-							className="rocketHandsLogo"
-							alt="Rocket Hands Logo"
-							src="/images/logos/rocket_hands_logo.jpg"
-						/>
+						<RocketHandsLogo customClassName="rocketHandsLogo" />
 					</NavLink>
 				</section>
 				<section className="sidebar_navigation_link_container cursor_pointer">

@@ -18,7 +18,7 @@
 	section.sidebar_navigation_link_container {
 		border-bottom: 1px solid #ccc;
 	}
-	.sidebar_navigation_link_image img {
+	.sidebar_navigation_link_image .rocketHandsLogo {
 		display: block;
 		padding-bottom: 1rem;
 		border-bottom: 5px solid transparent;
@@ -26,7 +26,7 @@
 			border-bottom-color: var(--blue-100);
 		}
 	}
-	.active_nav_image img {
+	.active_nav_image .rocketHandsLogo {
 		border-bottom-color: var(--blue-100);
 	}
 	a.sidebar_navigation_link {
