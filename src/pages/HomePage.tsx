@@ -1,6 +1,6 @@
-import { ProjectsGrid } from "@/components/ProjectsGrid";
-import { LeftSidebar } from "@/components/LeftSidebar";
-import { Footer } from "@/components/Footer";
+import { ProjectsGrid } from "@src/components/ProjectsGrid";
+import { LeftSidebar } from "@src/components/LeftSidebar";
+import { Footer } from "@src/components/Footer";
 import { useParams } from "react-router-dom";
 export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisible }) {
 	const params = useParams();

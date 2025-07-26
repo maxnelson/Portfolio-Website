@@ -1,7 +1,7 @@
-import { LeftSidebar } from "@/components/LeftSidebar";
-import { Footer } from "@/components/Footer";
+import { LeftSidebar } from "@src/components/LeftSidebar";
+import { Footer } from "@src/components/Footer";
 import { useState, useEffect } from "react";
-import { getAboutPageData } from "@/utility_functions/fetchData/getAboutPageData";
+import { getAboutPageData } from "@src/utility_functions/fetchData/getAboutPageData";
 
 interface AboutPageProps {
 	setProjectDescriptionVisible: (visible: boolean) => void;

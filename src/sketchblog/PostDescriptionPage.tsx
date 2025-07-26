@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { getPost } from "@/sketchblog/getPostCategory";
+import { getPost } from "@src/sketchblog/getPostCategory";
 import { useState, useEffect } from "react";
-import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
+import { SketchblogSidebar } from "@src/sketchblog/SketchblogSidebar";
 import { DocumentData } from "@firebase/firestore";
-import { SketchblogFooter } from "@/sketchblog/SketchblogFooter";
+import { SketchblogFooter } from "@src/sketchblog/SketchblogFooter";
 
 export function PostDescriptionPage() {
 	const [postObject, setPostObject] = useState<DocumentData | null>(null);

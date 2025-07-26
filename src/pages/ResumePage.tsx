@@ -1,11 +1,11 @@
-import { LeftSidebar } from "@/components/LeftSidebar";
-import { Footer } from "@/components/Footer";
+import { LeftSidebar } from "@src/components/LeftSidebar";
+import { Footer } from "@src/components/Footer";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getResumeData } from "@/utility_functions/fetchData/getResumeData";
-import { ResumePicker } from "@/components/Resume/ResumePicker/ResumePicker";
-import { ResumePDF } from "@/components/Resume/PDF/ResumePDF";
-import { ResumeControls } from "@/components/Resume/ResumeControls";
+import { getResumeData } from "@src/utility_functions/fetchData/getResumeData";
+import { ResumePicker } from "@src/components/Resume/ResumePicker/ResumePicker";
+import { ResumePDF } from "@src/components/Resume/PDF/ResumePDF";
+import { ResumeControls } from "@src/components/Resume/ResumeControls";
 
 interface resumeDataInterface {
 	name: string;

@@ -1,5 +1,5 @@
-import { LeftSidebar } from "@/components/LeftSidebar";
-import { Footer } from "@/components/Footer";
+import { LeftSidebar } from "@src/components/LeftSidebar";
+import { Footer } from "@src/components/Footer";
 export function ContactPage(setProjectDescriptionVisible) {
 	return (
 		<>

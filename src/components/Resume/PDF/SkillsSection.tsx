@@ -1,5 +1,5 @@
 import { View, Text } from "@react-pdf/renderer";
-import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
+import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 
 export const SkillsSection = (props) => {
 	return (

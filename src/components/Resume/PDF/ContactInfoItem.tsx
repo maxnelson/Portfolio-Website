@@ -1,5 +1,5 @@
 import { View, Text, Svg, Path, Link } from "@react-pdf/renderer";
-import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
+import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 export const ContactInfoItem = (props) => {
 	return (
 		<View style={[styles.margin_bottom_5, styles.flex_direction_row]}>

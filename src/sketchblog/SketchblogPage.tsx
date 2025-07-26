@@ -1,8 +1,8 @@
-import { PostCollection } from "@/sketchblog/PostCollection";
-import { SketchblogSidebar } from "@/sketchblog/SketchblogSidebar";
+import { PostCollection } from "@src/sketchblog/PostCollection";
+import { SketchblogSidebar } from "@src/sketchblog/SketchblogSidebar";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { SketchblogFooter } from "@/sketchblog/SketchblogFooter";
+import { SketchblogFooter } from "@src/sketchblog/SketchblogFooter";
 
 export function SketchblogPage() {
 	const [category, setCategory] = useState<string | null>(null);

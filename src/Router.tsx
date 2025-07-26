@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { HomePage } from "@/pages/HomePage";
-import { ResumePage } from "@/pages/ResumePage";
-import { AboutPage } from "@/pages/AboutPage";
-import { TimelinePage } from "@/pages/TimelinePage";
-import { ContactPage } from "@/pages/ContactPage";
-import { SketchblogPage } from "@/sketchblog/SketchblogPage";
-import { PostDescriptionPage } from "@/sketchblog/PostDescriptionPage";
+import { HomePage } from "@src/pages/HomePage";
+import { ResumePage } from "@src/pages/ResumePage";
+import { AboutPage } from "@src/pages/AboutPage";
+import { TimelinePage } from "@src/pages/TimelinePage";
+import { ContactPage } from "@src/pages/ContactPage";
+import { SketchblogPage } from "@src/sketchblog/SketchblogPage";
+import { PostDescriptionPage } from "@src/sketchblog/PostDescriptionPage";
 export function Router() {
 	const [projectDescriptionVisible, setProjectDescriptionVisible] = useState(false);
 

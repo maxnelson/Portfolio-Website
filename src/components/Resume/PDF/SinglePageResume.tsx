@@ -1,11 +1,11 @@
-import { ResumeHeader } from "@/components/Resume/PDF/ResumeHeader";
-import { ResumeFooter } from "@/components/Resume/PDF/ResumeFooter";
-import { ResumeItem } from "@/components/Resume/PDF/ResumeItem";
+import { ResumeHeader } from "@src/components/Resume/PDF/ResumeHeader";
+import { ResumeFooter } from "@src/components/Resume/PDF/ResumeFooter";
+import { ResumeItem } from "@src/components/Resume/PDF/ResumeItem";
 import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
-import { resumeStyles as styles } from "@/components/Resume/resumeStyles";
-import { ResumeSectionHeader } from "@/components/Resume/PDF/ResumeSectionHeader";
-import { SummarySection } from "@/components/Resume/PDF/SummarySection";
-import { AbridgeDisclaimer } from "@/components/Resume/PDF/AbridgeDisclaimer";
+import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
+import { ResumeSectionHeader } from "@src/components/Resume/PDF/ResumeSectionHeader";
+import { SummarySection } from "@src/components/Resume/PDF/SummarySection";
+import { AbridgeDisclaimer } from "@src/components/Resume/PDF/AbridgeDisclaimer";
 
 export const SinglePageResume = (props) => {
 	const resumeModeOptions = ["compact", "regular"];

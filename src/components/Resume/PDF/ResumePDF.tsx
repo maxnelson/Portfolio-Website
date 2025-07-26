@@ -1,5 +1,5 @@
-import { SinglePageResume } from "@/components/Resume/PDF/SinglePageResume";
-import { MultiPageResume } from "@/components/Resume/PDF/MultiPageResume";
+import { SinglePageResume } from "@src/components/Resume/PDF/SinglePageResume";
+import { MultiPageResume } from "@src/components/Resume/PDF/MultiPageResume";
 
 export const ResumePDF = (props) => {
 	return (
