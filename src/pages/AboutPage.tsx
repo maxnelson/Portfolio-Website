@@ -20,6 +20,8 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 		};
 		fetchData();
 	}, []);
+	console.log("aboutPageData");
+	console.log(aboutPageData);
 
 	return (
 		<>
@@ -36,12 +38,10 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 						/>
 					</div>
 					<div className="_display--inline-block width--80percent-minus-1rem _vertical-align--top _margin-left--1rem">
-						{aboutPageData ?
-							<div
-								dangerouslySetInnerHTML={{
-									__html: aboutPageData.aboutPageDataField
-								}}></div>
-						:	null}
+						<div
+							dangerouslySetInnerHTML={{
+								__html: aboutPageData
+							}}></div>
 					</div>
 				</div>
 				<Footer />

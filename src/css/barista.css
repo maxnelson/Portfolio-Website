@@ -22,6 +22,12 @@
 ._margin-top--2rem {
   margin-top: 2rem;
 }
+._color--var_gray-400_ {
+  color: var(--gray-400);
+}
+._font-size--2rem {
+  font-size: 2rem;
+}
 ._max-width--80percent {
   max-width: 80%;
 }
@@ -102,10 +108,4 @@
 }
 ._display--block {
   display: block;
-}
-._color--var_gray-400_ {
-  color: var(--gray-400);
-}
-._font-size--2rem {
-  font-size: 2rem;
 }
