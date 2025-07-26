@@ -14,6 +14,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						to={"/"}>
 						<img
 							loading="lazy"
+							alt="Rocket Hands Logo"
 							src="/images/logos/rocket_hands_logo.jpg"
 						/>
 					</NavLink>

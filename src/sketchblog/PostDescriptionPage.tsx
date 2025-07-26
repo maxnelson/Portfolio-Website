@@ -35,7 +35,7 @@ export function PostDescriptionPage() {
 											key={index}>
 											<img
 												src={image}
-												alt="drawing"
+												alt="Blog Post Image"
 											/>
 										</div>
 									);

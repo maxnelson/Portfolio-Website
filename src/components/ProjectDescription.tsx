@@ -17,21 +17,25 @@ export const ProjectDescription = (props) => {
 				{projectData?.image1 ?
 					<img
 						loading="lazy"
+						alt="Project detail image"
 						src={projectData?.image1}></img>
 				:	null}
 				{projectData?.image2 ?
 					<img
 						loading="lazy"
+						alt="Project detail image"
 						src={projectData?.image2}></img>
 				:	null}
 				{projectData?.image3 ?
 					<img
 						loading="lazy"
+						alt="Project detail image"
 						src={projectData?.image3}></img>
 				:	null}
 				{projectData?.image4 ?
 					<img
 						loading="lazy"
+						alt="Project detail image"
 						src={projectData?.image4}></img>
 				:	null}
 			</div>

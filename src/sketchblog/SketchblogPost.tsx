@@ -20,7 +20,7 @@ export function SketchblogPost(props) {
 								<img
 									loading="lazy"
 									src={image}
-									alt="drawing"
+									alt="Blog Post Image"
 								/>
 							</a>
 						</div>

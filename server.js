@@ -1,11 +1,15 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import { sitemapGenerator } from "#root/server/meta/sitemapGenerator.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static("public"));
+app.get("/sitemap.xml", sitemapGenerator);
+
 app.get("/{*splat}", (req, res, next) => {
 	if (req.accepts("html")) {
 		res.sendFile(path.join(__dirname, "dist", "index.html"));

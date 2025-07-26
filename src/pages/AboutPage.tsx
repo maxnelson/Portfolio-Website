@@ -31,6 +31,7 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 					<div className="_display--inline-block width-20percent-minus-1rem _margin-right--1rem">
 						<img
 							loading="lazy"
+							alt="Profile Picture"
 							src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fassets%2Fprofile_picture.png?alt=media&token=e8c85ebc-3169-4c3b-8984-ded19c32e2f3"
 						/>
 					</div>

@@ -6,6 +6,10 @@ export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisib
 	const params = useParams();
 	return (
 		<>
+			<link
+				rel="canonical"
+				href="https://maxnelsonwebsite.com"
+			/>
 			<div className="page_container">
 				<div className="sidebar _display--inline-block">
 					<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
