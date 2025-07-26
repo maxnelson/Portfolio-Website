@@ -9,6 +9,7 @@ export const ProjectGridItem = (props) => {
 					onClick={props.clickHandler}>
 					<img
 						alt="Project Image"
+						fetchPriority="high"
 						src={props.image1}></img>
 					<div className="project_grid_item_overlay">
 						<div className="project_grid_item_overlay_text project_grid_item_overlay_text_top">

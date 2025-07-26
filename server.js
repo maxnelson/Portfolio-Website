@@ -9,6 +9,9 @@ const app = express();
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.static("public"));
 app.get("/sitemap.xml", sitemapGenerator);
+app.get("/robots.txt", (req, res) => {
+	res.sendFile(path.join(__dirname, "dist", "robots.txt"));
+});
 app.use(
 	helmet({
 		strictTransportSecurity: {

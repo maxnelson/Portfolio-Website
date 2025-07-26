@@ -14,6 +14,7 @@ export const LeftSidebar = ({ setProjectDescriptionVisible }) => {
 						end
 						to={"/"}>
 						<RocketHandsLogo customClassName="rocketHandsLogo" />
+						<span className="screenReaderText">Home</span>
 					</NavLink>
 				</section>
 				<section className="sidebar_navigation_link_container cursor_pointer">

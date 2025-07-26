@@ -80,7 +80,7 @@ footer {
 	justify-content: space-between;
 }
 .footer_item_copyright {
-	color: #aaa;
+	color: #777;
 }
 .footer_item {
 	display: inline-block;
@@ -131,4 +131,15 @@ ol,
 
 .inner_page_container {
 	flex-direction: row;
+}
+
+.screenReaderText {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }

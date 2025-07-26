@@ -6,6 +6,7 @@ import Inspect from "vite-plugin-inspect";
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
+	publicDir: "public",
 	base: "/",
 	plugins: [
 		react(),
@@ -28,13 +29,15 @@ export default defineConfig({
 	},
 	build: {
 		target: "esnext",
-		sourcemap: true,
 		outDir: "dist",
+		cssCodeSplit: false,
+		sourcemap: true,
 		minify: "terser",
 		terserOptions: {
-			sourceMap: {
-				filename: "out.js",
-				url: "out.js.map"
+			compress: true,
+			mangle: true,
+			format: {
+				comments: false
 			}
 		}
 	}

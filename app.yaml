@@ -8,13 +8,27 @@ automatic_scaling:
 handlers:
     - url: /assets
       static_dir: dist/assets
+      http_headers:
+          Cache-Control: "public, max-age=31536000, immutable"
+
+    - url: /robots.txt
+      static_files: dist/robots.txt
+      upload: dist/robots.txt
+
+    - url: /sitemap.xml
+      static_files: dist/sitemap.xml
+      upload: dist/sitemap.xml
 
     - url: /
       static_files: dist/index.html
       upload: dist/index.html
+      http_headers:
+          Cache-Control: "no-cache"
 
     - url: /.*
       script: auto
+      http_headers:
+          Cache-Control: "no-cache"
 
 env_variables:
     NODE_ENV: "production"

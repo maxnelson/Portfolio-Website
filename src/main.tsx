@@ -5,14 +5,18 @@ if (import.meta.env.PROD) {
 	const cssFiles = import.meta.glob("/src/css/main.css", { as: "url", eager: true });
 	const href = cssFiles["/src/css/main.css"];
 	const link = document.createElement("link");
-	link.rel = "stylesheet";
+	link.rel = "preload";
+	link.as = "style";
 	link.href = href;
-	link.media = "print";
 	link.onload = () => {
-		link.media = "all";
+		const realLink = document.createElement("link");
+		realLink.rel = "stylesheet";
+		realLink.href = href;
+		document.head.appendChild(realLink);
 	};
 	document.head.appendChild(link);
 }
+import "@src/css/barista.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Router } from "@src/Router";
