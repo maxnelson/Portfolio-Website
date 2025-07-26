@@ -7,9 +7,9 @@ export function SketchblogSidebar(props) {
 		<>
 			<div className="_display--inline-block  sketchblog_sidebar _position--sticky _top--100px _height--fit-content">
 				<hr className="sketchblog_post_hr" />
-				<ul>
+				<aside>
 					<SketchblogSidebarSectionComponent name="Engineering">
-						<li>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("css");
@@ -21,10 +21,10 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/css">
 								CSS
 							</NavLink>
-						</li>
+						</section>
 					</SketchblogSidebarSectionComponent>
 					<SketchblogSidebarSectionComponent name="Design">
-						<li>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("design");
@@ -36,8 +36,8 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/design">
 								design
 							</NavLink>
-						</li>
-						<li>
+						</section>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("schoolwork");
@@ -49,10 +49,10 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/schoolwork">
 								schoolwork
 							</NavLink>
-						</li>
+						</section>
 					</SketchblogSidebarSectionComponent>
 					<SketchblogSidebarSectionComponent name="Art">
-						<li>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("drawings");
@@ -64,8 +64,8 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/drawings">
 								drawings
 							</NavLink>
-						</li>
-						<li>
+						</section>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("digital_art");
@@ -77,8 +77,8 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/digital_art">
 								digital art
 							</NavLink>
-						</li>
-						<li>
+						</section>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("mixed_media");
@@ -90,8 +90,8 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/mixed_media">
 								mixed media
 							</NavLink>
-						</li>
-						<li>
+						</section>
+						<section>
 							<NavLink
 								onClick={() => {
 									props.setCategory("comics");
@@ -103,10 +103,10 @@ export function SketchblogSidebar(props) {
 								to="/sketchblog/comics">
 								comics
 							</NavLink>
-						</li>
+						</section>
 					</SketchblogSidebarSectionComponent>
 
-					<li className="_margin-top--3rem">
+					<section className="_margin-top--3rem">
 						<NavLink
 							onClick={() => {
 								window.scrollTo(0, 0);
@@ -127,8 +127,8 @@ export function SketchblogSidebar(props) {
 							</div>
 							Back to Portfolio
 						</NavLink>
-					</li>
-				</ul>
+					</section>
+				</aside>
 			</div>
 		</>
 	);

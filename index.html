@@ -31,22 +31,23 @@
       href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_homepage_1_optimized.webp?alt=media&token=3840d07b-050a-41ee-ade5-351faf542676"
       fetchpriority="high" />
 
-
+    <script>
+      if (window.trustedTypes && window.trustedTypes.createPolicy) {
+        window.trustedTypes.createPolicy('default', {
+          createHTML: string => string,
+          createScriptURL: string => string,
+          createScript: string => string,
+        });
+      }
+    </script>
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5XVMK64Z");
+      window.addEventListener('load', function () {
+        const gtmScript = document.createElement('script');
+        gtmScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-5XVMK64Z";
+        gtmScript.async = true;
+        document.head.appendChild(gtmScript);
+      });
     </script>
     <!-- End Google Tag Manager -->
     <!-- Google Analytics -->
@@ -74,7 +75,6 @@
         style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
-    <div id="page_modal"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 

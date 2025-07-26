@@ -20,6 +20,8 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 		};
 		fetchData();
 	}, []);
+	const policy = window.trustedTypes.defaultPolicy;
+	const html = policy?.createHTML(aboutPageData);
 
 	return (
 		<>
@@ -42,7 +44,7 @@ export function AboutPage({ setProjectDescriptionVisible }: AboutPageProps) {
 							<div className="width-80percent-minus-1rem _vertical-align--top _margin-left--1rem">
 								<div
 									dangerouslySetInnerHTML={{
-										__html: aboutPageData
+										__html: html
 									}}></div>
 							</div>
 						</div>

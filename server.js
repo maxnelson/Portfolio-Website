@@ -49,7 +49,9 @@ app.use(
 				],
 				styleSrc: ["'self'", "https://fonts.googleapis.com"],
 				fontSrc: ["'self'", "https://fonts.gstatic.com"],
-				frameAncestors: ["'none'"]
+				frameAncestors: ["'none'"],
+				requireTrustedTypesFor: ["'script'"],
+				crossOriginOpenerPolicy: { policy: "same-origin" }
 			}
 		}
 	})

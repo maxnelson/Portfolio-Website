@@ -15,6 +15,8 @@ export function PostDescriptionPage() {
 			setPostObject(postObjectData);
 		}
 	}, [postDescription.status]);
+	const policy = window.trustedTypes.defaultPolicy;
+	const html = policy?.createHTML(postObject?.description);
 
 	return (
 		<>
@@ -62,7 +64,7 @@ export function PostDescriptionPage() {
 								</h2>
 								<div
 									className="_font-size--11pt color-777 _list-style-position--inside"
-									dangerouslySetInnerHTML={{ __html: postObject.description }}
+									dangerouslySetInnerHTML={{ __html: html }}
 								/>
 							</div>
 						</div>

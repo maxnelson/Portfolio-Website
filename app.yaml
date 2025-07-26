@@ -22,13 +22,9 @@ handlers:
     - url: /
       static_files: dist/index.html
       upload: dist/index.html
-      http_headers:
-          Cache-Control: "no-cache"
 
     - url: /.*
       script: auto
-      http_headers:
-          Cache-Control: "no-cache"
 
 env_variables:
     NODE_ENV: "production"

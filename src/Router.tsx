@@ -1,7 +1,9 @@
-import { useState, lazy, Suspense } from "react";
+import { useState, lazy } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { HomePage } from "@src/pages/HomePage";
 
+const HomePage = lazy(() =>
+	import("./pages/HomePage").then((module) => ({ default: module.HomePage }))
+);
 const AboutPage = lazy(() =>
 	import("./pages/AboutPage").then((module) => ({ default: module.AboutPage }))
 );
@@ -19,10 +21,8 @@ const PostDescriptionPage = lazy(() =>
 		default: module.PostDescriptionPage
 	}))
 );
-import { setLogLevel } from "firebase/firestore";
-
-// Set this before calling any Firestore APIs
-setLogLevel("debug");
+//import { setLogLevel } from "firebase/firestore";
+//setLogLevel("debug");
 
 export function Router() {
 	const [projectDescriptionVisible, setProjectDescriptionVisible] = useState(false);

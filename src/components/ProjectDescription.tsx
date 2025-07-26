@@ -12,6 +12,9 @@ export const ProjectDescription = (props) => {
 		};
 		fetchData();
 	}, []);
+	const policy = window.trustedTypes.defaultPolicy;
+	const html = policy?.createHTML(projectData?.description);
+
 	return (
 		<div className="project_description_container">
 			<div className="project_description_container_images">
@@ -63,7 +66,7 @@ export const ProjectDescription = (props) => {
 				)}
 				<div
 					dangerouslySetInnerHTML={{
-						__html: projectData?.description || ""
+						__html: html
 					}}></div>
 
 				<div className="back-button">
