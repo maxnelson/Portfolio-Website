@@ -11,9 +11,9 @@
 		"build": "vite build",
 		"start": "node server.js",
 		"preview": "vite preview",
-		"uploadResume": "node --env-file=.env -- src/utility_functions/uploadData/uploadResumeData.js",
-		"uploadProjectGridData": "node --env-file=.env -- src/utility_functions/uploadData/uploadProjectGridData.js",
-		"uploadAboutPageData": "node --env-file=.env -- src/utility_functions/uploadData/uploadAboutPageData.js",
+		"uploadResume": "node --env-file=.env -- server/uploadData/uploadResumeData.js",
+		"uploadProjectGridData": "node --env-file=.env -- server/uploadData/uploadProjectGridData.js",
+		"uploadAboutPageData": "node --env-file=.env -- server/uploadData/uploadAboutPageData.js",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
 	},
 	"dependencies": {
