@@ -2,7 +2,11 @@ if (import.meta.env.DEV) {
 	import("@src/css/main.css");
 }
 if (import.meta.env.PROD) {
-	const cssFiles = import.meta.glob("/src/css/main.css", { as: "url", eager: true });
+	const cssFiles = import.meta.glob("/src/css/main.css", {
+		query: "?url",
+		import: "default",
+		eager: true
+	});
 	const href = cssFiles["/src/css/main.css"];
 	const link = document.createElement("link");
 	link.rel = "preload";

@@ -1,8 +1,8 @@
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectGridItem } from "./ProjectsGridItem";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { getProjectGridData } from "@src/utility_functions/fetchData/getProjectGridData";
-
+import { ProjectGridItemSuspense } from "@src/components/ProjectGrid/ProjectGridItemSuspense";
 interface projectGridDataInterface {
 	timeline: {
 		image1: string;
@@ -111,14 +111,18 @@ export const ProjectsGrid = ({
 			:	<div className="project_grid_container">
 					{sortedProjectGridData.map((projectData) => {
 						return (
-							<ProjectGridItem
-								image1={projectData?.image1}
-								clientName={projectData?.clientName}
-								startDateYear={projectData?.startDateYear}
-								endDateYear={projectData?.endDateYear}
-								projectDescriptionContentName={projectData?.clientName.toLowerCase()}
-								key={projectData?.clientName}
-							/>
+							<Suspense
+								fallback={<ProjectGridItemSuspense />}
+								key={projectData?.clientName}>
+								<ProjectGridItem
+									image1={projectData?.image1}
+									clientName={projectData?.clientName}
+									startDateYear={projectData?.startDateYear}
+									endDateYear={projectData?.endDateYear}
+									projectDescriptionContentName={projectData?.clientName.toLowerCase()}
+									key={projectData?.clientName}
+								/>
+							</Suspense>
 						);
 					})}
 				</div>
