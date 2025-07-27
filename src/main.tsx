@@ -20,7 +20,6 @@ if (import.meta.env.PROD) {
 	};
 	document.head.appendChild(link);
 }
-import "@src/css/barista.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Router } from "@src/Router";

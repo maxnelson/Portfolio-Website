@@ -3,7 +3,7 @@ export const ProjectGridItemSuspense = (props) => {
 		<>
 			<div
 				style={{ backgroundColor: "#ddd" }}
-				className="project_grid_item aspect-ratio-1-1 _position--relative"></div>
+				className="project_grid_item aspect-ratio-1-1"></div>
 		</>
 	);
 };

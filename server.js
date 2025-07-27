@@ -7,6 +7,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 app.use(express.static(path.join(__dirname, "dist")));
+
+app.use(
+	"/assets",
+	express.static(path.join(__dirname, "dist/assets"), {
+		maxAge: "1y",
+		immutable: true
+	})
+);
+
 app.use(express.static("public"));
 app.get("/sitemap.xml", sitemapGenerator);
 app.get("/robots.txt", (req, res) => {

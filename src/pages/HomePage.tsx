@@ -1,7 +1,13 @@
+import { Suspense, lazy } from "react";
+import { useParams } from "react-router-dom";
 import { ProjectsGrid } from "@src/components/ProjectsGrid";
 import { LeftSidebar } from "@src/components/LeftSidebar";
-import { Footer } from "@src/components/Footer/Footer";
-import { useParams } from "react-router-dom";
+const Footer = lazy(() =>
+	import("@src/components/Footer/Footer").then((module) => ({
+		default: module.Footer || module.default
+	}))
+);
+
 export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisible }) {
 	const params = useParams();
 	return (
@@ -25,7 +31,9 @@ export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisib
 						/>
 					</main>
 				</div>
-				<Footer />
+				<Suspense fallback={null}>
+					<Footer />
+				</Suspense>
 			</div>
 		</>
 	);

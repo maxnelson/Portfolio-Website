@@ -5,7 +5,7 @@ export const ProjectGridItem = (props) => {
 		<>
 			<NavLink to={"/project/" + props.projectDescriptionContentName}>
 				<div
-					className="project_grid_item aspect-ratio-1-1 _position--relative"
+					className="project_grid_item aspect-ratio-1-1"
 					onClick={props.clickHandler}>
 					<img
 						alt="Project Image"
