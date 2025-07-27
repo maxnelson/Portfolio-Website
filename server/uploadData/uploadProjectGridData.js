@@ -1,43 +1,31 @@
 import { readFileSync } from "fs";
 import projectGridData from "#root/src/content/projectGridData.json" with { type: "json" };
-import resumeData from "#root/src/content/resumeData.json" with { type: "json" };
 import { firestore_database_service_account } from "#root/server/config/firebaseAdminConfig.js";
 
 export const uploadProjectGridData = async () => {
-	const timelineDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/timelineDescription.html",
-		"utf-8"
-	);
-	const appleDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/appleDescription.html",
-		"utf-8"
-	);
-	const rubrikDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/rubrikDescription.html",
-		"utf-8"
-	);
-	const clouderaDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/clouderaDescription.html",
-		"utf-8"
-	);
-	const gifhovDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/gifhovDescription.html",
-		"utf-8"
-	);
-	const blogDescription = readFileSync(
-		"src/content/projectDescriptionsHTML/blogDescription.html",
-		"utf-8"
-	);
-	projectGridData.timeline.description = timelineDescription;
-	projectGridData.apple.description = appleDescription;
-	projectGridData.rubrik.description = rubrikDescription;
-	projectGridData.cloudera.description = clouderaDescription;
-	projectGridData.gifhov.description = gifhovDescription;
-	projectGridData.blog.description = blogDescription;
-	const docRef = firestore_database_service_account.doc("resumeData/projectGridData");
-
-	await docRef.update({
-		projectGridDataField: projectGridData
-	});
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("apple")
+		.set(projectGridData.apple);
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("cloudera")
+		.set(projectGridData.cloudera);
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("rubrik")
+		.set(projectGridData.rubrik);
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("blog")
+		.set(projectGridData.blog);
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("timeline")
+		.set(projectGridData.timeline);
+	await firestore_database_service_account
+		.collection("projectGridData")
+		.doc("gifhov")
+		.set(projectGridData.gifhov);
 };
 uploadProjectGridData();

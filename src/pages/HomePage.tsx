@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import { useParams } from "react-router-dom";
-import { ProjectsGrid } from "@src/components/ProjectsGrid";
+import { ProjectGrid } from "@src/components/ProjectGrid/ProjectGrid";
 import { LeftSidebar } from "@src/components/LeftSidebar";
 const Footer = lazy(() =>
 	import("@src/components/Footer/Footer").then((module) => ({
@@ -24,7 +24,7 @@ export function HomePage({ projectDescriptionVisible, setProjectDescriptionVisib
 						<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
 					</div>
 					<main className="main_section">
-						<ProjectsGrid
+						<ProjectGrid
 							projectDescriptionVisible={projectDescriptionVisible}
 							setProjectDescriptionVisible={setProjectDescriptionVisible}
 							projectDescriptionContentName={params.project}

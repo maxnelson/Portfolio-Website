@@ -2,10 +2,10 @@ import { useState, lazy } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 const HomePage = lazy(() =>
-	import("./pages/HomePage").then((module) => ({ default: module.HomePage }))
+	import("@src/pages/HomePage").then((module) => ({ default: module.HomePage }))
 );
 const AboutPage = lazy(() =>
-	import("./pages/AboutPage").then((module) => ({ default: module.AboutPage }))
+	import("@src/pages/AboutPage").then((module) => ({ default: module.AboutPage }))
 );
 const ResumePage = lazy(() =>
 	import("@src/pages/ResumePage").then((module) => ({ default: module.ResumePage }))

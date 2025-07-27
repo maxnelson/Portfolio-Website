@@ -1,8 +1,8 @@
-import { ProjectDescription } from "./ProjectDescription";
-import { ProjectGridItem } from "./ProjectsGridItem";
 import { useState, useEffect, Suspense } from "react";
-import { getProjectGridData } from "@src/utility_functions/fetchData/getProjectGridData";
+import { ProjectDescription } from "@src/components/ProjectGrid/ProjectDescription";
+import { ProjectGridItem } from "@src/components/ProjectGrid/ProjectGridItem";
 import { ProjectGridItemSuspense } from "@src/components/ProjectGrid/ProjectGridItemSuspense";
+import { getProjectGridData } from "@src/utility_functions/fetchData/getProjectGridData";
 interface projectGridDataInterface {
 	timeline: {
 		image1: string;
@@ -78,7 +78,7 @@ interface projectGridDataInterface {
 	};
 }
 
-export const ProjectsGrid = ({
+export const ProjectGrid = ({
 	projectDescriptionVisible,
 	projectDescriptionContentName,
 	setProjectDescriptionVisible

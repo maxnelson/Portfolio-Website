@@ -1,9 +1,3 @@
-._word-wrap--break-word {
-  word-wrap: break-word;
-}
-._margin-bottom--1rem {
-  margin-bottom: 1rem;
-}
 ._margin-right--1rem {
   margin-right: 1rem;
 }
@@ -12,6 +6,9 @@
 }
 ._margin-left--1rem {
   margin-left: 1rem;
+}
+._margin-bottom--1rem {
+  margin-bottom: 1rem;
 }
 ._margin-top--2rem {
   margin-top: 2rem;
@@ -102,6 +99,9 @@
 }
 ._display--block {
   display: block;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
 }
 ._color--var_gray-400_ {
   color: var(--gray-400);
