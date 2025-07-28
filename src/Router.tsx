@@ -25,48 +25,25 @@ const PostDescriptionPage = lazy(() =>
 //setLogLevel("debug");
 
 export function Router() {
-	const [projectDescriptionVisible, setProjectDescriptionVisible] = useState(false);
 	return (
 		<>
 			<Routes>
 				<Route
 					path="/"
-					element={
-						<HomePage
-							projectDescriptionVisible={projectDescriptionVisible}
-							setProjectDescriptionVisible={setProjectDescriptionVisible}
-						/>
-					}></Route>
+					element={<HomePage />}></Route>
 				<Route
 					path="/project/:project"
-					element={
-						<HomePage
-							projectDescriptionVisible={true}
-							setProjectDescriptionVisible={setProjectDescriptionVisible}
-						/>
-					}></Route>
+					element={<HomePage />}></Route>
 				<Route
 					path="/about"
-					element={
-						<AboutPage setProjectDescriptionVisible={setProjectDescriptionVisible} />
-					}></Route>
+					element={<AboutPage />}></Route>
 				<Route
 					path="/resume/:resumetype?"
-					element={
-						<ResumePage
-							projectDescriptionVisible={projectDescriptionVisible}
-							setProjectDescriptionVisible={setProjectDescriptionVisible}
-						/>
-					}></Route>
+					element={<ResumePage />}></Route>
 
 				<Route
 					path="/contact"
-					element={
-						<ContactPage
-							projectDescriptionVisible={projectDescriptionVisible}
-							setProjectDescriptionVisible={setProjectDescriptionVisible}
-						/>
-					}></Route>
+					element={<ContactPage />}></Route>
 				<Route
 					path="/sketchblog"
 					element={<SketchblogPage />}>

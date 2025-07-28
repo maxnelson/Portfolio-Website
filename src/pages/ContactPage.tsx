@@ -1,6 +1,6 @@
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
-export function ContactPage(setProjectDescriptionVisible) {
+export function ContactPage() {
 	return (
 		<>
 			<div className="page_container">
@@ -8,7 +8,7 @@ export function ContactPage(setProjectDescriptionVisible) {
 					className="inner_page_container"
 					style={{ display: "flex" }}>
 					<div className="sidebar">
-						<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+						<LeftSidebar />
 					</div>
 					<main className="main_section">
 						<div>

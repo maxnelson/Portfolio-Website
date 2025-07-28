@@ -11,11 +11,8 @@ export const getPostCategory = (category) => {
 
 const fetchPostCategory = async ({ queryKey }) => {
 	const allPosts = collection(firestore_database, "sketchblog");
-
 	const allPostsFiltered = query(allPosts, where("category", "==", queryKey[1].category));
-
 	const allPostsFilteredDocs = await getDocs(allPostsFiltered);
-
 	if (allPostsFilteredDocs) {
 		return allPostsFilteredDocs;
 	} else {

@@ -9,10 +9,11 @@
 }
 
 .project_grid_item {
+	cursor: pointer;
+	overflow: hidden;
 	aspect-ratio: 1 / 1;
 	position: relative;
-	overflow: hidden;
-	cursor: pointer;
+	display: inline-block;
 }
 
 .project_description_container {

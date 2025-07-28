@@ -105,7 +105,7 @@ interface resumeDataInterface {
 	};
 }
 
-export const ResumePage = (setProjectDescriptionVisible) => {
+export const ResumePage = () => {
 	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
 	const { resumetype } = useParams();
 	const defaultResumeType = resumetype ? resumetype : "single";
@@ -125,7 +125,7 @@ export const ResumePage = (setProjectDescriptionVisible) => {
 					className="inner_page_container"
 					style={{ display: "flex" }}>
 					<div className="sidebar">
-						<LeftSidebar setProjectDescriptionVisible={setProjectDescriptionVisible} />
+						<LeftSidebar />
 						<ResumeControls
 							marginBetweenExperiences={marginBetweenExperiences}
 							setMarginBetweenExperiences={setMarginBetweenExperiences}

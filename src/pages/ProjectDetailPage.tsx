@@ -3,11 +3,7 @@ import { Footer } from "@src/components/Footer/Footer";
 import { useState, useEffect } from "react";
 import { getAboutPageData } from "@src/utility_functions/fetchData/getAboutPageData";
 
-interface AboutPageData {
-	aboutPageDataField: string;
-}
-
-export function AboutPage() {
+export function ProjectDetailPage() {
 	const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(null);
 	useEffect(() => {
 		const fetchData = async () => {
