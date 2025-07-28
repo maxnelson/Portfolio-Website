@@ -1,5 +1,4 @@
 import { Suspense, lazy } from "react";
-import { useParams } from "react-router-dom";
 import { ProjectGridItem } from "@src/components/ProjectGrid/ProjectGridItem";
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
@@ -12,7 +11,6 @@ const Footer = lazy(() =>
 */
 
 export function HomePage() {
-	const params = useParams();
 	return (
 		<>
 			<link

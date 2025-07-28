@@ -6,7 +6,6 @@ import { getProjectData } from "@src/utility_functions/fetchData/getProjectGridD
 export const ProjectGridItem = (props) => {
 	const projectDataQuery = getProjectData(props.name);
 	const projectData = projectDataQuery.data;
-	console.log(projectData);
 	return (
 		<>
 			<Suspense fallback={<ProjectGridItemSuspense />}>

@@ -1,19 +1,16 @@
+import { useParams } from "react-router-dom";
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
-import { useState, useEffect } from "react";
-import { getAboutPageData } from "@src/utility_functions/fetchData/getAboutPageData";
+import { Suspense, useState, useEffect } from "react";
+import { getProjectDescriptionData } from "@src/utility_functions/fetchData/getProjectGridData";
+import { ProjectDescription } from "@src/components/ProjectGrid/ProjectDescription";
 
 export function ProjectDetailPage() {
-	const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(null);
-	useEffect(() => {
-		const fetchData = async () => {
-			const fetchedAboutPageData: AboutPageData = await getAboutPageData();
-			setAboutPageData(fetchedAboutPageData);
-		};
-		fetchData();
-	}, []);
-	const policy = window.trustedTypes.defaultPolicy;
-	const html = policy?.createHTML(aboutPageData);
+	const URLParams = useParams();
+	const projectDataQuery = getProjectDescriptionData(URLParams.project);
+	const projectData = projectDataQuery.data;
+	console.log("projectData");
+	console.log(projectData);
 
 	return (
 		<>
@@ -25,24 +22,12 @@ export function ProjectDetailPage() {
 						<LeftSidebar />
 					</div>
 					<main className="main_section">
-						<div style={{ display: "flex" }}>
-							<div className="width-20percent-minus-1rem _margin-right--1rem">
-								<img
-									loading="lazy"
-									alt="Profile Picture"
-									src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fassets%2Fprofile_picture.png?alt=media&token=e8c85ebc-3169-4c3b-8984-ded19c32e2f3"
-								/>
-							</div>
-							<div className="width-80percent-minus-1rem _vertical-align--top _margin-left--1rem">
-								<div
-									dangerouslySetInnerHTML={{
-										__html: html
-									}}></div>
-							</div>
-						</div>
+						<ProjectDescription projectData={projectData} />
 					</main>
 				</div>
-				<Footer />
+				<Suspense fallback={null}>
+					<Footer />
+				</Suspense>
 			</div>
 		</>
 	);

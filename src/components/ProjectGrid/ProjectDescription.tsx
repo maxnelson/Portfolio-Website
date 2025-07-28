@@ -1,66 +1,55 @@
-import { useState, useEffect } from "react";
-import { getProjectData } from "@src/utility_functions/fetchData/getProjectGridData.js";
-import { projectDataModel } from "@src/types/models.ts";
 import { ChevronLeftIcon } from "@src/components/icons/ChevronLeftIcon";
 
 export const ProjectDescription = (props) => {
-	const [projectData, setProjectData] = useState<projectDataModel | null>(null);
-	useEffect(() => {
-		const fetchData = async () => {
-			const fetchedProjectData = await getProjectData(props.projectDescriptionContentName);
-			setProjectData(fetchedProjectData);
-		};
-		fetchData();
-	}, []);
 	const policy = window.trustedTypes.defaultPolicy;
-	const html = policy?.createHTML(projectData?.description);
-
+	const html = policy?.createHTML(props.projectData?.description);
 	return (
 		<div className="project_description_container">
 			<div className="project_description_container_images">
-				{projectData?.image1 ?
+				{props.projectData?.image1 ?
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={projectData?.image1}></img>
+						src={props.projectData?.image1}></img>
 				:	null}
-				{projectData?.image2 ?
+				{props.projectData?.image2 ?
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={projectData?.image2}></img>
+						src={props.projectData?.image2}></img>
 				:	null}
-				{projectData?.image3 ?
+				{props.projectData?.image3 ?
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={projectData?.image3}></img>
+						src={props.projectData?.image3}></img>
 				:	null}
-				{projectData?.image4 ?
+				{props.projectData?.image4 ?
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={projectData?.image4}></img>
+						src={props.projectData?.image4}></img>
 				:	null}
 			</div>
 			<div className="project_description_text_container _word-wrap--break-word">
-				{projectData?.clientName && (
+				{props.projectData?.clientName && (
 					<div className="_margin-bottom--1rem">
-						<h3>{projectData?.clientName}</h3>
+						<h3>{props.projectData?.clientName}</h3>
 						<p
 							style={{
 								fontSize: "12pt",
 								marginTop: "0",
 								marginBottom: "0"
 							}}>
-							{projectData?.jobTitle}
+							{props.projectData?.jobTitle}
 						</p>
 						<span>
-							{projectData?.startDateMonth && projectData?.startDateMonth}
-							{projectData?.startDateYear && " " + projectData?.startDateYear}
-							{projectData?.endDateYear && " - "}
-							{projectData?.endDateMonth && projectData?.endDateMonth}
-							{projectData?.endDateYear && " " + projectData?.endDateYear}
+							{props.projectData?.startDateMonth && props.projectData?.startDateMonth}
+							{props.projectData?.startDateYear &&
+								" " + props.projectData?.startDateYear}
+							{props.projectData?.endDateYear && " - "}
+							{props.projectData?.endDateMonth && props.projectData?.endDateMonth}
+							{props.projectData?.endDateYear && " " + props.projectData?.endDateYear}
 						</span>
 					</div>
 				)}

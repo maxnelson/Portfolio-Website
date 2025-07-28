@@ -8,8 +8,7 @@
 		"startDateYear": "2023",
 		"endDateMonth": "Oct",
 		"endDateYear": "2024",
-		"description": "",
-		"gridSequence": "1"
+		"description": ""
 	},
 	"apple": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_1_optimized.webp?alt=media&token=51b360e7-e4e6-4328-bee3-3a13d176311c",
@@ -23,8 +22,7 @@
 		"startDateYear": "2020",
 		"endDateMonth": "Oct",
 		"endDateYear": "2023",
-		"description": "",
-		"gridSequence": "2"
+		"description": ""
 	},
 	"rubrik": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.webp?alt=media&token=d80c735c-b7ee-4b96-a398-77c825d3741a",
@@ -37,8 +35,7 @@
 		"startDateYear": "2019",
 		"endDateMonth": "Feb",
 		"endDateYear": "2020",
-		"description": "",
-		"gridSequence": "3"
+		"description": ""
 	},
 	"cloudera": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.webp?alt=media&token=cf379433-f68c-49f1-a74f-d94592a1173f",
@@ -51,8 +48,7 @@
 		"startDateYear": "2013",
 		"endDateMonth": "Sept",
 		"endDateYear": "2017",
-		"description": "",
-		"gridSequence": "4"
+		"description": ""
 	},
 	"gifhov": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.webp?alt=media&token=93415c15-696f-4fb7-99bf-5b6aa9bd07b8",
@@ -61,8 +57,7 @@
 		"location": "",
 		"startDateYear": "2015",
 		"endDateYear": "",
-		"description": "",
-		"gridSequence": "5"
+		"description": ""
 	},
 	"blog": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_homepage_1_optimized.webp?alt=media&token=3840d07b-050a-41ee-ade5-351faf542676",
@@ -74,7 +69,6 @@
 		"clientName": "Blog",
 		"jobTitle": "",
 		"location": "",
-		"description": "",
-		"gridSequence": "6"
+		"description": ""
 	}
 }

@@ -4,6 +4,9 @@ import { Route, Routes, Navigate } from "react-router-dom";
 const HomePage = lazy(() =>
 	import("@src/pages/HomePage").then((module) => ({ default: module.HomePage }))
 );
+const ProjectDetailPage = lazy(() =>
+	import("@src/pages/ProjectDetailPage").then((module) => ({ default: module.ProjectDetailPage }))
+);
 const AboutPage = lazy(() =>
 	import("@src/pages/AboutPage").then((module) => ({ default: module.AboutPage }))
 );
@@ -33,7 +36,7 @@ export function Router() {
 					element={<HomePage />}></Route>
 				<Route
 					path="/project/:project"
-					element={<HomePage />}></Route>
+					element={<ProjectDetailPage />}></Route>
 				<Route
 					path="/about"
 					element={<AboutPage />}></Route>
