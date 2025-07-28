@@ -1,4 +1,5 @@
 import { ResumeControlMarginBetweenExperiences } from "@src/components/Resume/ResumeControls/ResumeControlMarginBetweenExperiences";
+import { ResumeControlTitleFontSize } from "@src/components/Resume/ResumeControls/ResumeControlTitleFontSize";
 
 export const ResumeControls = (props) => {
 	return (
@@ -19,9 +20,12 @@ export const ResumeControls = (props) => {
 					}}>
 					<p>Customize Resume</p>
 				</div>
-				<ResumeControlMarginBetweenExperiences
-					setMarginBetweenExperiences={props.setMarginBetweenExperiences}
-				/>
+				<div style={{ padding: "1rem" }}>
+					<ResumeControlMarginBetweenExperiences
+						setMarginBetweenExperiences={props.setMarginBetweenExperiences}
+					/>
+					<ResumeControlTitleFontSize setTitleFontSize={props.setTitleFontSize} />
+				</div>
 			</div>
 		</>
 	);

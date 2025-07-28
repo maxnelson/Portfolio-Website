@@ -3,25 +3,24 @@ export const ResumeControlTitleFontSize = (props) => {
 		<>
 			<div
 				style={{
-					padding: "1rem"
+					marginBottom: "1rem"
 				}}>
 				<div>
 					<label
-						htmlFor="marginBetweenExperiencesSlider"
-						style={{ color: "#aaa", marginBottom: "1rem", display: "block" }}>
+						htmlFor="titleFontSizeSlider"
+						style={{ color: "#aaa", marginBottom: "10px", display: "block" }}>
 						TitleFontSize:
 					</label>
 					<input
 						type="range"
-						id="marginBetweenExperiencesSlider"
-						name="marginBetweenExperiencesSlider"
-						min="2"
-						max="10"
+						id="titleFontSizeSlider"
+						name="titleFontSizeSlider"
+						min="12"
+						max="14"
 						step="1"
+						defaultValue="12"
 						style={{ cursor: "pointer" }}
-						onChange={(event) =>
-							props.setMarginBetweenExperiences(event?.target.value)
-						}></input>
+						onChange={(event) => props.setTitleFontSize(event?.target.value)}></input>
 				</div>
 			</div>
 		</>

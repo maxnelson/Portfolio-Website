@@ -1,6 +1,6 @@
 import { View, Text } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
-import { ContactInfoItem } from "@src/components/Resume/PDF/ContactInfoItem";
+import { ContactInfoItem } from "@src/components/Resume/PDF/Header/ContactInfoItem";
 
 export const ResumeHeader = (props) => {
 	const email_icon =

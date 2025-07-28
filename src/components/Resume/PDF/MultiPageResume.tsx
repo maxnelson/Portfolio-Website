@@ -1,10 +1,10 @@
-import { ResumeHeader } from "@src/components/Resume/PDF/ResumeHeader";
-import { ResumeFooter } from "@src/components/Resume/PDF/ResumeFooter";
-import { ResumeItem } from "@src/components/Resume/PDF/ResumeItem";
+import { ResumeHeader } from "@src/components/Resume/PDF/Header/ResumeHeader";
+import { ResumeFooter } from "@src/components/Resume/PDF/Footer/ResumeFooter";
+import { ResumeItem } from "@src/components/Resume/PDF/Experience/ResumeItem";
 import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 import { ResumeSectionHeader } from "@src/components/Resume/PDF/ResumeSectionHeader";
-import { SummarySection } from "@src/components/Resume/PDF/SummarySection";
+import { SummarySection } from "@src/components/Resume/PDF/Header/SummarySection";
 
 export const MultiPageResume = (props) => {
 	return (

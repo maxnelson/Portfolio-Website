@@ -1,28 +1,25 @@
-import { ResumeHeader } from "@src/components/Resume/PDF/ResumeHeader";
-import { ResumeFooter } from "@src/components/Resume/PDF/ResumeFooter";
-import { ResumeItem } from "@src/components/Resume/PDF/ResumeItem";
+import { ResumeHeader } from "@src/components/Resume/PDF/Header/ResumeHeader";
+import { ResumeFooter } from "@src/components/Resume/PDF/Footer/ResumeFooter";
+import { ResumeItem } from "@src/components/Resume/PDF/Experience/ResumeItem";
 import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 import { ResumeSectionHeader } from "@src/components/Resume/PDF/ResumeSectionHeader";
-import { SummarySection } from "@src/components/Resume/PDF/SummarySection";
-import { AbridgeDisclaimer } from "@src/components/Resume/PDF/AbridgeDisclaimer";
+import { SummarySection } from "@src/components/Resume/PDF/Header/SummarySection";
+import { AbridgeDisclaimer } from "@src/components/Resume/PDF/Footer/AbridgeDisclaimer";
 
 export const SinglePageResume = (props) => {
 	const resumeModeOptions = ["compact", "regular"];
 	const resumeMode = resumeModeOptions[1];
 	let marginBelowItem;
-	let titleFontSize;
 	let itemLineHeight;
 	let spaceBetweenBullets;
 
 	if (resumeMode === "compact") {
 		marginBelowItem = styles.margin_bottom_5;
-		titleFontSize = styles.font_size_12pt;
 		itemLineHeight = styles.line_height_1;
 		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
 	} else if (resumeMode === "regular") {
 		marginBelowItem = styles.margin_bottom_10;
-		titleFontSize = styles.font_size_13pt;
 		itemLineHeight = styles.line_height_1_2;
 		spaceBetweenBullets = [styles.margin_top_0, styles.margin_bottom_0];
 	}
@@ -57,7 +54,7 @@ export const SinglePageResume = (props) => {
 											}
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
-											titleFontSize={titleFontSize}
+											titleFontSize={props.titleFontSize}
 											customStyle={[marginBelowItem]}
 											clientName={
 												props.resumeData?.section1.datafinitygroup
@@ -109,7 +106,7 @@ export const SinglePageResume = (props) => {
 										marginBetweenExperiences={props.marginBetweenExperiences}
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
-										titleFontSize={titleFontSize}
+										titleFontSize={props.titleFontSize}
 										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.timeline.clientName}
 										jobTitle={props.resumeData?.section1.timeline.jobTitle}
@@ -140,7 +137,7 @@ export const SinglePageResume = (props) => {
 										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
-										titleFontSize={titleFontSize}
+										titleFontSize={props.titleFontSize}
 										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.apple.clientName}
 										jobTitle={props.resumeData?.section1.apple.jobTitle}
@@ -174,7 +171,7 @@ export const SinglePageResume = (props) => {
 										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
-										titleFontSize={titleFontSize}
+										titleFontSize={props.titleFontSize}
 										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.rubrik.clientName}
 										jobTitle={props.resumeData?.section1.rubrik.jobTitle}
@@ -205,7 +202,7 @@ export const SinglePageResume = (props) => {
 										marginBetweenExperiences={props.marginBetweenExperiences}
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
-										titleFontSize={titleFontSize}
+										titleFontSize={props.titleFontSize}
 										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.cloudera.clientName}
 										jobTitle={props.resumeData?.section1.cloudera.jobTitle}

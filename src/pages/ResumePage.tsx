@@ -111,6 +111,8 @@ export const ResumePage = () => {
 	const defaultResumeType = resumetype ? resumetype : "single";
 	const [resumeType, setResumeType] = useState(defaultResumeType);
 	const [marginBetweenExperiences, setMarginBetweenExperiences] = useState(0);
+	const [titleFontSize, setTitleFontSize] = useState(0);
+
 	useEffect(() => {
 		const fetchData = async () => {
 			const fetchedResumeData = await getResumeData();
@@ -129,6 +131,8 @@ export const ResumePage = () => {
 						<ResumeControls
 							marginBetweenExperiences={marginBetweenExperiences}
 							setMarginBetweenExperiences={setMarginBetweenExperiences}
+							titleFontSize={titleFontSize}
+							setTitleFontSize={setTitleFontSize}
 						/>
 					</div>
 					<main className="main_section">
@@ -140,6 +144,7 @@ export const ResumePage = () => {
 							resumeType={resumeType}
 							resumeData={resumeData}
 							marginBetweenExperiences={marginBetweenExperiences}
+							titleFontSize={titleFontSize}
 						/>
 
 						<div className="display_block _margin-top--2rem">

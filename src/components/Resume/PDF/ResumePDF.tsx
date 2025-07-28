@@ -8,6 +8,7 @@ export const ResumePDF = (props) => {
 				<SinglePageResume
 					resumeData={props.resumeData}
 					marginBetweenExperiences={props.marginBetweenExperiences}
+					titleFontSize={props.titleFontSize}
 				/>
 			:	<MultiPageResume resumeData={props.resumeData} />}
 		</>
