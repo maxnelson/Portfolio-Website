@@ -24,7 +24,12 @@ export const ResumeItem = (props) => {
 							]}>
 							{props.clientName}
 						</Text>
-						<Text style={[styles.font_family_helvetica_bold, styles.font_size_11pt]}>
+						<Text
+							style={[
+								styles.font_family_helvetica_bold,
+								styles.font_size_11pt,
+								styles.margin_top_negative_5
+							]}>
 							{props.jobTitle}
 						</Text>
 					</View>

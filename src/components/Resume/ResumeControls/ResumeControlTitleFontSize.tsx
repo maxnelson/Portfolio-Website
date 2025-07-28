@@ -8,7 +8,7 @@ export const ResumeControlTitleFontSize = (props) => {
 				<div>
 					<label
 						htmlFor="titleFontSizeSlider"
-						style={{ color: "#aaa", marginBottom: "10px", display: "block" }}>
+						style={{ color: "#aaa", marginBottom: "5px", display: "block" }}>
 						TitleFontSize:
 					</label>
 					<input
@@ -19,7 +19,7 @@ export const ResumeControlTitleFontSize = (props) => {
 						max="14"
 						step="1"
 						defaultValue="12"
-						style={{ cursor: "pointer" }}
+						style={{ width: "100%", cursor: "pointer" }}
 						onChange={(event) => props.setTitleFontSize(event?.target.value)}></input>
 				</div>
 			</div>

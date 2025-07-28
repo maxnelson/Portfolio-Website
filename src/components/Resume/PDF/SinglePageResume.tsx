@@ -9,7 +9,7 @@ import { AbridgeDisclaimer } from "@src/components/Resume/PDF/Footer/AbridgeDisc
 
 export const SinglePageResume = (props) => {
 	const resumeModeOptions = ["compact", "regular"];
-	const resumeMode = resumeModeOptions[1];
+	const resumeMode = resumeModeOptions[0];
 	let marginBelowItem;
 	let itemLineHeight;
 	let spaceBetweenBullets;
@@ -17,11 +17,11 @@ export const SinglePageResume = (props) => {
 	if (resumeMode === "compact") {
 		marginBelowItem = styles.margin_bottom_5;
 		itemLineHeight = styles.line_height_1;
-		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
+		spaceBetweenBullets = [styles.margin_top_0, styles.margin_bottom_0];
 	} else if (resumeMode === "regular") {
 		marginBelowItem = styles.margin_bottom_10;
 		itemLineHeight = styles.line_height_1_2;
-		spaceBetweenBullets = [styles.margin_top_0, styles.margin_bottom_0];
+		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
 	}
 	return (
 		<>

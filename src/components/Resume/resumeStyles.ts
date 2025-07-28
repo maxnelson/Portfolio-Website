@@ -21,6 +21,15 @@ export const resumeStyles = StyleSheet.create({
 		paddingLeft: "30",
 		paddingRight: "30"
 	},
+	margin_top_negative_20: {
+		marginTop: "-20"
+	},
+	margin_top_negative_10: {
+		marginTop: "-10"
+	},
+	margin_top_negative_5: {
+		marginTop: "-5"
+	},
 	margin_bottom_negative_10: {
 		marginBottom: "-10"
 	},
