@@ -11,7 +11,10 @@ export default defineConfig({
 	plugins: [
 		react(),
 		Inspect(),
-		visualizer(),
+		visualizer({
+			filename: "./dist/report.html",
+			template: "treemap"
+		}),
 		baristaCSS({
 			include: ["src/**/*.{js,ts,jsx,tsx,html}"],
 			outputFilepath: "src/css/barista.css",
@@ -33,6 +36,13 @@ export default defineConfig({
 		cssCodeSplit: false,
 		sourcemap: true,
 		minify: "terser",
+		rollupOptions: {
+			output: {
+				entryFileNames: "assets/[name].js",
+				chunkFileNames: "assets/[name].js",
+				assetFileNames: "assets/[name][extname]"
+			}
+		},
 		terserOptions: {
 			compress: true,
 			mangle: true,

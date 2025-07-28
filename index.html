@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
       content="Personal Portfolio Website of Max Nelson. Web Developer. ">
+    <link rel="modulepreload" href="/assets/HomePage.js" />
     <link rel="preconnect" href="https://firestore.googleapis.com"
       crossorigin />
     <link rel="preconnect" href="https://firebasestorage.googleapis.com"
@@ -30,7 +31,9 @@
     <link rel="preload" as="image"
       href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_homepage_1_optimized.webp?alt=media&token=3840d07b-050a-41ee-ade5-351faf542676"
       fetchpriority="high" />
-
+    <link rel="icon" type="image/svg+xml"
+      href="/images/favicons/favicon_spaceboy.svg" />
+    <title>Max Nelson - Portfolio</title>
     <script>
       if (window.trustedTypes && window.trustedTypes.createPolicy) {
         window.trustedTypes.createPolicy('default', {
@@ -40,8 +43,14 @@
         });
       }
     </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
     <!-- Google Tag Manager -->
-    <script>
+    <script defer async>
       window.addEventListener('load', function () {
         const gtmScript = document.createElement('script');
         gtmScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-5XVMK64Z";
@@ -51,9 +60,9 @@
     </script>
     <!-- End Google Tag Manager -->
     <!-- Google Analytics -->
-    <script async
+    <script defer async
       src="https://www.googletagmanager.com/gtag/js?id=G-1638H8T4HJ"></script>
-    <script>
+    <script defer async>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -62,20 +71,12 @@
       gtag("config", "G-1638H8T4HJ");
     </script>
     <!-- End Google Analytics -->
-    <link rel="icon" type="image/svg+xml"
-      href="/images/favicons/favicon_spaceboy.svg" />
-    <title>Max Nelson - Portfolio</title>
-  </head>
-
-  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5XVMK64Z"
         height="0" width="0"
         style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 
 </html>
