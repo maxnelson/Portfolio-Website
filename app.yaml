@@ -11,6 +11,11 @@ handlers:
       expiration: "365d"
       http_headers:
           Cache-Control: "public, max-age=31536000, immutable"
+    - url: /images
+      static_dir: dist/images
+      expiration: "30d"
+      http_headers:
+          Cache-Control: "public, max-age=2592000"
 
     - url: /robots.txt
       static_files: dist/robots.txt

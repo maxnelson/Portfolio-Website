@@ -2,24 +2,20 @@ if (import.meta.env.DEV) {
 	import("@src/css/main.css");
 }
 if (import.meta.env.PROD) {
-	const cssFiles = import.meta.glob("/src/css/main.css", {
-		query: "?url",
-		import: "default",
-		eager: true
-	});
-	const href = cssFiles["/src/css/main.css"];
-	const link = document.createElement("link");
-	link.rel = "preload";
-	link.as = "style";
-	link.href = href;
-	link.onload = () => {
-		const realLink = document.createElement("link");
-		realLink.rel = "stylesheet";
-		realLink.href = href;
-		document.head.appendChild(realLink);
-	};
-	document.head.appendChild(link);
+	//PRELOAD MAIN CSS LINK
+	const mainCSSLink = document.createElement("link");
+	mainCSSLink.rel = "preload";
+	mainCSSLink.as = "style";
+	mainCSSLink.href = "/assets/main.css";
+	document.head.appendChild(mainCSSLink);
+	document.head.appendChild(mainCSSLink);
+	//PRELOAD HOMEPAGE JS CHUNK
+	const homepageJSLink = document.createElement("link");
+	homepageJSLink.rel = "modulepreload";
+	homepageJSLink.href = "/assets/HomePage.js";
+	document.head.appendChild(homepageJSLink);
 }
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Router } from "@src/Router";

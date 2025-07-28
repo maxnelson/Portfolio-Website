@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { getResumeData } from "@src/utility_functions/fetchData/getResumeData";
 import { ResumePicker } from "@src/components/Resume/ResumePicker/ResumePicker";
 import { ResumePDF } from "@src/components/Resume/PDF/ResumePDF";
-import { ResumeControls } from "@src/components/Resume/ResumeControls";
+import { ResumeControls } from "@src/components/Resume/ResumeControls/ResumeControls";
 
 interface resumeDataInterface {
 	name: string;

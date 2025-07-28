@@ -48,10 +48,7 @@ export const SinglePageResume = (props) => {
 									summary1={props.resumeData?.summary1}
 									summary2={props.resumeData?.summary2}
 								/>
-								<ResumeSectionHeader
-									title={props.resumeData?.section1.title}
-									customStyle={[marginBelowItem]}
-								/>
+								<ResumeSectionHeader title={props.resumeData?.section1.title} />
 								<View>
 									{
 										<ResumeItem

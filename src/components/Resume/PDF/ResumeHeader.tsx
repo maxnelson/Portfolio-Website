@@ -26,9 +26,8 @@ export const ResumeHeader = (props) => {
 					]}>
 					{props.name}
 				</Text>
-				<Text style={[styles.font_size_13pt]}>{props.title}</Text>
+				<Text style={[styles.font_size_13pt, styles.margin_top_10]}>{props.title}</Text>
 			</View>
-
 			<View style={[styles.margin_top_5]}>
 				<ContactInfoItem
 					icon={website_icon}
