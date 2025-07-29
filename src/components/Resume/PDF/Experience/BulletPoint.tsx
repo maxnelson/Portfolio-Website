@@ -11,10 +11,7 @@ export const BulletPoint = (props) => {
 					//props.spaceBetweenBullets[0],
 					//props.spaceBetweenBullets[1],
 					styles.font_size_11pt,
-					{
-						marginBottom: `${props.marginBetweenExperiences}`,
-						marginTop: `${props.marginBetweenExperiences}`
-					}
+					styles.line_height_0
 				]}>
 				{props.bullet === "bullet" && (
 					<Svg
@@ -33,7 +30,7 @@ export const BulletPoint = (props) => {
 						Technologies Used:&nbsp;
 					</Text>
 				)}
-				<Text style={[styles.margin_bottom_1, styles.line_height_1_2]}>{props.text}</Text>
+				<Text style={[styles.margin_bottom_1]}>{props.text}</Text>
 			</View>
 		</>
 	);

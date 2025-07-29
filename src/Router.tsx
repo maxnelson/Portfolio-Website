@@ -1,4 +1,4 @@
-import { useState, lazy } from "react";
+import { lazy } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 const HomePage = lazy(() =>

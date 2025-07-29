@@ -1,7 +1,8 @@
 @import "basic.scss";
+@import "barista.css";
 @import "project-grid.scss";
 @import "portfolio-website.scss";
 @import "mobile.scss";
-@import "post-formats.scss";
-@import "sketchblog.scss";
-@import "barista.css";
+@import "sketchblog/post-formats.scss";
+@import "sketchblog/sketchblog.scss";
+@import "resume_page.scss";

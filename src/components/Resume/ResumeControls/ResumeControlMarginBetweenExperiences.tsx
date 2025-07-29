@@ -18,7 +18,7 @@ export const ResumeControlMarginBetweenExperiences = (props) => {
 						min="0"
 						max="10"
 						step="1"
-						defaultValue="2"
+						defaultValue={props.defaultMarginBetweenExperiences}
 						style={{ width: "100%", cursor: "pointer" }}
 						onChange={(event) =>
 							props.setMarginBetweenExperiences(event?.target.value)

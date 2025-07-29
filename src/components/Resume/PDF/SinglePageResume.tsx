@@ -10,17 +10,14 @@ import { AbridgeDisclaimer } from "@src/components/Resume/PDF/Footer/AbridgeDisc
 export const SinglePageResume = (props) => {
 	const resumeModeOptions = ["compact", "regular"];
 	const resumeMode = resumeModeOptions[0];
-	let marginBelowItem;
 	let itemLineHeight;
 	let spaceBetweenBullets;
 
 	if (resumeMode === "compact") {
-		marginBelowItem = styles.margin_bottom_5;
-		itemLineHeight = styles.line_height_1;
+		itemLineHeight = styles.line_height_0;
 		spaceBetweenBullets = [styles.margin_top_0, styles.margin_bottom_0];
 	} else if (resumeMode === "regular") {
-		marginBelowItem = styles.margin_bottom_10;
-		itemLineHeight = styles.line_height_1_2;
+		itemLineHeight = styles.line_height_0;
 		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
 	}
 	return (
@@ -55,7 +52,6 @@ export const SinglePageResume = (props) => {
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
 											titleFontSize={props.titleFontSize}
-											customStyle={[marginBelowItem]}
 											clientName={
 												props.resumeData?.section1.datafinitygroup
 													.clientName
@@ -107,7 +103,6 @@ export const SinglePageResume = (props) => {
 											spaceBetweenBullets={spaceBetweenBullets}
 											itemLineHeight={itemLineHeight}
 										titleFontSize={props.titleFontSize}
-										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.timeline.clientName}
 										jobTitle={props.resumeData?.section1.timeline.jobTitle}
 										startDateMonth={
@@ -138,7 +133,6 @@ export const SinglePageResume = (props) => {
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={props.titleFontSize}
-										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.apple.clientName}
 										jobTitle={props.resumeData?.section1.apple.jobTitle}
 										startDateMonth={
@@ -172,7 +166,6 @@ export const SinglePageResume = (props) => {
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={props.titleFontSize}
-										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.rubrik.clientName}
 										jobTitle={props.resumeData?.section1.rubrik.jobTitle}
 										startDateMonth={
@@ -203,7 +196,6 @@ export const SinglePageResume = (props) => {
 										spaceBetweenBullets={spaceBetweenBullets}
 										itemLineHeight={itemLineHeight}
 										titleFontSize={props.titleFontSize}
-										customStyle={[marginBelowItem]}
 										clientName={props.resumeData?.section1.cloudera.clientName}
 										jobTitle={props.resumeData?.section1.cloudera.jobTitle}
 										startDateMonth={

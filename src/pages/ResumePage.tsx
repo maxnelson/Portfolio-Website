@@ -110,8 +110,12 @@ export const ResumePage = () => {
 	const { resumetype } = useParams();
 	const defaultResumeType = resumetype ? resumetype : "single";
 	const [resumeType, setResumeType] = useState(defaultResumeType);
-	const [marginBetweenExperiences, setMarginBetweenExperiences] = useState(0);
+	const defaultMarginBetweenExperiences = 5;
+	const [marginBetweenExperiences, setMarginBetweenExperiences] = useState(
+		defaultMarginBetweenExperiences
+	);
 	const [titleFontSize, setTitleFontSize] = useState(0);
+	const [visibleExperiences, setVisibleExperiences] = useState<string[]>([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -133,6 +137,8 @@ export const ResumePage = () => {
 							setMarginBetweenExperiences={setMarginBetweenExperiences}
 							titleFontSize={titleFontSize}
 							setTitleFontSize={setTitleFontSize}
+							visibleExperiences={visibleExperiences}
+							setVisibleExperiences={setVisibleExperiences}
 						/>
 					</div>
 					<main className="main_section">
@@ -143,13 +149,11 @@ export const ResumePage = () => {
 						<ResumePDF
 							resumeType={resumeType}
 							resumeData={resumeData}
+							defaultMarginBetweenExperiences={defaultMarginBetweenExperiences}
 							marginBetweenExperiences={marginBetweenExperiences}
 							titleFontSize={titleFontSize}
+							visibleExperiences={visibleExperiences}
 						/>
-
-						<div className="display_block _margin-top--2rem">
-							<p>This Resume was generated using React-PDF :)</p>
-						</div>
 					</main>
 				</div>
 				<Footer />

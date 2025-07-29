@@ -6,13 +6,15 @@ import { DurationLockup } from "@src/components/Resume/PDF/Experience/DurationLo
 export const ResumeItem = (props) => {
 	return (
 		<>
-			<View style={[props.customStyle]}>
+			<View style={[{ marginBottom: props.marginBetweenExperiences }]}>
 				<View style={[styles.flex_direction_row, styles.align_items_center]}>
 					<View
 						style={[
 							styles.display_flex,
 							styles.flex_direction_column,
-							styles.width_80_percent
+							styles.width_80_percent,
+							styles.line_height_0,
+							styles.margin_bottom_2
 						]}>
 						<Text
 							style={[
@@ -24,12 +26,7 @@ export const ResumeItem = (props) => {
 							]}>
 							{props.clientName}
 						</Text>
-						<Text
-							style={[
-								styles.font_family_helvetica_bold,
-								styles.font_size_11pt,
-								styles.margin_top_negative_5
-							]}>
+						<Text style={[styles.font_family_helvetica_bold, styles.font_size_11pt]}>
 							{props.jobTitle}
 						</Text>
 					</View>
@@ -44,7 +41,6 @@ export const ResumeItem = (props) => {
 				<View style={[styles.font_size_medium, props.itemLineHeight]}>
 					{props.description1 && (
 						<BulletPoint
-							marginBetweenExperiences={props.marginBetweenExperiences}
 							spaceBetweenBullets={props.spaceBetweenBullets}
 							text={props.description1}
 							bullet={false}

@@ -7,7 +7,6 @@ export const EducationSection = (props) => {
 		<>
 			<View
 				style={[
-					styles.margin_top_5,
 					styles.font_size_medium,
 					styles.flex_direction_row,
 					styles.align_items_center,
@@ -26,7 +25,7 @@ export const EducationSection = (props) => {
 			<View>
 				<Text
 					wrap={false}
-					style={[styles.margin_top_2, styles.font_size_medium]}>
+					style={[styles.margin_top_5, styles.font_size_medium, styles.line_height_1_2]}>
 					{props.description}
 				</Text>
 			</View>

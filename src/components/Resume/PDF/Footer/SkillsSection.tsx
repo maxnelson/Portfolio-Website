@@ -3,7 +3,7 @@ import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 
 export const SkillsSection = (props) => {
 	return (
-		<View style={[styles.margin_top_5, styles.font_size_medium]}>
+		<View style={[styles.font_size_medium, styles.line_height_1_2]}>
 			<Text style={[]}>
 				<Text style={[styles.font_family_helvetica_bold]}>{props.skill1Title + ": "}</Text>
 				{props.skill1Description}

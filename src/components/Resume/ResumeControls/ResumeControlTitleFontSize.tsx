@@ -9,7 +9,7 @@ export const ResumeControlTitleFontSize = (props) => {
 					<label
 						htmlFor="titleFontSizeSlider"
 						style={{ color: "#aaa", marginBottom: "5px", display: "block" }}>
-						TitleFontSize:
+						Title font size:
 					</label>
 					<input
 						type="range"

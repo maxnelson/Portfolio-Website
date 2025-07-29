@@ -4,12 +4,12 @@ import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 export const ResumeSectionHeader = (props) => {
 	return (
 		<>
-			<View style={[props.customStyle, styles.margin_bottom_10]}>
+			<View style={[styles.margin_bottom_5]}>
 				<Text
 					style={[
 						styles.font_family_helvetica_bold,
 						styles.font_size_medium,
-						styles.margin_bottom_negative_6
+						styles.line_height_0
 					]}>
 					{props.title ? props.title.toUpperCase() : ""}
 				</Text>

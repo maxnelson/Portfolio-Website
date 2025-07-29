@@ -1,0 +1,49 @@
+.resumeSelectorContainer {
+	text-align: center;
+	margin-bottom: 1rem;
+
+	.resumeSelectorButton {
+		padding-bottom: 1rem;
+		font-size: 16px;
+		color: var(--gray-125);
+		background-color: transparent;
+		&.resumeTypeActive {
+			color: black;
+			border-bottom: 2px solid black;
+			//font-weight: 500;
+		}
+	}
+	.resumeSelectorButtonSeparator {
+		font-size: 16px;
+		font-weight: 200;
+		display: inline-block;
+		margin: 0rem 2rem;
+	}
+}
+
+.resume_control_hr {
+	border: 0;
+	height: 2px;
+	background: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+}
+.resume_control_experience_checkbox_container {
+	cursor: pointer;
+	display: flex;
+	.resume_control_experience_checkbox {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+	.resume_control_experience_checkbox_label {
+		cursor: pointer;
+		vertical-align: text-top;
+		color: #aaa;
+		&:first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
