@@ -9,8 +9,7 @@
 	"summary1": "Web Developer with ten years of experience developing high traffic, highly visible web sites and applications.",
 	"summary2": "Experienced in developing tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; developing integrations with a variety of web services, databases, and content repositories, including Wordpress and AEM.",
 	"section1": {
-		"title": "Experience",
-		"datafinitygroup": {
+		"datafinity_group": {
 			"clientName": "Datafinity Group",
 			"jobTitle": "Marketing Automation Specialist",
 			"startDateMonth": "Oct",
@@ -89,7 +88,7 @@
 			"description9": "Administered the publication of website content. Used AEM Admin tools like VLT-RPC, QueryBuilder, Bulk Editor, and CRXDE Lite, to manage, sync, and replicate JCR content across AEM instances (dev, auth, stage, prod, pub).",
 			"technologies_used": "Docker, Wordpress, PHP (Timber, Twig), Javascript, Node, HTML, CSS (BEM), AEM, Git"
 		},
-		"apple2": {
+		"apple_bizweb": {
 			"clientName": "Apple",
 			"jobTitle": "Email Template Developer",
 			"startDateMonth": "July",
@@ -128,7 +127,7 @@
 			"description15": "Used Java build tools (Maven) to maintain local AEM instance (Version 5.5, later upgrading to 5.6, 6.0 and 6.1) for frontend component development. Used Git, Gitflow, and SourceTree to maintain version control while working with several different agencies / teams of developers.",
 			"technologies_used": "AEM (Java, Maven, JCR, JSP, HTL, ExtJS), Jenkins, Grunt, Javascript, HTML, CSS"
 		},
-		"levis": {
+		"levi_strauss": {
 			"clientName": "Levis",
 			"jobTitle": "Graphic Production Artist",
 			"location": "San Francisco, CA",
@@ -142,7 +141,7 @@
 			"description4": "Conference graphics: Banners, signage, badges.",
 			"technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign"
 		},
-		"numi": {
+		"numi_tea": {
 			"clientName": "Numi Organic Tea",
 			"jobTitle": "Production Artist",
 			"location": "Oakland, CA",
@@ -155,7 +154,7 @@
 			"description3": "Modified and updated marketing Email templates using HTML and CSS.",
 			"technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, HTML, CSS"
 		},
-		"stringLetterPublishing": {
+		"strings_magazine": {
 			"clientName": "String Letter Publishing",
 			"jobTitle": "Production Artist",
 			"location": "San Rafael, CA",
@@ -168,7 +167,7 @@
 			"description4": "Used Adobe Indesign to arrange content into magazine page templates for print.",
 			"technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, HTML, CSS"
 		},
-		"autumnPress": {
+		"autumn_press": {
 			"clientName": "Autumn Press",
 			"jobTitle": "Print Technician",
 			"location": "San Francisco, CA",
@@ -181,7 +180,7 @@
 			"description3": "Operated specialty printers and die-cut machines to produce a variety of printed assets including corporate brochures, pamphlets, leaflets, wedding invitations, business cards, and more.",
 			"technologies_used": "Adobe Photoshop, Adobe InDesign, Adobe Acrobat"
 		},
-		"theOrion": {
+		"the_orion": {
 			"clientName": "The Orion",
 			"jobTitle": "Advertising Design Intern",
 			"location": "Chico, CA",
@@ -193,7 +192,7 @@
 			"description2": "Produced a weekly comic.",
 			"technologies_used": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign"
 		},
-		"truckerDeluxe": {
+		"trucker_deluxe": {
 			"clientName": "Trucker Deluxe",
 			"jobTitle": "Design Intern",
 			"location": "Chico, CA",

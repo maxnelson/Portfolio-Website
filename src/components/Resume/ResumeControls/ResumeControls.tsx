@@ -22,11 +22,13 @@ export const ResumeControls = (props) => {
 					<p>Customize Resume</p>
 				</div>
 				<div style={{ padding: "1rem" }}>
-					<ResumeControlMarginBetweenExperiences
-						defaultMarginBetweenExperiences={props.defaultMarginBetweenExperiences}
-						setMarginBetweenExperiences={props.setMarginBetweenExperiences}
-					/>
-					<ResumeControlTitleFontSize setTitleFontSize={props.setTitleFontSize} />
+					<div style={{ borderBottom: "2px solid #ddd" }}>
+						<ResumeControlMarginBetweenExperiences
+							defaultMarginBetweenExperiences={props.defaultMarginBetweenExperiences}
+							setMarginBetweenExperiences={props.setMarginBetweenExperiences}
+						/>
+						<ResumeControlTitleFontSize setTitleFontSize={props.setTitleFontSize} />
+					</div>
 					<ResumeControlExperiences
 						visibleExperiences={props.visibleExperiences}
 						setVisibleExperiences={props.setVisibleExperiences}

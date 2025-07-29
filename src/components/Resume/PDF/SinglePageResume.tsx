@@ -5,7 +5,6 @@ import { PDFViewer, Document, Page, View } from "@react-pdf/renderer";
 import { resumeStyles as styles } from "@src/components/Resume/resumeStyles";
 import { ResumeSectionHeader } from "@src/components/Resume/PDF/ResumeSectionHeader";
 import { SummarySection } from "@src/components/Resume/PDF/Header/SummarySection";
-import { AbridgeDisclaimer } from "@src/components/Resume/PDF/Footer/AbridgeDisclaimer";
 
 export const SinglePageResume = (props) => {
 	const resumeModeOptions = ["compact", "regular"];
@@ -20,6 +19,18 @@ export const SinglePageResume = (props) => {
 		itemLineHeight = styles.line_height_0;
 		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
 	}
+
+	const resumeDataSorted = Object.entries(props.resumeData?.section1 || {}).sort(
+		([, a], [, b]) => parseInt(b.startDateYear) - parseInt(a.startDateYear)
+	);
+	console.log(resumeDataSorted);
+	const keyOrderMap = Object.fromEntries(resumeDataSorted.map(([key], idx) => [key, idx]));
+
+	const sortedVisibleExperiences = props.visibleExperiences
+		.slice()
+		.sort((a, b) => (keyOrderMap[a] ?? Infinity) - (keyOrderMap[b] ?? Infinity));
+
+	console.log(sortedVisibleExperiences);
 	return (
 		<>
 			<PDFViewer
@@ -42,194 +53,63 @@ export const SinglePageResume = (props) => {
 									summary1={props.resumeData?.summary1}
 									summary2={props.resumeData?.summary2}
 								/>
-								<ResumeSectionHeader title={props.resumeData?.section1.title} />
+								<ResumeSectionHeader title={"Experience"} />
 								<View>
-									{
-										<ResumeItem
-											marginBetweenExperiences={
-												props.marginBetweenExperiences
-											}
-											spaceBetweenBullets={spaceBetweenBullets}
-											itemLineHeight={itemLineHeight}
-											titleFontSize={props.titleFontSize}
-											clientName={
-												props.resumeData?.section1.datafinitygroup
-													.clientName
-											}
-											jobTitle={
-												props.resumeData?.section1.datafinitygroup.jobTitle
-											}
-											startDateMonth={
-												props.resumeData?.section1.datafinitygroup
-													.startDateMonth
-											}
-											endDateMonth={
-												props.resumeData?.section1.datafinitygroup
-													.endDateMonth
-											}
-											startDateYear={
-												props.resumeData?.section1.datafinitygroup
-													.startDateYear
-											}
-											endDateYear={
-												props.resumeData?.section1.datafinitygroup
-													.endDateYear
-											}
-											description1={
-												props.resumeData?.section1.datafinitygroup
-													.description1
-											}
-											description2={
-												props.resumeData?.section1.datafinitygroup
-													.description2
-											}
-											description3={
-												props.resumeData?.section1.datafinitygroup
-													.description3
-											}
-											description4={
-												props.resumeData?.section1.datafinitygroup
-													.description4
-											}
-											description5={
-												props.resumeData?.section1.datafinitygroup
-													.description5
-											}
-										/>
-									}
-									{/* 
-									<ResumeItem
-										marginBetweenExperiences={props.marginBetweenExperiences}
-											spaceBetweenBullets={spaceBetweenBullets}
-											itemLineHeight={itemLineHeight}
-										titleFontSize={props.titleFontSize}
-										clientName={props.resumeData?.section1.timeline.clientName}
-										jobTitle={props.resumeData?.section1.timeline.jobTitle}
-										startDateMonth={
-											props.resumeData?.section1.timeline.startDateMonth
-										}
-										endDateMonth={
-											props.resumeData?.section1.timeline.endDateMonth
-										}
-										startDateYear={
-											props.resumeData?.section1.timeline.startDateYear
-										}
-										endDateYear={
-											props.resumeData?.section1.timeline.endDateYear
-										}
-										description1={
-											props.resumeData?.section1.timeline.description1
-										}
-										description2={
-											props.resumeData?.section1.timeline.description2
-										}
-										description3={
-											props.resumeData?.section1.timeline.description3
-										}
-									/>
-									*/}
-									<ResumeItem
-										marginBetweenExperiences={props.marginBetweenExperiences}
-										spaceBetweenBullets={spaceBetweenBullets}
-										itemLineHeight={itemLineHeight}
-										titleFontSize={props.titleFontSize}
-										clientName={props.resumeData?.section1.apple.clientName}
-										jobTitle={props.resumeData?.section1.apple.jobTitle}
-										startDateMonth={
-											props.resumeData?.section1.apple.startDateMonth
-										}
-										endDateMonth={props.resumeData?.section1.apple.endDateMonth}
-										startDateYear={
-											props.resumeData?.section1.apple.startDateYear
-										}
-										endDateYear={props.resumeData?.section1.apple.endDateYear}
-										description1={props.resumeData?.section1.apple.description1}
-										description2={props.resumeData?.section1.apple.description2}
-										description3={props.resumeData?.section1.apple.description3}
-										description4={props.resumeData?.section1.apple.description4}
-										description5={props.resumeData?.section1.apple.description5}
-										/*
-										description7={props.resumeData?.section1.apple.description7}
-										description6={props.resumeData?.section1.apple.description6}
-										description8={props.resumeData?.section1.apple.description8}
-										description9={props.resumeData?.section1.apple.description9}
-										description10={
-											props.resumeData?.section1.apple.description10
-										}
-										*/
-										technologies_used={
-											props.resumeData?.section1.apple.technologies_used
-										}
-									/>
-									<ResumeItem
-										marginBetweenExperiences={props.marginBetweenExperiences}
-										spaceBetweenBullets={spaceBetweenBullets}
-										itemLineHeight={itemLineHeight}
-										titleFontSize={props.titleFontSize}
-										clientName={props.resumeData?.section1.rubrik.clientName}
-										jobTitle={props.resumeData?.section1.rubrik.jobTitle}
-										startDateMonth={
-											props.resumeData?.section1.rubrik.startDateMonth
-										}
-										endDateMonth={
-											props.resumeData?.section1.rubrik.endDateMonth
-										}
-										startDateYear={
-											props.resumeData?.section1.rubrik.startDateYear
-										}
-										endDateYear={props.resumeData?.section1.rubrik.endDateYear}
-										description1={
-											props.resumeData?.section1.rubrik.description1
-										}
-										description2={
-											props.resumeData?.section1.rubrik.description2
-										}
-										description3={
-											props.resumeData?.section1.rubrik.description3
-										}
-										technologies_used={
-											props.resumeData?.section1.rubrik.technologies_used
-										}
-									/>
-									<ResumeItem
-										marginBetweenExperiences={props.marginBetweenExperiences}
-										spaceBetweenBullets={spaceBetweenBullets}
-										itemLineHeight={itemLineHeight}
-										titleFontSize={props.titleFontSize}
-										clientName={props.resumeData?.section1.cloudera.clientName}
-										jobTitle={props.resumeData?.section1.cloudera.jobTitle}
-										startDateMonth={
-											props.resumeData?.section1.cloudera.startDateMonth
-										}
-										endDateMonth={
-											props.resumeData?.section1.cloudera.endDateMonth
-										}
-										startDateYear={
-											props.resumeData?.section1.cloudera.startDateYear
-										}
-										endDateYear={
-											props.resumeData?.section1.cloudera.endDateYear
-										}
-										description1={
-											props.resumeData?.section1.cloudera.description1
-										}
-										description2={
-											props.resumeData?.section1.cloudera.description2
-										}
-										description3={
-											props.resumeData?.section1.cloudera.description3
-										}
-										description4={
-											props.resumeData?.section1.cloudera.description4
-										}
-										description5={
-											props.resumeData?.section1.cloudera.description5
-										}
-										technologies_used={
-											props.resumeData?.section1.cloudera.technologies_used
-										}
-									/>
-
+									{sortedVisibleExperiences.map((name, index) => {
+										return (
+											<View key={name}>
+												<ResumeItem
+													marginBetweenExperiences={
+														props.marginBetweenExperiences
+													}
+													spaceBetweenBullets={spaceBetweenBullets}
+													itemLineHeight={itemLineHeight}
+													titleFontSize={props.titleFontSize}
+													clientName={
+														props.resumeData?.section1[name].clientName
+													}
+													jobTitle={
+														props.resumeData?.section1[name].jobTitle
+													}
+													startDateMonth={
+														props.resumeData?.section1[name]
+															.startDateMonth
+													}
+													endDateMonth={
+														props.resumeData?.section1[name]
+															.endDateMonth
+													}
+													startDateYear={
+														props.resumeData?.section1[name]
+															.startDateYear
+													}
+													endDateYear={
+														props.resumeData?.section1[name].endDateYear
+													}
+													description1={
+														props.resumeData?.section1[name]
+															.description1
+													}
+													description2={
+														props.resumeData?.section1[name]
+															.description2
+													}
+													description3={
+														props.resumeData?.section1[name]
+															.description3
+													}
+													description4={
+														props.resumeData?.section1[name]
+															.description4
+													}
+													description5={
+														props.resumeData?.section1[name]
+															.description5
+													}
+												/>
+											</View>
+										);
+									})}
 									<ResumeFooter
 										educationTitle={props.resumeData?.section2.education.title}
 										degree={props.resumeData?.section2.education.degree}
@@ -261,7 +141,6 @@ export const SinglePageResume = (props) => {
 											props.resumeData?.section2.skills.skill4.description
 										}
 									/>
-									<AbridgeDisclaimer />
 								</View>
 							</View>
 						</View>

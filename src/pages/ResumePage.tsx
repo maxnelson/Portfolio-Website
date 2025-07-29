@@ -106,8 +106,8 @@ interface resumeDataInterface {
 }
 
 export const ResumePage = () => {
-	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
 	const { resumetype } = useParams();
+	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
 	const defaultResumeType = resumetype ? resumetype : "single";
 	const [resumeType, setResumeType] = useState(defaultResumeType);
 	const defaultMarginBetweenExperiences = 5;
@@ -115,7 +115,13 @@ export const ResumePage = () => {
 		defaultMarginBetweenExperiences
 	);
 	const [titleFontSize, setTitleFontSize] = useState(0);
-	const [visibleExperiences, setVisibleExperiences] = useState<string[]>([]);
+
+	const [visibleExperiences, setVisibleExperiences] = useState<string[]>([
+		"apple",
+		"rubrik",
+		"cloudera",
+		"timeline"
+	]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -146,14 +152,16 @@ export const ResumePage = () => {
 							resumeType={resumeType}
 							setResumeType={setResumeType}
 						/>
-						<ResumePDF
-							resumeType={resumeType}
-							resumeData={resumeData}
-							defaultMarginBetweenExperiences={defaultMarginBetweenExperiences}
-							marginBetweenExperiences={marginBetweenExperiences}
-							titleFontSize={titleFontSize}
-							visibleExperiences={visibleExperiences}
-						/>
+						{resumeData && (
+							<ResumePDF
+								resumeType={resumeType}
+								resumeData={resumeData}
+								defaultMarginBetweenExperiences={defaultMarginBetweenExperiences}
+								marginBetweenExperiences={marginBetweenExperiences}
+								titleFontSize={titleFontSize}
+								visibleExperiences={visibleExperiences}
+							/>
+						)}
 					</main>
 				</div>
 				<Footer />

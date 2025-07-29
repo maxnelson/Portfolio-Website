@@ -10,9 +10,6 @@
 ._margin-bottom--1rem {
   margin-bottom: 1rem;
 }
-._word-wrap--break-word {
-  word-wrap: break-word;
-}
 ._max-width--80percent {
   max-width: 80%;
 }
@@ -99,6 +96,9 @@
 }
 ._display--block {
   display: block;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
 }
 ._color--var_gray-400_ {
   color: var(--gray-400);

@@ -1,37 +1,37 @@
 export const ResumeControlExperiences = (props) => {
 	const jobs = [
 		"timeline",
-		"datafinity",
+		"datafinity_group",
 		"apple",
 		"aquent",
 		"rubrik",
+		"apple_bizweb",
 		"cloudera",
-		"levis",
-		"numi",
-		"strings",
-		"orion",
-		"trucker"
+		"levi_strauss",
+		"numi_tea",
+		"strings_magazine",
+		"autumn_press",
+		"the_orion",
+		"trucker_deluxe"
 	];
 
 	const handleCheckboxChange = (value: string) => {
 		props.setVisibleExperiences((prev) =>
 			prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]
 		);
-		console.log(props.visibleExperiences);
 	};
 
 	return (
 		<>
 			<div>
-				<label
+				<p
 					style={{
 						color: "#aaa",
 						display: "block",
-						lineHeight: "0",
 						marginBottom: "10px"
 					}}>
 					Experiences:
-				</label>
+				</p>
 				<hr className="resume_control_hr" />
 				{jobs.map((element, index) => {
 					return (
