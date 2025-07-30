@@ -55,61 +55,65 @@ export const SinglePageResume = (props) => {
 								/>
 								<ResumeSectionHeader title={"Experience"} />
 								<View>
-									{sortedVisibleExperiences.map((name, index) => {
-										return (
-											<View key={name}>
-												<ResumeItem
-													marginBetweenExperiences={
-														props.marginBetweenExperiences
-													}
-													spaceBetweenBullets={spaceBetweenBullets}
-													itemLineHeight={itemLineHeight}
-													titleFontSize={props.titleFontSize}
-													clientName={
-														props.resumeData?.section1[name].clientName
-													}
-													jobTitle={
-														props.resumeData?.section1[name].jobTitle
-													}
-													startDateMonth={
-														props.resumeData?.section1[name]
-															.startDateMonth
-													}
-													endDateMonth={
-														props.resumeData?.section1[name]
-															.endDateMonth
-													}
-													startDateYear={
-														props.resumeData?.section1[name]
-															.startDateYear
-													}
-													endDateYear={
-														props.resumeData?.section1[name].endDateYear
-													}
-													description1={
-														props.resumeData?.section1[name]
-															.description1
-													}
-													description2={
-														props.resumeData?.section1[name]
-															.description2
-													}
-													description3={
-														props.resumeData?.section1[name]
-															.description3
-													}
-													description4={
-														props.resumeData?.section1[name]
-															.description4
-													}
-													description5={
-														props.resumeData?.section1[name]
-															.description5
-													}
-												/>
-											</View>
-										);
-									})}
+									{props.resumeData?.section1 &&
+										sortedVisibleExperiences.map((name, index) => {
+											return (
+												<View key={name}>
+													<ResumeItem
+														marginBetweenExperiences={
+															props.marginBetweenExperiences
+														}
+														spaceBetweenBullets={spaceBetweenBullets}
+														itemLineHeight={itemLineHeight}
+														titleFontSize={props.titleFontSize}
+														clientName={
+															props.resumeData?.section1[name]
+																.clientName
+														}
+														jobTitle={
+															props.resumeData?.section1[name]
+																.jobTitle
+														}
+														startDateMonth={
+															props.resumeData?.section1[name]
+																.startDateMonth
+														}
+														endDateMonth={
+															props.resumeData?.section1[name]
+																.endDateMonth
+														}
+														startDateYear={
+															props.resumeData?.section1[name]
+																.startDateYear
+														}
+														endDateYear={
+															props.resumeData?.section1[name]
+																.endDateYear
+														}
+														description1={
+															props.resumeData?.section1[name]
+																.description1
+														}
+														description2={
+															props.resumeData?.section1[name]
+																.description2
+														}
+														description3={
+															props.resumeData?.section1[name]
+																.description3
+														}
+														description4={
+															props.resumeData?.section1[name]
+																.description4
+														}
+														description5={
+															props.resumeData?.section1[name]
+																.description5
+														}
+													/>
+												</View>
+											);
+										})}
 									<ResumeFooter
 										educationTitle={props.resumeData?.section2.education.title}
 										degree={props.resumeData?.section2.education.degree}

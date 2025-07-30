@@ -1,13 +1,11 @@
-if (import.meta.env.DEV) {
-	import("@src/css/main.css");
-}
+import "@src/css/main.css";
+
 if (import.meta.env.PROD) {
-	//PRELOAD MAIN CSS LINK
+	//PRELOAD CSS FILE
 	const mainCSSLink = document.createElement("link");
 	mainCSSLink.rel = "preload";
 	mainCSSLink.as = "style";
-	mainCSSLink.href = "/assets/main.css";
-	document.head.appendChild(mainCSSLink);
+	mainCSSLink.href = "/assets/style.css";
 	document.head.appendChild(mainCSSLink);
 	//PRELOAD HOMEPAGE JS CHUNK
 	const homepageJSLink = document.createElement("link");

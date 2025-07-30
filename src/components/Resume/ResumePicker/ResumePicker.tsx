@@ -9,13 +9,6 @@ export const ResumePicker = (props) => {
 					active={props.resumeType === "single"}
 					setResumeType={props.setResumeType}
 				/>
-				<p className="resumeSelectorButtonSeparator">|</p>
-				<ResumePickerButton
-					type="full"
-					text="Multi Page (Full)"
-					active={props.resumeType === "full"}
-					setResumeType={props.setResumeType}
-				/>
 			</div>
 		</>
 	);

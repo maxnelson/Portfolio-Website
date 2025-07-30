@@ -3,6 +3,6 @@
 @import "project-grid.scss";
 @import "portfolio-website.scss";
 @import "mobile.scss";
-@import "sketchblog/post-formats.scss";
-@import "sketchblog/sketchblog.scss";
+@import "post-formats.scss";
+@import "sketchblog.scss";
 @import "resume_page.scss";

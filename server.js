@@ -1,3 +1,4 @@
+import helmet from "helmet";
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -28,7 +29,7 @@ app.use(
 			includeSubDomains: true,
 			preload: true
 		},
-		crossOriginEmbedderPolicy: { policy: "require-corp" },
+		crossOriginEmbedderPolicy: false,
 		crossOriginOpenerPolicy: { policy: "same-origin" },
 		frameguard: { action: "deny" },
 		contentSecurityPolicy: {
@@ -36,12 +37,15 @@ app.use(
 				defaultSrc: ["'self'"],
 				scriptSrc: [
 					"'self'",
+					"'unsafe-inline'",
+					"'unsafe-eval'",
 					"https://www.googletagmanager.com",
 					"https://www.google-analytics.com",
 					"https://www.gstatic.com"
 				],
 				connectSrc: [
 					"'self'",
+					"data:",
 					"https://firestore.googleapis.com",
 					"https://www.google-analytics.com",
 					"https://www.googleapis.com",
@@ -54,13 +58,13 @@ app.use(
 					"https://www.google-analytics.com",
 					"https://www.googletagmanager.com",
 					"https://www.google.com",
+					"https://firebasestorage.googleapis.com",
 					"data:"
 				],
 				styleSrc: ["'self'", "https://fonts.googleapis.com"],
 				fontSrc: ["'self'", "https://fonts.gstatic.com"],
 				frameAncestors: ["'none'"],
-				requireTrustedTypesFor: ["'script'"],
-				crossOriginOpenerPolicy: { policy: "same-origin" }
+				requireTrustedTypesFor: "'script'"
 			}
 		}
 	})
