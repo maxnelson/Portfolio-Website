@@ -16,9 +16,11 @@ export const ResumeControlExperiences = (props) => {
 	];
 
 	const handleCheckboxChange = (value: string) => {
-		props.setVisibleExperiences((prev) =>
-			prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]
-		);
+		props.setVisibleExperiences((prev) => {
+			//debugger;
+			//console.log(prev);
+			return prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value];
+		});
 	};
 
 	return (
@@ -58,7 +60,7 @@ export const ResumeControlExperienceCheckbox = (props) => {
 					id={props.experienceName}
 					name={props.experienceName}
 					value={props.experienceName}
-					defaultChecked={props.visibleExperiences.includes(props.experienceName)}
+					checked={props.visibleExperiences.includes(props.experienceName)}
 					onChange={() => {
 						props.handleChange(props.experienceName);
 					}}

@@ -29,12 +29,12 @@ export const ResumeControls = (props) => {
 						/>
 						<ResumeControlTitleFontSize setTitleFontSize={props.setTitleFontSize} />
 					</div>
-					{/*
-					<ResumeControlExperiences
-						visibleExperiences={props.visibleExperiences}
-						setVisibleExperiences={props.setVisibleExperiences}
-					/>
-					*/}
+					{
+						<ResumeControlExperiences
+							visibleExperiences={props.visibleExperiences}
+							setVisibleExperiences={props.setVisibleExperiences}
+						/>
+					}
 				</div>
 			</div>
 		</>
