@@ -2,7 +2,7 @@ import { CopyRightText } from "@src/components/Footer/CopyRightText";
 
 export function SketchblogFooter() {
 	return (
-		<div className="_width--100percent _margin-top--5rem _margin-bottom--5rem">
+		<footer className="sketchblogFooterContainer">
 			<hr className="sketchblog_post_hr" />
 			<div>
 				<p className="_font-size--10pt _color--var_gray-125_">
@@ -19,7 +19,7 @@ export function SketchblogFooter() {
 					</a>
 					{" • "}
 					<a
-						className="_font-size--10pt _cursor--pointer testthisoutagain3333"
+						className="_font-size--10pt _cursor--pointer"
 						href="/contact">
 						Contact
 					</a>
@@ -27,6 +27,6 @@ export function SketchblogFooter() {
 					<CopyRightText />
 				</p>
 			</div>
-		</div>
+		</footer>
 	);
 }

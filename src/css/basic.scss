@@ -145,9 +145,6 @@ span > i {
 	appearance: none;
 }
 
-.width-20percent-minus-1rem {
-	width: calc(20% - 1rem);
-}
 .width-80percent-minus-1rem {
 	width: calc(80% - 1rem);
 }
@@ -160,13 +157,15 @@ blockquote {
 	margin-bottom: 1rem;
 }
 
-.line-height-1-5 {
-	line-height: 1.5;
-}
-.width-20percent-minus-1rem {
-	width: calc(20% - 1rem);
+pre {
+	white-space: pre-wrap;
+	word-break: break-word;
 }
 
-.color-777 {
-	color: #777;
+.sketchblogFooterContainer {
+	width: 80%;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -13,7 +13,7 @@ export function ContactPage() {
 					<main className="main_section">
 						<div>
 							<h2 className="_margin-bottom--1rem">Contact</h2>
-							<p className="line-height-1-5 color-777">
+							<p className="_line-height--1p5  _color--var_gray-125_">
 								Please feel free to send me an Email at&nbsp;
 								<a
 									className="external_link"

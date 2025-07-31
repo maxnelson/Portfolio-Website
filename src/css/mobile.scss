@@ -25,35 +25,21 @@
 			max-width: 100%;
 		}
 	}
-	footer {
-		flex-direction: column;
-		padding-top: 0;
-		.footer_item {
-			width: 100%;
-			a {
-				display: block;
-				padding: 1rem 1rem;
-				border-bottom: 1px solid black;
-			}
-		}
-		.footer_item_copyright {
-			text-align: center;
-			padding-top: 1rem;
-		}
-	}
-	/*
-	//Fix sidebar layout
-	.inner_page_container {
-		//flex-direction: column;
-		.sidebar {
-			//width: 100%;
-		}
-	}
-	*/
 }
 
-@media screen and (max-width: 1000px) {
-	.page_container {
-		//width: 95%;
+.desktop_horizontal_mobile_vertical {
+	display: flex;
+	flex-direction: row;
+	@media (max-width: 400px) {
+		flex-direction: column;
+	}
+}
+
+.profilePictureContainer {
+	width: calc(20% - 1rem);
+	@media (max-width: 400px) {
+		width: 50%;
+		align-self: center;
+		margin-bottom: 1rem;
 	}
 }

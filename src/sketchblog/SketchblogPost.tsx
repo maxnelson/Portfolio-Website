@@ -34,7 +34,7 @@ export function SketchblogPost(props) {
 					</h2>
 				)}
 
-				<p className="project_description color-777 _margin-bottom--1rem">
+				<p className="project_description _color--var_gray-400_ _margin-bottom--1rem">
 					{props.postData.shortDescription ? props.postData.shortDescription : null}
 				</p>
 				<div>

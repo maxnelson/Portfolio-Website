@@ -28,7 +28,7 @@ export function PostCollection(props) {
 
 	return (
 		<>
-			<div className="_max-width--80percent _display--inline-block">
+			<div className="sketchblog_post_list_container">
 				{collectionDataObject &&
 					collectionDataObject.map((postData) => {
 						return (

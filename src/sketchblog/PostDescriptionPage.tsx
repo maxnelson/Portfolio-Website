@@ -22,8 +22,8 @@ export function PostDescriptionPage() {
 		<>
 			{postObject && (
 				<>
-					<div className="_width--80percent _margin-left--auto _margin-right--auto _margin-top--10rem _display--flex _flex-wrap--wrap _justify-content--space-between">
-						<div className="_width--85percent">
+					<div className="sketchblog_post_detail_page_container">
+						<div>
 							<div
 								className={
 									"sketchblog_post_detail_images_container " +
@@ -63,7 +63,7 @@ export function PostDescriptionPage() {
 									{postObject.title}
 								</h2>
 								<div
-									className="_font-size--11pt color-777 _list-style-position--inside"
+									className="_font-size--11pt _color--var_gray-400_ _list-style-position--inside"
 									dangerouslySetInnerHTML={{ __html: html }}
 								/>
 							</div>

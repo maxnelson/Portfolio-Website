@@ -1,4 +1,28 @@
+.sketchblog_page_container {
+	background-image: var(--image-1);
+	background-repeat: repeat;
+	display: flex;
+	padding-top: 10rem;
+	.sketchblog_page_inner_container {
+		.sketchblog_post_list_container {
+			//width: 50%;
+		}
+		.sketchblog_page_content_container {
+			display: flex;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			@media (max-width: 400px) {
+				width: 90%;
+			}
+		}
+	}
+}
+
 .sketchblog_sidebar {
+	position: sticky;
+	height: fit-content;
+	top: 100px;
 	section {
 		list-style-type: none;
 		white-space: nowrap;
@@ -78,6 +102,21 @@
 .sketchblog_post_detail_images_container.post_detail_images_container_1s {
 	.post_image_container {
 		max-width: 60%;
+	}
+}
+.sketchblog_post_detail_page_container {
+	//display: flex;
+	//flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10rem;
+
+	@media (max-width: 400px) {
+		width: 90%;
+		margin-top: 2rem;
 	}
 }
 

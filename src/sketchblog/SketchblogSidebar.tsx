@@ -5,7 +5,7 @@ import { ChevronLeftIcon } from "@src/components/icons/ChevronLeftIcon";
 export function SketchblogSidebar(props) {
 	return (
 		<>
-			<div className="_display--inline-block  sketchblog_sidebar _position--sticky _top--100px _height--fit-content">
+			<div className="sketchblog_sidebar">
 				<hr className="sketchblog_post_hr" />
 				<aside>
 					<SketchblogSidebarSectionComponent name="Engineering">
