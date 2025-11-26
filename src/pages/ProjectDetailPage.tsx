@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
-import { Suspense, useState, useEffect } from "react";
+import { Suspense } from "react";
 import { getProjectDescriptionData } from "@src/utility_functions/fetchData/getProjectGridData";
 import { ProjectDescription } from "@src/components/ProjectGrid/ProjectDescription";
 
@@ -9,9 +9,6 @@ export function ProjectDetailPage() {
 	const URLParams = useParams();
 	const projectDataQuery = getProjectDescriptionData(URLParams.project);
 	const projectData = projectDataQuery.data;
-	console.log("projectData");
-	console.log(projectData);
-
 	return (
 		<>
 			<div className="page_container">

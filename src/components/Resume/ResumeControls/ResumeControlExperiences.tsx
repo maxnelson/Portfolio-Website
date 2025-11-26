@@ -17,8 +17,6 @@ export const ResumeControlExperiences = (props) => {
 
 	const handleCheckboxChange = (value: string) => {
 		props.setVisibleExperiences((prev) => {
-			//debugger;
-			//console.log(prev);
 			return prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value];
 		});
 	};

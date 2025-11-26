@@ -29,9 +29,6 @@ export const SinglePageResume = (props) => {
 		.slice()
 		.sort((a, b) => (keyOrderMap[a] ?? Infinity) - (keyOrderMap[b] ?? Infinity));
 
-	console.log("sortedVisibleExperiences");
-	console.log(sortedVisibleExperiences);
-
 	const count = useRef(0);
 	useEffect(() => {
 		count.current++;
