@@ -37,7 +37,8 @@ export const SinglePageResume = (props) => {
 		return (
 			<>
 				<PDFViewer
-					key={count.current}
+					//key={count.current}
+					key={props.visibleExperiences.join("|")}
 					style={{
 						width: "100%",
 						height: "75rem"
