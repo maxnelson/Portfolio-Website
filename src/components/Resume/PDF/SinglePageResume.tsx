@@ -37,7 +37,6 @@ export const SinglePageResume = (props) => {
 		return (
 			<>
 				<PDFViewer
-					//key={count.current}
 					key={props.visibleExperiences.join("|")}
 					style={{
 						width: "100%",
@@ -58,7 +57,6 @@ export const SinglePageResume = (props) => {
 										summary1={props.resumeData?.summary1}
 										summary2={props.resumeData?.summary2}
 									/>
-
 									<ResumeSectionHeader title={"Experience"} />
 									<View>
 										{props.resumeData?.section1 &&
@@ -174,6 +172,5 @@ export const SinglePageResume = (props) => {
 		);
 	} catch (error) {
 		console.warn(error);
-		//debugger;
 	}
 };

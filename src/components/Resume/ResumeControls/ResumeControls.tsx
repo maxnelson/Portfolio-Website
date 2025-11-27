@@ -7,6 +7,7 @@ export const ResumeControls = (props) => {
 		<>
 			<div
 				style={{
+					width: "fit-content",
 					border: "1px solid black",
 					borderRadius: "4px",
 					marginTop: "3rem"

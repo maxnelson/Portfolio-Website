@@ -1,5 +1,6 @@
 export const ResumeControlExperiences = (props) => {
 	const jobs = [
+		"adobe",
 		"timeline",
 		"datafinity_group",
 		"apple",
@@ -48,6 +49,16 @@ export const ResumeControlExperiences = (props) => {
 	);
 };
 
+function deUnderscore(str: string) {
+	return str.replace(/_/g, " ");
+}
+function capitalizeWords(str: string) {
+	return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+function deUnderscoreAndCapitalize(str: string) {
+	return capitalizeWords(deUnderscore(str));
+}
+
 export const ResumeControlExperienceCheckbox = (props) => {
 	return (
 		<>
@@ -66,7 +77,7 @@ export const ResumeControlExperienceCheckbox = (props) => {
 				<label
 					htmlFor={props.experienceName}
 					className="resume_control_experience_checkbox_label">
-					{props.experienceName}
+					{deUnderscoreAndCapitalize(props.experienceName)}
 				</label>
 			</div>
 		</>

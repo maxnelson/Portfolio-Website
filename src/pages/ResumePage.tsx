@@ -116,6 +116,7 @@ export const ResumePage = () => {
 	const [titleFontSize, setTitleFontSize] = useState(0);
 
 	const [visibleExperiences, setVisibleExperiences] = useState<string[]>([
+		"adobe",
 		"apple",
 		"rubrik",
 		"cloudera",

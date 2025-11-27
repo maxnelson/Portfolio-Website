@@ -9,6 +9,18 @@
 	"summary1": "Web Developer with ten years of experience developing high traffic, highly visible web sites and applications.",
 	"summary2": "Experienced in developing tools, features, and components, using many different languages, frameworks, and platforms, including Javascript, React, HTML and CSS; developing integrations with a variety of web services, databases, and content repositories, including Wordpress and AEM.",
 	"section1": {
+		"adobe": {
+			"clientName": "Adobe",
+			"jobTitle": "Senior Software Engineer",
+			"startDateMonth": "Aug",
+			"startDateYear": "2025",
+			"endDateMonth": "Current",
+			"endDateYear": "",
+			"location": "San Jose, CA",
+			"description1": "Developing web components for Adobe.com/express",
+			"description2": "Built multiple frontend components for the Adobe.com website, including a Product Detail Page (PDP).",
+			"description3": ""
+		},
 		"datafinity_group": {
 			"clientName": "Datafinity Group",
 			"jobTitle": "Marketing Automation Specialist",
@@ -29,8 +41,8 @@
 			"jobTitle": "Founder / Fullstack Developer",
 			"startDateMonth": "Oct",
 			"startDateYear": "2023",
-			"endDateMonth": "Current",
-			"endDateYear": "",
+			"endDateMonth": "Aug",
+			"endDateYear": "2025",
 			"location": "Berkeley, CA",
 			"description1": "Designed and implemented a fully-functional web application that allows users to build interactive visual timelines.",
 			"description2": "Developed authentication mechanisms and login flows with federated login providers using OAuth2 protocol.",

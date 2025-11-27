@@ -10,7 +10,6 @@
 		&.resumeTypeActive {
 			color: black;
 			border-bottom: 2px solid black;
-			//font-weight: 500;
 		}
 	}
 	.resumeSelectorButtonSeparator {
@@ -39,6 +38,7 @@
 	}
 
 	.resume_control_experience_checkbox_label {
+		white-space: nowrap;
 		cursor: pointer;
 		vertical-align: text-top;
 		color: #aaa;
