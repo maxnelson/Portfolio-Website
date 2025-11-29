@@ -35,6 +35,9 @@ app.use(
 		contentSecurityPolicy: {
 			directives: {
 				defaultSrc: ["'self'"],
+				frameSrc: ["'self'", "blob:"],
+				childSrc: ["'self'", "blob:"],
+				workerSrc: ["'self'", "blob:"],
 				scriptSrc: [
 					"'self'",
 					"'unsafe-inline'",

@@ -17,8 +17,8 @@
 			"endDateMonth": "Current",
 			"endDateYear": "",
 			"location": "San Jose, CA",
-			"description1": "Developing web components for Adobe.com/express",
-			"description2": "Built multiple frontend components for the Adobe.com website, including a Product Detail Page (PDP).",
+			"description1": "Developing web components for Adobe.com/express.",
+			"description2": "Built multiple components for the Adobe.com/express website.",
 			"description3": ""
 		},
 		"datafinity_group": {
@@ -33,7 +33,7 @@
 			"description2": "Configured nurture campaigns, attribution programs, batch-and-blast programs, and audience lists in Marketo.",
 			"description3": "Modified, updated, and optimized Email templates using HTML and CSS.",
 			"description4": "Ensured compatibility with all major Email clients, including Outlook Classic.",
-			"description5": "Achieved professional certifications in both Marketo and Adobe Journey Optimizer",
+			"description5": "Achieved professional certifications in both Marketo and Adobe Journey Optimizer.",
 			"technologies_used": "HTML, CSS, Marketo, Adobe Journey Optimizer"
 		},
 		"timeline": {

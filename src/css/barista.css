@@ -1,14 +1,23 @@
-._font-size--9pt {
-  font-size: 9pt;
-}
-._color--var_gray-125_ {
-  color: var(--gray-125);
+._margin-right--1rem {
+  margin-right: 1rem;
 }
 ._vertical-align--top {
   vertical-align: top;
 }
+._margin-left--1rem {
+  margin-left: 1rem;
+}
 ._margin-bottom--1rem {
   margin-bottom: 1rem;
+}
+._line-height--1p5 {
+  line-height: 1.5;
+}
+._color--var_gray-125_ {
+  color: var(--gray-125);
+}
+._font-size--9pt {
+  font-size: 9pt;
 }
 ._margin-top--1rem {
   margin-top: 1rem;
@@ -37,18 +46,9 @@
 ._display--block {
   display: block;
 }
-._margin-left--1rem {
-  margin-left: 1rem;
-}
-._margin-right--1rem {
-  margin-right: 1rem;
-}
-._line-height--1p5 {
-  line-height: 1.5;
+._font-size--2rem {
+  font-size: 2rem;
 }
 ._word-wrap--break-word {
   word-wrap: break-word;
-}
-._font-size--2rem {
-  font-size: 2rem;
 }
