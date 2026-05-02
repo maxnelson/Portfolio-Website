@@ -14,7 +14,8 @@ export const ProjectGridItem = (props) => {
 						<img
 							alt="Project Image"
 							fetchPriority="high"
-							src={projectData.image1}></img>
+							src={projectData.image1}
+						></img>
 						<div className="project_grid_item_overlay">
 							<div className="project_grid_item_overlay_text project_grid_item_overlay_text_top">
 								<h3>{projectData.clientName}</h3>

@@ -4,11 +4,13 @@ export const ResumeControlMarginBetweenExperiences = (props) => {
 			<div
 				style={{
 					marginBottom: "1rem"
-				}}>
+				}}
+			>
 				<div>
 					<label
 						htmlFor="marginBetweenExperiencesSlider"
-						style={{ color: "#aaa", marginBottom: "5px", display: "block" }}>
+						style={{ color: "#aaa", marginBottom: "5px", display: "block" }}
+					>
 						Margin between experiences:
 					</label>
 					<input
@@ -22,7 +24,8 @@ export const ResumeControlMarginBetweenExperiences = (props) => {
 						style={{ width: "100%", cursor: "pointer" }}
 						onChange={(event) =>
 							props.setMarginBetweenExperiences(event?.target.value)
-						}></input>
+						}
+					></input>
 				</div>
 			</div>
 		</>

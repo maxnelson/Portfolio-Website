@@ -10,7 +10,8 @@ export const AbridgeDisclaimer = () => {
 					styles.flex_direction_row,
 					styles.font_size_smaller,
 					styles.margin_top_15
-				]}>
+				]}
+			>
 				<View style={[styles.width_35_percent]}></View>
 				<View style={[styles.display_flex, styles.flex_direction_row]}>
 					<View style={[]}>
@@ -25,7 +26,8 @@ export const AbridgeDisclaimer = () => {
 								styles.color_blue_100,
 								styles.font_weight_bold,
 								styles.text_decoration_none
-							]}>
+							]}
+						>
 							{"here"}
 						</Link>
 					</View>

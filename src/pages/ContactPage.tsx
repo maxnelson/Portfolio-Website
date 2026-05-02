@@ -4,9 +4,7 @@ export function ContactPage() {
 	return (
 		<>
 			<div className="page_container">
-				<div
-					className="inner_page_container"
-					style={{ display: "flex" }}>
+				<div className="inner_page_container" style={{ display: "flex" }}>
 					<div className="sidebar">
 						<LeftSidebar />
 					</div>
@@ -19,7 +17,8 @@ export function ContactPage() {
 									className="external_link"
 									href="mailto:maxnelson88@gmail.com"
 									target="_blank"
-									rel="noopener noreferrer">
+									rel="noopener noreferrer"
+								>
 									maxnelson88@gmail.com
 								</a>
 								.

@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { ProjectGridItem } from "@src/components/ProjectGrid/ProjectGridItem";
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
@@ -13,14 +13,9 @@ const Footer = lazy(() =>
 export function HomePage() {
 	return (
 		<>
-			<link
-				rel="canonical"
-				href="https://maxnelsonwebsite.com"
-			/>
+			<link rel="canonical" href="https://maxnelsonwebsite.com" />
 			<div className="page_container">
-				<div
-					className="inner_page_container"
-					style={{ display: "flex" }}>
+				<div className="inner_page_container" style={{ display: "flex" }}>
 					<div className="sidebar">
 						<LeftSidebar />
 					</div>

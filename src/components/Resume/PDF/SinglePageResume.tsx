@@ -21,13 +21,19 @@ export const SinglePageResume = (props) => {
 		itemLineHeight = styles.line_height_0;
 		spaceBetweenBullets = [styles.margin_top_2, styles.margin_bottom_2];
 	}
-	const resumeDataSorted = Object.entries(props.resumeData?.section1 || {}).sort(
+	const resumeDataSorted = Object.entries(
+		props.resumeData?.section1 || {}
+	).sort(
 		([, a], [, b]) => parseInt(b.startDateYear) - parseInt(a.startDateYear)
 	);
-	const keyOrderMap = Object.fromEntries(resumeDataSorted.map(([key], idx) => [key, idx]));
+	const keyOrderMap = Object.fromEntries(
+		resumeDataSorted.map(([key], idx) => [key, idx])
+	);
 	const sortedVisibleExperiences = props.visibleExperiences
 		.slice()
-		.sort((a, b) => (keyOrderMap[a] ?? Infinity) - (keyOrderMap[b] ?? Infinity));
+		.sort(
+			(a, b) => (keyOrderMap[a] ?? Infinity) - (keyOrderMap[b] ?? Infinity)
+		);
 
 	const count = useRef(0);
 	useEffect(() => {
@@ -41,7 +47,8 @@ export const SinglePageResume = (props) => {
 					style={{
 						width: "100%",
 						height: "75rem"
-					}}>
+					}}
+				>
 					<Document>
 						<Page size="LETTER">
 							<View style={styles.page_container}>
@@ -68,54 +75,41 @@ export const SinglePageResume = (props) => {
 															marginBetweenExperiences={
 																props.marginBetweenExperiences
 															}
-															spaceBetweenBullets={
-																spaceBetweenBullets
-															}
+															spaceBetweenBullets={spaceBetweenBullets}
 															itemLineHeight={itemLineHeight}
 															titleFontSize={props.titleFontSize}
 															clientName={
-																props.resumeData?.section1[name]
-																	.clientName
+																props.resumeData?.section1[name].clientName
 															}
 															jobTitle={
-																props.resumeData?.section1[name]
-																	.jobTitle
+																props.resumeData?.section1[name].jobTitle
 															}
 															startDateMonth={
-																props.resumeData?.section1[name]
-																	.startDateMonth
+																props.resumeData?.section1[name].startDateMonth
 															}
 															endDateMonth={
-																props.resumeData?.section1[name]
-																	.endDateMonth
+																props.resumeData?.section1[name].endDateMonth
 															}
 															startDateYear={
-																props.resumeData?.section1[name]
-																	.startDateYear
+																props.resumeData?.section1[name].startDateYear
 															}
 															endDateYear={
-																props.resumeData?.section1[name]
-																	.endDateYear
+																props.resumeData?.section1[name].endDateYear
 															}
 															description1={
-																props.resumeData?.section1[name]
-																	.description1
+																props.resumeData?.section1[name].description1
 															}
 															description2={
-																props.resumeData?.section1[name]
-																	.description2
+																props.resumeData?.section1[name].description2
 															}
 															description3={
-																props.resumeData?.section1[name]
-																	.description3
+																props.resumeData?.section1[name].description3
 															}
 															description4={
-																props.resumeData?.section1[name]
-																	.description4
+																props.resumeData?.section1[name].description4
 															}
 															description5={
-																props.resumeData?.section1[name]
-																	.description5
+																props.resumeData?.section1[name].description5
 															}
 														/>
 													</View>

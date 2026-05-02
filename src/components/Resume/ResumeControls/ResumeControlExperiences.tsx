@@ -18,7 +18,9 @@ export const ResumeControlExperiences = (props) => {
 
 	const handleCheckboxChange = (value: string) => {
 		props.setVisibleExperiences((prev) => {
-			return prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value];
+			return prev.includes(value)
+				? prev.filter((v) => v !== value)
+				: [...prev, value];
 		});
 	};
 
@@ -30,11 +32,12 @@ export const ResumeControlExperiences = (props) => {
 						color: "#aaa",
 						display: "block",
 						marginBottom: "10px"
-					}}>
+					}}
+				>
 					Experiences:
 				</p>
 				<hr className="resume_control_hr" />
-				{jobs.map((element, index) => {
+				{jobs.map((element) => {
 					return (
 						<ResumeControlExperienceCheckbox
 							key={element}
@@ -76,7 +79,8 @@ export const ResumeControlExperienceCheckbox = (props) => {
 				/>
 				<label
 					htmlFor={props.experienceName}
-					className="resume_control_experience_checkbox_label">
+					className="resume_control_experience_checkbox_label"
+				>
 					{deUnderscoreAndCapitalize(props.experienceName)}
 				</label>
 			</div>

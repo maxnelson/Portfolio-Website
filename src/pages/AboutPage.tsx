@@ -8,7 +8,9 @@ interface AboutPageData {
 }
 
 export function AboutPage() {
-	const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(null);
+	const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(
+		null
+	);
 	useEffect(() => {
 		const fetchData = async () => {
 			const fetchedAboutPageData: AboutPageData = await getAboutPageData();
@@ -22,21 +24,22 @@ export function AboutPage() {
 		return <div>Loading...</div>;
 	}
 
-	const html = window.trustedTypes?.defaultPolicy?.createHTML(aboutPageData) ?? aboutPageData;
+	const html =
+		window.trustedTypes?.defaultPolicy?.createHTML(aboutPageData) ??
+		aboutPageData;
 
 	return (
 		<>
 			<div className="page_container">
-				<div
-					className="inner_page_container"
-					style={{ display: "flex" }}>
+				<div className="inner_page_container" style={{ display: "flex" }}>
 					<div className="sidebar">
 						<LeftSidebar />
 					</div>
 					<main className="main_section">
 						<div
 							className="desktop_horizontal_mobile_vertical"
-							style={{ display: "flex" }}>
+							style={{ display: "flex" }}
+						>
 							<div className="profilePictureContainer width-20percent-minus-1rem _margin-right--1rem">
 								<img
 									className="profilePicture"
@@ -49,7 +52,8 @@ export function AboutPage() {
 								<div
 									dangerouslySetInnerHTML={{
 										__html: html
-									}}></div>
+									}}
+								></div>
 							</div>
 						</div>
 					</main>

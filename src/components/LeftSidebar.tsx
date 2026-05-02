@@ -8,10 +8,12 @@ export const LeftSidebar = () => {
 				<section className="sidebar_navigation_link_container_img cursor_pointer">
 					<NavLink
 						className={({ isActive }) =>
-							"sidebar_navigation_link_image" + (isActive ? " active_nav_image" : "")
+							"sidebar_navigation_link_image" +
+							(isActive ? " active_nav_image" : "")
 						}
 						end
-						to={"/"}>
+						to={"/"}
+					>
 						<RocketHandsLogo customClassName="rocketHandsLogo" />
 						<span className="screenReaderText">Home</span>
 					</NavLink>
@@ -22,7 +24,8 @@ export const LeftSidebar = () => {
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
 						}
 						end
-						to={"/about"}>
+						to={"/about"}
+					>
 						About
 					</NavLink>
 				</section>
@@ -32,7 +35,8 @@ export const LeftSidebar = () => {
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
 						}
 						end
-						to={"/resume"}>
+						to={"/resume"}
+					>
 						Resumé
 					</NavLink>
 				</section>
@@ -42,7 +46,8 @@ export const LeftSidebar = () => {
 							"sidebar_navigation_link" + (isActive ? " active_nav_link" : "")
 						}
 						end
-						to={"/sketchblog/css"}>
+						to={"/sketchblog/css"}
+					>
 						Blog
 					</NavLink>
 				</section>

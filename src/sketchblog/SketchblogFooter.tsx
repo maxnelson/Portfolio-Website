@@ -6,21 +6,15 @@ export function SketchblogFooter() {
 			<hr className="sketchblog_post_hr" />
 			<div>
 				<p className="_font-size--10pt _color--var_gray-125_">
-					<a
-						className="_font-size--10pt _cursor--pointer"
-						href="/sketchblog">
+					<a className="_font-size--10pt _cursor--pointer" href="/sketchblog">
 						Home
 					</a>
 					{" • "}
-					<a
-						className="_font-size--10pt _cursor--pointer"
-						href="/about">
+					<a className="_font-size--10pt _cursor--pointer" href="/about">
 						About
 					</a>
 					{" • "}
-					<a
-						className="_font-size--10pt _cursor--pointer"
-						href="/contact">
+					<a className="_font-size--10pt _cursor--pointer" href="/contact">
 						Contact
 					</a>
 					{" • "}

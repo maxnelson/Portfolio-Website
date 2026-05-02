@@ -12,17 +12,11 @@ export const BulletPoint = (props) => {
 					//props.spaceBetweenBullets[1],
 					styles.font_size_11pt,
 					styles.line_height_0
-				]}>
+				]}
+			>
 				{props.bullet === "bullet" && (
-					<Svg
-						width={8}
-						height={9}>
-						<Circle
-							cx="3"
-							cy="6"
-							r="1.3"
-							fill="black"
-						/>
+					<Svg width={8} height={9}>
+						<Circle cx="3" cy="6" r="1.3" fill="black" />
 					</Svg>
 				)}
 				{props.bullet === "technologies" && (

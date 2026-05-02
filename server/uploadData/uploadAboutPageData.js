@@ -9,7 +9,9 @@ export const uploadAboutPagedData = async () => {
 	const aboutPageDataObject = {
 		data: aboutPageDescription
 	};
-	const aboutPageDocRef = firestore_database_service_account.doc("resumeData/aboutPage");
+	const aboutPageDocRef = firestore_database_service_account.doc(
+		"resumeData/aboutPage"
+	);
 	await aboutPageDocRef.update({
 		aboutPageDataField: aboutPageDataObject.data
 	});

@@ -8,12 +8,15 @@ export function SketchblogSidebarSectionComponent({ name, children }) {
 				className=""
 				onClick={() => {
 					setIsVisible(!isVisible);
-				}}>
+				}}
+			>
 				<a className="_display--block">
 					<span
 						className={
-							"sidebar_section_container_arrow " + (isVisible ? "rotateDown" : "")
-						}>
+							"sidebar_section_container_arrow " +
+							(isVisible ? "rotateDown" : "")
+						}
+					>
 						&#9654;
 					</span>
 					{name}

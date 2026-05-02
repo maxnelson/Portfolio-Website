@@ -5,19 +5,27 @@ export const SkillsSection = (props) => {
 	return (
 		<View style={[styles.font_size_medium, styles.line_height_1_2]}>
 			<Text style={[]}>
-				<Text style={[styles.font_family_helvetica_bold]}>{props.skill1Title + ": "}</Text>
+				<Text style={[styles.font_family_helvetica_bold]}>
+					{props.skill1Title + ": "}
+				</Text>
 				{props.skill1Description}
 			</Text>
 			<Text style={[]}>
-				<Text style={[styles.font_family_helvetica_bold]}>{props.skill2Title + ": "}</Text>
+				<Text style={[styles.font_family_helvetica_bold]}>
+					{props.skill2Title + ": "}
+				</Text>
 				{props.skill2Description}
 			</Text>
 			<Text style={[]}>
-				<Text style={[styles.font_family_helvetica_bold]}>{props.skill3Title + ": "}</Text>
+				<Text style={[styles.font_family_helvetica_bold]}>
+					{props.skill3Title + ": "}
+				</Text>
 				{props.skill3Description}
 			</Text>
 			<Text style={[]}>
-				<Text style={[styles.font_family_helvetica_bold]}>{props.skill4Title + ": "}</Text>
+				<Text style={[styles.font_family_helvetica_bold]}>
+					{props.skill4Title + ": "}
+				</Text>
 				{props.skill4Description}
 			</Text>
 		</View>

@@ -6,30 +6,34 @@ export const ProjectDescription = (props) => {
 	return (
 		<div className="project_description_container">
 			<div className="project_description_container_images">
-				{props.projectData?.image1 ?
+				{props.projectData?.image1 ? (
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={props.projectData?.image1}></img>
-				:	null}
-				{props.projectData?.image2 ?
+						src={props.projectData?.image1}
+					></img>
+				) : null}
+				{props.projectData?.image2 ? (
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={props.projectData?.image2}></img>
-				:	null}
-				{props.projectData?.image3 ?
+						src={props.projectData?.image2}
+					></img>
+				) : null}
+				{props.projectData?.image3 ? (
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={props.projectData?.image3}></img>
-				:	null}
-				{props.projectData?.image4 ?
+						src={props.projectData?.image3}
+					></img>
+				) : null}
+				{props.projectData?.image4 ? (
 					<img
 						loading="lazy"
 						alt="Project detail image"
-						src={props.projectData?.image4}></img>
-				:	null}
+						src={props.projectData?.image4}
+					></img>
+				) : null}
 			</div>
 			<div className="project_description_text_container _word-wrap--break-word">
 				{props.projectData?.clientName && (
@@ -40,23 +44,28 @@ export const ProjectDescription = (props) => {
 								fontSize: "12pt",
 								marginTop: "0",
 								marginBottom: "0"
-							}}>
+							}}
+						>
 							{props.projectData?.jobTitle}
 						</p>
 						<span>
-							{props.projectData?.startDateMonth && props.projectData?.startDateMonth}
+							{props.projectData?.startDateMonth &&
+								props.projectData?.startDateMonth}
 							{props.projectData?.startDateYear &&
 								" " + props.projectData?.startDateYear}
 							{props.projectData?.endDateYear && " - "}
-							{props.projectData?.endDateMonth && props.projectData?.endDateMonth}
-							{props.projectData?.endDateYear && " " + props.projectData?.endDateYear}
+							{props.projectData?.endDateMonth &&
+								props.projectData?.endDateMonth}
+							{props.projectData?.endDateYear &&
+								" " + props.projectData?.endDateYear}
 						</span>
 					</div>
 				)}
 				<div
 					dangerouslySetInnerHTML={{
 						__html: html
-					}}></div>
+					}}
+				></div>
 
 				<div className="back-button">
 					<a href="/">

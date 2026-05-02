@@ -12,7 +12,8 @@ export const Footer = () => {
 							isActive ? "internal_link active_nav_link" : "internal_link"
 						}
 						end
-						to={"/"}>
+						to={"/"}
+					>
 						Projects
 					</NavLink>
 				</div>
@@ -22,7 +23,8 @@ export const Footer = () => {
 							isActive ? "internal_link active_nav_link" : "internal_link"
 						}
 						end
-						to={"/about"}>
+						to={"/about"}
+					>
 						About
 					</NavLink>
 				</div>
@@ -32,7 +34,8 @@ export const Footer = () => {
 							isActive ? "internal_link active_nav_link" : "internal_link"
 						}
 						end
-						to={"/resume"}>
+						to={"/resume"}
+					>
 						Resumé
 					</NavLink>
 				</div>
@@ -42,7 +45,8 @@ export const Footer = () => {
 							isActive ? "internal_link active_nav_link" : "internal_link"
 						}
 						end
-						to={"/contact"}>
+						to={"/contact"}
+					>
 						Contact
 					</NavLink>
 				</div>
@@ -50,7 +54,9 @@ export const Footer = () => {
 					<a
 						className="external_link"
 						href="https://www.linkedin.com/in/maxnelson88/"
-						target="_blank">
+						target="_blank"
+						rel="noreferrer"
+					>
 						LinkedIn&nbsp;
 						<ExternalLinkIcon />
 					</a>
@@ -59,7 +65,9 @@ export const Footer = () => {
 					<a
 						className="external_link"
 						href="https://twitter.com/modularmoon"
-						target="_blank">
+						target="_blank"
+						rel="noreferrer"
+					>
 						Twitter&nbsp;
 						<ExternalLinkIcon />
 					</a>

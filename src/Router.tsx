@@ -5,19 +5,29 @@ const HomePage = lazy(() =>
 	import("@src/pages/HomePage").then((module) => ({ default: module.HomePage }))
 );
 const ProjectDetailPage = lazy(() =>
-	import("@src/pages/ProjectDetailPage").then((module) => ({ default: module.ProjectDetailPage }))
+	import("@src/pages/ProjectDetailPage").then((module) => ({
+		default: module.ProjectDetailPage
+	}))
 );
 const AboutPage = lazy(() =>
-	import("@src/pages/AboutPage").then((module) => ({ default: module.AboutPage }))
+	import("@src/pages/AboutPage").then((module) => ({
+		default: module.AboutPage
+	}))
 );
 const ResumePage = lazy(() =>
-	import("@src/pages/ResumePage").then((module) => ({ default: module.ResumePage }))
+	import("@src/pages/ResumePage").then((module) => ({
+		default: module.ResumePage
+	}))
 );
 const ContactPage = lazy(() =>
-	import("@src/pages/ContactPage").then((module) => ({ default: module.ContactPage }))
+	import("@src/pages/ContactPage").then((module) => ({
+		default: module.ContactPage
+	}))
 );
 const SketchblogPage = lazy(() =>
-	import("@src/sketchblog/SketchblogPage").then((module) => ({ default: module.SketchblogPage }))
+	import("@src/sketchblog/SketchblogPage").then((module) => ({
+		default: module.SketchblogPage
+	}))
 );
 const PostDescriptionPage = lazy(() =>
 	import("@src/sketchblog/PostDescriptionPage").then((module) => ({
@@ -31,39 +41,16 @@ export function Router() {
 	return (
 		<>
 			<Routes>
-				<Route
-					path="/"
-					element={<HomePage />}></Route>
-				<Route
-					path="/project/:project"
-					element={<ProjectDetailPage />}></Route>
-				<Route
-					path="/about"
-					element={<AboutPage />}></Route>
-				<Route
-					path="/resume/:resumetype?"
-					element={<ResumePage />}></Route>
+				<Route path="/" element={<HomePage />}></Route>
+				<Route path="/project/:project" element={<ProjectDetailPage />}></Route>
+				<Route path="/about" element={<AboutPage />}></Route>
+				<Route path="/resume/:resumetype?" element={<ResumePage />}></Route>
 
-				<Route
-					path="/contact"
-					element={<ContactPage />}></Route>
-				<Route
-					path="/sketchblog"
-					element={<SketchblogPage />}>
-					<Route
-						index
-						element={
-							<Navigate
-								to="drawings"
-								replace
-							/>
-						}
-					/>
+				<Route path="/contact" element={<ContactPage />}></Route>
+				<Route path="/sketchblog" element={<SketchblogPage />}>
+					<Route index element={<Navigate to="drawings" replace />} />
 				</Route>
-				<Route
-					path="/sketchblog/:category"
-					element={<SketchblogPage />}
-				/>
+				<Route path="/sketchblog/:category" element={<SketchblogPage />} />
 				<Route
 					path="/sketchblog/:category/:postname"
 					element={<PostDescriptionPage />}

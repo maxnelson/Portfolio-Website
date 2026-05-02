@@ -12,9 +12,7 @@ export function ProjectDetailPage() {
 	return (
 		<>
 			<div className="page_container">
-				<div
-					className="inner_page_container"
-					style={{ display: "flex" }}>
+				<div className="inner_page_container" style={{ display: "flex" }}>
 					<div className="sidebar">
 						<LeftSidebar />
 					</div>

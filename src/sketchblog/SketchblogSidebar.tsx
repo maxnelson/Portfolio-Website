@@ -18,7 +18,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/css">
+								to="/sketchblog/css"
+							>
 								CSS
 							</NavLink>
 						</section>
@@ -33,7 +34,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/design">
+								to="/sketchblog/design"
+							>
 								design
 							</NavLink>
 						</section>
@@ -46,7 +48,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/schoolwork">
+								to="/sketchblog/schoolwork"
+							>
 								schoolwork
 							</NavLink>
 						</section>
@@ -61,7 +64,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/drawings">
+								to="/sketchblog/drawings"
+							>
 								drawings
 							</NavLink>
 						</section>
@@ -74,7 +78,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/digital_art">
+								to="/sketchblog/digital_art"
+							>
 								digital art
 							</NavLink>
 						</section>
@@ -87,7 +92,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/mixed_media">
+								to="/sketchblog/mixed_media"
+							>
 								mixed media
 							</NavLink>
 						</section>
@@ -100,7 +106,8 @@ export function SketchblogSidebar(props) {
 								className={({ isActive }) =>
 									"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 								}
-								to="/sketchblog/comics">
+								to="/sketchblog/comics"
+							>
 								comics
 							</NavLink>
 						</section>
@@ -115,13 +122,15 @@ export function SketchblogSidebar(props) {
 								"_font-size--9pt" + (isActive ? " active_nav_link" : "")
 							}
 							end
-							to="/">
+							to="/"
+						>
 							<div
 								style={{
 									display: "inline-block",
 									verticalAlign: "sub",
 									marginRight: "6px"
-								}}>
+								}}
+							>
 								<ChevronLeftIcon size="8px" />
 								<ChevronLeftIcon size="8px" />
 							</div>

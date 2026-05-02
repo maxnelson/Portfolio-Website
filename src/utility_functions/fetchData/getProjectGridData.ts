@@ -1,5 +1,4 @@
-import { doc, getDoc, collection } from "firebase/firestore";
-import { useQuery } from "@tanstack/react-query";
+import { doc, getDoc } from "firebase/firestore";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { firestore_database } from "#root/src/utility_functions/config/firebaseConfig.js";
 

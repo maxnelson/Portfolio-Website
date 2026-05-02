@@ -13,7 +13,8 @@ export const MultiPageResume = (props) => {
 				style={{
 					width: "100%",
 					height: "75rem"
-				}}>
+				}}
+			>
 				<Document>
 					<Page size="LETTER">
 						<View style={styles.multipage_container}>
@@ -73,14 +74,22 @@ export const MultiPageResume = (props) => {
 									startDateMonth={
 										props.resumeData?.section1.timeline.startDateMonth
 									}
-									endDateMonth={props.resumeData?.section1.timeline.endDateMonth}
+									endDateMonth={
+										props.resumeData?.section1.timeline.endDateMonth
+									}
 									startDateYear={
 										props.resumeData?.section1.timeline.startDateYear
 									}
 									endDateYear={props.resumeData?.section1.timeline.endDateYear}
-									description1={props.resumeData?.section1.timeline.description1}
-									description2={props.resumeData?.section1.timeline.description2}
-									description3={props.resumeData?.section1.timeline.description3}
+									description1={
+										props.resumeData?.section1.timeline.description1
+									}
+									description2={
+										props.resumeData?.section1.timeline.description2
+									}
+									description3={
+										props.resumeData?.section1.timeline.description3
+									}
 									/*
 									technologies_used={
 										props.resumeData?.section1.timeline.technologies_used
@@ -91,7 +100,9 @@ export const MultiPageResume = (props) => {
 									customStyle={styles.margin_bottom_5}
 									clientName={props.resumeData?.section1.apple.clientName}
 									jobTitle={props.resumeData?.section1.apple.jobTitle}
-									startDateMonth={props.resumeData?.section1.apple.startDateMonth}
+									startDateMonth={
+										props.resumeData?.section1.apple.startDateMonth
+									}
 									endDateMonth={props.resumeData?.section1.apple.endDateMonth}
 									startDateYear={props.resumeData?.section1.apple.startDateYear}
 									endDateYear={props.resumeData?.section1.apple.endDateYear}
@@ -119,7 +130,9 @@ export const MultiPageResume = (props) => {
 										props.resumeData?.section1.aquent.startDateMonth
 									}
 									endDateMonth={props.resumeData?.section1.aquent.endDateMonth}
-									startDateYear={props.resumeData?.section1.aquent.startDateYear}
+									startDateYear={
+										props.resumeData?.section1.aquent.startDateYear
+									}
 									endDateYear={props.resumeData?.section1.aquent.endDateYear}
 									description1={props.resumeData?.section1.aquent.description1}
 									/*
@@ -136,7 +149,9 @@ export const MultiPageResume = (props) => {
 										props.resumeData?.section1.rubrik.startDateMonth
 									}
 									endDateMonth={props.resumeData?.section1.rubrik.endDateMonth}
-									startDateYear={props.resumeData?.section1.rubrik.startDateYear}
+									startDateYear={
+										props.resumeData?.section1.rubrik.startDateYear
+									}
 									endDateYear={props.resumeData?.section1.rubrik.endDateYear}
 									description1={props.resumeData?.section1.rubrik.description1}
 									description2={props.resumeData?.section1.rubrik.description2}
@@ -160,7 +175,9 @@ export const MultiPageResume = (props) => {
 										props.resumeData?.section1.apple2.startDateMonth
 									}
 									endDateMonth={props.resumeData?.section1.apple2.endDateMonth}
-									startDateYear={props.resumeData?.section1.apple2.startDateYear}
+									startDateYear={
+										props.resumeData?.section1.apple2.startDateYear
+									}
 									endDateYear={props.resumeData?.section1.apple2.endDateYear}
 									description1={props.resumeData?.section1.apple2.description1}
 									description2={props.resumeData?.section1.apple2.description2}
@@ -180,20 +197,40 @@ export const MultiPageResume = (props) => {
 									startDateMonth={
 										props.resumeData?.section1.cloudera.startDateMonth
 									}
-									endDateMonth={props.resumeData?.section1.cloudera.endDateMonth}
+									endDateMonth={
+										props.resumeData?.section1.cloudera.endDateMonth
+									}
 									startDateYear={
 										props.resumeData?.section1.cloudera.startDateYear
 									}
 									endDateYear={props.resumeData?.section1.cloudera.endDateYear}
-									description1={props.resumeData?.section1.cloudera.description1}
-									description2={props.resumeData?.section1.cloudera.description2}
-									description3={props.resumeData?.section1.cloudera.description3}
-									description4={props.resumeData?.section1.cloudera.description4}
-									description5={props.resumeData?.section1.cloudera.description5}
-									description6={props.resumeData?.section1.cloudera.description6}
-									description7={props.resumeData?.section1.cloudera.description7}
-									description8={props.resumeData?.section1.cloudera.description8}
-									description9={props.resumeData?.section1.cloudera.description9}
+									description1={
+										props.resumeData?.section1.cloudera.description1
+									}
+									description2={
+										props.resumeData?.section1.cloudera.description2
+									}
+									description3={
+										props.resumeData?.section1.cloudera.description3
+									}
+									description4={
+										props.resumeData?.section1.cloudera.description4
+									}
+									description5={
+										props.resumeData?.section1.cloudera.description5
+									}
+									description6={
+										props.resumeData?.section1.cloudera.description6
+									}
+									description7={
+										props.resumeData?.section1.cloudera.description7
+									}
+									description8={
+										props.resumeData?.section1.cloudera.description8
+									}
+									description9={
+										props.resumeData?.section1.cloudera.description9
+									}
 									description10={
 										props.resumeData?.section1.cloudera.description10
 									}
@@ -211,7 +248,9 @@ export const MultiPageResume = (props) => {
 									customStyle={styles.margin_bottom_5}
 									clientName={props.resumeData?.section1.levis.clientName}
 									jobTitle={props.resumeData?.section1.levis.jobTitle}
-									startDateMonth={props.resumeData?.section1.levis.startDateMonth}
+									startDateMonth={
+										props.resumeData?.section1.levis.startDateMonth
+									}
 									endDateMonth={props.resumeData?.section1.levis.endDateMonth}
 									startDateYear={props.resumeData?.section1.levis.startDateYear}
 									endDateYear={props.resumeData?.section1.levis.endDateYear}
@@ -229,7 +268,9 @@ export const MultiPageResume = (props) => {
 									customStyle={styles.margin_bottom_5}
 									clientName={props.resumeData?.section1.numi.clientName}
 									jobTitle={props.resumeData?.section1.numi.jobTitle}
-									startDateMonth={props.resumeData?.section1.numi.startDateMonth}
+									startDateMonth={
+										props.resumeData?.section1.numi.startDateMonth
+									}
 									endDateMonth={props.resumeData?.section1.numi.endDateMonth}
 									startDateYear={props.resumeData?.section1.numi.startDateYear}
 									endDateYear={props.resumeData?.section1.numi.endDateYear}
@@ -292,13 +333,19 @@ export const MultiPageResume = (props) => {
 									startDateMonth={
 										props.resumeData?.section1.theOrion.startDateMonth
 									}
-									endDateMonth={props.resumeData?.section1.theOrion.endDateMonth}
+									endDateMonth={
+										props.resumeData?.section1.theOrion.endDateMonth
+									}
 									startDateYear={
 										props.resumeData?.section1.theOrion.startDateYear
 									}
 									endDateYear={props.resumeData?.section1.theOrion.endDateYear}
-									description1={props.resumeData?.section1.theOrion.description1}
-									description2={props.resumeData?.section1.theOrion.description2}
+									description1={
+										props.resumeData?.section1.theOrion.description1
+									}
+									description2={
+										props.resumeData?.section1.theOrion.description2
+									}
 									/*
 									technologies_used={
 										props.resumeData?.section1.theOrion.technologies_used
@@ -307,7 +354,9 @@ export const MultiPageResume = (props) => {
 								/>
 								<ResumeItem
 									customStyle={styles.margin_bottom_10}
-									clientName={props.resumeData?.section1.truckerDeluxe.clientName}
+									clientName={
+										props.resumeData?.section1.truckerDeluxe.clientName
+									}
 									jobTitle={props.resumeData?.section1.truckerDeluxe.jobTitle}
 									startDateMonth={
 										props.resumeData?.section1.truckerDeluxe.startDateMonth

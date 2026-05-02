@@ -106,9 +106,11 @@ interface resumeDataInterface {
 
 export const ResumePage = () => {
 	const { resumetype } = useParams();
-	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(null);
+	const [resumeData, setResumeData] = useState<resumeDataInterface | null>(
+		null
+	);
 	const defaultResumeType = resumetype ? resumetype : "single";
-	const [resumeType, setResumeType] = useState(defaultResumeType);
+	const [resumeType] = useState(defaultResumeType);
 	const defaultMarginBetweenExperiences = 5;
 	const [marginBetweenExperiences, setMarginBetweenExperiences] = useState(
 		defaultMarginBetweenExperiences
@@ -133,9 +135,7 @@ export const ResumePage = () => {
 	return (
 		<>
 			<div className="page_container">
-				<div
-					className="inner_page_container"
-					style={{ display: "flex" }}>
+				<div className="inner_page_container" style={{ display: "flex" }}>
 					<div className="sidebar">
 						<LeftSidebar />
 						<ResumeControls
@@ -152,7 +152,9 @@ export const ResumePage = () => {
 							<ResumePDF
 								resumeType={resumeType}
 								resumeData={resumeData}
-								defaultMarginBetweenExperiences={defaultMarginBetweenExperiences}
+								defaultMarginBetweenExperiences={
+									defaultMarginBetweenExperiences
+								}
 								marginBetweenExperiences={marginBetweenExperiences}
 								titleFontSize={titleFontSize}
 								visibleExperiences={visibleExperiences}

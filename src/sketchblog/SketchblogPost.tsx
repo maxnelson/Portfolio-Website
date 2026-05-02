@@ -3,27 +3,25 @@ import { ChevronRightIcon } from "@src/components/icons/ChevronRightIcon";
 
 export function SketchblogPost(props) {
 	const dateParsed = new Date(props.postData.date.toDate());
-	const formattedDate = DateTime.fromJSDate(dateParsed).toFormat("MMMM dd, yyyy");
+	const formattedDate =
+		DateTime.fromJSDate(dateParsed).toFormat("MMMM dd, yyyy");
 	return (
 		<>
-			<div className={"_margin-bottom--10rem post_format_" + props.postData.format}>
+			<div
+				className={"_margin-bottom--10rem post_format_" + props.postData.format}
+			>
 				{props.postData.images.map((image, index) => {
 					return (
-						<div
-							className="post_image_container"
-							key={index}>
+						<div className="post_image_container" key={index}>
 							<a
 								href={
 									"/sketchblog/" +
 									props.postData.category +
 									"/" +
 									props.postData.id
-								}>
-								<img
-									loading="lazy"
-									src={image}
-									alt="Blog Post Image"
-								/>
+								}
+							>
+								<img loading="lazy" src={image} alt="Blog Post Image" />
 							</a>
 						</div>
 					);
@@ -35,17 +33,25 @@ export function SketchblogPost(props) {
 				)}
 
 				<p className="project_description _color--var_gray-400_ _margin-bottom--1rem">
-					{props.postData.shortDescription ? props.postData.shortDescription : null}
+					{props.postData.shortDescription
+						? props.postData.shortDescription
+						: null}
 				</p>
 				<div>
-					<a href={"/sketchblog/" + props.postData.category + "/" + props.postData.id}>
+					<a
+						href={
+							"/sketchblog/" + props.postData.category + "/" + props.postData.id
+						}
+					>
 						Read More
 						<ChevronRightIcon />
 					</a>
 				</div>
 				<hr className="sketchblog_post_hr" />
 				<div className="post_text_container">
-					<p className="_font-size--9pt _color--var_gray-125_">{formattedDate}</p>
+					<p className="_font-size--9pt _color--var_gray-125_">
+						{formattedDate}
+					</p>
 				</div>
 			</div>
 		</>

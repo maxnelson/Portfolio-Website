@@ -15,7 +15,8 @@ export const ResumeHeader = (props) => {
 				styles.flex_direction_row,
 				styles.justify_content_space_between,
 				styles.margin_bottom_10
-			]}>
+			]}
+		>
 			<View>
 				<Text
 					style={[
@@ -23,10 +24,13 @@ export const ResumeHeader = (props) => {
 						//styles.color_777,
 						styles.font_family_helvetica_bold,
 						styles.margin_left_2n
-					]}>
+					]}
+				>
 					{props.name}
 				</Text>
-				<Text style={[styles.font_size_13pt, styles.margin_top_10]}>{props.title}</Text>
+				<Text style={[styles.font_size_13pt, styles.margin_top_10]}>
+					{props.title}
+				</Text>
 			</View>
 			<View style={[styles.margin_top_5]}>
 				<ContactInfoItem

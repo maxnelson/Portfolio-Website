@@ -11,7 +11,8 @@ export const ResumeControls = (props) => {
 					border: "1px solid black",
 					borderRadius: "4px",
 					marginTop: "3rem"
-				}}>
+				}}
+			>
 				<div
 					style={{
 						borderBottom: "1px solid black",
@@ -19,16 +20,21 @@ export const ResumeControls = (props) => {
 						backgroundColor: "#efefef",
 						borderTopRightRadius: "4px",
 						borderTopLeftRadius: "4px"
-					}}>
+					}}
+				>
 					<p>Customize Resume</p>
 				</div>
 				<div style={{ padding: "1rem" }}>
 					<div style={{}}>
 						<ResumeControlMarginBetweenExperiences
-							defaultMarginBetweenExperiences={props.defaultMarginBetweenExperiences}
+							defaultMarginBetweenExperiences={
+								props.defaultMarginBetweenExperiences
+							}
 							setMarginBetweenExperiences={props.setMarginBetweenExperiences}
 						/>
-						<ResumeControlTitleFontSize setTitleFontSize={props.setTitleFontSize} />
+						<ResumeControlTitleFontSize
+							setTitleFontSize={props.setTitleFontSize}
+						/>
 					</div>
 					{
 						<ResumeControlExperiences
