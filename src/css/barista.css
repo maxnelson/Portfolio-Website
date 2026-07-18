@@ -46,9 +46,9 @@
 ._display--block {
   display: block;
 }
-._word-wrap--break-word {
-  word-wrap: break-word;
-}
 ._font-size--2rem {
   font-size: 2rem;
+}
+._word-wrap--break-word {
+  word-wrap: break-word;
 }

@@ -21,7 +21,8 @@ export function HomePage() {
 					</div>
 					<main className="main_section">
 						<div className="project_grid_container">
-							<ProjectGridItem name="timeline" />
+							{/* Hidden tile — data preserved in projectGridData.json. Uncomment to restore. */}
+							{/* <ProjectGridItem name="timeline" /> */}
 							<ProjectGridItem name="apple" />
 							<ProjectGridItem name="rubrik" />
 							<ProjectGridItem name="cloudera" />
