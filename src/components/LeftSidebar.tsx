@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { RocketHandsLogo } from "@src/components/icons/RocketHandsLogo";
 
 export const LeftSidebar = () => {

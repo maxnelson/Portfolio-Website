@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { SketchblogSidebarSectionComponent } from "@src/sketchblog/SketchblogSidebarSectionComponent";
 import { ChevronLeftIcon } from "@src/components/icons/ChevronLeftIcon";
 

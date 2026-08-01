@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { ExternalLinkIcon } from "@src/components/icons/ExternalLinkIcon";
 import { CopyRightText } from "@src/components/Footer/CopyRightText";
 

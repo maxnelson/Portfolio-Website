@@ -1,7 +1,7 @@
 import { LeftSidebar } from "@src/components/LeftSidebar";
 import { Footer } from "@src/components/Footer/Footer";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { getResumeData } from "@src/utility_functions/fetchData/getResumeData";
 import { ResumePDF } from "@src/components/Resume/PDF/ResumePDF";
 import { ResumeControls } from "@src/components/Resume/ResumeControls/ResumeControls";

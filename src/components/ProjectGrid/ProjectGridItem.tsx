@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { ProjectGridItemSuspense } from "@src/components/ProjectGrid/ProjectGridItemSuspense";
 import { getProjectData } from "@src/utility_functions/fetchData/getProjectGridData";
 
