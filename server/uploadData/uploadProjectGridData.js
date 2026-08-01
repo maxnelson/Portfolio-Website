@@ -6,6 +6,10 @@ import { firestore_database_service_account } from "#root/server/config/firebase
 export const uploadProjectGridData = async () => {
 	await firestore_database_service_account
 		.collection("projectGridData")
+		.doc("wastedata")
+		.set(projectGridData.wastedata);
+	await firestore_database_service_account
+		.collection("projectGridData")
 		.doc("apple")
 		.set(projectGridData.apple);
 	await firestore_database_service_account
@@ -31,6 +35,10 @@ export const uploadProjectGridData = async () => {
 };
 
 export const uploadProjectGridDescriptionData = async () => {
+	const wastedataDescription = readFileSync(
+		"src/content/projectDescriptionsHTML/wastedataDescription.html",
+		"utf-8"
+	);
 	const timelineDescription = readFileSync(
 		"src/content/projectDescriptionsHTML/timelineDescription.html",
 		"utf-8"
@@ -55,6 +63,7 @@ export const uploadProjectGridDescriptionData = async () => {
 		"src/content/projectDescriptionsHTML/blogDescription.html",
 		"utf-8"
 	);
+	projectGridDescriptionData.wastedata.description = wastedataDescription;
 	projectGridDescriptionData.timeline.description = timelineDescription;
 	projectGridDescriptionData.apple.description = appleDescription;
 	projectGridDescriptionData.rubrik.description = rubrikDescription;
@@ -62,6 +71,10 @@ export const uploadProjectGridDescriptionData = async () => {
 	projectGridDescriptionData.gifhov.description = gifhovDescription;
 	projectGridDescriptionData.blog.description = blogDescription;
 
+	await firestore_database_service_account
+		.collection("projectGridDescriptionData")
+		.doc("wastedata")
+		.set(projectGridDescriptionData.wastedata);
 	await firestore_database_service_account
 		.collection("projectGridDescriptionData")
 		.doc("apple")

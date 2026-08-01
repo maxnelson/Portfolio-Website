@@ -1,4 +1,15 @@
 {
+	"wastedata": {
+		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fwastedata%2Fwastedata_homepage_1_optimized.webp?alt=media&token=ac21a644-7cf1-4c50-b8d7-066bf8e82d08",
+		"clientName": "Wastedata",
+		"jobTitle": "",
+		"location": "",
+		"startDateMonth": "April",
+		"startDateYear": "2026",
+		"endDateMonth": "",
+		"endDateYear": "",
+		"description": ""
+	},
 	"timeline": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_1_optimized.webp?alt=media&token=847189b0-3c1c-4778-b96c-d313b7f45033",
 		"clientName": "Timeline",

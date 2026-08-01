@@ -1,44 +1,51 @@
 {
+	"wastedata": {
+		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fwastedata%2Fwastedata_homepage_1_optimized.webp?alt=media&token=ac21a644-7cf1-4c50-b8d7-066bf8e82d08",
+		"clientName": "Wastedata",
+		"startDateYear": 2026,
+		"endDateYear": "",
+		"gridSequence": 1
+	},
 	"timeline": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Ftimeline%2Ftimeline_homepage_1_optimized.webp?alt=media&token=847189b0-3c1c-4778-b96c-d313b7f45033",
 		"clientName": "Timeline",
 		"startDateYear": 2023,
 		"endDateYear": 2024,
-		"gridSequence": 1
+		"gridSequence": 2
 	},
 	"apple": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fapple%2Fexplore_app_simulator_1_optimized.webp?alt=media&token=51b360e7-e4e6-4328-bee3-3a13d176311c",
 		"clientName": "Apple",
 		"startDateYear": 2020,
 		"endDateYear": 2023,
-		"gridSequence": 2
+		"gridSequence": 3
 	},
 	"rubrik": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Frubrik%2Frubrik_homepage_1_optimized.webp?alt=media&token=d80c735c-b7ee-4b96-a398-77c825d3741a",
 		"clientName": "Rubrik",
 		"startDateYear": 2019,
 		"endDateYear": 2020,
-		"gridSequence": 3
+		"gridSequence": 4
 	},
 	"cloudera": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fcloudera%2Fcloudera_homepage_1_optimized.webp?alt=media&token=cf379433-f68c-49f1-a74f-d94592a1173f",
 		"clientName": "Cloudera",
 		"startDateYear": 2013,
 		"endDateYear": 2017,
-		"gridSequence": 4
+		"gridSequence": 5
 	},
 	"gifhov": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fgifhov%2Fgifhov_homepage_image_optimized.webp?alt=media&token=93415c15-696f-4fb7-99bf-5b6aa9bd07b8",
 		"clientName": "Gifhov",
 		"startDateYear": 2015,
 		"endDateYear": "",
-		"gridSequence": 5
+		"gridSequence": 6
 	},
 	"blog": {
 		"image1": "https://firebasestorage.googleapis.com/v0/b/portfolio-website-410901.appspot.com/o/portfolio_website%2Fprojects%2Fsketchblog%2Fblog_homepage_1_optimized.webp?alt=media&token=3840d07b-050a-41ee-ade5-351faf542676",
 		"clientName": "Blog",
 		"startDateYear": "",
 		"endDateYear": "",
-		"gridSequence": 6
+		"gridSequence": 7
 	}
 }
